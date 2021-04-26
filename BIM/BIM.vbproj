@@ -25,7 +25,7 @@
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>true</UpdatePeriodically>
     <UpdateRequired>true</UpdateRequired>
-    <MapFileExtensions>false</MapFileExtensions>
+    <MapFileExtensions>true</MapFileExtensions>
     <InstallUrl>https://raw.githubusercontent.com/danny1099/Smartket.com/master/BIM/publish/</InstallUrl>
     <UpdateUrl>https://raw.githubusercontent.com/danny1099/Smartket.com/master/BIM/publish/</UpdateUrl>
     <TargetCulture>es-CO</TargetCulture>
@@ -34,7 +34,7 @@
     <SuiteName>Customer and Sales Management</SuiteName>
     <MinimumRequiredVersion>3.0.4.360</MinimumRequiredVersion>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>362</ApplicationRevision>
+    <ApplicationRevision>363</ApplicationRevision>
     <ApplicationVersion>3.0.4.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -90,13 +90,14 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>93C252E830B3CC98EEAC21B45586FA1A1010846E</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>02DC54D67699EE6D526A98F3638CEB522C385B3F</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>BIMv4_Key.pfx</ManifestKeyFile>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>false</SignManifests>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
