@@ -34,7 +34,7 @@
     <SuiteName>Customer and Sales Management</SuiteName>
     <MinimumRequiredVersion>3.0.4.360</MinimumRequiredVersion>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>363</ApplicationRevision>
+    <ApplicationRevision>364</ApplicationRevision>
     <ApplicationVersion>3.0.4.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
