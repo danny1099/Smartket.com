@@ -63,7 +63,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>yHkPdZfV0MQleSSXdxhjYVJdy0Se2vZGRRNPaBd5whg=</dsig:DigestValue>
+        <dsig:DigestValue>gQlCZKInOjFW3cpOAupKo1bqFLr8/DHdEIX60UiCQNc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1330,7 +1330,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>4EKgnnXGWMUOdwbbHVDBkdDhvPg+Qrc2tqU3K6zPdzs=</dsig:DigestValue>
+      <dsig:DigestValue>Y9BMSw3wLSFY1YquQmj9H0gT8yTjeRZUEwGCfvOwN5M=</dsig:DigestValue>
     </hash>
   </file>
   <file name="BIM.xml" size="7048">

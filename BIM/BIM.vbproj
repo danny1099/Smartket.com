@@ -26,8 +26,8 @@
     <UpdatePeriodically>true</UpdatePeriodically>
     <UpdateRequired>true</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
-    <InstallUrl>https://raw.githubusercontent.com/danny1099/Smartket.com/main/BIM/publish/</InstallUrl>
-    <UpdateUrl>https://raw.githubusercontent.com/danny1099/Smartket.com/main/BIM/publish/</UpdateUrl>
+    <InstallUrl>https://raw.githubusercontent.com/danny1099/Smartket.com/master/BIM/publish/</InstallUrl>
+    <UpdateUrl>https://raw.githubusercontent.com/danny1099/Smartket.com/master/BIM/publish/</UpdateUrl>
     <TargetCulture>es-CO</TargetCulture>
     <ProductName>BIM</ProductName>
     <PublisherName>APDA</PublisherName>

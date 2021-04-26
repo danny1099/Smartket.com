@@ -8,7 +8,7 @@
         <beforeApplicationStartup />
       </update>
     </subscription>
-    <deploymentProvider codebase="https://raw.githubusercontent.com/danny1099/Smartket.com/main/BIM/publish/BIM.application" />
+    <deploymentProvider codebase="https://raw.githubusercontent.com/danny1099/Smartket.com/master/BIM/publish/BIM.application" />
   </deployment>
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
     <framework targetVersion="4.6.2" profile="Full" supportedRuntime="4.0.30319" />
@@ -21,7 +21,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>l1y0/B+d5tT/VoZNM8jJfT0kOScZypju4UYL0cfXNAk=</dsig:DigestValue>
+        <dsig:DigestValue>h3C0a+ywdCSJWTA+mzRFxCA2x6hvrFrOWrMq71QjGSA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
