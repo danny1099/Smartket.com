@@ -35,7 +35,7 @@
     <MinimumRequiredVersion>3.0.4.360</MinimumRequiredVersion>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>377</ApplicationRevision>
+    <ApplicationRevision>378</ApplicationRevision>
     <ApplicationVersion>3.0.4.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -382,6 +382,12 @@
     </Compile>
     <Compile Include="UI\0. Initial\start_initial_restore.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\0. Initial\start_initial_restored.Designer.vb">
+      <DependentUpon>start_initial_restored.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\0. Initial\start_initial_restored.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UI\0. Initial\start_initial_update.Designer.vb">
       <DependentUpon>start_initial_update.vb</DependentUpon>
@@ -1839,6 +1845,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\0. Initial\start_initial_restore.resx">
       <DependentUpon>start_initial_restore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\0. Initial\start_initial_restored.resx">
+      <DependentUpon>start_initial_restored.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\0. Initial\start_initial_update.resx">
       <DependentUpon>start_initial_update.vb</DependentUpon>

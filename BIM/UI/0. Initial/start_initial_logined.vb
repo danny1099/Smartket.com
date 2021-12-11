@@ -38,9 +38,7 @@ Public Class start_initial_logined
 
     Private Sub restore_password(sender As Object, e As EventArgs) Handles object_label_restore.Click
         If message_text("¿Está seguro que desea gestionar un cambio de contraseña", MessageBoxButtons.YesNo) = DialogResult.Yes Then
-            Using restore As New start_initial_restore
-                restore.ShowDialog(start_home)
-            End Using
+            show_flyout(New start_initial_restored, Me)
         End If
     End Sub
 
