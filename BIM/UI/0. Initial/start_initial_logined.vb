@@ -53,6 +53,9 @@ Public Class start_initial_logined
             If singup_called = True Then object_image_photo.Image = If(.remember_photo.ToString = "", My.Resources.photo_default, If(local_photo() = True, Image.FromFile(.remember_photo.ToString), My.Resources.photo_default))
             If singup_called = True Then object_check_remember.Checked = If(.remember_username.ToString <> "", True, False)
 
+            'Muestra el tipo de conexion guardada
+            object_label_connection.Text = "Server: " & server_names()
+
             'Guarda los cambios en el archivo settings
             .Save()
         End With
@@ -62,37 +65,20 @@ Public Class start_initial_logined
         Return File.Exists(My.Settings.remember_photo)
     End Function
 
-    Private Sub search_update()
-        Dim table_search As DataTable = general.settings_search_versions("row_visible=1 and v.file_version<>'" & fn_version_number() & "'")
+    Private Function server_names() As String
+        Select Case My.Settings.connection_type
+            Case "C0DB" : Return fn_text_settings("C0DB", "DSO", "C:\APDA\BIM\settings.ini")
+            Case "C0HD" : Return "DESKTOP-GG063L8"
+            Case "L0DB" : Return "Desarrollo"
+        End Select
 
-        With table_search
-            If .Rows.Count = 1 Then
-                If message_text("La nueva versión " & .Rows(0).Item("Version").ToString & " de BIM está disponible para descargar, Desea realizar la instalación de la versión?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
-                    Dim file_name As String = .Rows(0).Item("file_name") & ".zip"
-                    Dim array_bytes As Byte() = TryCast(.Rows(0).Item("object_data"), Byte())
-
-                    'Crear el archivo tipo zip para descomprimir y actualizar
-                    File.WriteAllBytes("C:\APDA\BIM\updates\" & file_name, array_bytes)
-
-                    'Descomprime el archivo descargado
-                    If decompress_file("C:\APDA\BIM\updates\" & file_name) = True Then
-                        Application.ExitThread()
-                    End If
-                End If
-            End If
-        End With
-    End Sub
-
-    Private Function decompress_file(file_name As String) As Boolean
-        If My.Computer.FileSystem.FileExists("C:\APDA\BIM\updates\" + file_name) = True Then
-            Using zipFile As ZipFile = ZipFile.Read("C:\APDA\BIM\updates\" + file_name)
-                zipFile.ExtractAll("C:\APDA\BIM\", 1)
-                Return True
-            End Using
-        End If
-
-        Return False
+        Return ""
     End Function
+
+    Private Sub connection_changed(sender As Object, e As EventArgs) Handles object_label_connection.Click
+        show_flyout(New start_initial_connect, Me)
+        object_label_connection.Text = "Server: " & server_names()
+    End Sub
 #End Region
 
 #Region "methods"

@@ -95,7 +95,7 @@
 
     Private Sub dealer_change(sender As Object, e As EventArgs) Handles cmb_sales_dealer.EditValueChanged
         If cmb_sales_dealer.EditValue IsNot Nothing Then
-            cmb_sales_plan.Datasources(product.services_products_listed("s.row_visible=1 and s.product_type=1 and s.segment_code=1 and s.operator_code=" & cmb_sales_dealer.GetColumnValue("operator_code")), "Nombre del producto")
+            cmb_sales_plan.Datasources(product.services_products_listed("s.row_visible=1 and s.segment_code=1 and s.operator_code=" & cmb_sales_dealer.GetColumnValue("operator_code")), "Nombre del producto")
         End If
     End Sub
 
@@ -149,16 +149,6 @@
             txt_sales_serial3.Properties.ReadOnly = True
         End If
     End Sub
-
-    Private Sub seriales_checking(sender As Object, e As EventArgs) Handles txt_sales_serial1.Leave, txt_sales_serial2.Leave, txt_sales_serial3.Leave
-        If sender.EditValue IsNot Nothing Then
-            caracteres_count(sender)
-        End If
-    End Sub
-
-    Private Function caracteres_count(text_control As Object) As String
-        If Len(text_control.EditValue) < text_control.Properties.MaxLength Then Return message_text("El numero de serial " & text_control.Tag.ToString & " no tiene la cantidad de caracteres requeridos", MessageBoxButtons.OK)
-    End Function
 #End Region
 
 #Region "methods"

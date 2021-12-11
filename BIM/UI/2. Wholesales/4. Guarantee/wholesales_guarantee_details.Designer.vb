@@ -110,7 +110,6 @@ Partial Class wholesales_guarantee_details
         Me.txt_navigate_objects = New DevExpress.XtraEditors.ControlNavigator()
         Me.pnl_object_options = New DevExpress.XtraEditors.PanelControl()
         Me.lbl_separator_tiny2 = New DevExpress.XtraEditors.SeparatorControl()
-        Me.lbl_options_tracing = New DevExpress.XtraEditors.LabelControl()
         Me.btn_object_notes = New System.Windows.Forms.Button()
         Me.lbl_options_notes = New DevExpress.XtraEditors.LabelControl()
         Me.lbl_object_separator4 = New DevExpress.XtraEditors.LabelControl()
@@ -549,13 +548,13 @@ Partial Class wholesales_guarantee_details
         Me.pnl_search_right.Controls.Add(Me.pnl_search_results)
         Me.pnl_search_right.Controls.Add(Me.lbl_search_inforesults)
         Me.pnl_search_right.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnl_search_right.Location = New System.Drawing.Point(548, 1)
+        Me.pnl_search_right.Location = New System.Drawing.Point(501, 1)
         Me.pnl_search_right.LookAndFeel.SkinName = "Office 2019 White"
         Me.pnl_search_right.LookAndFeel.UseDefaultLookAndFeel = False
         Me.pnl_search_right.Margin = New System.Windows.Forms.Padding(0)
         Me.pnl_search_right.Name = "pnl_search_right"
         Me.pnl_search_right.Padding = New System.Windows.Forms.Padding(40, 20, 30, 5)
-        Me.pnl_search_right.Size = New System.Drawing.Size(799, 851)
+        Me.pnl_search_right.Size = New System.Drawing.Size(846, 851)
         Me.pnl_search_right.TabIndex = 0
         '
         'pnl_object_flyout
@@ -792,7 +791,7 @@ Partial Class wholesales_guarantee_details
         Me.dgv_grid_result.Margin = New System.Windows.Forms.Padding(0)
         Me.dgv_grid_result.Name = "dgv_grid_result"
         Me.dgv_grid_result.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpt_picture_option})
-        Me.dgv_grid_result.Size = New System.Drawing.Size(706, 145)
+        Me.dgv_grid_result.Size = New System.Drawing.Size(753, 145)
         Me.dgv_grid_result.TabIndex = 0
         Me.dgv_grid_result.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.dgv_view_results})
         '
@@ -1114,7 +1113,7 @@ Partial Class wholesales_guarantee_details
         Me.pnl_search_objects.Margin = New System.Windows.Forms.Padding(0)
         Me.pnl_search_objects.Name = "pnl_search_objects"
         Me.pnl_search_objects.Padding = New System.Windows.Forms.Padding(1)
-        Me.pnl_search_objects.Size = New System.Drawing.Size(712, 473)
+        Me.pnl_search_objects.Size = New System.Drawing.Size(759, 473)
         Me.pnl_search_objects.TabIndex = 0
         '
         'dgv_grid_objects
@@ -1127,7 +1126,7 @@ Partial Class wholesales_guarantee_details
         Me.dgv_grid_objects.Margin = New System.Windows.Forms.Padding(0)
         Me.dgv_grid_objects.Name = "dgv_grid_objects"
         Me.dgv_grid_objects.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemPictureEdit1, Me.txt_memo_edit})
-        Me.dgv_grid_objects.Size = New System.Drawing.Size(706, 437)
+        Me.dgv_grid_objects.Size = New System.Drawing.Size(753, 437)
         Me.dgv_grid_objects.TabIndex = 0
         Me.dgv_grid_objects.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.dgv_view_objects})
         '
@@ -1462,7 +1461,7 @@ Partial Class wholesales_guarantee_details
         Me.pnl_options_objects.Margin = New System.Windows.Forms.Padding(0)
         Me.pnl_options_objects.Name = "pnl_options_objects"
         Me.pnl_options_objects.Padding = New System.Windows.Forms.Padding(1, 1, 5, 1)
-        Me.pnl_options_objects.Size = New System.Drawing.Size(706, 30)
+        Me.pnl_options_objects.Size = New System.Drawing.Size(753, 30)
         Me.pnl_options_objects.TabIndex = 0
         '
         'btn_update_objects
@@ -1476,7 +1475,7 @@ Partial Class wholesales_guarantee_details
         Me.btn_update_objects.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
         Me.btn_update_objects.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_update_objects.Image = CType(resources.GetObject("btn_update_objects.Image"), System.Drawing.Image)
-        Me.btn_update_objects.Location = New System.Drawing.Point(601, 1)
+        Me.btn_update_objects.Location = New System.Drawing.Point(648, 1)
         Me.btn_update_objects.Margin = New System.Windows.Forms.Padding(0)
         Me.btn_update_objects.MinimumSize = New System.Drawing.Size(25, 25)
         Me.btn_update_objects.Name = "btn_update_objects"
@@ -1497,7 +1496,7 @@ Partial Class wholesales_guarantee_details
         Me.btn_print_objects.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
         Me.btn_print_objects.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_print_objects.Image = CType(resources.GetObject("btn_print_objects.Image"), System.Drawing.Image)
-        Me.btn_print_objects.Location = New System.Drawing.Point(636, 1)
+        Me.btn_print_objects.Location = New System.Drawing.Point(683, 1)
         Me.btn_print_objects.Margin = New System.Windows.Forms.Padding(0)
         Me.btn_print_objects.MinimumSize = New System.Drawing.Size(25, 25)
         Me.btn_print_objects.Name = "btn_print_objects"
@@ -1519,7 +1518,7 @@ Partial Class wholesales_guarantee_details
         Me.btn_export_objects.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_export_objects.ForeColor = System.Drawing.Color.CornflowerBlue
         Me.btn_export_objects.Image = CType(resources.GetObject("btn_export_objects.Image"), System.Drawing.Image)
-        Me.btn_export_objects.Location = New System.Drawing.Point(671, 1)
+        Me.btn_export_objects.Location = New System.Drawing.Point(718, 1)
         Me.btn_export_objects.Margin = New System.Windows.Forms.Padding(0, 0, 5, 0)
         Me.btn_export_objects.MinimumSize = New System.Drawing.Size(25, 25)
         Me.btn_export_objects.Name = "btn_export_objects"
@@ -1613,7 +1612,6 @@ Partial Class wholesales_guarantee_details
         '
         Me.pnl_object_options.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.pnl_object_options.Controls.Add(Me.lbl_separator_tiny2)
-        Me.pnl_object_options.Controls.Add(Me.lbl_options_tracing)
         Me.pnl_object_options.Controls.Add(Me.btn_object_notes)
         Me.pnl_object_options.Controls.Add(Me.lbl_options_notes)
         Me.pnl_object_options.Dock = System.Windows.Forms.DockStyle.Top
@@ -1623,7 +1621,7 @@ Partial Class wholesales_guarantee_details
         Me.pnl_object_options.Margin = New System.Windows.Forms.Padding(0)
         Me.pnl_object_options.Name = "pnl_object_options"
         Me.pnl_object_options.Padding = New System.Windows.Forms.Padding(1, 1, 5, 1)
-        Me.pnl_object_options.Size = New System.Drawing.Size(712, 35)
+        Me.pnl_object_options.Size = New System.Drawing.Size(759, 35)
         Me.pnl_object_options.TabIndex = 0
         '
         'lbl_separator_tiny2
@@ -1632,7 +1630,7 @@ Partial Class wholesales_guarantee_details
         Me.lbl_separator_tiny2.LineAlignment = DevExpress.XtraEditors.Alignment.Near
         Me.lbl_separator_tiny2.LineColor = System.Drawing.Color.Silver
         Me.lbl_separator_tiny2.LineOrientation = System.Windows.Forms.Orientation.Vertical
-        Me.lbl_separator_tiny2.Location = New System.Drawing.Point(572, 1)
+        Me.lbl_separator_tiny2.Location = New System.Drawing.Point(619, 1)
         Me.lbl_separator_tiny2.LookAndFeel.SkinName = "Office 2019 White"
         Me.lbl_separator_tiny2.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_separator_tiny2.Margin = New System.Windows.Forms.Padding(0)
@@ -1640,28 +1638,6 @@ Partial Class wholesales_guarantee_details
         Me.lbl_separator_tiny2.Padding = New System.Windows.Forms.Padding(0, 8, 0, 8)
         Me.lbl_separator_tiny2.Size = New System.Drawing.Size(5, 33)
         Me.lbl_separator_tiny2.TabIndex = 0
-        '
-        'lbl_options_tracing
-        '
-        Me.lbl_options_tracing.Appearance.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_options_tracing.Appearance.ForeColor = System.Drawing.Color.DimGray
-        Me.lbl_options_tracing.Appearance.Options.UseFont = True
-        Me.lbl_options_tracing.Appearance.Options.UseForeColor = True
-        Me.lbl_options_tracing.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
-        Me.lbl_options_tracing.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lbl_options_tracing.Dock = System.Windows.Forms.DockStyle.Left
-        Me.lbl_options_tracing.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter
-        Me.lbl_options_tracing.ImageOptions.Alignment = System.Drawing.ContentAlignment.MiddleLeft
-        Me.lbl_options_tracing.ImageOptions.Image = CType(resources.GetObject("lbl_options_tracing.ImageOptions.Image"), System.Drawing.Image)
-        Me.lbl_options_tracing.Location = New System.Drawing.Point(169, 1)
-        Me.lbl_options_tracing.LookAndFeel.SkinName = "Office 2019 White"
-        Me.lbl_options_tracing.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.lbl_options_tracing.Margin = New System.Windows.Forms.Padding(0)
-        Me.lbl_options_tracing.Name = "lbl_options_tracing"
-        Me.lbl_options_tracing.Padding = New System.Windows.Forms.Padding(5, 0, 5, 0)
-        Me.lbl_options_tracing.Size = New System.Drawing.Size(115, 33)
-        Me.lbl_options_tracing.TabIndex = 0
-        Me.lbl_options_tracing.Text = "Seguimiento"
         '
         'btn_object_notes
         '
@@ -1678,7 +1654,7 @@ Partial Class wholesales_guarantee_details
         Me.btn_object_notes.ForeColor = System.Drawing.Color.DimGray
         Me.btn_object_notes.Image = CType(resources.GetObject("btn_object_notes.Image"), System.Drawing.Image)
         Me.btn_object_notes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_object_notes.Location = New System.Drawing.Point(577, 1)
+        Me.btn_object_notes.Location = New System.Drawing.Point(624, 1)
         Me.btn_object_notes.Margin = New System.Windows.Forms.Padding(0)
         Me.btn_object_notes.Name = "btn_object_notes"
         Me.btn_object_notes.Size = New System.Drawing.Size(130, 33)
@@ -1732,7 +1708,7 @@ Partial Class wholesales_guarantee_details
         Me.lbl_object_separator4.Margin = New System.Windows.Forms.Padding(0)
         Me.lbl_object_separator4.Name = "lbl_object_separator4"
         Me.lbl_object_separator4.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
-        Me.lbl_object_separator4.Size = New System.Drawing.Size(712, 20)
+        Me.lbl_object_separator4.Size = New System.Drawing.Size(759, 20)
         Me.lbl_object_separator4.TabIndex = 0
         '
         'txt_search_description
@@ -1774,7 +1750,7 @@ Partial Class wholesales_guarantee_details
         Me.txt_search_description.Properties.LookAndFeel.UseDefaultLookAndFeel = False
         Me.txt_search_description.Properties.MaxLength = 500
         Me.txt_search_description.Properties.ReadOnly = True
-        Me.txt_search_description.Size = New System.Drawing.Size(712, 163)
+        Me.txt_search_description.Size = New System.Drawing.Size(759, 163)
         Me.txt_search_description.TabIndex = 0
         Me.txt_search_description.Tag = "Descripción"
         '
@@ -1791,7 +1767,7 @@ Partial Class wholesales_guarantee_details
         Me.pnl_object_revision.Margin = New System.Windows.Forms.Padding(0)
         Me.pnl_object_revision.Name = "pnl_object_revision"
         Me.pnl_object_revision.Padding = New System.Windows.Forms.Padding(1)
-        Me.pnl_object_revision.Size = New System.Drawing.Size(712, 35)
+        Me.pnl_object_revision.Size = New System.Drawing.Size(759, 35)
         Me.pnl_object_revision.TabIndex = 0
         '
         'lbl_search_support
@@ -1819,7 +1795,7 @@ Partial Class wholesales_guarantee_details
         Me.lbl_separator_tiny1.LineAlignment = DevExpress.XtraEditors.Alignment.Near
         Me.lbl_separator_tiny1.LineColor = System.Drawing.Color.Silver
         Me.lbl_separator_tiny1.LineOrientation = System.Windows.Forms.Orientation.Vertical
-        Me.lbl_separator_tiny1.Location = New System.Drawing.Point(587, 1)
+        Me.lbl_separator_tiny1.Location = New System.Drawing.Point(634, 1)
         Me.lbl_separator_tiny1.LookAndFeel.SkinName = "Office 2019 White"
         Me.lbl_separator_tiny1.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_separator_tiny1.Margin = New System.Windows.Forms.Padding(0)
@@ -1843,7 +1819,7 @@ Partial Class wholesales_guarantee_details
         Me.btn_object_support.ForeColor = System.Drawing.Color.DimGray
         Me.btn_object_support.Image = CType(resources.GetObject("btn_object_support.Image"), System.Drawing.Image)
         Me.btn_object_support.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_object_support.Location = New System.Drawing.Point(592, 1)
+        Me.btn_object_support.Location = New System.Drawing.Point(639, 1)
         Me.btn_object_support.Margin = New System.Windows.Forms.Padding(0)
         Me.btn_object_support.MaximumSize = New System.Drawing.Size(119, 33)
         Me.btn_object_support.MinimumSize = New System.Drawing.Size(119, 33)
@@ -1877,7 +1853,7 @@ Partial Class wholesales_guarantee_details
         Me.lbl_object_separator3.Margin = New System.Windows.Forms.Padding(0)
         Me.lbl_object_separator3.Name = "lbl_object_separator3"
         Me.lbl_object_separator3.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
-        Me.lbl_object_separator3.Size = New System.Drawing.Size(712, 20)
+        Me.lbl_object_separator3.Size = New System.Drawing.Size(759, 20)
         Me.lbl_object_separator3.TabIndex = 0
         '
         'pnl_search_results
@@ -1897,7 +1873,7 @@ Partial Class wholesales_guarantee_details
         Me.pnl_search_results.Margin = New System.Windows.Forms.Padding(0)
         Me.pnl_search_results.Name = "pnl_search_results"
         Me.pnl_search_results.Padding = New System.Windows.Forms.Padding(1)
-        Me.pnl_search_results.Size = New System.Drawing.Size(712, 181)
+        Me.pnl_search_results.Size = New System.Drawing.Size(759, 181)
         Me.pnl_search_results.TabIndex = 0
         '
         'pnl_options_result
@@ -1927,7 +1903,7 @@ Partial Class wholesales_guarantee_details
         Me.pnl_options_result.Margin = New System.Windows.Forms.Padding(0)
         Me.pnl_options_result.Name = "pnl_options_result"
         Me.pnl_options_result.Padding = New System.Windows.Forms.Padding(1, 1, 5, 1)
-        Me.pnl_options_result.Size = New System.Drawing.Size(706, 30)
+        Me.pnl_options_result.Size = New System.Drawing.Size(753, 30)
         Me.pnl_options_result.TabIndex = 0
         '
         'btn_update_results
@@ -1941,7 +1917,7 @@ Partial Class wholesales_guarantee_details
         Me.btn_update_results.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
         Me.btn_update_results.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_update_results.Image = CType(resources.GetObject("btn_update_results.Image"), System.Drawing.Image)
-        Me.btn_update_results.Location = New System.Drawing.Point(601, 1)
+        Me.btn_update_results.Location = New System.Drawing.Point(648, 1)
         Me.btn_update_results.Margin = New System.Windows.Forms.Padding(0)
         Me.btn_update_results.MinimumSize = New System.Drawing.Size(25, 25)
         Me.btn_update_results.Name = "btn_update_results"
@@ -2012,7 +1988,7 @@ Partial Class wholesales_guarantee_details
         Me.btn_print_results.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
         Me.btn_print_results.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_print_results.Image = CType(resources.GetObject("btn_print_results.Image"), System.Drawing.Image)
-        Me.btn_print_results.Location = New System.Drawing.Point(636, 1)
+        Me.btn_print_results.Location = New System.Drawing.Point(683, 1)
         Me.btn_print_results.Margin = New System.Windows.Forms.Padding(0)
         Me.btn_print_results.MinimumSize = New System.Drawing.Size(25, 25)
         Me.btn_print_results.Name = "btn_print_results"
@@ -2034,7 +2010,7 @@ Partial Class wholesales_guarantee_details
         Me.btn_export_results.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_export_results.ForeColor = System.Drawing.Color.CornflowerBlue
         Me.btn_export_results.Image = CType(resources.GetObject("btn_export_results.Image"), System.Drawing.Image)
-        Me.btn_export_results.Location = New System.Drawing.Point(671, 1)
+        Me.btn_export_results.Location = New System.Drawing.Point(718, 1)
         Me.btn_export_results.Margin = New System.Windows.Forms.Padding(0, 0, 5, 0)
         Me.btn_export_results.MinimumSize = New System.Drawing.Size(25, 25)
         Me.btn_export_results.Name = "btn_export_results"
@@ -2090,7 +2066,7 @@ Partial Class wholesales_guarantee_details
         Me.lbl_search_inforesults.Margin = New System.Windows.Forms.Padding(0)
         Me.lbl_search_inforesults.Name = "lbl_search_inforesults"
         Me.lbl_search_inforesults.Padding = New System.Windows.Forms.Padding(1, 0, 0, 0)
-        Me.lbl_search_inforesults.Size = New System.Drawing.Size(712, 28)
+        Me.lbl_search_inforesults.Size = New System.Drawing.Size(759, 28)
         Me.lbl_search_inforesults.TabIndex = 0
         Me.lbl_search_inforesults.Text = "Resultados de la busqueda"
         '
@@ -2112,7 +2088,7 @@ Partial Class wholesales_guarantee_details
         Me.pnl_search_left.Margin = New System.Windows.Forms.Padding(0)
         Me.pnl_search_left.Name = "pnl_search_left"
         Me.pnl_search_left.Padding = New System.Windows.Forms.Padding(40, 20, 10, 5)
-        Me.pnl_search_left.Size = New System.Drawing.Size(547, 851)
+        Me.pnl_search_left.Size = New System.Drawing.Size(500, 851)
         Me.pnl_search_left.TabIndex = 0
         '
         'pnl_search_trancing
@@ -2141,11 +2117,10 @@ Partial Class wholesales_guarantee_details
         Me.pnl_search_trancing.LookAndFeel.SkinName = "Office 2019 White"
         Me.pnl_search_trancing.LookAndFeel.UseDefaultLookAndFeel = False
         Me.pnl_search_trancing.Margin = New System.Windows.Forms.Padding(0)
-        Me.pnl_search_trancing.MaximumSize = New System.Drawing.Size(532, 340)
-        Me.pnl_search_trancing.MinimumSize = New System.Drawing.Size(510, 35)
+        Me.pnl_search_trancing.MinimumSize = New System.Drawing.Size(0, 35)
         Me.pnl_search_trancing.Name = "pnl_search_trancing"
         Me.pnl_search_trancing.Padding = New System.Windows.Forms.Padding(5)
-        Me.pnl_search_trancing.Size = New System.Drawing.Size(510, 340)
+        Me.pnl_search_trancing.Size = New System.Drawing.Size(433, 340)
         Me.pnl_search_trancing.TabIndex = 0
         '
         'txt_search_session
@@ -2578,7 +2553,7 @@ Partial Class wholesales_guarantee_details
         Me.lbl_search_infotracing.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_search_infotracing.Margin = New System.Windows.Forms.Padding(0)
         Me.lbl_search_infotracing.Name = "lbl_search_infotracing"
-        Me.lbl_search_infotracing.Size = New System.Drawing.Size(500, 28)
+        Me.lbl_search_infotracing.Size = New System.Drawing.Size(423, 28)
         Me.lbl_search_infotracing.TabIndex = 0
         Me.lbl_search_infotracing.Tag = "pnl_search_trancing"
         Me.lbl_search_infotracing.Text = " Auditoria"
@@ -2604,7 +2579,7 @@ Partial Class wholesales_guarantee_details
         Me.lbl_object_separator2.Margin = New System.Windows.Forms.Padding(0)
         Me.lbl_object_separator2.Name = "lbl_object_separator2"
         Me.lbl_object_separator2.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
-        Me.lbl_object_separator2.Size = New System.Drawing.Size(480, 30)
+        Me.lbl_object_separator2.Size = New System.Drawing.Size(433, 30)
         Me.lbl_object_separator2.TabIndex = 0
         '
         'pnl_search_sales
@@ -2647,11 +2622,10 @@ Partial Class wholesales_guarantee_details
         Me.pnl_search_sales.LookAndFeel.SkinName = "Office 2019 White"
         Me.pnl_search_sales.LookAndFeel.UseDefaultLookAndFeel = False
         Me.pnl_search_sales.Margin = New System.Windows.Forms.Padding(0)
-        Me.pnl_search_sales.MaximumSize = New System.Drawing.Size(532, 590)
-        Me.pnl_search_sales.MinimumSize = New System.Drawing.Size(532, 35)
+        Me.pnl_search_sales.MinimumSize = New System.Drawing.Size(0, 35)
         Me.pnl_search_sales.Name = "pnl_search_sales"
         Me.pnl_search_sales.Padding = New System.Windows.Forms.Padding(5)
-        Me.pnl_search_sales.Size = New System.Drawing.Size(532, 590)
+        Me.pnl_search_sales.Size = New System.Drawing.Size(433, 590)
         Me.pnl_search_sales.TabIndex = 0
         '
         'txt_search_dispach
@@ -3592,7 +3566,7 @@ Partial Class wholesales_guarantee_details
         Me.lbl_search_infosales.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_search_infosales.Margin = New System.Windows.Forms.Padding(0)
         Me.lbl_search_infosales.Name = "lbl_search_infosales"
-        Me.lbl_search_infosales.Size = New System.Drawing.Size(522, 28)
+        Me.lbl_search_infosales.Size = New System.Drawing.Size(423, 28)
         Me.lbl_search_infosales.TabIndex = 0
         Me.lbl_search_infosales.Tag = "pnl_search_sales"
         Me.lbl_search_infosales.Text = " Datos de garantía"
@@ -3636,7 +3610,7 @@ Partial Class wholesales_guarantee_details
         Me.lbl_object_separator1.Margin = New System.Windows.Forms.Padding(0)
         Me.lbl_object_separator1.Name = "lbl_object_separator1"
         Me.lbl_object_separator1.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
-        Me.lbl_object_separator1.Size = New System.Drawing.Size(480, 30)
+        Me.lbl_object_separator1.Size = New System.Drawing.Size(433, 30)
         Me.lbl_object_separator1.TabIndex = 0
         '
         'pnl_search_customer
@@ -3674,11 +3648,10 @@ Partial Class wholesales_guarantee_details
         Me.pnl_search_customer.LookAndFeel.SkinName = "Office 2019 White"
         Me.pnl_search_customer.LookAndFeel.UseDefaultLookAndFeel = False
         Me.pnl_search_customer.Margin = New System.Windows.Forms.Padding(0)
-        Me.pnl_search_customer.MaximumSize = New System.Drawing.Size(532, 435)
-        Me.pnl_search_customer.MinimumSize = New System.Drawing.Size(510, 35)
+        Me.pnl_search_customer.MinimumSize = New System.Drawing.Size(0, 35)
         Me.pnl_search_customer.Name = "pnl_search_customer"
         Me.pnl_search_customer.Padding = New System.Windows.Forms.Padding(5)
-        Me.pnl_search_customer.Size = New System.Drawing.Size(510, 435)
+        Me.pnl_search_customer.Size = New System.Drawing.Size(433, 435)
         Me.pnl_search_customer.TabIndex = 0
         '
         'txt_search_cellphone
@@ -4343,7 +4316,7 @@ Partial Class wholesales_guarantee_details
         Me.lbl_search_infocustomer.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_search_infocustomer.Margin = New System.Windows.Forms.Padding(0)
         Me.lbl_search_infocustomer.Name = "lbl_search_infocustomer"
-        Me.lbl_search_infocustomer.Size = New System.Drawing.Size(500, 28)
+        Me.lbl_search_infocustomer.Size = New System.Drawing.Size(423, 28)
         Me.lbl_search_infocustomer.TabIndex = 0
         Me.lbl_search_infocustomer.Tag = "pnl_search_customer"
         Me.lbl_search_infocustomer.Text = " Información del cliente"
@@ -4528,7 +4501,6 @@ Partial Class wholesales_guarantee_details
     Friend WithEvents lbl_separator_objects As DevExpress.XtraEditors.SeparatorControl
     Protected WithEvents txt_navigate_objects As DevExpress.XtraEditors.ControlNavigator
     Friend WithEvents pnl_object_options As DevExpress.XtraEditors.PanelControl
-    Friend WithEvents lbl_options_tracing As DevExpress.XtraEditors.LabelControl
     Friend WithEvents lbl_options_notes As DevExpress.XtraEditors.LabelControl
     Friend WithEvents lbl_object_separator3 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents pnl_search_results As DevExpress.XtraEditors.PanelControl

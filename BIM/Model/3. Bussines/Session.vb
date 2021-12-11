@@ -1,4 +1,6 @@
-﻿Namespace sessions
+﻿Imports DevExpress.XtraBars.Docking2010.Views.WindowsUI
+
+Namespace sessions
     Public Module Session
 
 #Region "properties"
@@ -16,6 +18,7 @@
         Public Property user_access As String
         Public Property position_name As String
         Public Property query_level As String
+        Public Property flyout_props As New FlyoutProperties With {.Style = FlyoutStyle.Popup}
 #End Region
 
 #Region "methods"

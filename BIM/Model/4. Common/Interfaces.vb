@@ -75,10 +75,12 @@ Public Module Interfaces
         windows_tabbed(control_object)
     End Sub
 
-    Public Sub show_flyout(control_object As Control)
-        Using fly_out As New model_object_flyout(start_home, control_object)
-            fly_out.ShowDialog()
-        End Using
+    Public Sub show_flyout(control_object As Control, Optional owner_form As Form = Nothing)
+        If control_object IsNot Nothing Then
+            Using fly_out As New model_object_flyout(If(owner_form Is Nothing, start_home, owner_form), control_object)
+                fly_out.ShowDialog(If(owner_form Is Nothing, start_home, owner_form))
+            End Using
+        End If
     End Sub
 
     Private Sub windows_tabbed(object_control As Control)

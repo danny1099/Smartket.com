@@ -113,6 +113,18 @@ Namespace My
                 Me("remember_photo") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C0DB")>  _
+        Public Property connection_type() As String
+            Get
+                Return CType(Me("connection_type"),String)
+            End Get
+            Set
+                Me("connection_type") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

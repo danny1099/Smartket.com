@@ -59,7 +59,7 @@
 
     Private Sub payment_changed(sender As Object, e As EventArgs) Handles cmb_values_payment.EditValueChanged
         If cmb_values_payment.EditValue IsNot Nothing Then
-            cmb_values_rules.Datasources(rules.commision_rules_listed("r.row_visible=1 and r.rule_type<>'C' and r.segment_code=" & cmb_values_condition.GetColumnValue("segment_code") & " and r.operator_code=" & cmb_values_condition.GetColumnValue("operator_code") & " and r.payment_type=" & cmb_values_payment.EditValue), "Nombre de la regla")
+            cmb_values_rules.Datasources(rules.commision_rules_listed("r.row_visible=1 and r.rule_type<>'C' and r.payment_type=" & cmb_values_payment.EditValue), "Nombre de la regla")
         End If
     End Sub
 

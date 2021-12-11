@@ -17,5 +17,8 @@
     <Setting Name="remember_photo" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="connection_type" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C0DB</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -427,7 +427,6 @@ Partial Class wholesales_guarantee_support
         Me.cmb_guarantee_causal.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmb_guarantee_causal.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.cmb_guarantee_causal.Properties.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.cmb_guarantee_causal.Properties.ReadOnly = True
         Me.cmb_guarantee_causal.Size = New System.Drawing.Size(400, 30)
         Me.cmb_guarantee_causal.TabIndex = 0
         Me.cmb_guarantee_causal.Tag = "Cauales"

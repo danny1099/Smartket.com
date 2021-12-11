@@ -958,7 +958,7 @@ Partial Class wholesales_orders_created
         Me.pnl_object_resumen.Controls.Add(Me.cmb_orders_payment)
         Me.pnl_object_resumen.Controls.Add(Me.txt_orders_description)
         Me.pnl_object_resumen.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnl_object_resumen.Location = New System.Drawing.Point(0, 0)
+        Me.pnl_object_resumen.Location = New System.Drawing.Point(0, -262)
         Me.pnl_object_resumen.LookAndFeel.SkinName = "Office 2019 White"
         Me.pnl_object_resumen.LookAndFeel.UseDefaultLookAndFeel = False
         Me.pnl_object_resumen.Margin = New System.Windows.Forms.Padding(0)

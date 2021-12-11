@@ -80,24 +80,28 @@
 #Region "methods"
     Private Sub saved_option(sender As Object, e As EventArgs) Handles btn_object_accept.Click
         If xvp_validate.Validate = True Then
-            With guarantee.sql_command
-                .CommandType = CommandType.StoredProcedure
-                .CommandText = "wholesales_master_guarantee_support"
+            If cmb_guarantee_revision.Text <> "Pendiente Solución" Then
+                With guarantee.sql_command
+                    .CommandType = CommandType.StoredProcedure
+                    .CommandText = "wholesales_master_guarantee_support"
 
-                .Parameters.Clear()
-                .Parameters.Add("@row_affected", SqlDbType.Int).Value = record_affected
-                .Parameters.Add("@revision_code", SqlDbType.TinyInt).Value = cmb_guarantee_revision.EditValue
-                .Parameters.Add("@support_date", SqlDbType.Date).Value = txt_guarantee_support.EditValue
-                .Parameters.Add("@description_text", SqlDbType.VarChar, 500).Value = txt_guarantee_description.EditValue
-                .Parameters.Add("@trace_number", SqlDbType.Char, 10).Value = "00000000"
-                .Parameters.Add("@trace_objects", SqlDbType.VarChar, 3000).Value = trace_to_create(pnl_object_container)
-                .Parameters.Add("@event_date", SqlDbType.DateTime).Value = Now
-                .Parameters.Add("@user_code", SqlDbType.SmallInt).Value = sessions.person_code
-                .Parameters.Add("@text_message", SqlDbType.VarChar, 300).Direction = ParameterDirection.Output
-            End With
+                    .Parameters.Clear()
+                    .Parameters.Add("@row_affected", SqlDbType.Int).Value = record_affected
+                    .Parameters.Add("@revision_code", SqlDbType.TinyInt).Value = cmb_guarantee_revision.EditValue
+                    .Parameters.Add("@support_date", SqlDbType.Date).Value = txt_guarantee_support.EditValue
+                    .Parameters.Add("@description_text", SqlDbType.VarChar, 500).Value = txt_guarantee_description.EditValue
+                    .Parameters.Add("@trace_number", SqlDbType.Char, 10).Value = "00000000"
+                    .Parameters.Add("@trace_objects", SqlDbType.VarChar, 3000).Value = trace_to_create(pnl_object_container)
+                    .Parameters.Add("@event_date", SqlDbType.DateTime).Value = Now
+                    .Parameters.Add("@user_code", SqlDbType.SmallInt).Value = sessions.person_code
+                    .Parameters.Add("@text_message", SqlDbType.VarChar, 300).Direction = ParameterDirection.Output
+                End With
 
-            If guarantee.execute_procedure = True Then
-                start_home.removed_tabbed()
+                If guarantee.execute_procedure = True Then
+                    start_home.removed_tabbed()
+                End If
+            Else
+                message_text("La revisión no se puede finalizar con el estado seleccionado", MessageBoxButtons.OK)
             End If
         End If
     End Sub

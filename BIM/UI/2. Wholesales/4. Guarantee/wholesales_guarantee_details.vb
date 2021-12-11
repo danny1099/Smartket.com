@@ -296,6 +296,9 @@ Public Class wholesales_guarantee_details
                 'check if field special with condition
                 If .Item("opt_in").ToString() = "True" Then chk_search_optin.Checked = True Else chk_search_optin.Checked = False
                 If .Item("support_text").ToString() <> "" Then txt_search_description.EditValue += vbCrLf & vbCrLf & "Revisión Tecnica: " & vbCrLf & .Item("support_text").ToString() & vbCrLf & vbCrLf & "Tecnico: " & .Item("revision_user").ToString() & vbCrLf & "Fecha de revisión: " & CDate(.Item("support_date").ToString()).ToLongDateString & vbCrLf & "Tipo de revisión: " & .Item("revision_type").ToString()
+
+                'Carga las notas asociadas al registro seleccionado
+                reports_show(options_changed("lbl_options_notes"))
             End With
         End If
     End Sub
@@ -443,19 +446,6 @@ Public Class wholesales_guarantee_details
         End If
     End Sub
 
-    Private Sub helper_field(sender As Object, e As RowClickEventArgs) Handles dgv_view_objects.RowClick
-        If dgv_view_objects.IsRowSelected(e.RowHandle) = True Then
-            Dim hi As GridHitInfo = dgv_view_objects.CalcHitInfo(e.Location)
-            If hi.InRowCell Then
-                Dim column As GridColumn = hi.Column
-                If column.FieldName = "Opciones" Then
-                    Using trace_ As New model_object_tracing(dgv_view_objects.GetRowCellValue(dgv_view_objects.FocusedRowHandle, "field_affected"))
-                        trace_.ShowDialog(start_home)
-                    End Using
-                End If
-            End If
-        End If
-    End Sub
 
     Public Sub reports_show(source As DataTable, Optional show_option As Boolean = False)
         dgv_grid_objects.DataSource = Nothing
@@ -469,9 +459,6 @@ Public Class wholesales_guarantee_details
             dgv_view_objects.BestFitColumns(True)
             dgv_view_objects.SelectRow(0)
 
-            'check if column exists
-            If dgv_view_objects.Columns("field_affected") IsNot Nothing Then dgv_view_objects.Columns("field_affected").Visible = False
-
             'check if columng comentario exists to change columnd and row size
             With dgv_view_objects
                 If .Columns("Comentario") IsNot Nothing Then .Columns("Comentario").ColumnEdit = txt_memo_edit
@@ -482,16 +469,13 @@ Public Class wholesales_guarantee_details
 
             'set total of registre in label lbl_count
             lbl_count_objects.Text = CInt(dgv_view_objects.RowCount.ToString)
-
-            'set parameters of columns and hiden columns
-            If show_option = True Then helper_column()
         End If
     End Sub
 #End Region
 
 #Region "objects"
-    Private Sub options_selected(sender As Object, e As EventArgs) Handles lbl_options_tracing.Click, lbl_options_notes.Click
-        reports_show(options_changed(sender.Name), options_helpers(sender.Name))
+    Private Sub options_selected(sender As Object, e As EventArgs) Handles lbl_options_notes.Click
+        reports_show(options_changed(sender.Name))
     End Sub
 
     Private Function options_changed(process_name_ As String) As DataTable
@@ -500,7 +484,6 @@ Public Class wholesales_guarantee_details
 
         'compare name to decide process execute table
         Select Case process_name_
-            Case "lbl_options_tracing" : Return audited.audits_search_tracing("Wholesales.Masters.Guarantee", dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Id"))
             Case "lbl_options_notes" : Return notes.notes_master_show("Wholesales.Masters.Guarantee", dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Id"))
         End Select
 
@@ -509,13 +492,11 @@ Public Class wholesales_guarantee_details
 
     Private Function options_helpers(process_name_ As String) As Boolean
         Select Case process_name_
-            Case "lbl_options_tracing" : module_name = "Seguimiento"
             Case "lbl_options_notes" : module_name = "Notas y/o comentarios"
         End Select
 
         'compare name of process to return value and name of process
         Select Case process_name_
-            Case "lbl_options_tracing" : Return True
             Case "lbl_options_notes" : Return False
         End Select
 

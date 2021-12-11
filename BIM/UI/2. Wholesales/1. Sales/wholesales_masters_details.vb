@@ -31,6 +31,7 @@ Public Class wholesales_masters_details
 
         'set in private variable parameter
         record_affected = row_selected
+        search_permits()
     End Sub
 
     Private Sub module_load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -573,7 +574,7 @@ Public Class wholesales_masters_details
 #End Region
 
 #Region "objects"
-    Private Sub options_selected(sender As Object, e As EventArgs) Handles lbl_options_notes.Click, lbl_options_tracing.Click, lbl_options_payments.Click, lbl_options_request.Click, lbl_options_discounts.Click
+    Private Sub options_selected(sender As Object, e As EventArgs) Handles lbl_options_notes.Click, lbl_options_payments.Click, lbl_options_request.Click, lbl_options_discounts.Click
         reports_show(options_changed(sender.Name), options_helpers(sender.Name))
     End Sub
 
@@ -585,7 +586,6 @@ Public Class wholesales_masters_details
         Select Case process_name_
             Case "lbl_options_request" : Return request.wholesale_request_show("r.wholesale_code=" & dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Id") & " and r.row_visible in (1,3,4)")
             Case "lbl_options_payments" : Return commision.commision_payments_resume("s.wholesales_code=" & dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Id") & " and s.row_visible=1")
-            Case "lbl_options_tracing" : Return audited.audits_search_tracing("Wholesales.Masters.Sales", dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Id"))
             Case "lbl_options_notes" : Return notes.notes_master_show("Wholesales.Masters.Sales", dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Id"))
             Case "lbl_options_discounts" : Return commision.commision_discount_search("d.wholesales_code=" & dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Id"))
         End Select
@@ -597,7 +597,6 @@ Public Class wholesales_masters_details
         Select Case process_name_
             Case "lbl_options_request" : module_name = "Peticiones"
             Case "lbl_options_payments" : module_name = "Comisiones"
-            Case "lbl_options_tracing" : module_name = "Seguimiento"
             Case "lbl_options_notes" : module_name = "Notas de venta"
             Case "lbl_options_discounts" : module_name = "Descuentos"
         End Select
@@ -606,7 +605,6 @@ Public Class wholesales_masters_details
         Select Case process_name_
             Case "lbl_options_request" : Return False
             Case "lbl_options_payments" : Return False
-            Case "lbl_options_tracing" : Return True
             Case "lbl_options_notes" : Return False
             Case "lbl_options_discounts" : Return False
         End Select

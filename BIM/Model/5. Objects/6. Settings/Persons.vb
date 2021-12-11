@@ -404,7 +404,7 @@
             .CommandText = "entities_workforce_budgets_erased"
 
             .Parameters.Clear()
-            .Parameters.Add("@row_affected", SqlDbType.TinyInt).Value = record_affected
+            .Parameters.Add("@row_affected", SqlDbType.Int).Value = record_affected
             .Parameters.Add("@trace_number", SqlDbType.Char, 10).Value = "00000000"
             .Parameters.Add("@trace_objects", SqlDbType.VarChar, 5000).Value = trace_to_edited("Estado", "Activo", "Anulado")
             .Parameters.Add("@event_date", SqlDbType.DateTime).Value = Now

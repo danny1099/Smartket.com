@@ -37,8 +37,10 @@ Partial Class start_initial_logined
         Me.txt_object_password = New APDA.[Object].Controls.CustomButton()
         Me.object_component_tool = New DevExpress.Utils.DefaultToolTipController(Me.components)
         Me.object_panel_left = New DevExpress.XtraEditors.PanelControl()
-        Me.object_image_logo = New DevExpress.XtraEditors.LabelControl()
+        Me.object_panel_bottom = New DevExpress.XtraEditors.PanelControl()
+        Me.object_label_connection = New DevExpress.XtraEditors.LabelControl()
         Me.object_image_apda = New DevExpress.XtraEditors.LabelControl()
+        Me.object_image_logo = New DevExpress.XtraEditors.LabelControl()
         Me.object_panel_container = New DevExpress.XtraEditors.PanelControl()
         Me.object_check_remember = New DevExpress.XtraEditors.CheckEdit()
         Me.object_label_password = New DevExpress.XtraEditors.LabelControl()
@@ -53,6 +55,8 @@ Partial Class start_initial_logined
         CType(Me.txt_object_password.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.object_panel_left, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.object_panel_left.SuspendLayout()
+        CType(Me.object_panel_bottom, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.object_panel_bottom.SuspendLayout()
         CType(Me.object_panel_container, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.object_panel_container.SuspendLayout()
         CType(Me.object_check_remember.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -156,8 +160,8 @@ Partial Class start_initial_logined
         Me.object_panel_left.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.object_panel_left.ContentImage = CType(resources.GetObject("object_panel_left.ContentImage"), System.Drawing.Image)
         Me.object_panel_left.ContentImageAlignment = System.Drawing.ContentAlignment.MiddleLeft
+        Me.object_panel_left.Controls.Add(Me.object_panel_bottom)
         Me.object_panel_left.Controls.Add(Me.object_image_logo)
-        Me.object_panel_left.Controls.Add(Me.object_image_apda)
         Me.object_panel_left.Dock = System.Windows.Forms.DockStyle.Fill
         Me.object_panel_left.Location = New System.Drawing.Point(1, 1)
         Me.object_panel_left.LookAndFeel.SkinName = "Office 2019 White"
@@ -167,6 +171,68 @@ Partial Class start_initial_logined
         Me.object_panel_left.Padding = New System.Windows.Forms.Padding(1)
         Me.object_panel_left.Size = New System.Drawing.Size(864, 698)
         Me.object_panel_left.TabIndex = 0
+        '
+        'object_panel_bottom
+        '
+        Me.object_component_tool.SetAllowHtmlText(Me.object_panel_bottom, DevExpress.Utils.DefaultBoolean.[Default])
+        Me.object_panel_bottom.Appearance.BackColor = System.Drawing.Color.Transparent
+        Me.object_panel_bottom.Appearance.Options.UseBackColor = True
+        Me.object_panel_bottom.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.object_panel_bottom.Controls.Add(Me.object_label_connection)
+        Me.object_panel_bottom.Controls.Add(Me.object_image_apda)
+        Me.object_panel_bottom.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.object_panel_bottom.Location = New System.Drawing.Point(1, 650)
+        Me.object_panel_bottom.LookAndFeel.SkinName = "Office 2019 White"
+        Me.object_panel_bottom.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.object_panel_bottom.Margin = New System.Windows.Forms.Padding(0)
+        Me.object_panel_bottom.Name = "object_panel_bottom"
+        Me.object_panel_bottom.Padding = New System.Windows.Forms.Padding(20, 10, 20, 1)
+        Me.object_panel_bottom.Size = New System.Drawing.Size(862, 47)
+        Me.object_panel_bottom.TabIndex = 0
+        '
+        'object_label_connection
+        '
+        Me.object_label_connection.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.object_label_connection.Appearance.ForeColor = System.Drawing.Color.Gray
+        Me.object_label_connection.Appearance.Options.UseFont = True
+        Me.object_label_connection.Appearance.Options.UseForeColor = True
+        Me.object_label_connection.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal
+        Me.object_label_connection.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.object_label_connection.Dock = System.Windows.Forms.DockStyle.Right
+        Me.object_label_connection.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter
+        Me.object_label_connection.ImageOptions.Image = CType(resources.GetObject("object_label_connection.ImageOptions.Image"), System.Drawing.Image)
+        Me.object_label_connection.Location = New System.Drawing.Point(733, 10)
+        Me.object_label_connection.LookAndFeel.SkinName = "Office 2019 White"
+        Me.object_label_connection.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.object_label_connection.Margin = New System.Windows.Forms.Padding(0)
+        Me.object_label_connection.Name = "object_label_connection"
+        Me.object_label_connection.Padding = New System.Windows.Forms.Padding(0, 5, 0, 0)
+        Me.object_label_connection.Size = New System.Drawing.Size(109, 25)
+        Me.object_label_connection.TabIndex = 0
+        Me.object_label_connection.Text = "Server: Desarrollo"
+        '
+        'object_image_apda
+        '
+        Me.object_image_apda.Appearance.Font = New System.Drawing.Font("Century Gothic", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.object_image_apda.Appearance.ForeColor = System.Drawing.Color.LightSeaGreen
+        Me.object_image_apda.Appearance.Options.UseFont = True
+        Me.object_image_apda.Appearance.Options.UseForeColor = True
+        Me.object_image_apda.Appearance.Options.UseTextOptions = True
+        Me.object_image_apda.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
+        Me.object_image_apda.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.object_image_apda.Dock = System.Windows.Forms.DockStyle.Left
+        Me.object_image_apda.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter
+        Me.object_image_apda.ImageOptions.Image = CType(resources.GetObject("object_image_apda.ImageOptions.Image"), System.Drawing.Image)
+        Me.object_image_apda.Location = New System.Drawing.Point(20, 10)
+        Me.object_image_apda.LookAndFeel.SkinName = "Office 2019 White"
+        Me.object_image_apda.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.object_image_apda.Margin = New System.Windows.Forms.Padding(0)
+        Me.object_image_apda.MaximumSize = New System.Drawing.Size(95, 90)
+        Me.object_image_apda.MinimumSize = New System.Drawing.Size(85, 30)
+        Me.object_image_apda.Name = "object_image_apda"
+        Me.object_image_apda.Size = New System.Drawing.Size(85, 30)
+        Me.object_image_apda.TabIndex = 0
+        Me.object_image_apda.Text = "apda"
         '
         'object_image_logo
         '
@@ -193,31 +259,6 @@ Partial Class start_initial_logined
         Me.object_image_logo.TabIndex = 0
         Me.object_image_logo.Text = "bim"
         Me.object_image_logo.ToolTip = "BIM Customer and Sales Manager"
-        '
-        'object_image_apda
-        '
-        Me.object_image_apda.Appearance.Font = New System.Drawing.Font("Century Gothic", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.object_image_apda.Appearance.ForeColor = System.Drawing.Color.LightSeaGreen
-        Me.object_image_apda.Appearance.Options.UseFont = True
-        Me.object_image_apda.Appearance.Options.UseForeColor = True
-        Me.object_image_apda.Appearance.Options.UseTextOptions = True
-        Me.object_image_apda.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
-        Me.object_image_apda.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
-        Me.object_image_apda.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.object_image_apda.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.object_image_apda.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter
-        Me.object_image_apda.ImageOptions.Image = CType(resources.GetObject("object_image_apda.ImageOptions.Image"), System.Drawing.Image)
-        Me.object_image_apda.Location = New System.Drawing.Point(1, 656)
-        Me.object_image_apda.LookAndFeel.SkinName = "Office 2019 White"
-        Me.object_image_apda.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.object_image_apda.Margin = New System.Windows.Forms.Padding(0)
-        Me.object_image_apda.MaximumSize = New System.Drawing.Size(95, 90)
-        Me.object_image_apda.MinimumSize = New System.Drawing.Size(85, 30)
-        Me.object_image_apda.Name = "object_image_apda"
-        Me.object_image_apda.Padding = New System.Windows.Forms.Padding(20, 0, 0, 10)
-        Me.object_image_apda.Size = New System.Drawing.Size(95, 41)
-        Me.object_image_apda.TabIndex = 0
-        Me.object_image_apda.Text = "apda"
         '
         'object_panel_container
         '
@@ -430,6 +471,9 @@ Partial Class start_initial_logined
         CType(Me.txt_object_password.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.object_panel_left, System.ComponentModel.ISupportInitialize).EndInit()
         Me.object_panel_left.ResumeLayout(False)
+        CType(Me.object_panel_bottom, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.object_panel_bottom.ResumeLayout(False)
+        Me.object_panel_bottom.PerformLayout()
         CType(Me.object_panel_container, System.ComponentModel.ISupportInitialize).EndInit()
         Me.object_panel_container.ResumeLayout(False)
         Me.object_panel_container.PerformLayout()
@@ -442,7 +486,6 @@ Partial Class start_initial_logined
     Friend WithEvents object_component_tool As DevExpress.Utils.DefaultToolTipController
     Friend WithEvents object_panel_left As DevExpress.XtraEditors.PanelControl
     Friend WithEvents object_image_logo As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents object_image_apda As DevExpress.XtraEditors.LabelControl
     Friend WithEvents object_panel_container As DevExpress.XtraEditors.PanelControl
     Friend WithEvents object_check_remember As DevExpress.XtraEditors.CheckEdit
     Friend WithEvents object_label_password As DevExpress.XtraEditors.LabelControl
@@ -455,4 +498,7 @@ Partial Class start_initial_logined
     Friend WithEvents txt_object_password As APDA.Object.Controls.CustomButton
     Friend WithEvents txt_object_account As APDA.Object.Controls.CustomButton
     Friend WithEvents xvp_validate As DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider
+    Friend WithEvents object_panel_bottom As DevExpress.XtraEditors.PanelControl
+    Friend WithEvents object_label_connection As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents object_image_apda As DevExpress.XtraEditors.LabelControl
 End Class

@@ -67,7 +67,12 @@ Public Class wholesales_masters_show
                 .Columns("Servicios").AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
                 .Columns("Estrato").AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
                 .Columns("Cuotas Pendientes").AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+
+                'formato moneda en campo'
+                .Columns("Total Venta").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+                .Columns("Importe").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
                 .Columns("Total Venta").DisplayFormat.FormatString = "c0"
+                .Columns("Importe").DisplayFormat.FormatString = "c0"
                 .BestFitColumns(True)
                 .SelectRow(0)
 

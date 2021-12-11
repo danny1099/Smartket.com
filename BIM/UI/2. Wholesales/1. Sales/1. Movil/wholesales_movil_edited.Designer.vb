@@ -1248,7 +1248,6 @@ Partial Class wholesales_movil_edited
         '
         'chk_sales_cfm
         '
-        Me.chk_sales_cfm.EditValue = True
         Me.chk_sales_cfm.Location = New System.Drawing.Point(896, 358)
         Me.chk_sales_cfm.Margin = New System.Windows.Forms.Padding(0)
         Me.chk_sales_cfm.Name = "chk_sales_cfm"
