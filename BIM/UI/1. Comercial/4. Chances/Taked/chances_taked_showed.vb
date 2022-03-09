@@ -13,7 +13,7 @@ Public Class chances_taked_showed
     End Sub
 
     Private Sub module_load(sender As Object, e As EventArgs) Handles MyBase.Load
-        cmb_chances_condition.Datasources(chances.commercial_chances_search(If(sessions.admin_user = 1, "c.row_visible=1", "c.row_visible=1 and dbo.fn_format_query_compare('" & sessions.agency_permit & "',c.agency_code)>0 or c.mark_global=1 and c.row_visible=1")), "chance_name")
+        cmb_chances_condition.Datasources(chances.commercial_chances_search(If(sessions.admin_user = 1, "c.row_visible=1", "c.row_visible=1 and c.agency_code in (select Existing  from dbo.fn_format_string_check('" & sessions.agency_permit & "', c.agency_code) where Existing is not null)  or c.mark_global=1 and c.row_visible=1")), "chance_name")
     End Sub
 #End Region
 
@@ -122,7 +122,7 @@ Public Class chances_taked_showed
 
 #Region "options"
     Private Sub taked_option(sender As Object, e As EventArgs) Handles btn_object_attention.Click
-        If dgv_object_view.RowCount > 0 Then
+        If dgv_object_view.RowCount > 0 And cmb_chances_condition.EditValue IsNot Nothing Then
             If message_text("Está seguro que desea tomar las oportunidades de venta seleccionadas?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
                 With dgv_object_view
                     For i As Integer = 0 To .DataRowCount - 1
@@ -141,8 +141,8 @@ Public Class chances_taked_showed
         End If
     End Sub
 
-    Private Sub massive_option(sender As Object, e As EventArgs) Handles btn_object_massive.Click
-        If dgv_object_view.RowCount > 0 Then
+    Private Sub massive_option(sender As Object, e As EventArgs)
+        If dgv_object_view.RowCount > 0 And cmb_chances_condition.EditValue IsNot Nothing Then
             If message_text("Está seguro que desea tomar las oportunidades de venta seleccionadas?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
                 With dgv_object_view
                     For i As Integer = 0 To .DataRowCount - 1

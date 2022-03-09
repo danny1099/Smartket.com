@@ -130,6 +130,7 @@ Public Class comercial_attention_details
 
                 'Define el total de filas en la etiqueta de totales
                 If object_view.Columns("Valor a financiar") IsNot Nothing Then object_count.Text = total_values() Else object_count.Text = .RowCount.ToString
+                If object_view.Columns.Count < 10 Then object_view.OptionsView.ColumnAutoWidth = True
             End With
 
             'Activa el nodo asociado a la consulta base
@@ -290,7 +291,7 @@ Public Class comercial_attention_details
     End Sub
 
     Private Sub update_features(sender As Object, e As EventArgs) Handles btn_update_features.Click
-        reports_show(table_search("comercial_customer_hobbies", CStr(row_customer)), dgc_features_search, dgv_features_search, lbl_features_count, True, dgn_features_search, "commercial_attention_suggested")
+        reports_show(table_search("comercial_customer_hobbies", CStr(row_customer)), dgc_features_search, dgv_features_search, lbl_features_count, True, dgn_features_search, "commercial_attention_suggested", "p.Id in (")
     End Sub
 
     Private Sub exported_features(sender As Object, e As EventArgs) Handles btn_export_features.Click

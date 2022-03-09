@@ -129,19 +129,9 @@
         V4SOZoewLMsxrtkNTjgmeN4GqHnisy/3FYkAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btn_object_massive.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        xAAADsQBlSsOGwAAAbFJREFUSEvtUrtKA1EQXUIIEvwCaz/BL7CWIJZiZWlhKeT9XMhuHRELi0BkkcVs
-        QpAN6USsrUQsLCzFIogEsQjxzHon3Lj35iGCTQ4cZnbm3DN7H8YSiyLyR/w/8HT5T8axVCptg7uUf5cC
-        6HIlSKBkuVzeSqVSn+BQGqKjFirh2DyTyXyA73MM0YKbE8J8Pu8XCoWTXC7ngJfFYtFEvBVt2XCquRa2
-        be/4vh/hAaKWCJoL4ucOJigNUPYlasHNiOd5sWazGW+1WlGu4ZjOQZdyKrTbbdLFSUvfwFTzAJ1Oh57j
-        Pi6zj3har9dXRMvAMcW63S6bGa7rRvEALGgHuJfDRqMxfYBlWWs4gqt0Oj2A+V6v16MFM4khCazpZ7PZ
-        62q1uo6aGhA8JZPJEYbcgx4RR3Ik2mTGCHL89QHr8NLu8HxH2M1roFABzTcS0RCKRNpNrVZbFZIxHMeJ
-        Qv/COkk/FJIwsIMbNqfIhJGDmonc5IjamazjHB4Pwi4MbPWYhCqyyawcHhfCLoxKpbKBP6Dzf/4NsfYR
-        F74p7JTgi+QXQuB8EWrBTZVQ/p4nX2IeGMYXAUcqjkwM4XAAAAAASUVORK5CYII=
-</value>
-  </data>
+  <metadata name="txt_object_tips.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="btn_object_update.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -156,9 +146,6 @@
         P9IAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="txt_object_tips.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="btn_object_export.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -193,4 +180,7 @@
         xeE4Tgqzf+fjwPeH67qbFF7iT0OSfgCw063TMz3p7AAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="txt_object_tips.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

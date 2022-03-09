@@ -127,7 +127,7 @@ Public Class attention_quotation_show
 
 #Region "helpers"
     Private Sub objects_condition()
-        txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Fecha de creación", "convert(date,c.created_date)", GetType(Date), New RepositoryDate, FilterColumnClauseClass.DateTime))
+        txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Fecha de creación", "convert(date,c.event_date)", GetType(Date), New RepositoryDate, FilterColumnClauseClass.DateTime))
         txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Fecha de cierre", "convert(date,c.closed_date)", GetType(Date), New RepositoryDate, FilterColumnClauseClass.DateTime))
         txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Días Restantes", "datediff(d,getdate(),c.closed_date)", GetType(Integer), New RepositoryItem, FilterColumnClauseClass.String))
         txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Nombre de consultor", "t.person_code", GetType(Integer), New RepositoryChecked(person.settings_persons_listed("p.row_visible=1"), "Nombre del funcionario"), FilterColumnClauseClass.Lookup))
@@ -282,7 +282,7 @@ Public Class attention_quotation_show
         If criteria_condition() <> "" Then
             criteria_search = criteria_condition()
 
-            If criteria_search <> "" Then reports_show(criteria_search)
+            If criteria_search <> "" Then reports_show(criteria_search & " and c.number_invoice is null")
         End If
     End Sub
 

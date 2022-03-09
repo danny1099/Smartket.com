@@ -441,7 +441,7 @@ Partial Class attention_quotation_show
         Me.dgv_object_view.Appearance.Empty.Options.UseForeColor = True
         Me.dgv_object_view.Appearance.EvenRow.BackColor = System.Drawing.Color.White
         Me.dgv_object_view.Appearance.EvenRow.BackColor2 = System.Drawing.Color.White
-       Me.dgv_object_view.Appearance.EvenRow.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgv_object_view.Appearance.EvenRow.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.dgv_object_view.Appearance.EvenRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dgv_object_view.Appearance.EvenRow.ForeColor = System.Drawing.Color.Black
         Me.dgv_object_view.Appearance.EvenRow.Options.UseBackColor = True
@@ -529,9 +529,9 @@ Partial Class attention_quotation_show
         Me.dgv_object_view.Appearance.HeaderPanel.Options.UseForeColor = True
         Me.dgv_object_view.Appearance.HideSelectionRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dgv_object_view.Appearance.HideSelectionRow.Options.UseFont = True
-      Me.dgv_object_view.Appearance.HorzLine.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-       Me.dgv_object_view.Appearance.HorzLine.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-       Me.dgv_object_view.Appearance.HorzLine.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgv_object_view.Appearance.HorzLine.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgv_object_view.Appearance.HorzLine.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgv_object_view.Appearance.HorzLine.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.dgv_object_view.Appearance.HorzLine.ForeColor = System.Drawing.Color.DimGray
         Me.dgv_object_view.Appearance.HorzLine.Options.UseBackColor = True
         Me.dgv_object_view.Appearance.HorzLine.Options.UseBorderColor = True
@@ -676,6 +676,7 @@ Partial Class attention_quotation_show
         Me.dgv_object_view.FixedLineWidth = 1
         Me.dgv_object_view.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
         Me.dgv_object_view.GridControl = Me.dgv_object_grid
+        Me.dgv_object_view.GroupSummary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Count, "Id", Nothing, " | Total: {0}")})
         Me.dgv_object_view.Name = "dgv_object_view"
         Me.dgv_object_view.OptionsBehavior.AlignGroupSummaryInGroupRow = DevExpress.Utils.DefaultBoolean.[True]
         Me.dgv_object_view.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.[False]
@@ -691,7 +692,6 @@ Partial Class attention_quotation_show
         Me.dgv_object_view.OptionsMenu.EnableFooterMenu = False
         Me.dgv_object_view.OptionsPrint.EnableAppearanceEvenRow = True
         Me.dgv_object_view.OptionsPrint.EnableAppearanceOddRow = True
-        Me.dgv_object_view.OptionsPrint.PrintHorzLines = True
         Me.dgv_object_view.OptionsPrint.PrintVertLines = False
         Me.dgv_object_view.OptionsSelection.CheckBoxSelectorColumnWidth = 30
         Me.dgv_object_view.OptionsSelection.EnableAppearanceFocusedCell = False
@@ -710,11 +710,10 @@ Partial Class attention_quotation_show
         Me.dgv_object_view.OptionsView.ShowGroupedColumns = True
         Me.dgv_object_view.OptionsView.ShowGroupPanel = False
         Me.dgv_object_view.OptionsView.ShowGroupPanelColumnsAsSingleRow = True
+        Me.dgv_object_view.OptionsView.ShowHorizontalLines = DevExpress.Utils.DefaultBoolean.[True]
         Me.dgv_object_view.OptionsView.ShowIndicator = False
         Me.dgv_object_view.OptionsView.ShowPreviewRowLines = DevExpress.Utils.DefaultBoolean.[False]
         Me.dgv_object_view.OptionsView.ShowVerticalLines = DevExpress.Utils.DefaultBoolean.[False]
-        Me.dgv_object_view.OptionsView.ShowHorizontalLines = DevExpress.Utils.DefaultBoolean.[True]
-        Me.dgv_object_view.GroupSummary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Count, "Id", Nothing, " | Total: {0}")})
         Me.dgv_object_view.PaintStyleName = "Skin"
         Me.dgv_object_view.RowHeight = 30
         '

@@ -24,11 +24,11 @@ Partial Class chances_taked_showed
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(chances_taked_showed))
-        Dim EditorButtonImageOptions1 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
-        Dim SerializableAppearanceObject1 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject2 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject3 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject4 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim EditorButtonImageOptions2 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
+        Dim SerializableAppearanceObject5 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject6 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject7 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject8 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Me.pnl_object_top = New DevExpress.XtraEditors.PanelControl()
         Me.lbl_module_subtitle = New DevExpress.XtraEditors.LabelControl()
         Me.lbl_module_title = New DevExpress.XtraEditors.LabelControl()
@@ -38,7 +38,6 @@ Partial Class chances_taked_showed
         Me.pnl_object_menu = New DevExpress.XtraEditors.PanelControl()
         Me.pnl_object_actions = New System.Windows.Forms.FlowLayoutPanel()
         Me.btn_object_attention = New System.Windows.Forms.Button()
-        Me.btn_object_massive = New System.Windows.Forms.Button()
         Me.dgv_object_grid = New APDA.[Object].Controls.CustomGrid()
         Me.dgv_object_view = New APDA.[Object].Controls.CustomGridView()
         Me.rpt_picture_option = New DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit()
@@ -219,7 +218,7 @@ Partial Class chances_taked_showed
         Me.pnl_object_flyout.OptionsBeakPanel.BorderColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
         Me.pnl_object_flyout.OptionsButtonPanel.ButtonPanelLocation = DevExpress.Utils.FlyoutPanelButtonPanelLocation.Top
         Me.pnl_object_flyout.OwnerControl = Me.dgv_object_grid
-        Me.pnl_object_flyout.Size = New System.Drawing.Size(260, 94)
+        Me.pnl_object_flyout.Size = New System.Drawing.Size(260, 52)
         Me.pnl_object_flyout.TabIndex = 0
         '
         'pnl_object_menu
@@ -238,21 +237,20 @@ Partial Class chances_taked_showed
         Me.pnl_object_menu.LookAndFeel.UseDefaultLookAndFeel = False
         Me.pnl_object_menu.Margin = New System.Windows.Forms.Padding(0)
         Me.pnl_object_menu.Name = "pnl_object_menu"
-        Me.pnl_object_menu.Size = New System.Drawing.Size(260, 94)
+        Me.pnl_object_menu.Size = New System.Drawing.Size(260, 52)
         Me.pnl_object_menu.TabIndex = 0
         '
         'pnl_object_actions
         '
         Me.pnl_object_actions.BackColor = System.Drawing.Color.White
         Me.pnl_object_actions.Controls.Add(Me.btn_object_attention)
-        Me.pnl_object_actions.Controls.Add(Me.btn_object_massive)
         Me.pnl_object_actions.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnl_object_actions.FlowDirection = System.Windows.Forms.FlowDirection.TopDown
         Me.pnl_object_actions.Location = New System.Drawing.Point(2, 2)
         Me.pnl_object_actions.Margin = New System.Windows.Forms.Padding(0)
         Me.pnl_object_actions.Name = "pnl_object_actions"
         Me.pnl_object_actions.Padding = New System.Windows.Forms.Padding(3)
-        Me.pnl_object_actions.Size = New System.Drawing.Size(256, 90)
+        Me.pnl_object_actions.Size = New System.Drawing.Size(256, 48)
         Me.pnl_object_actions.TabIndex = 0
         Me.pnl_object_actions.WrapContents = False
         '
@@ -281,32 +279,6 @@ Partial Class chances_taked_showed
         Me.btn_object_attention.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btn_object_attention.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btn_object_attention.UseVisualStyleBackColor = False
-        '
-        'btn_object_massive
-        '
-        Me.btn_object_massive.BackColor = System.Drawing.Color.White
-        Me.btn_object_massive.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_object_massive.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btn_object_massive.FlatAppearance.BorderSize = 0
-        Me.btn_object_massive.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
-        Me.btn_object_massive.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.btn_object_massive.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
-        Me.btn_object_massive.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_object_massive.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_object_massive.ForeColor = System.Drawing.Color.DimGray
-        Me.btn_object_massive.Image = CType(resources.GetObject("btn_object_massive.Image"), System.Drawing.Image)
-        Me.btn_object_massive.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_object_massive.Location = New System.Drawing.Point(4, 46)
-        Me.btn_object_massive.Margin = New System.Windows.Forms.Padding(1)
-        Me.btn_object_massive.MaximumSize = New System.Drawing.Size(250, 40)
-        Me.btn_object_massive.MinimumSize = New System.Drawing.Size(250, 0)
-        Me.btn_object_massive.Name = "btn_object_massive"
-        Me.btn_object_massive.Size = New System.Drawing.Size(250, 40)
-        Me.btn_object_massive.TabIndex = 0
-        Me.btn_object_massive.Text = "Enviar Masivo"
-        Me.btn_object_massive.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_object_massive.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btn_object_massive.UseVisualStyleBackColor = False
         '
         'dgv_object_grid
         '
@@ -758,7 +730,7 @@ Partial Class chances_taked_showed
         Me.txt_object_search.Properties.AppearanceReadOnly.Options.UseBorderColor = True
         Me.txt_object_search.Properties.AutoHeight = False
         Me.txt_object_search.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        Me.txt_object_search.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Search, "", -1, True, True, True, EditorButtonImageOptions1, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, SerializableAppearanceObject2, SerializableAppearanceObject3, SerializableAppearanceObject4, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        Me.txt_object_search.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Search, "", -1, True, True, True, EditorButtonImageOptions2, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject5, SerializableAppearanceObject6, SerializableAppearanceObject7, SerializableAppearanceObject8, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_object_search.Properties.Client = Me.dgv_object_grid
         Me.txt_object_search.Properties.FilterCondition = DevExpress.Data.Filtering.FilterCondition.Contains
         Me.txt_object_search.Properties.LookAndFeel.SkinName = "Office 2019 White"
@@ -1056,6 +1028,5 @@ Partial Class chances_taked_showed
     Friend WithEvents pnl_object_actions As FlowLayoutPanel
     Protected WithEvents btn_object_attention As Button
     Protected WithEvents btn_object_update As Button
-    Protected WithEvents btn_object_massive As Button
     Protected WithEvents object_button_fields As Button
 End Class

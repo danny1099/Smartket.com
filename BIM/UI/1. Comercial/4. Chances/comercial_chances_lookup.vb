@@ -1,5 +1,6 @@
 ﻿Public Class comercial_chances_lookup
     Private chance As Chances = Chances.Instance
+    Private wholesales As Sales = Sales.Instance
     Private criteria_selected As String
 
 #Region "contructors"
@@ -22,7 +23,7 @@
 
 #Region "behaviors"
     Public Sub reports_show(Optional criteria_search As String = "")
-        Dim source As DataTable = chance.chances_taked_showed(criteria_search)
+        Dim source As DataTable = wholesales.wholesale_sales_show(criteria_search)
 
         'limpia los origenes de datos anteriores
         dgv_object_grid.DataSource = Nothing
@@ -37,8 +38,6 @@
             'parametriza las columnas de la vista
             With dgv_object_view
                 .Columns("Id").Visible = False
-                .Columns("service_code").Visible = False
-                .Columns("customer_code").Visible = False
                 .BestFitColumns(True)
                 .SelectRow(0)
 

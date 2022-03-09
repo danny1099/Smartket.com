@@ -491,6 +491,7 @@ Partial Class start_initial_home
         'nam_object_crm
         '
         Me.nam_object_crm.Elements.AddRange(New DevExpress.XtraBars.Navigation.AccordionControlElement() {Me.nam_comercial_group})
+        Me.nam_object_crm.Expanded = True
         Me.nam_object_crm.Hint = "Comercial"
         Me.nam_object_crm.ImageOptions.Image = CType(resources.GetObject("nam_object_crm.ImageOptions.Image"), System.Drawing.Image)
         Me.nam_object_crm.Name = "nam_object_crm"

@@ -42,7 +42,7 @@
                 .Parameters.Add("@trace_number", SqlDbType.Char, 10).Value = fn_trace_number()
                 .Parameters.Add("@trace_objects", SqlDbType.VarChar, 3000).Value = trace_to_create(pnl_object_container)
                 .Parameters.Add("@event_date", SqlDbType.DateTime).Value = Now
-                .Parameters.Add("@user_code", SqlDbType.SmallInt).Value = sessions.person_code
+                .Parameters.Add("@text_message", SqlDbType.VarChar, 300).Direction = ParameterDirection.Output
             End With
 
             If person.execute_procedure = True Then

@@ -3,6 +3,8 @@
     Private dealer As Dealers = Dealers.Instance
     Private attention As Attentions = Attentions.Instance
     Private row_affected As Integer
+    Private product_code As Integer
+    Private product_type As String
 
 #Region "constructor"
     Public Sub New(row_selected As Integer)
@@ -11,6 +13,16 @@
 
         'set in private variable parameter
         row_affected = row_selected
+    End Sub
+
+    Public Sub New(row_selected As Integer, product_selected As Integer, type_select As String)
+        InitializeComponent()
+        PerformAutoScale()
+
+        'set in private variable parameter
+        row_affected = row_selected
+        product_code = product_selected
+        product_type = type_select
     End Sub
 
     Private Sub module_load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -25,12 +37,16 @@
 #Region "behaviors"
     Private Sub object_listed()
         cmb_quotation_type.Datasources(services.services_products_type("row_visible=1"), "product_type")
-        cmb_quotation_dealers.Datasources(dealer.settings_dealers_search("row_visible=1 and d.Id in (select dealer_code from [Entities.Bussines.Distributary] where agency_code in (" & sessions.agency_permit & ") and segment_code=3 and row_visible=1)"), "dealer_name")
+        cmb_quotation_dealers.Datasources(dealer.settings_dealers_search("row_visible=1"), "dealer_name")
+
+        If product_type <> "" Then cmb_quotation_type.EditValue = cmb_quotation_type.Properties.GetKeyValueByDisplayText(product_type)
     End Sub
 
     Private Sub typed_changed(sender As Object, e As EventArgs) Handles cmb_quotation_type.EditValueChanged
         If cmb_quotation_type.EditValue IsNot Nothing Then
-            cmb_quotation_services.Datasources(services.services_products_listed("s.row_visible=1 and s.segment_code=3 and s.product_type=" & cmb_quotation_type.EditValue), "Nombre del producto")
+            cmb_quotation_services.Datasources(services.services_products_listed("s.row_visible=1 and s.product_type=" & cmb_quotation_type.EditValue), "Nombre del producto")
+
+            If product_code <> 0 Then cmb_quotation_services.EditValue = product_code
         End If
     End Sub
 

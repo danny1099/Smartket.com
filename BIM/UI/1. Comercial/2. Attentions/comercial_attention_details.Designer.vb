@@ -711,6 +711,17 @@ Partial Class comercial_attention_details
         Me.dgn_features_search.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFullFocus
         Me.dgn_features_search.GridControl = Me.dgc_features_search
         Me.dgn_features_search.Name = "dgn_features_search"
+        Me.dgn_features_search.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.[False]
+        Me.dgn_features_search.OptionsBehavior.Editable = False
+        Me.dgn_features_search.OptionsBehavior.ReadOnly = True
+        Me.dgn_features_search.OptionsSelection.CheckBoxSelectorColumnWidth = 30
+        Me.dgn_features_search.OptionsSelection.EnableAppearanceFocusedCell = False
+        Me.dgn_features_search.OptionsSelection.EnableAppearanceHideSelection = False
+        Me.dgn_features_search.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect
+        Me.dgn_features_search.OptionsSelection.ResetSelectionClickOutsideCheckboxSelector = True
+        Me.dgn_features_search.OptionsSelection.ShowCheckBoxSelectorInColumnHeader = DevExpress.Utils.DefaultBoolean.[True]
+        Me.dgn_features_search.OptionsSelection.ShowCheckBoxSelectorInGroupRow = DevExpress.Utils.DefaultBoolean.[False]
+        Me.dgn_features_search.OptionsSelection.ShowCheckBoxSelectorInPrintExport = DevExpress.Utils.DefaultBoolean.[False]
         Me.dgn_features_search.OptionsView.ShowVerticalLines = DevExpress.Utils.DefaultBoolean.[False]
         Me.dgn_features_search.PaintStyleName = "Skin"
         '
