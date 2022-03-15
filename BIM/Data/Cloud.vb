@@ -28,7 +28,7 @@ Public NotInheritable Class Connections
     Public Function fn_connection_cloud() As SqlConnection
         Try
             If cnn_nube Is Nothing Then
-                cnn_nube = New SqlConnection("Data Source=" & If(My.Settings.connection_type = "C0HD", "DESKTOP-GG063L8", fn_text_settings(My.Settings.connection_type, "DSO", "C:\APDA\BIM\settings.ini")) & ";Initial Catalog=BIMv4;User ID=SA;Password=" & fn_text_settings("C0DB", "IDT", "C:\APDA\BIM\settings.ini"))
+                cnn_nube = New SqlConnection("Data Source=" & fn_text_settings(My.Settings.connection_type, "DSO", "C:\APDA\BIM\settings.ini") & ";Initial Catalog=BIMv4;User ID=SA;Password=" & fn_text_settings(My.Settings.connection_type, "IDT", "C:\APDA\BIM\settings.ini"))
                 cnn_nube.Open()
             End If
         Catch ex As Exception

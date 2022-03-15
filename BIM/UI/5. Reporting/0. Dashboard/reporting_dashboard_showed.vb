@@ -26,7 +26,7 @@ Public Class reporting_dashboard_showed
         'ejecuta el proceso para actualizar los datos
         With dbs_connections
             'cambia los datos de conexion
-            Dim cnn_connection As String = "XpoProvider=MSSqlServer;Data Source=" & fn_text_settings("C0DB", "DSO", "C:\APDA\BIM\settings.ini") & ";User ID=sa;Password=" & fn_text_settings("C0DB", "IDT", "C:\APDA\BIM\settings.ini") & ";Initial Catalog=" & fn_text_settings("C0DB", "DBO", "C:\APDA\BIM\settings.ini") & ";Persist Security Info=true;"
+            Dim cnn_connection As String = "XpoProvider=MSSqlServer;Data Source=" & fn_text_settings(My.Settings.connection_type, "DSO", "C:\APDA\BIM\settings.ini") & ";Initial Catalog=BIMv4;User ID=SA;Password=" & fn_text_settings(My.Settings.connection_type, "IDT", "C:\APDA\BIM\settings.ini") & ";Persist Security Info=true;"
             Dim cnn_parameters As New CustomStringConnectionParameters(cnn_connection)
 
             'carga la conexion y la apertura para la carga de datos

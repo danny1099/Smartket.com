@@ -22,9 +22,9 @@
         End With
 
         With source_table.Rows
+            .Add("C0HD", fn_text_settings("C0HD", "DSO", "C:\APDA\BIM\settings.ini"))
             .Add("C0DB", fn_text_settings("C0DB", "DSO", "C:\APDA\BIM\settings.ini"))
-            .Add("C0HD", "DESKTOP-GG063L8")
-            .Add("L0DB", "DEVELOPMENT")
+            .Add("L0DB", fn_text_settings("L0DB", "DSO", "C:\APDA\BIM\settings.ini"))
         End With
 
         Return source_table

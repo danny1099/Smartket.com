@@ -66,7 +66,7 @@ Public Class start_initial_logined
     Private Function server_names() As String
         Select Case My.Settings.connection_type
             Case "C0DB" : Return fn_text_settings("C0DB", "DSO", "C:\APDA\BIM\settings.ini")
-            Case "C0HD" : Return "DESKTOP-GG063L8"
+            Case "C0HD" : Return fn_text_settings("C0HD", "DSO", "C:\APDA\BIM\settings.ini")
             Case "L0DB" : Return "Desarrollo"
         End Select
 
