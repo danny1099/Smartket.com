@@ -4,6 +4,7 @@ Public Class attention_quotation_wholesales
     Private resumen As Resumen = Resumen.Instance
     Private dealer As Dealers = Dealers.Instance
     Private attention As Attentions = Attentions.Instance
+    Private causal As Request = Request.Instance
     Private row_affected As Integer
 
 #Region "constructor"
@@ -29,6 +30,7 @@ Public Class attention_quotation_wholesales
         cmb_quotation_type.Datasources(services.services_products_type("row_visible=1"), "product_type")
         cmb_quotation_dealers.Datasources(dealer.settings_dealers_search("row_visible=1 and d.Id in (select dealer_code from [Entities.Bussines.Distributary] where agency_code in (" & sessions.agency_permit & ") and segment_code=3 and row_visible=1)"), "dealer_name")
         cmb_quotation_services.Datasources(services.services_products_listed("s.row_visible=1 and s.segment_code=3"), "Nombre del producto")
+        cmb_quotation_status.Datasources(causal.request_causal_search("row_visible=1 and c.module_code=8 and c.causal_type='S'"), "causal_name")
 
         'Carga la cotizacion seleccionada
         search_quotation()
@@ -51,6 +53,18 @@ Public Class attention_quotation_wholesales
             End With
         End If
     End Sub
+
+    Private Function validate_causal()
+        If cmb_quotation_status.EditValue IsNot Nothing Then
+            Dim required As String = cmb_quotation_status.GetColumnValue("required_invoice").ToString
+
+            If cmb_quotation_status.GetColumnValue("required_invoice").ToString = "True" Then
+                Return True
+            End If
+        End If
+
+        Return False
+    End Function
 #End Region
 
 #Region "methods"
@@ -62,7 +76,11 @@ Public Class attention_quotation_wholesales
 
                 .Parameters.Clear()
                 .Parameters.Add("@row_affected", SqlDbType.Int).Value = row_affected
-                .Parameters.Add("@number_invoice", SqlDbType.VarChar, 50).Value = txt_number_invoice.Text
+                .Parameters.Add("@dealer_code", SqlDbType.TinyInt).Value = cmb_quotation_dealers.EditValue
+                .Parameters.Add("@purchase_value", SqlDbType.Decimal, 18, 2).Value = CDec(txt_quotation_value.EditValue)
+                .Parameters.Add("@causal_code", SqlDbType.SmallInt).Value = cmb_quotation_status.EditValue
+                .Parameters.Add("@number_invoice", SqlDbType.VarChar, 50).Value = If(validate_causal() = True, txt_number_invoice.Text, DBNull.Value)
+                .Parameters.Add("@description_text", SqlDbType.VarChar, 500).Value = If(txt_quotation_desc.EditValue, "Actualización de cotización del producto " & cmb_quotation_services.Text & " por el usuario " & sessions.person_name)
                 .Parameters.Add("@trace_number", SqlDbType.Char, 10).Value = "00000000"
                 .Parameters.Add("@trace_objects", SqlDbType.VarChar, 3000).Value = trace_to_create(pnl_object_container)
                 .Parameters.Add("@event_date", SqlDbType.DateTime).Value = Now

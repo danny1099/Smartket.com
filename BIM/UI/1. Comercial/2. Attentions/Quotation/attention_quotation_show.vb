@@ -15,6 +15,7 @@ Public Class attention_quotation_show
     Private agency As Agencys = Agencys.Instance
     Private person As Persons = Persons.Instance
     Private product As Products = Products.Instance
+    Private causal As Request = Request.Instance
     Private criteria_search As String = String.Empty
 
 #Region "constructor"
@@ -137,6 +138,7 @@ Public Class attention_quotation_show
         txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Numero de cotización", "c.quotation_number", GetType(String), New RepositoryItemTextEdit, FilterColumnClauseClass.String))
         txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Segmento", "c.segment_code", GetType(Integer), New RepositoryChecked(parameter.settings_search_segments("row_visible=1"), "segment_name"), FilterColumnClauseClass.Lookup))
         txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Nombre de producto", "c.services_code", GetType(Integer), New RepositoryChecked(product.services_products_listed("s.row_visible=1"), "Nombre del producto"), FilterColumnClauseClass.Lookup))
+        txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Estado", "c.causal_code", GetType(Integer), New RepositoryChecked(causal.request_causal_search("row_visible=1 and c.module_code=8"), "causal_name"), FilterColumnClauseClass.Lookup))
     End Sub
 
     Private Function criteria_condition() As String

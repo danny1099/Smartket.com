@@ -2951,7 +2951,6 @@ Partial Class comercial_customer_searched
         Me.txt_search_depto.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.txt_search_depto.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.txt_search_depto.Properties.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.txt_search_depto.Properties.ReadOnly = True
         Me.txt_search_depto.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
         Me.txt_search_depto.Size = New System.Drawing.Size(278, 25)
         Me.txt_search_depto.TabIndex = 0
@@ -3017,7 +3016,6 @@ Partial Class comercial_customer_searched
         Me.txt_search_neighborhood.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.txt_search_neighborhood.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.txt_search_neighborhood.Properties.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.txt_search_neighborhood.Properties.ReadOnly = True
         Me.txt_search_neighborhood.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
         Me.txt_search_neighborhood.Size = New System.Drawing.Size(278, 25)
         Me.txt_search_neighborhood.TabIndex = 0
@@ -3085,7 +3083,6 @@ Partial Class comercial_customer_searched
         Me.txt_search_cellphone.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions4, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject13, SerializableAppearanceObject14, SerializableAppearanceObject15, SerializableAppearanceObject16, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_search_cellphone.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.txt_search_cellphone.Properties.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.txt_search_cellphone.Properties.ReadOnly = True
         Me.txt_search_cellphone.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
         Me.txt_search_cellphone.Size = New System.Drawing.Size(131, 25)
         Me.txt_search_cellphone.TabIndex = 0
@@ -3274,7 +3271,6 @@ Partial Class comercial_customer_searched
         Me.txt_search_city.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.txt_search_city.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.txt_search_city.Properties.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.txt_search_city.Properties.ReadOnly = True
         Me.txt_search_city.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
         Me.txt_search_city.Size = New System.Drawing.Size(278, 25)
         Me.txt_search_city.TabIndex = 0
@@ -3342,7 +3338,6 @@ Partial Class comercial_customer_searched
         Me.txt_search_address.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions6, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject21, SerializableAppearanceObject22, SerializableAppearanceObject23, SerializableAppearanceObject24, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_search_address.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.txt_search_address.Properties.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.txt_search_address.Properties.ReadOnly = True
         Me.txt_search_address.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
         Me.txt_search_address.Size = New System.Drawing.Size(278, 25)
         Me.txt_search_address.TabIndex = 0
@@ -3410,7 +3405,6 @@ Partial Class comercial_customer_searched
         Me.txt_search_email.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions7, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject25, SerializableAppearanceObject26, SerializableAppearanceObject27, SerializableAppearanceObject28, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_search_email.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.txt_search_email.Properties.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.txt_search_email.Properties.ReadOnly = True
         Me.txt_search_email.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
         Me.txt_search_email.Size = New System.Drawing.Size(278, 25)
         Me.txt_search_email.TabIndex = 0
@@ -3478,7 +3472,6 @@ Partial Class comercial_customer_searched
         Me.txt_search_phone.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions8, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject29, SerializableAppearanceObject30, SerializableAppearanceObject31, SerializableAppearanceObject32, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_search_phone.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.txt_search_phone.Properties.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.txt_search_phone.Properties.ReadOnly = True
         Me.txt_search_phone.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
         Me.txt_search_phone.Size = New System.Drawing.Size(131, 25)
         Me.txt_search_phone.TabIndex = 0
@@ -3619,7 +3612,6 @@ Partial Class comercial_customer_searched
         Me.txt_search_customer.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.txt_search_customer.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.txt_search_customer.Properties.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.txt_search_customer.Properties.ReadOnly = True
         Me.txt_search_customer.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
         Me.txt_search_customer.Size = New System.Drawing.Size(278, 25)
         Me.txt_search_customer.TabIndex = 0
@@ -3685,7 +3677,6 @@ Partial Class comercial_customer_searched
         Me.txt_search_document.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.txt_search_document.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.txt_search_document.Properties.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.txt_search_document.Properties.ReadOnly = True
         Me.txt_search_document.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
         Me.txt_search_document.Size = New System.Drawing.Size(278, 25)
         Me.txt_search_document.TabIndex = 0

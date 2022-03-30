@@ -66,12 +66,13 @@ Public Class comercial_customer_show
             With dgv_object_view
                 .Columns("Id").Visible = False
                 .Columns("Edad").AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-                .Columns("Total de ventas").AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+                .Columns("Total Ventas").AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+                .Columns("Total Productos").AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
                 .BestFitColumns(True)
                 .SelectRow(0)
 
                 'comprueba el total de columnas para realizar el ajuste
-                .OptionsView.ColumnAutoWidth = If(.Columns.Count <= 10, True, False)
+                .OptionsView.ColumnAutoWidth = False
 
                 'define el total de filas en la etiqueta de totales
                 lbl_object_count.Text = .RowCount.ToString
@@ -147,7 +148,7 @@ Public Class comercial_customer_show
 
 #Region "helpers"
     Private Sub objects_condition()
-        txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Fecha de creación", "c.creation_date", GetType(Date), New RepositoryDate, FilterColumnClauseClass.DateTime))
+        txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Fecha de creación", "convert(date,c.event_date)", GetType(Date), New RepositoryDate, FilterColumnClauseClass.DateTime))
         txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Fecha de nacimiento", "c.birth_date", GetType(Date), New RepositoryDate, FilterColumnClauseClass.DateTime))
         txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Edad", "datediff(year,c.birth_date,getdate())", GetType(Integer), New RepositoryItemTextEdit, FilterColumnClauseClass.String))
         txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Agencia", "c.agency_code", GetType(Integer), New RepositoryChecked(agency.settings_agencys_search("row_visible=1 and a.Id in (" & sessions.agency_permit & ")"), "agency_name"), FilterColumnClauseClass.Lookup))
@@ -158,7 +159,8 @@ Public Class comercial_customer_show
         txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Genero", "c.genre_code", GetType(Integer), New RepositoryChecked(parameter.settings_search_genres("row_visible=1"), "genre_name"), FilterColumnClauseClass.Lookup))
         txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("CEE", "c.knowledge_code", GetType(Integer), New RepositoryChecked(customer.comercial_customer_knowledge("row_visible=1"), "knowledge_name"), FilterColumnClauseClass.Lookup))
         txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Fuente", "c.source_code", GetType(Integer), New RepositoryChecked(customer.comercial_customer_source("row_visible=1"), "source_name"), FilterColumnClauseClass.Lookup))
-        txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Total Ventas", "dbo.fn_relationship_customer_wholesales(c.Id)", GetType(Integer), New RepositoryItemTextEdit, FilterColumnClauseClass.String))
+        txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Total Productos", "dbo.fn_relationship_customer_wholesales(c.Id)", GetType(Integer), New RepositoryItemTextEdit, FilterColumnClauseClass.String))
+        txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Total Ventas", "dbo.fn_relationship_customer_invoices(c.Id)", GetType(Integer), New RepositoryItemTextEdit, FilterColumnClauseClass.String))
         txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Ultima Compra", "dbo.fn_relationship_customer_lastpurchase(c.Id)", GetType(Date), New RepositoryDate, FilterColumnClauseClass.DateTime))
         txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Puntaje", "convert(smallint,c.credit_score)", GetType(Integer), New RepositoryItemTextEdit, FilterColumnClauseClass.String))
         txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Cupo", "convert(decimal(18,2),c.credit_limit)", GetType(Double), New RepositoryItemTextEdit, FilterColumnClauseClass.String))

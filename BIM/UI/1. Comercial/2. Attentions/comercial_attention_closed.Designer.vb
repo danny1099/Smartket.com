@@ -364,9 +364,9 @@ Partial Class comercial_attention_closed
         Me.lbl_attention_theme.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_attention_theme.Margin = New System.Windows.Forms.Padding(0)
         Me.lbl_attention_theme.Name = "lbl_attention_theme"
-        Me.lbl_attention_theme.Size = New System.Drawing.Size(155, 16)
+        Me.lbl_attention_theme.Size = New System.Drawing.Size(161, 16)
         Me.lbl_attention_theme.TabIndex = 0
-        Me.lbl_attention_theme.Text = "Defina el tipo de gestión relizada*"
+        Me.lbl_attention_theme.Text = "Defina el tipo de gestión realizada*"
         '
         'lbl_attention_created
         '

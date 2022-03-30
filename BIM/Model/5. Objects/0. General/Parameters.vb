@@ -385,6 +385,7 @@
             .Rows.Add(5, "Gestiones")
             .Rows.Add(6, "Devoluciones")
             .Rows.Add(7, "Financiera")
+            .Rows.Add(8, "Cotizaciones")
         End With
 
         Return table

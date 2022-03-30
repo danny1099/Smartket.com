@@ -33,6 +33,8 @@ Partial Class attention_quotation_wholesales
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(attention_quotation_wholesales))
         Me.txt_object_tips = New System.Windows.Forms.ToolTip(Me.components)
         Me.pnl_object_container = New DevExpress.XtraEditors.PanelControl()
+        Me.lbl_quotation_status = New DevExpress.XtraEditors.LabelControl()
+        Me.cmb_quotation_status = New APDA.[Object].Controls.ComboboxEdit()
         Me.lbl_sales_bill = New DevExpress.XtraEditors.LabelControl()
         Me.txt_number_invoice = New APDA.[Object].Controls.TextboxEdit()
         Me.chk_row_visible = New DevExpress.XtraEditors.CheckEdit()
@@ -55,6 +57,7 @@ Partial Class attention_quotation_wholesales
         Me.xvp_validate = New DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(Me.components)
         CType(Me.pnl_object_container, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnl_object_container.SuspendLayout()
+        CType(Me.cmb_quotation_status.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txt_number_invoice.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.chk_row_visible.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txt_quotation_desc.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -69,6 +72,8 @@ Partial Class attention_quotation_wholesales
         'pnl_object_container
         '
         Me.pnl_object_container.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.pnl_object_container.Controls.Add(Me.lbl_quotation_status)
+        Me.pnl_object_container.Controls.Add(Me.cmb_quotation_status)
         Me.pnl_object_container.Controls.Add(Me.lbl_sales_bill)
         Me.pnl_object_container.Controls.Add(Me.txt_number_invoice)
         Me.pnl_object_container.Controls.Add(Me.chk_row_visible)
@@ -97,24 +102,93 @@ Partial Class attention_quotation_wholesales
         Me.pnl_object_container.Size = New System.Drawing.Size(853, 513)
         Me.pnl_object_container.TabIndex = 0
         '
+        'lbl_quotation_status
+        '
+        Me.lbl_quotation_status.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_quotation_status.Appearance.ForeColor = System.Drawing.Color.DimGray
+        Me.lbl_quotation_status.Appearance.Options.UseFont = True
+        Me.lbl_quotation_status.Appearance.Options.UseForeColor = True
+        Me.lbl_quotation_status.Location = New System.Drawing.Point(440, 158)
+        Me.lbl_quotation_status.LookAndFeel.SkinName = "Office 2019 White"
+        Me.lbl_quotation_status.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.lbl_quotation_status.Margin = New System.Windows.Forms.Padding(0)
+        Me.lbl_quotation_status.Name = "lbl_quotation_status"
+        Me.lbl_quotation_status.Size = New System.Drawing.Size(36, 16)
+        Me.lbl_quotation_status.TabIndex = 0
+        Me.lbl_quotation_status.Text = "Estado*"
+        '
+        'cmb_quotation_status
+        '
+        Me.xvp_validate.SetIconAlignment(Me.cmb_quotation_status, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
+        Me.cmb_quotation_status.Location = New System.Drawing.Point(440, 178)
+        Me.cmb_quotation_status.Margin = New System.Windows.Forms.Padding(0)
+        Me.cmb_quotation_status.Name = "cmb_quotation_status"
+        Me.cmb_quotation_status.Properties.Appearance.BackColor = System.Drawing.Color.White
+        Me.cmb_quotation_status.Properties.Appearance.BackColor2 = System.Drawing.Color.White
+        Me.cmb_quotation_status.Properties.Appearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.cmb_quotation_status.Properties.Appearance.ForeColor = System.Drawing.Color.Black
+        Me.cmb_quotation_status.Properties.Appearance.Options.UseBackColor = True
+        Me.cmb_quotation_status.Properties.Appearance.Options.UseBorderColor = True
+        Me.cmb_quotation_status.Properties.Appearance.Options.UseForeColor = True
+        Me.cmb_quotation_status.Properties.AppearanceDisabled.BackColor = System.Drawing.Color.White
+        Me.cmb_quotation_status.Properties.AppearanceDisabled.BackColor2 = System.Drawing.Color.White
+        Me.cmb_quotation_status.Properties.AppearanceDisabled.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.cmb_quotation_status.Properties.AppearanceDisabled.Options.UseBackColor = True
+        Me.cmb_quotation_status.Properties.AppearanceDisabled.Options.UseBorderColor = True
+        Me.cmb_quotation_status.Properties.AppearanceDropDown.BackColor = System.Drawing.Color.White
+        Me.cmb_quotation_status.Properties.AppearanceDropDown.BackColor2 = System.Drawing.Color.White
+        Me.cmb_quotation_status.Properties.AppearanceDropDown.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.cmb_quotation_status.Properties.AppearanceDropDown.Options.UseBackColor = True
+        Me.cmb_quotation_status.Properties.AppearanceDropDown.Options.UseBorderColor = True
+        Me.cmb_quotation_status.Properties.AppearanceDropDownHeader.BackColor = System.Drawing.Color.White
+        Me.cmb_quotation_status.Properties.AppearanceDropDownHeader.BackColor2 = System.Drawing.Color.White
+        Me.cmb_quotation_status.Properties.AppearanceDropDownHeader.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.cmb_quotation_status.Properties.AppearanceDropDownHeader.Options.UseBackColor = True
+        Me.cmb_quotation_status.Properties.AppearanceDropDownHeader.Options.UseBorderColor = True
+        Me.cmb_quotation_status.Properties.AppearanceFocused.BackColor = System.Drawing.Color.White
+        Me.cmb_quotation_status.Properties.AppearanceFocused.BackColor2 = System.Drawing.Color.White
+        Me.cmb_quotation_status.Properties.AppearanceFocused.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.cmb_quotation_status.Properties.AppearanceFocused.Options.UseBackColor = True
+        Me.cmb_quotation_status.Properties.AppearanceFocused.Options.UseBorderColor = True
+        Me.cmb_quotation_status.Properties.AppearanceReadOnly.BackColor = System.Drawing.Color.White
+        Me.cmb_quotation_status.Properties.AppearanceReadOnly.BackColor2 = System.Drawing.Color.White
+        Me.cmb_quotation_status.Properties.AppearanceReadOnly.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.cmb_quotation_status.Properties.AppearanceReadOnly.Options.UseBackColor = True
+        Me.cmb_quotation_status.Properties.AppearanceReadOnly.Options.UseBorderColor = True
+        Me.cmb_quotation_status.Properties.AutoHeight = False
+        Me.cmb_quotation_status.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple
+        Me.cmb_quotation_status.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.cmb_quotation_status.Properties.DropDownItemHeight = 30
+        Me.cmb_quotation_status.Properties.LookAndFeel.SkinName = "Office 2019 White"
+        Me.cmb_quotation_status.Properties.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.cmb_quotation_status.Properties.NullText = ""
+        Me.cmb_quotation_status.Properties.ShowFooter = False
+        Me.cmb_quotation_status.Properties.ShowHeader = False
+        Me.cmb_quotation_status.Size = New System.Drawing.Size(175, 30)
+        Me.cmb_quotation_status.TabIndex = 8
+        Me.cmb_quotation_status.Tag = "Estado"
+        ConditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
+        ConditionValidationRule1.ErrorText = "This value is not valid"
+        Me.xvp_validate.SetValidationRule(Me.cmb_quotation_status, ConditionValidationRule1)
+        '
         'lbl_sales_bill
         '
         Me.lbl_sales_bill.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_sales_bill.Appearance.ForeColor = System.Drawing.Color.DimGray
         Me.lbl_sales_bill.Appearance.Options.UseFont = True
         Me.lbl_sales_bill.Appearance.Options.UseForeColor = True
-        Me.lbl_sales_bill.Location = New System.Drawing.Point(49, 335)
+        Me.lbl_sales_bill.Location = New System.Drawing.Point(625, 158)
         Me.lbl_sales_bill.LookAndFeel.SkinName = "Office 2019 White"
         Me.lbl_sales_bill.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_sales_bill.Margin = New System.Windows.Forms.Padding(0)
         Me.lbl_sales_bill.Name = "lbl_sales_bill"
-        Me.lbl_sales_bill.Size = New System.Drawing.Size(91, 16)
-        Me.lbl_sales_bill.TabIndex = 6
-        Me.lbl_sales_bill.Text = "Numero de factura*"
+        Me.lbl_sales_bill.Size = New System.Drawing.Size(87, 16)
+        Me.lbl_sales_bill.TabIndex = 0
+        Me.lbl_sales_bill.Text = "Numero de factura"
         '
         'txt_number_invoice
         '
-        Me.txt_number_invoice.Location = New System.Drawing.Point(49, 354)
+        Me.txt_number_invoice.Location = New System.Drawing.Point(625, 178)
         Me.txt_number_invoice.Margin = New System.Windows.Forms.Padding(0)
         Me.txt_number_invoice.Name = "txt_number_invoice"
         Me.txt_number_invoice.Properties.Appearance.BackColor = System.Drawing.Color.White
@@ -157,12 +231,9 @@ Partial Class attention_quotation_wholesales
         Me.txt_number_invoice.Properties.Mask.BeepOnError = True
         Me.txt_number_invoice.Properties.MaskSettings.Set("MaskManagerType", GetType(DevExpress.Data.Mask.RegularMaskManager))
         Me.txt_number_invoice.Properties.MaskSettings.Set("mask", "\F\E\-\d\d\d\d\d\d")
-        Me.txt_number_invoice.Size = New System.Drawing.Size(350, 30)
+        Me.txt_number_invoice.Size = New System.Drawing.Size(184, 30)
         Me.txt_number_invoice.TabIndex = 1
         Me.txt_number_invoice.Tag = "Numero de factura"
-        ConditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule1.ErrorText = "This value is not valid"
-        Me.xvp_validate.SetValidationRule(Me.txt_number_invoice, ConditionValidationRule1)
         '
         'chk_row_visible
         '
@@ -252,7 +323,7 @@ Partial Class attention_quotation_wholesales
         '
         Me.lbl_object_caracters.Appearance.ForeColor = System.Drawing.Color.DimGray
         Me.lbl_object_caracters.Appearance.Options.UseForeColor = True
-        Me.lbl_object_caracters.Location = New System.Drawing.Point(782, 388)
+        Me.lbl_object_caracters.Location = New System.Drawing.Point(780, 346)
         Me.lbl_object_caracters.LookAndFeel.SkinName = "Office 2019 White"
         Me.lbl_object_caracters.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_object_caracters.Margin = New System.Windows.Forms.Padding(0)
@@ -267,7 +338,7 @@ Partial Class attention_quotation_wholesales
         Me.lbl_quotation_desc.Appearance.ForeColor = System.Drawing.Color.DimGray
         Me.lbl_quotation_desc.Appearance.Options.UseFont = True
         Me.lbl_quotation_desc.Appearance.Options.UseForeColor = True
-        Me.lbl_quotation_desc.Location = New System.Drawing.Point(440, 138)
+        Me.lbl_quotation_desc.Location = New System.Drawing.Point(440, 227)
         Me.lbl_quotation_desc.LookAndFeel.SkinName = "Office 2019 White"
         Me.lbl_quotation_desc.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_quotation_desc.Margin = New System.Windows.Forms.Padding(0)
@@ -278,7 +349,7 @@ Partial Class attention_quotation_wholesales
         '
         'txt_quotation_desc
         '
-        Me.txt_quotation_desc.Location = New System.Drawing.Point(440, 158)
+        Me.txt_quotation_desc.Location = New System.Drawing.Point(440, 247)
         Me.txt_quotation_desc.Margin = New System.Windows.Forms.Padding(0)
         Me.txt_quotation_desc.Name = "txt_quotation_desc"
         Me.txt_quotation_desc.Properties.Appearance.BackColor = System.Drawing.Color.White
@@ -313,7 +384,7 @@ Partial Class attention_quotation_wholesales
         Me.txt_quotation_desc.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.txt_quotation_desc.Properties.LookAndFeel.UseDefaultLookAndFeel = False
         Me.txt_quotation_desc.Properties.MaxLength = 500
-        Me.txt_quotation_desc.Size = New System.Drawing.Size(369, 226)
+        Me.txt_quotation_desc.Size = New System.Drawing.Size(369, 94)
         Me.txt_quotation_desc.TabIndex = 5
         Me.txt_quotation_desc.Tag = "Descripción"
         '
@@ -323,7 +394,7 @@ Partial Class attention_quotation_wholesales
         Me.lbl_quotation_dealer.Appearance.ForeColor = System.Drawing.Color.DimGray
         Me.lbl_quotation_dealer.Appearance.Options.UseFont = True
         Me.lbl_quotation_dealer.Appearance.Options.UseForeColor = True
-        Me.lbl_quotation_dealer.Location = New System.Drawing.Point(49, 271)
+        Me.lbl_quotation_dealer.Location = New System.Drawing.Point(49, 291)
         Me.lbl_quotation_dealer.LookAndFeel.SkinName = "Office 2019 White"
         Me.lbl_quotation_dealer.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_quotation_dealer.Margin = New System.Windows.Forms.Padding(0)
@@ -336,7 +407,7 @@ Partial Class attention_quotation_wholesales
         '
         Me.txt_quotation_value.EditValue = 0
         Me.xvp_validate.SetIconAlignment(Me.txt_quotation_value, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
-        Me.txt_quotation_value.Location = New System.Drawing.Point(241, 291)
+        Me.txt_quotation_value.Location = New System.Drawing.Point(241, 311)
         Me.txt_quotation_value.Margin = New System.Windows.Forms.Padding(0)
         Me.txt_quotation_value.Name = "txt_quotation_value"
         Me.txt_quotation_value.Properties.Appearance.BackColor = System.Drawing.Color.White
@@ -379,7 +450,6 @@ Partial Class attention_quotation_wholesales
         Me.txt_quotation_value.Properties.Mask.BeepOnError = True
         Me.txt_quotation_value.Properties.MaskSettings.Set("MaskManagerType", GetType(DevExpress.Data.Mask.NumericMaskManager))
         Me.txt_quotation_value.Properties.MaskSettings.Set("mask", "c0")
-        Me.txt_quotation_value.Properties.ReadOnly = True
         Me.txt_quotation_value.Size = New System.Drawing.Size(158, 30)
         Me.txt_quotation_value.TabIndex = 0
         Me.txt_quotation_value.Tag = "Valor de cotizacion"
@@ -393,7 +463,7 @@ Partial Class attention_quotation_wholesales
         Me.lbl_quotation_value.Appearance.ForeColor = System.Drawing.Color.DimGray
         Me.lbl_quotation_value.Appearance.Options.UseFont = True
         Me.lbl_quotation_value.Appearance.Options.UseForeColor = True
-        Me.lbl_quotation_value.Location = New System.Drawing.Point(241, 271)
+        Me.lbl_quotation_value.Location = New System.Drawing.Point(241, 291)
         Me.lbl_quotation_value.LookAndFeel.SkinName = "Office 2019 White"
         Me.lbl_quotation_value.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_quotation_value.Margin = New System.Windows.Forms.Padding(0)
@@ -405,7 +475,7 @@ Partial Class attention_quotation_wholesales
         'cmb_quotation_dealers
         '
         Me.xvp_validate.SetIconAlignment(Me.cmb_quotation_dealers, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
-        Me.cmb_quotation_dealers.Location = New System.Drawing.Point(49, 291)
+        Me.cmb_quotation_dealers.Location = New System.Drawing.Point(49, 311)
         Me.cmb_quotation_dealers.Margin = New System.Windows.Forms.Padding(0)
         Me.cmb_quotation_dealers.Name = "cmb_quotation_dealers"
         Me.cmb_quotation_dealers.Properties.Appearance.BackColor = System.Drawing.Color.White
@@ -447,7 +517,6 @@ Partial Class attention_quotation_wholesales
         Me.cmb_quotation_dealers.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.cmb_quotation_dealers.Properties.LookAndFeel.UseDefaultLookAndFeel = False
         Me.cmb_quotation_dealers.Properties.NullText = ""
-        Me.cmb_quotation_dealers.Properties.ReadOnly = True
         Me.cmb_quotation_dealers.Properties.ShowFooter = False
         Me.cmb_quotation_dealers.Properties.ShowHeader = False
         Me.cmb_quotation_dealers.Size = New System.Drawing.Size(184, 30)
@@ -460,7 +529,7 @@ Partial Class attention_quotation_wholesales
         'cmb_quotation_type
         '
         Me.xvp_validate.SetIconAlignment(Me.cmb_quotation_type, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
-        Me.cmb_quotation_type.Location = New System.Drawing.Point(49, 158)
+        Me.cmb_quotation_type.Location = New System.Drawing.Point(49, 178)
         Me.cmb_quotation_type.Margin = New System.Windows.Forms.Padding(0)
         Me.cmb_quotation_type.Name = "cmb_quotation_type"
         Me.cmb_quotation_type.Properties.Appearance.BackColor = System.Drawing.Color.White
@@ -518,7 +587,7 @@ Partial Class attention_quotation_wholesales
         Me.lbl_quotation_services.Appearance.ForeColor = System.Drawing.Color.DimGray
         Me.lbl_quotation_services.Appearance.Options.UseFont = True
         Me.lbl_quotation_services.Appearance.Options.UseForeColor = True
-        Me.lbl_quotation_services.Location = New System.Drawing.Point(49, 207)
+        Me.lbl_quotation_services.Location = New System.Drawing.Point(49, 227)
         Me.lbl_quotation_services.LookAndFeel.SkinName = "Office 2019 White"
         Me.lbl_quotation_services.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_quotation_services.Margin = New System.Windows.Forms.Padding(0)
@@ -533,7 +602,7 @@ Partial Class attention_quotation_wholesales
         Me.lbl_quotation_operator.Appearance.ForeColor = System.Drawing.Color.DimGray
         Me.lbl_quotation_operator.Appearance.Options.UseFont = True
         Me.lbl_quotation_operator.Appearance.Options.UseForeColor = True
-        Me.lbl_quotation_operator.Location = New System.Drawing.Point(49, 138)
+        Me.lbl_quotation_operator.Location = New System.Drawing.Point(49, 158)
         Me.lbl_quotation_operator.LookAndFeel.SkinName = "Office 2019 White"
         Me.lbl_quotation_operator.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_quotation_operator.Margin = New System.Windows.Forms.Padding(0)
@@ -546,7 +615,7 @@ Partial Class attention_quotation_wholesales
         '
         Me.cmb_quotation_services.EditValue = ""
         Me.xvp_validate.SetIconAlignment(Me.cmb_quotation_services, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
-        Me.cmb_quotation_services.Location = New System.Drawing.Point(49, 227)
+        Me.cmb_quotation_services.Location = New System.Drawing.Point(49, 247)
         Me.cmb_quotation_services.Margin = New System.Windows.Forms.Padding(0)
         Me.cmb_quotation_services.Name = "cmb_quotation_services"
         Me.cmb_quotation_services.Properties.Appearance.BackColor = System.Drawing.Color.White
@@ -678,6 +747,7 @@ Partial Class attention_quotation_wholesales
         CType(Me.pnl_object_container, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnl_object_container.ResumeLayout(False)
         Me.pnl_object_container.PerformLayout()
+        CType(Me.cmb_quotation_status.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txt_number_invoice.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.chk_row_visible.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txt_quotation_desc.Properties, System.ComponentModel.ISupportInitialize).EndInit()
@@ -713,4 +783,6 @@ Partial Class attention_quotation_wholesales
     Friend WithEvents lbl_sales_bill As DevExpress.XtraEditors.LabelControl
     Friend WithEvents txt_number_invoice As APDA.Object.Controls.TextboxEdit
     Friend WithEvents xvp_validate As DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider
+    Friend WithEvents lbl_quotation_status As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents cmb_quotation_status As APDA.Object.Controls.ComboboxEdit
 End Class
