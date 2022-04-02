@@ -23,19 +23,19 @@ Partial Class comercial_attention_created
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim ConditionValidationRule6 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
         Dim ConditionValidationRule1 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
-        Dim ConditionValidationRule2 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
-        Dim EditorButtonImageOptions1 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
+        Dim EditorButtonImageOptions2 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(comercial_attention_created))
-        Dim SerializableAppearanceObject1 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject2 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject3 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject4 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject5 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject6 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject7 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject8 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim ConditionValidationRule2 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
         Dim ConditionValidationRule3 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
         Dim ConditionValidationRule4 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
-        Dim ConditionValidationRule5 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
-        Dim OptionsSpelling1 As DevExpress.XtraSpellChecker.OptionsSpelling = New DevExpress.XtraSpellChecker.OptionsSpelling()
-        Dim HunspellDictionary1 As DevExpress.XtraSpellChecker.HunspellDictionary = New DevExpress.XtraSpellChecker.HunspellDictionary()
+        Dim OptionsSpelling2 As DevExpress.XtraSpellChecker.OptionsSpelling = New DevExpress.XtraSpellChecker.OptionsSpelling()
+        Dim HunspellDictionary2 As DevExpress.XtraSpellChecker.HunspellDictionary = New DevExpress.XtraSpellChecker.HunspellDictionary()
         Me.xvp_validate = New DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(Me.components)
         Me.txt_attention_ticket = New APDA.[Object].Controls.TextboxEdit()
         Me.cmb_attention_theme = New APDA.[Object].Controls.ComboboxEdit()
@@ -129,9 +129,9 @@ Partial Class comercial_attention_created
         Me.txt_attention_ticket.Size = New System.Drawing.Size(137, 30)
         Me.txt_attention_ticket.TabIndex = 5
         Me.txt_attention_ticket.Tag = "Tipo de ticket"
-        ConditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule1.ErrorText = "Este campo es requerido..."
-        Me.xvp_validate.SetValidationRule(Me.txt_attention_ticket, ConditionValidationRule1)
+        ConditionValidationRule6.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
+        ConditionValidationRule6.ErrorText = "Este campo es requerido..."
+        Me.xvp_validate.SetValidationRule(Me.txt_attention_ticket, ConditionValidationRule6)
         '
         'cmb_attention_theme
         '
@@ -183,9 +183,9 @@ Partial Class comercial_attention_created
         Me.cmb_attention_theme.Size = New System.Drawing.Size(400, 30)
         Me.cmb_attention_theme.TabIndex = 3
         Me.cmb_attention_theme.Tag = "Tema de gestión"
-        ConditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule2.ErrorText = "Este campo es requerido..."
-        Me.xvp_validate.SetValidationRule(Me.cmb_attention_theme, ConditionValidationRule2)
+        ConditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
+        ConditionValidationRule1.ErrorText = "Este campo es requerido..."
+        Me.xvp_validate.SetValidationRule(Me.cmb_attention_theme, ConditionValidationRule1)
         '
         'txt_attention_date
         '
@@ -232,8 +232,8 @@ Partial Class comercial_attention_created
         Me.txt_attention_date.Properties.AutoHeight = False
         Me.txt_attention_date.Properties.BeepOnError = False
         Me.txt_attention_date.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple
-        EditorButtonImageOptions1.Image = CType(resources.GetObject("EditorButtonImageOptions1.Image"), System.Drawing.Image)
-        Me.txt_attention_date.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions1, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, SerializableAppearanceObject2, SerializableAppearanceObject3, SerializableAppearanceObject4, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions2.Image = CType(resources.GetObject("EditorButtonImageOptions2.Image"), System.Drawing.Image)
+        Me.txt_attention_date.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions2, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject5, SerializableAppearanceObject6, SerializableAppearanceObject7, SerializableAppearanceObject8, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_attention_date.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.txt_attention_date.Properties.DisplayFormat.FormatString = "G"
         Me.txt_attention_date.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime
@@ -246,9 +246,9 @@ Partial Class comercial_attention_created
         Me.txt_attention_date.Size = New System.Drawing.Size(255, 30)
         Me.txt_attention_date.TabIndex = 4
         Me.txt_attention_date.Tag = "Fecha de vigencia"
-        ConditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule3.ErrorText = "Este campo es requerido..."
-        Me.xvp_validate.SetValidationRule(Me.txt_attention_date, ConditionValidationRule3)
+        ConditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
+        ConditionValidationRule2.ErrorText = "Este campo es requerido..."
+        Me.xvp_validate.SetValidationRule(Me.txt_attention_date, ConditionValidationRule2)
         '
         'cmb_attention_topic
         '
@@ -300,9 +300,9 @@ Partial Class comercial_attention_created
         Me.cmb_attention_topic.Size = New System.Drawing.Size(400, 30)
         Me.cmb_attention_topic.TabIndex = 2
         Me.cmb_attention_topic.Tag = "Tipo de atención"
-        ConditionValidationRule4.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule4.ErrorText = "Este campo es requerido..."
-        Me.xvp_validate.SetValidationRule(Me.cmb_attention_topic, ConditionValidationRule4)
+        ConditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
+        ConditionValidationRule3.ErrorText = "Este campo es requerido..."
+        Me.xvp_validate.SetValidationRule(Me.cmb_attention_topic, ConditionValidationRule3)
         '
         'cmb_attention_person
         '
@@ -357,9 +357,9 @@ Partial Class comercial_attention_created
         Me.cmb_attention_person.Size = New System.Drawing.Size(400, 30)
         Me.cmb_attention_person.TabIndex = 1
         Me.cmb_attention_person.Tag = "Responsable"
-        ConditionValidationRule5.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule5.ErrorText = "Este campo es requerido..."
-        Me.xvp_validate.SetValidationRule(Me.cmb_attention_person, ConditionValidationRule5)
+        ConditionValidationRule4.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
+        ConditionValidationRule4.ErrorText = "Este campo es requerido..."
+        Me.xvp_validate.SetValidationRule(Me.cmb_attention_person, ConditionValidationRule4)
         '
         'dgv_sales_customers
         '
@@ -404,7 +404,7 @@ Partial Class comercial_attention_created
         Me.txt_attention_desc.Properties.LookAndFeel.UseDefaultLookAndFeel = False
         Me.xvp_spell.SetShowSpellCheckMenu(Me.txt_attention_desc, True)
         Me.txt_attention_desc.Size = New System.Drawing.Size(430, 238)
-        Me.xvp_spell.SetSpellCheckerOptions(Me.txt_attention_desc, OptionsSpelling1)
+        Me.xvp_spell.SetSpellCheckerOptions(Me.txt_attention_desc, OptionsSpelling2)
         Me.txt_attention_desc.TabIndex = 6
         Me.txt_attention_desc.Tag = "Descripción"
         '
@@ -412,12 +412,12 @@ Partial Class comercial_attention_created
         '
         Me.xvp_spell.CheckAsYouTypeOptions.Color = System.Drawing.Color.LightSeaGreen
         Me.xvp_spell.Culture = New System.Globalization.CultureInfo("es-CO")
-        HunspellDictionary1.Culture = New System.Globalization.CultureInfo("es-CO")
-        HunspellDictionary1.DictionaryPath = "C:\Users\Danny\Documents\Visual Studio 2015\APDA\BIM\BIM\Model\6. Database\Dictio" &
+        HunspellDictionary2.Culture = New System.Globalization.CultureInfo("es-CO")
+        HunspellDictionary2.DictionaryPath = "C:\Users\Danny\Documents\Visual Studio 2015\APDA\BIM\BIM\Model\6. Database\Dictio" &
     "naries\es_CO.dic"
-        HunspellDictionary1.GrammarPath = "C:\Users\Danny\Documents\Visual Studio 2015\APDA\BIM\BIM\Model\6. Database\Dictio" &
+        HunspellDictionary2.GrammarPath = "C:\Users\Danny\Documents\Visual Studio 2015\APDA\BIM\BIM\Model\6. Database\Dictio" &
     "naries\es_CO.aff"
-        Me.xvp_spell.Dictionaries.Add(HunspellDictionary1)
+        Me.xvp_spell.Dictionaries.Add(HunspellDictionary2)
         Me.xvp_spell.LoadOnDemand = True
         Me.xvp_spell.LookAndFeel.SkinName = "Office 2019 White"
         Me.xvp_spell.LookAndFeel.UseDefaultLookAndFeel = False
@@ -766,6 +766,7 @@ Partial Class comercial_attention_created
         Me.Name = "comercial_attention_created"
         Me.Padding = New System.Windows.Forms.Padding(1)
         Me.Size = New System.Drawing.Size(1350, 550)
+        Me.Tag = "Gestión Comercial"
         CType(Me.xvp_validate, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txt_attention_ticket.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.cmb_attention_theme.Properties, System.ComponentModel.ISupportInitialize).EndInit()

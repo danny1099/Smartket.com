@@ -195,6 +195,7 @@ Public Class wholesales_masters_details
                 .Columns("timespan_date").Visible = False
                 .Columns("user_access").Visible = False
                 .Columns("json_products").Visible = False
+                .Columns("mark_advance").Visible = False
 
                 'Change caption of columns visibles
                 .Columns("segment_name").Caption = "Segmento"
