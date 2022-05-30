@@ -23,317 +23,62 @@ Partial Class wholesales_guarantee_support
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(wholesales_guarantee_support))
-        Dim ConditionValidationRule1 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
-        Dim ConditionValidationRule2 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
         Dim EditorButtonImageOptions1 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(wholesales_guarantee_support))
         Dim SerializableAppearanceObject1 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject2 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject3 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject4 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim ConditionValidationRule1 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
+        Dim ConditionValidationRule2 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
         Dim ConditionValidationRule3 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
         Dim ConditionValidationRule4 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
-        Dim ConditionValidationRule5 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
-        Dim ConditionValidationRule6 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
-        Dim EditorButtonImageOptions2 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
-        Dim SerializableAppearanceObject5 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject6 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject7 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject8 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim ConditionValidationRule7 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
-        Dim ConditionValidationRule8 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
-        Dim EditorButtonImageOptions3 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
-        Dim SerializableAppearanceObject9 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject10 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject11 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject12 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim ConditionValidationRule9 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
-        Dim ConditionValidationRule10 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
         Dim OptionsSpelling1 As DevExpress.XtraSpellChecker.OptionsSpelling = New DevExpress.XtraSpellChecker.OptionsSpelling()
+        Dim ConditionValidationRule5 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
         Dim HunspellDictionary1 As DevExpress.XtraSpellChecker.HunspellDictionary = New DevExpress.XtraSpellChecker.HunspellDictionary()
-        Me.pnl_object_top = New DevExpress.XtraEditors.PanelControl()
-        Me.lbl_object_info = New DevExpress.XtraEditors.LabelControl()
-        Me.lbl_object_title = New DevExpress.XtraEditors.LabelControl()
-        Me.btn_object_refresh = New DevExpress.XtraEditors.LabelControl()
-        Me.btn_object_cancel = New System.Windows.Forms.Button()
         Me.xvp_validate = New DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(Me.components)
-        Me.txt_guarantee_sku = New APDA.[Object].Controls.TextboxEdit()
-        Me.cmb_guarantee_brand = New APDA.[Object].Controls.ComboboxEdit()
         Me.txt_guarantee_product = New APDA.[Object].Controls.TextboxEdit()
         Me.cmb_guarantee_causal = New APDA.[Object].Controls.ComboboxCheck()
         Me.txt_guarantee_serial = New APDA.[Object].Controls.TextboxEdit()
-        Me.txt_guarantee_invoice = New APDA.[Object].Controls.TextboxEdit()
-        Me.txt_guarantee_date = New APDA.[Object].Controls.TextboxDates()
         Me.cmb_guarantee_revision = New APDA.[Object].Controls.ComboboxEdit()
-        Me.txt_guarantee_support = New APDA.[Object].Controls.TextboxDates()
-        Me.txt_guarantee_customer = New APDA.[Object].Controls.TextboxEdit()
         Me.txt_guarantee_description = New DevExpress.XtraEditors.MemoEdit()
-        Me.pnl_object_bottom = New DevExpress.XtraEditors.PanelControl()
-        Me.btn_object_accept = New System.Windows.Forms.Button()
-        Me.chk_row_visible = New DevExpress.XtraEditors.CheckEdit()
-        Me.pnl_object_container = New DevExpress.XtraEditors.PanelControl()
-        Me.lbl_guarantee_support = New DevExpress.XtraEditors.LabelControl()
+        Me.object_panel_container = New DevExpress.XtraEditors.PanelControl()
+        Me.object_label_info = New DevExpress.XtraEditors.LabelControl()
+        Me.object_label_title = New DevExpress.XtraEditors.LabelControl()
         Me.lbl_guarantee_revision = New DevExpress.XtraEditors.LabelControl()
-        Me.lbl_guarantee_sku = New DevExpress.XtraEditors.LabelControl()
         Me.lbl_object_caracters = New DevExpress.XtraEditors.LabelControl()
         Me.lbl_guarantee_description = New DevExpress.XtraEditors.LabelControl()
-        Me.lbl_guarantee_brand = New DevExpress.XtraEditors.LabelControl()
         Me.lbl_guarantee_product = New DevExpress.XtraEditors.LabelControl()
         Me.lbl_guarantee_causal = New DevExpress.XtraEditors.LabelControl()
         Me.lbl_guarantee_serial = New DevExpress.XtraEditors.LabelControl()
-        Me.lbl_guarantee_bill = New DevExpress.XtraEditors.LabelControl()
-        Me.lbl_guarantee_date = New DevExpress.XtraEditors.LabelControl()
-        Me.lbl_guarantee_customer = New DevExpress.XtraEditors.LabelControl()
         Me.xvp_spell = New DevExpress.XtraSpellChecker.SpellChecker(Me.components)
-        CType(Me.pnl_object_top, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnl_object_top.SuspendLayout()
+        Me.object_panel_actions = New System.Windows.Forms.FlowLayoutPanel()
+        Me.object_button_saved = New System.Windows.Forms.Button()
+        Me.object_separator_spliter1 = New DevExpress.XtraEditors.SeparatorControl()
+        Me.object_button_clean = New System.Windows.Forms.Button()
+        Me.object_button_closed = New System.Windows.Forms.Button()
         CType(Me.xvp_validate, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txt_guarantee_sku.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.cmb_guarantee_brand.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txt_guarantee_product.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmb_guarantee_causal.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txt_guarantee_serial.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txt_guarantee_invoice.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txt_guarantee_date.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txt_guarantee_date.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmb_guarantee_revision.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txt_guarantee_support.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txt_guarantee_support.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txt_guarantee_customer.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txt_guarantee_description.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pnl_object_bottom, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnl_object_bottom.SuspendLayout()
-        CType(Me.chk_row_visible.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pnl_object_container, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnl_object_container.SuspendLayout()
+        CType(Me.object_panel_container, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.object_panel_container.SuspendLayout()
+        Me.object_panel_actions.SuspendLayout()
+        CType(Me.object_separator_spliter1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'pnl_object_top
-        '
-        Me.pnl_object_top.Appearance.BackColor = System.Drawing.Color.White
-        Me.pnl_object_top.Appearance.BackColor2 = System.Drawing.Color.White
-        Me.pnl_object_top.Appearance.BorderColor = System.Drawing.Color.White
-        Me.pnl_object_top.Appearance.ForeColor = System.Drawing.Color.DimGray
-        Me.pnl_object_top.Appearance.Options.UseBackColor = True
-        Me.pnl_object_top.Appearance.Options.UseBorderColor = True
-        Me.pnl_object_top.Appearance.Options.UseForeColor = True
-        Me.pnl_object_top.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        Me.pnl_object_top.Controls.Add(Me.lbl_object_info)
-        Me.pnl_object_top.Controls.Add(Me.lbl_object_title)
-        Me.pnl_object_top.Controls.Add(Me.btn_object_refresh)
-        Me.pnl_object_top.Controls.Add(Me.btn_object_cancel)
-        Me.pnl_object_top.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnl_object_top.Location = New System.Drawing.Point(1, 1)
-        Me.pnl_object_top.LookAndFeel.SkinName = "Office 2019 White"
-        Me.pnl_object_top.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.pnl_object_top.Margin = New System.Windows.Forms.Padding(0)
-        Me.pnl_object_top.Name = "pnl_object_top"
-        Me.pnl_object_top.Padding = New System.Windows.Forms.Padding(30, 1, 10, 1)
-        Me.pnl_object_top.Size = New System.Drawing.Size(1348, 75)
-        Me.pnl_object_top.TabIndex = 0
-        '
-        'lbl_object_info
-        '
-        Me.lbl_object_info.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_object_info.Appearance.ForeColor = System.Drawing.Color.DimGray
-        Me.lbl_object_info.Appearance.Options.UseFont = True
-        Me.lbl_object_info.Appearance.Options.UseForeColor = True
-        Me.lbl_object_info.Appearance.Options.UseTextOptions = True
-        Me.lbl_object_info.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
-        Me.lbl_object_info.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
-        Me.lbl_object_info.Dock = System.Windows.Forms.DockStyle.Top
-        Me.lbl_object_info.Location = New System.Drawing.Point(30, 50)
-        Me.lbl_object_info.LookAndFeel.SkinName = "Office 2019 White"
-        Me.lbl_object_info.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.lbl_object_info.Margin = New System.Windows.Forms.Padding(0)
-        Me.lbl_object_info.Name = "lbl_object_info"
-        Me.lbl_object_info.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
-        Me.lbl_object_info.Size = New System.Drawing.Size(1198, 20)
-        Me.lbl_object_info.TabIndex = 0
-        Me.lbl_object_info.Text = "Todos los campos marcados con asterico (*) son obligatorios"
-        '
-        'lbl_object_title
-        '
-        Me.lbl_object_title.Appearance.Font = New System.Drawing.Font("Open Sans Condensed Light", 20.25!)
-        Me.lbl_object_title.Appearance.ForeColor = System.Drawing.Color.LightSeaGreen
-        Me.lbl_object_title.Appearance.Options.UseFont = True
-        Me.lbl_object_title.Appearance.Options.UseForeColor = True
-        Me.lbl_object_title.Appearance.Options.UseTextOptions = True
-        Me.lbl_object_title.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
-        Me.lbl_object_title.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Bottom
-        Me.lbl_object_title.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
-        Me.lbl_object_title.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        Me.lbl_object_title.Dock = System.Windows.Forms.DockStyle.Top
-        Me.lbl_object_title.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter
-        Me.lbl_object_title.ImageOptions.Alignment = System.Drawing.ContentAlignment.MiddleLeft
-        Me.lbl_object_title.Location = New System.Drawing.Point(30, 1)
-        Me.lbl_object_title.LookAndFeel.SkinName = "Office 2019 White"
-        Me.lbl_object_title.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.lbl_object_title.Margin = New System.Windows.Forms.Padding(0)
-        Me.lbl_object_title.Name = "lbl_object_title"
-        Me.lbl_object_title.Padding = New System.Windows.Forms.Padding(13, 0, 0, 0)
-        Me.lbl_object_title.Size = New System.Drawing.Size(1198, 49)
-        Me.lbl_object_title.TabIndex = 0
-        Me.lbl_object_title.Text = "Revisión Tecnica"
-        '
-        'btn_object_refresh
-        '
-        Me.btn_object_refresh.Appearance.ForeColor = System.Drawing.Color.DimGray
-        Me.btn_object_refresh.Appearance.Options.UseFont = True
-        Me.btn_object_refresh.Appearance.Options.UseForeColor = True
-        Me.btn_object_refresh.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
-        Me.btn_object_refresh.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_object_refresh.Dock = System.Windows.Forms.DockStyle.Right
-        Me.btn_object_refresh.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter
-        Me.btn_object_refresh.ImageOptions.Image = CType(resources.GetObject("btn_object_refresh.ImageOptions.Image"), System.Drawing.Image)
-        Me.btn_object_refresh.Location = New System.Drawing.Point(1228, 1)
-        Me.btn_object_refresh.LookAndFeel.SkinName = "Office 2019 White"
-        Me.btn_object_refresh.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.btn_object_refresh.Margin = New System.Windows.Forms.Padding(0)
-        Me.btn_object_refresh.MaximumSize = New System.Drawing.Size(80, 30)
-        Me.btn_object_refresh.MinimumSize = New System.Drawing.Size(80, 30)
-        Me.btn_object_refresh.Name = "btn_object_refresh"
-        Me.btn_object_refresh.Size = New System.Drawing.Size(80, 30)
-        Me.btn_object_refresh.TabIndex = 0
-        Me.btn_object_refresh.Text = "Sincronizar"
-        '
-        'btn_object_cancel
-        '
-        Me.btn_object_cancel.BackColor = System.Drawing.Color.White
-        Me.btn_object_cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.btn_object_cancel.Dock = System.Windows.Forms.DockStyle.Right
-        Me.btn_object_cancel.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btn_object_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.btn_object_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
-        Me.btn_object_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_object_cancel.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
-        Me.btn_object_cancel.ForeColor = System.Drawing.Color.DimGray
-        Me.btn_object_cancel.Location = New System.Drawing.Point(1308, 1)
-        Me.btn_object_cancel.Margin = New System.Windows.Forms.Padding(0)
-        Me.btn_object_cancel.MaximumSize = New System.Drawing.Size(30, 30)
-        Me.btn_object_cancel.MinimumSize = New System.Drawing.Size(30, 30)
-        Me.btn_object_cancel.Name = "btn_object_cancel"
-        Me.btn_object_cancel.Size = New System.Drawing.Size(30, 30)
-        Me.btn_object_cancel.TabIndex = 0
-        Me.btn_object_cancel.TabStop = False
-        Me.btn_object_cancel.Text = "X"
-        Me.btn_object_cancel.UseVisualStyleBackColor = False
         '
         'xvp_validate
         '
         Me.xvp_validate.ValidateHiddenControls = False
         Me.xvp_validate.ValidationMode = DevExpress.XtraEditors.DXErrorProvider.ValidationMode.Manual
         '
-        'txt_guarantee_sku
-        '
-        Me.txt_guarantee_sku.EditValue = ""
-        Me.xvp_validate.SetIconAlignment(Me.txt_guarantee_sku, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
-        Me.txt_guarantee_sku.Location = New System.Drawing.Point(206, 325)
-        Me.txt_guarantee_sku.Margin = New System.Windows.Forms.Padding(0)
-        Me.txt_guarantee_sku.Name = "txt_guarantee_sku"
-        Me.txt_guarantee_sku.Properties.Appearance.BackColor = System.Drawing.Color.White
-        Me.txt_guarantee_sku.Properties.Appearance.BackColor2 = System.Drawing.Color.White
-        Me.txt_guarantee_sku.Properties.Appearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_guarantee_sku.Properties.Appearance.ForeColor = System.Drawing.Color.Black
-        Me.txt_guarantee_sku.Properties.Appearance.Options.UseBackColor = True
-        Me.txt_guarantee_sku.Properties.Appearance.Options.UseBorderColor = True
-        Me.txt_guarantee_sku.Properties.Appearance.Options.UseForeColor = True
-        Me.txt_guarantee_sku.Properties.AppearanceDisabled.BackColor = System.Drawing.Color.White
-        Me.txt_guarantee_sku.Properties.AppearanceDisabled.BackColor2 = System.Drawing.Color.White
-        Me.txt_guarantee_sku.Properties.AppearanceDisabled.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_guarantee_sku.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black
-        Me.txt_guarantee_sku.Properties.AppearanceDisabled.Options.UseBackColor = True
-        Me.txt_guarantee_sku.Properties.AppearanceDisabled.Options.UseBorderColor = True
-        Me.txt_guarantee_sku.Properties.AppearanceDisabled.Options.UseForeColor = True
-        Me.txt_guarantee_sku.Properties.AppearanceFocused.BackColor = System.Drawing.Color.White
-        Me.txt_guarantee_sku.Properties.AppearanceFocused.BackColor2 = System.Drawing.Color.White
-        Me.txt_guarantee_sku.Properties.AppearanceFocused.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_guarantee_sku.Properties.AppearanceFocused.ForeColor = System.Drawing.Color.Black
-        Me.txt_guarantee_sku.Properties.AppearanceFocused.Options.UseBackColor = True
-        Me.txt_guarantee_sku.Properties.AppearanceFocused.Options.UseBorderColor = True
-        Me.txt_guarantee_sku.Properties.AppearanceFocused.Options.UseForeColor = True
-        Me.txt_guarantee_sku.Properties.AppearanceReadOnly.BackColor = System.Drawing.Color.White
-        Me.txt_guarantee_sku.Properties.AppearanceReadOnly.BackColor2 = System.Drawing.Color.White
-        Me.txt_guarantee_sku.Properties.AppearanceReadOnly.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_guarantee_sku.Properties.AppearanceReadOnly.ForeColor = System.Drawing.Color.Black
-        Me.txt_guarantee_sku.Properties.AppearanceReadOnly.Options.UseBackColor = True
-        Me.txt_guarantee_sku.Properties.AppearanceReadOnly.Options.UseBorderColor = True
-        Me.txt_guarantee_sku.Properties.AppearanceReadOnly.Options.UseForeColor = True
-        Me.txt_guarantee_sku.Properties.AutoHeight = False
-        Me.txt_guarantee_sku.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple
-        Me.txt_guarantee_sku.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txt_guarantee_sku.Properties.LookAndFeel.SkinName = "Office 2019 White"
-        Me.txt_guarantee_sku.Properties.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.txt_guarantee_sku.Properties.Mask.BeepOnError = True
-        Me.txt_guarantee_sku.Properties.MaxLength = 100
-        Me.txt_guarantee_sku.Properties.ReadOnly = True
-        Me.txt_guarantee_sku.Size = New System.Drawing.Size(195, 30)
-        Me.txt_guarantee_sku.TabIndex = 0
-        Me.txt_guarantee_sku.Tag = "SKU"
-        ConditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule1.ErrorText = "Este campo es requerido..."
-        Me.xvp_validate.SetValidationRule(Me.txt_guarantee_sku, ConditionValidationRule1)
-        '
-        'cmb_guarantee_brand
-        '
-        Me.xvp_validate.SetIconAlignment(Me.cmb_guarantee_brand, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
-        Me.cmb_guarantee_brand.Location = New System.Drawing.Point(411, 325)
-        Me.cmb_guarantee_brand.Margin = New System.Windows.Forms.Padding(0)
-        Me.cmb_guarantee_brand.Name = "cmb_guarantee_brand"
-        Me.cmb_guarantee_brand.Properties.Appearance.BackColor = System.Drawing.Color.White
-        Me.cmb_guarantee_brand.Properties.Appearance.BackColor2 = System.Drawing.Color.White
-        Me.cmb_guarantee_brand.Properties.Appearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.cmb_guarantee_brand.Properties.Appearance.ForeColor = System.Drawing.Color.Black
-        Me.cmb_guarantee_brand.Properties.Appearance.Options.UseBackColor = True
-        Me.cmb_guarantee_brand.Properties.Appearance.Options.UseBorderColor = True
-        Me.cmb_guarantee_brand.Properties.Appearance.Options.UseForeColor = True
-        Me.cmb_guarantee_brand.Properties.AppearanceDisabled.BackColor = System.Drawing.Color.White
-        Me.cmb_guarantee_brand.Properties.AppearanceDisabled.BackColor2 = System.Drawing.Color.White
-        Me.cmb_guarantee_brand.Properties.AppearanceDisabled.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.cmb_guarantee_brand.Properties.AppearanceDisabled.Options.UseBackColor = True
-        Me.cmb_guarantee_brand.Properties.AppearanceDisabled.Options.UseBorderColor = True
-        Me.cmb_guarantee_brand.Properties.AppearanceDropDown.BackColor = System.Drawing.Color.White
-        Me.cmb_guarantee_brand.Properties.AppearanceDropDown.BackColor2 = System.Drawing.Color.White
-        Me.cmb_guarantee_brand.Properties.AppearanceDropDown.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.cmb_guarantee_brand.Properties.AppearanceDropDown.Options.UseBackColor = True
-        Me.cmb_guarantee_brand.Properties.AppearanceDropDown.Options.UseBorderColor = True
-        Me.cmb_guarantee_brand.Properties.AppearanceDropDownHeader.BackColor = System.Drawing.Color.White
-        Me.cmb_guarantee_brand.Properties.AppearanceDropDownHeader.BackColor2 = System.Drawing.Color.White
-        Me.cmb_guarantee_brand.Properties.AppearanceDropDownHeader.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.cmb_guarantee_brand.Properties.AppearanceDropDownHeader.Options.UseBackColor = True
-        Me.cmb_guarantee_brand.Properties.AppearanceDropDownHeader.Options.UseBorderColor = True
-        Me.cmb_guarantee_brand.Properties.AppearanceFocused.BackColor = System.Drawing.Color.White
-        Me.cmb_guarantee_brand.Properties.AppearanceFocused.BackColor2 = System.Drawing.Color.White
-        Me.cmb_guarantee_brand.Properties.AppearanceFocused.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.cmb_guarantee_brand.Properties.AppearanceFocused.Options.UseBackColor = True
-        Me.cmb_guarantee_brand.Properties.AppearanceFocused.Options.UseBorderColor = True
-        Me.cmb_guarantee_brand.Properties.AppearanceReadOnly.BackColor = System.Drawing.Color.White
-        Me.cmb_guarantee_brand.Properties.AppearanceReadOnly.BackColor2 = System.Drawing.Color.White
-        Me.cmb_guarantee_brand.Properties.AppearanceReadOnly.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.cmb_guarantee_brand.Properties.AppearanceReadOnly.Options.UseBackColor = True
-        Me.cmb_guarantee_brand.Properties.AppearanceReadOnly.Options.UseBorderColor = True
-        Me.cmb_guarantee_brand.Properties.AutoHeight = False
-        Me.cmb_guarantee_brand.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple
-        Me.cmb_guarantee_brand.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.cmb_guarantee_brand.Properties.DropDownItemHeight = 30
-        Me.cmb_guarantee_brand.Properties.LookAndFeel.SkinName = "Office 2019 White"
-        Me.cmb_guarantee_brand.Properties.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.cmb_guarantee_brand.Properties.NullText = ""
-        Me.cmb_guarantee_brand.Properties.ReadOnly = True
-        Me.cmb_guarantee_brand.Properties.ShowFooter = False
-        Me.cmb_guarantee_brand.Properties.ShowHeader = False
-        Me.cmb_guarantee_brand.Size = New System.Drawing.Size(195, 30)
-        Me.cmb_guarantee_brand.TabIndex = 0
-        Me.cmb_guarantee_brand.Tag = "Marca"
-        ConditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule2.ErrorText = "Este campo es requerido..."
-        Me.xvp_validate.SetValidationRule(Me.cmb_guarantee_brand, ConditionValidationRule2)
-        '
         'txt_guarantee_product
         '
         Me.txt_guarantee_product.EditValue = ""
         Me.xvp_validate.SetIconAlignment(Me.txt_guarantee_product, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
-        Me.txt_guarantee_product.Location = New System.Drawing.Point(206, 261)
+        Me.txt_guarantee_product.Location = New System.Drawing.Point(45, 219)
         Me.txt_guarantee_product.Margin = New System.Windows.Forms.Padding(0)
         Me.txt_guarantee_product.Name = "txt_guarantee_product"
         Me.txt_guarantee_product.Properties.Appearance.BackColor = System.Drawing.Color.White
@@ -374,17 +119,17 @@ Partial Class wholesales_guarantee_support
         Me.txt_guarantee_product.Properties.Mask.BeepOnError = True
         Me.txt_guarantee_product.Properties.MaxLength = 100
         Me.txt_guarantee_product.Properties.ReadOnly = True
-        Me.txt_guarantee_product.Size = New System.Drawing.Size(400, 30)
+        Me.txt_guarantee_product.Size = New System.Drawing.Size(352, 35)
         Me.txt_guarantee_product.TabIndex = 0
         Me.txt_guarantee_product.Tag = "Nombre de producto"
-        ConditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule3.ErrorText = "Este campo es requerido..."
-        Me.xvp_validate.SetValidationRule(Me.txt_guarantee_product, ConditionValidationRule3)
+        ConditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
+        ConditionValidationRule1.ErrorText = "Este campo es requerido..."
+        Me.xvp_validate.SetValidationRule(Me.txt_guarantee_product, ConditionValidationRule1)
         '
         'cmb_guarantee_causal
         '
         Me.xvp_validate.SetIconAlignment(Me.cmb_guarantee_causal, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
-        Me.cmb_guarantee_causal.Location = New System.Drawing.Point(727, 69)
+        Me.cmb_guarantee_causal.Location = New System.Drawing.Point(45, 287)
         Me.cmb_guarantee_causal.Margin = New System.Windows.Forms.Padding(0)
         Me.cmb_guarantee_causal.Name = "cmb_guarantee_causal"
         Me.cmb_guarantee_causal.Properties.Appearance.BackColor = System.Drawing.Color.White
@@ -427,18 +172,18 @@ Partial Class wholesales_guarantee_support
         Me.cmb_guarantee_causal.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmb_guarantee_causal.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.cmb_guarantee_causal.Properties.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.cmb_guarantee_causal.Size = New System.Drawing.Size(400, 30)
+        Me.cmb_guarantee_causal.Size = New System.Drawing.Size(352, 35)
         Me.cmb_guarantee_causal.TabIndex = 0
         Me.cmb_guarantee_causal.Tag = "Cauales"
-        ConditionValidationRule4.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule4.ErrorText = "Este campo es requerido..."
-        Me.xvp_validate.SetValidationRule(Me.cmb_guarantee_causal, ConditionValidationRule4)
+        ConditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
+        ConditionValidationRule2.ErrorText = "Este campo es requerido..."
+        Me.xvp_validate.SetValidationRule(Me.cmb_guarantee_causal, ConditionValidationRule2)
         '
         'txt_guarantee_serial
         '
         Me.txt_guarantee_serial.EditValue = ""
         Me.xvp_validate.SetIconAlignment(Me.txt_guarantee_serial, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
-        Me.txt_guarantee_serial.Location = New System.Drawing.Point(206, 133)
+        Me.txt_guarantee_serial.Location = New System.Drawing.Point(45, 150)
         Me.txt_guarantee_serial.Margin = New System.Windows.Forms.Padding(0)
         Me.txt_guarantee_serial.Name = "txt_guarantee_serial"
         Me.txt_guarantee_serial.Properties.Appearance.BackColor = System.Drawing.Color.White
@@ -474,127 +219,20 @@ Partial Class wholesales_guarantee_support
         Me.txt_guarantee_serial.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.txt_guarantee_serial.Properties.LookAndFeel.UseDefaultLookAndFeel = False
         Me.txt_guarantee_serial.Properties.Mask.BeepOnError = True
-        Me.txt_guarantee_serial.Properties.Mask.EditMask = "\d+"
+        Me.txt_guarantee_serial.Properties.MaskSettings.Set("mask", "\d+")
         Me.txt_guarantee_serial.Properties.MaxLength = 50
         Me.txt_guarantee_serial.Properties.ReadOnly = True
-        Me.txt_guarantee_serial.Size = New System.Drawing.Size(400, 30)
+        Me.txt_guarantee_serial.Size = New System.Drawing.Size(352, 35)
         Me.txt_guarantee_serial.TabIndex = 0
         Me.txt_guarantee_serial.Tag = "Numero de serial"
-        ConditionValidationRule5.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule5.ErrorText = "Este campo es requerido..."
-        Me.xvp_validate.SetValidationRule(Me.txt_guarantee_serial, ConditionValidationRule5)
-        '
-        'txt_guarantee_invoice
-        '
-        Me.xvp_validate.SetIconAlignment(Me.txt_guarantee_invoice, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
-        Me.txt_guarantee_invoice.Location = New System.Drawing.Point(411, 197)
-        Me.txt_guarantee_invoice.Margin = New System.Windows.Forms.Padding(0)
-        Me.txt_guarantee_invoice.Name = "txt_guarantee_invoice"
-        Me.txt_guarantee_invoice.Properties.Appearance.BackColor = System.Drawing.Color.White
-        Me.txt_guarantee_invoice.Properties.Appearance.BackColor2 = System.Drawing.Color.White
-        Me.txt_guarantee_invoice.Properties.Appearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_guarantee_invoice.Properties.Appearance.ForeColor = System.Drawing.Color.Black
-        Me.txt_guarantee_invoice.Properties.Appearance.Options.UseBackColor = True
-        Me.txt_guarantee_invoice.Properties.Appearance.Options.UseBorderColor = True
-        Me.txt_guarantee_invoice.Properties.Appearance.Options.UseForeColor = True
-        Me.txt_guarantee_invoice.Properties.AppearanceDisabled.BackColor = System.Drawing.Color.White
-        Me.txt_guarantee_invoice.Properties.AppearanceDisabled.BackColor2 = System.Drawing.Color.White
-        Me.txt_guarantee_invoice.Properties.AppearanceDisabled.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_guarantee_invoice.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black
-        Me.txt_guarantee_invoice.Properties.AppearanceDisabled.Options.UseBackColor = True
-        Me.txt_guarantee_invoice.Properties.AppearanceDisabled.Options.UseBorderColor = True
-        Me.txt_guarantee_invoice.Properties.AppearanceDisabled.Options.UseForeColor = True
-        Me.txt_guarantee_invoice.Properties.AppearanceFocused.BackColor = System.Drawing.Color.White
-        Me.txt_guarantee_invoice.Properties.AppearanceFocused.BackColor2 = System.Drawing.Color.White
-        Me.txt_guarantee_invoice.Properties.AppearanceFocused.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_guarantee_invoice.Properties.AppearanceFocused.ForeColor = System.Drawing.Color.Black
-        Me.txt_guarantee_invoice.Properties.AppearanceFocused.Options.UseBackColor = True
-        Me.txt_guarantee_invoice.Properties.AppearanceFocused.Options.UseBorderColor = True
-        Me.txt_guarantee_invoice.Properties.AppearanceFocused.Options.UseForeColor = True
-        Me.txt_guarantee_invoice.Properties.AppearanceReadOnly.BackColor = System.Drawing.Color.White
-        Me.txt_guarantee_invoice.Properties.AppearanceReadOnly.BackColor2 = System.Drawing.Color.White
-        Me.txt_guarantee_invoice.Properties.AppearanceReadOnly.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_guarantee_invoice.Properties.AppearanceReadOnly.ForeColor = System.Drawing.Color.Black
-        Me.txt_guarantee_invoice.Properties.AppearanceReadOnly.Options.UseBackColor = True
-        Me.txt_guarantee_invoice.Properties.AppearanceReadOnly.Options.UseBorderColor = True
-        Me.txt_guarantee_invoice.Properties.AppearanceReadOnly.Options.UseForeColor = True
-        Me.txt_guarantee_invoice.Properties.AutoHeight = False
-        Me.txt_guarantee_invoice.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple
-        Me.txt_guarantee_invoice.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txt_guarantee_invoice.Properties.LookAndFeel.SkinName = "Office 2019 White"
-        Me.txt_guarantee_invoice.Properties.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.txt_guarantee_invoice.Properties.Mask.BeepOnError = True
-        Me.txt_guarantee_invoice.Properties.Mask.EditMask = "(2) \d\d\d-\d\d\d\d"
-        Me.txt_guarantee_invoice.Properties.ReadOnly = True
-        Me.txt_guarantee_invoice.Size = New System.Drawing.Size(195, 30)
-        Me.txt_guarantee_invoice.TabIndex = 0
-        Me.txt_guarantee_invoice.Tag = "Numero de factura"
-        ConditionValidationRule6.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule6.ErrorText = "Este campo es requerido..."
-        Me.xvp_validate.SetValidationRule(Me.txt_guarantee_invoice, ConditionValidationRule6)
-        '
-        'txt_guarantee_date
-        '
-        Me.txt_guarantee_date.EditValue = Nothing
-        Me.xvp_validate.SetIconAlignment(Me.txt_guarantee_date, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
-        Me.txt_guarantee_date.Location = New System.Drawing.Point(206, 197)
-        Me.txt_guarantee_date.Margin = New System.Windows.Forms.Padding(0)
-        Me.txt_guarantee_date.Name = "txt_guarantee_date"
-        Me.txt_guarantee_date.Properties.Appearance.BackColor = System.Drawing.Color.White
-        Me.txt_guarantee_date.Properties.Appearance.BackColor2 = System.Drawing.Color.White
-        Me.txt_guarantee_date.Properties.Appearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_guarantee_date.Properties.Appearance.ForeColor = System.Drawing.Color.Black
-        Me.txt_guarantee_date.Properties.Appearance.Options.UseBackColor = True
-        Me.txt_guarantee_date.Properties.Appearance.Options.UseBorderColor = True
-        Me.txt_guarantee_date.Properties.Appearance.Options.UseForeColor = True
-        Me.txt_guarantee_date.Properties.AppearanceDisabled.BackColor = System.Drawing.Color.White
-        Me.txt_guarantee_date.Properties.AppearanceDisabled.BackColor2 = System.Drawing.Color.White
-        Me.txt_guarantee_date.Properties.AppearanceDisabled.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_guarantee_date.Properties.AppearanceDisabled.Options.UseBackColor = True
-        Me.txt_guarantee_date.Properties.AppearanceDisabled.Options.UseBorderColor = True
-        Me.txt_guarantee_date.Properties.AppearanceDropDown.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_guarantee_date.Properties.AppearanceDropDown.ForeColor = System.Drawing.Color.Black
-        Me.txt_guarantee_date.Properties.AppearanceDropDown.Options.UseBorderColor = True
-        Me.txt_guarantee_date.Properties.AppearanceDropDown.Options.UseForeColor = True
-        Me.txt_guarantee_date.Properties.AppearanceFocused.BackColor = System.Drawing.Color.White
-        Me.txt_guarantee_date.Properties.AppearanceFocused.BackColor2 = System.Drawing.Color.White
-        Me.txt_guarantee_date.Properties.AppearanceFocused.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_guarantee_date.Properties.AppearanceFocused.ForeColor = System.Drawing.Color.Black
-        Me.txt_guarantee_date.Properties.AppearanceFocused.Options.UseBackColor = True
-        Me.txt_guarantee_date.Properties.AppearanceFocused.Options.UseBorderColor = True
-        Me.txt_guarantee_date.Properties.AppearanceFocused.Options.UseForeColor = True
-        Me.txt_guarantee_date.Properties.AppearanceReadOnly.BackColor = System.Drawing.Color.White
-        Me.txt_guarantee_date.Properties.AppearanceReadOnly.BackColor2 = System.Drawing.Color.White
-        Me.txt_guarantee_date.Properties.AppearanceReadOnly.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_guarantee_date.Properties.AppearanceReadOnly.ForeColor = System.Drawing.Color.Black
-        Me.txt_guarantee_date.Properties.AppearanceReadOnly.Options.UseBackColor = True
-        Me.txt_guarantee_date.Properties.AppearanceReadOnly.Options.UseBorderColor = True
-        Me.txt_guarantee_date.Properties.AppearanceReadOnly.Options.UseForeColor = True
-        Me.txt_guarantee_date.Properties.AutoHeight = False
-        Me.txt_guarantee_date.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple
-        EditorButtonImageOptions2.Image = CType(resources.GetObject("EditorButtonImageOptions2.Image"), System.Drawing.Image)
-        Me.txt_guarantee_date.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions2, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject5, SerializableAppearanceObject6, SerializableAppearanceObject7, SerializableAppearanceObject8, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
-        Me.txt_guarantee_date.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.txt_guarantee_date.Properties.DisplayFormat.FormatString = "D"
-        Me.txt_guarantee_date.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime
-        Me.txt_guarantee_date.Properties.EditFormat.FormatString = "D"
-        Me.txt_guarantee_date.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime
-        Me.txt_guarantee_date.Properties.LookAndFeel.SkinName = "Office 2019 White"
-        Me.txt_guarantee_date.Properties.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.txt_guarantee_date.Properties.Mask.EditMask = "D"
-        Me.txt_guarantee_date.Properties.ReadOnly = True
-        Me.txt_guarantee_date.Properties.SelectionMode = DevExpress.XtraEditors.Repository.CalendarSelectionMode.Multiple
-        Me.txt_guarantee_date.Size = New System.Drawing.Size(195, 30)
-        Me.txt_guarantee_date.TabIndex = 0
-        Me.txt_guarantee_date.Tag = "Fecha de venta"
-        ConditionValidationRule7.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule7.ErrorText = "Este campo es requerido..."
-        Me.xvp_validate.SetValidationRule(Me.txt_guarantee_date, ConditionValidationRule7)
+        ConditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
+        ConditionValidationRule3.ErrorText = "Este campo es requerido..."
+        Me.xvp_validate.SetValidationRule(Me.txt_guarantee_serial, ConditionValidationRule3)
         '
         'cmb_guarantee_revision
         '
         Me.xvp_validate.SetIconAlignment(Me.cmb_guarantee_revision, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
-        Me.cmb_guarantee_revision.Location = New System.Drawing.Point(934, 133)
+        Me.cmb_guarantee_revision.Location = New System.Drawing.Point(477, 150)
         Me.cmb_guarantee_revision.Margin = New System.Windows.Forms.Padding(0)
         Me.cmb_guarantee_revision.Name = "cmb_guarantee_revision"
         Me.cmb_guarantee_revision.Properties.Appearance.BackColor = System.Drawing.Color.White
@@ -638,124 +276,17 @@ Partial Class wholesales_guarantee_support
         Me.cmb_guarantee_revision.Properties.NullText = ""
         Me.cmb_guarantee_revision.Properties.ShowFooter = False
         Me.cmb_guarantee_revision.Properties.ShowHeader = False
-        Me.cmb_guarantee_revision.Size = New System.Drawing.Size(196, 30)
+        Me.cmb_guarantee_revision.Size = New System.Drawing.Size(352, 30)
         Me.cmb_guarantee_revision.TabIndex = 1
         Me.cmb_guarantee_revision.Tag = "Tipo de revision"
-        ConditionValidationRule8.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule8.ErrorText = "Este campo es requerido..."
-        Me.xvp_validate.SetValidationRule(Me.cmb_guarantee_revision, ConditionValidationRule8)
-        '
-        'txt_guarantee_support
-        '
-        Me.txt_guarantee_support.EditValue = New Date(2020, 12, 29, 20, 2, 46, 398)
-        Me.xvp_validate.SetIconAlignment(Me.txt_guarantee_support, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
-        Me.txt_guarantee_support.Location = New System.Drawing.Point(727, 133)
-        Me.txt_guarantee_support.Margin = New System.Windows.Forms.Padding(0)
-        Me.txt_guarantee_support.Name = "txt_guarantee_support"
-        Me.txt_guarantee_support.Properties.Appearance.BackColor = System.Drawing.Color.White
-        Me.txt_guarantee_support.Properties.Appearance.BackColor2 = System.Drawing.Color.White
-        Me.txt_guarantee_support.Properties.Appearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_guarantee_support.Properties.Appearance.ForeColor = System.Drawing.Color.Black
-        Me.txt_guarantee_support.Properties.Appearance.Options.UseBackColor = True
-        Me.txt_guarantee_support.Properties.Appearance.Options.UseBorderColor = True
-        Me.txt_guarantee_support.Properties.Appearance.Options.UseForeColor = True
-        Me.txt_guarantee_support.Properties.AppearanceDisabled.BackColor = System.Drawing.Color.White
-        Me.txt_guarantee_support.Properties.AppearanceDisabled.BackColor2 = System.Drawing.Color.White
-        Me.txt_guarantee_support.Properties.AppearanceDisabled.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_guarantee_support.Properties.AppearanceDisabled.Options.UseBackColor = True
-        Me.txt_guarantee_support.Properties.AppearanceDisabled.Options.UseBorderColor = True
-        Me.txt_guarantee_support.Properties.AppearanceDropDown.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_guarantee_support.Properties.AppearanceDropDown.ForeColor = System.Drawing.Color.Black
-        Me.txt_guarantee_support.Properties.AppearanceDropDown.Options.UseBorderColor = True
-        Me.txt_guarantee_support.Properties.AppearanceDropDown.Options.UseForeColor = True
-        Me.txt_guarantee_support.Properties.AppearanceFocused.BackColor = System.Drawing.Color.White
-        Me.txt_guarantee_support.Properties.AppearanceFocused.BackColor2 = System.Drawing.Color.White
-        Me.txt_guarantee_support.Properties.AppearanceFocused.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_guarantee_support.Properties.AppearanceFocused.ForeColor = System.Drawing.Color.Black
-        Me.txt_guarantee_support.Properties.AppearanceFocused.Options.UseBackColor = True
-        Me.txt_guarantee_support.Properties.AppearanceFocused.Options.UseBorderColor = True
-        Me.txt_guarantee_support.Properties.AppearanceFocused.Options.UseForeColor = True
-        Me.txt_guarantee_support.Properties.AppearanceReadOnly.BackColor = System.Drawing.Color.White
-        Me.txt_guarantee_support.Properties.AppearanceReadOnly.BackColor2 = System.Drawing.Color.White
-        Me.txt_guarantee_support.Properties.AppearanceReadOnly.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_guarantee_support.Properties.AppearanceReadOnly.ForeColor = System.Drawing.Color.Black
-        Me.txt_guarantee_support.Properties.AppearanceReadOnly.Options.UseBackColor = True
-        Me.txt_guarantee_support.Properties.AppearanceReadOnly.Options.UseBorderColor = True
-        Me.txt_guarantee_support.Properties.AppearanceReadOnly.Options.UseForeColor = True
-        Me.txt_guarantee_support.Properties.AutoHeight = False
-        Me.txt_guarantee_support.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple
-        EditorButtonImageOptions3.Image = CType(resources.GetObject("EditorButtonImageOptions3.Image"), System.Drawing.Image)
-        Me.txt_guarantee_support.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions3, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject9, SerializableAppearanceObject10, SerializableAppearanceObject11, SerializableAppearanceObject12, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
-        Me.txt_guarantee_support.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.txt_guarantee_support.Properties.DisplayFormat.FormatString = "G"
-        Me.txt_guarantee_support.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime
-        Me.txt_guarantee_support.Properties.EditFormat.FormatString = "G"
-        Me.txt_guarantee_support.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime
-        Me.txt_guarantee_support.Properties.LookAndFeel.SkinName = "Office 2019 White"
-        Me.txt_guarantee_support.Properties.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.txt_guarantee_support.Properties.MaskSettings.Set("mask", "G")
-        Me.txt_guarantee_support.Properties.SelectionMode = DevExpress.XtraEditors.Repository.CalendarSelectionMode.Multiple
-        Me.txt_guarantee_support.Size = New System.Drawing.Size(195, 30)
-        Me.txt_guarantee_support.TabIndex = 0
-        Me.txt_guarantee_support.Tag = "Fecha de revision"
-        ConditionValidationRule9.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule9.ErrorText = "Este campo es requerido..."
-        Me.xvp_validate.SetValidationRule(Me.txt_guarantee_support, ConditionValidationRule9)
-        '
-        'txt_guarantee_customer
-        '
-        Me.txt_guarantee_customer.EditValue = ""
-        Me.xvp_validate.SetIconAlignment(Me.txt_guarantee_customer, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
-        Me.txt_guarantee_customer.Location = New System.Drawing.Point(206, 69)
-        Me.txt_guarantee_customer.Margin = New System.Windows.Forms.Padding(0)
-        Me.txt_guarantee_customer.Name = "txt_guarantee_customer"
-        Me.txt_guarantee_customer.Properties.Appearance.BackColor = System.Drawing.Color.White
-        Me.txt_guarantee_customer.Properties.Appearance.BackColor2 = System.Drawing.Color.White
-        Me.txt_guarantee_customer.Properties.Appearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_guarantee_customer.Properties.Appearance.ForeColor = System.Drawing.Color.Black
-        Me.txt_guarantee_customer.Properties.Appearance.Options.UseBackColor = True
-        Me.txt_guarantee_customer.Properties.Appearance.Options.UseBorderColor = True
-        Me.txt_guarantee_customer.Properties.Appearance.Options.UseForeColor = True
-        Me.txt_guarantee_customer.Properties.AppearanceDisabled.BackColor = System.Drawing.Color.White
-        Me.txt_guarantee_customer.Properties.AppearanceDisabled.BackColor2 = System.Drawing.Color.White
-        Me.txt_guarantee_customer.Properties.AppearanceDisabled.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_guarantee_customer.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black
-        Me.txt_guarantee_customer.Properties.AppearanceDisabled.Options.UseBackColor = True
-        Me.txt_guarantee_customer.Properties.AppearanceDisabled.Options.UseBorderColor = True
-        Me.txt_guarantee_customer.Properties.AppearanceDisabled.Options.UseForeColor = True
-        Me.txt_guarantee_customer.Properties.AppearanceFocused.BackColor = System.Drawing.Color.White
-        Me.txt_guarantee_customer.Properties.AppearanceFocused.BackColor2 = System.Drawing.Color.White
-        Me.txt_guarantee_customer.Properties.AppearanceFocused.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_guarantee_customer.Properties.AppearanceFocused.ForeColor = System.Drawing.Color.Black
-        Me.txt_guarantee_customer.Properties.AppearanceFocused.Options.UseBackColor = True
-        Me.txt_guarantee_customer.Properties.AppearanceFocused.Options.UseBorderColor = True
-        Me.txt_guarantee_customer.Properties.AppearanceFocused.Options.UseForeColor = True
-        Me.txt_guarantee_customer.Properties.AppearanceReadOnly.BackColor = System.Drawing.Color.White
-        Me.txt_guarantee_customer.Properties.AppearanceReadOnly.BackColor2 = System.Drawing.Color.White
-        Me.txt_guarantee_customer.Properties.AppearanceReadOnly.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_guarantee_customer.Properties.AppearanceReadOnly.ForeColor = System.Drawing.Color.Black
-        Me.txt_guarantee_customer.Properties.AppearanceReadOnly.Options.UseBackColor = True
-        Me.txt_guarantee_customer.Properties.AppearanceReadOnly.Options.UseBorderColor = True
-        Me.txt_guarantee_customer.Properties.AppearanceReadOnly.Options.UseForeColor = True
-        Me.txt_guarantee_customer.Properties.AutoHeight = False
-        Me.txt_guarantee_customer.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple
-        Me.txt_guarantee_customer.Properties.LookAndFeel.SkinName = "Office 2019 White"
-        Me.txt_guarantee_customer.Properties.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.txt_guarantee_customer.Properties.Mask.BeepOnError = True
-        Me.txt_guarantee_customer.Properties.Mask.EditMask = "\d+"
-        Me.txt_guarantee_customer.Properties.MaxLength = 50
-        Me.txt_guarantee_customer.Properties.ReadOnly = True
-        Me.txt_guarantee_customer.Size = New System.Drawing.Size(400, 30)
-        Me.txt_guarantee_customer.TabIndex = 0
-        Me.txt_guarantee_customer.Tag = "Nombre de cliente"
-        ConditionValidationRule10.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule10.ErrorText = "Este campo es requerido..."
-        Me.xvp_validate.SetValidationRule(Me.txt_guarantee_customer, ConditionValidationRule10)
+        ConditionValidationRule4.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
+        ConditionValidationRule4.ErrorText = "Este campo es requerido..."
+        Me.xvp_validate.SetValidationRule(Me.cmb_guarantee_revision, ConditionValidationRule4)
         '
         'txt_guarantee_description
         '
         Me.xvp_validate.SetIconAlignment(Me.txt_guarantee_description, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
-        Me.txt_guarantee_description.Location = New System.Drawing.Point(727, 197)
+        Me.txt_guarantee_description.Location = New System.Drawing.Point(477, 219)
         Me.txt_guarantee_description.Margin = New System.Windows.Forms.Padding(0)
         Me.txt_guarantee_description.Name = "txt_guarantee_description"
         Me.txt_guarantee_description.Properties.Appearance.BackColor = System.Drawing.Color.White
@@ -771,146 +302,77 @@ Partial Class wholesales_guarantee_support
         Me.txt_guarantee_description.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.txt_guarantee_description.Properties.LookAndFeel.UseDefaultLookAndFeel = False
         Me.xvp_spell.SetShowSpellCheckMenu(Me.txt_guarantee_description, True)
-        Me.txt_guarantee_description.Size = New System.Drawing.Size(400, 158)
+        Me.txt_guarantee_description.Size = New System.Drawing.Size(352, 117)
         Me.xvp_spell.SetSpellCheckerOptions(Me.txt_guarantee_description, OptionsSpelling1)
         Me.txt_guarantee_description.TabIndex = 2
         Me.txt_guarantee_description.Tag = "Descripción"
+        ConditionValidationRule5.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
+        ConditionValidationRule5.ErrorText = "Este campo es requerido..."
+        Me.xvp_validate.SetValidationRule(Me.txt_guarantee_description, ConditionValidationRule5)
         '
-        'pnl_object_bottom
+        'object_panel_container
         '
-        Me.pnl_object_bottom.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        Me.pnl_object_bottom.Controls.Add(Me.btn_object_accept)
-        Me.pnl_object_bottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.pnl_object_bottom.Location = New System.Drawing.Point(1, 497)
-        Me.pnl_object_bottom.LookAndFeel.SkinName = "Office 2019 White"
-        Me.pnl_object_bottom.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.pnl_object_bottom.Margin = New System.Windows.Forms.Padding(0)
-        Me.pnl_object_bottom.Name = "pnl_object_bottom"
-        Me.pnl_object_bottom.Padding = New System.Windows.Forms.Padding(1, 1, 30, 1)
-        Me.pnl_object_bottom.Size = New System.Drawing.Size(1348, 52)
-        Me.pnl_object_bottom.TabIndex = 0
+        Me.object_panel_container.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.object_panel_container.Controls.Add(Me.object_label_info)
+        Me.object_panel_container.Controls.Add(Me.object_label_title)
+        Me.object_panel_container.Controls.Add(Me.lbl_guarantee_revision)
+        Me.object_panel_container.Controls.Add(Me.cmb_guarantee_revision)
+        Me.object_panel_container.Controls.Add(Me.lbl_object_caracters)
+        Me.object_panel_container.Controls.Add(Me.lbl_guarantee_description)
+        Me.object_panel_container.Controls.Add(Me.txt_guarantee_product)
+        Me.object_panel_container.Controls.Add(Me.lbl_guarantee_product)
+        Me.object_panel_container.Controls.Add(Me.lbl_guarantee_causal)
+        Me.object_panel_container.Controls.Add(Me.cmb_guarantee_causal)
+        Me.object_panel_container.Controls.Add(Me.txt_guarantee_serial)
+        Me.object_panel_container.Controls.Add(Me.lbl_guarantee_serial)
+        Me.object_panel_container.Controls.Add(Me.txt_guarantee_description)
+        Me.object_panel_container.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.object_panel_container.Location = New System.Drawing.Point(1, 1)
+        Me.object_panel_container.LookAndFeel.SkinName = "Office 2019 White"
+        Me.object_panel_container.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.object_panel_container.Margin = New System.Windows.Forms.Padding(0)
+        Me.object_panel_container.Name = "object_panel_container"
+        Me.object_panel_container.Padding = New System.Windows.Forms.Padding(1)
+        Me.object_panel_container.Size = New System.Drawing.Size(882, 394)
+        Me.object_panel_container.TabIndex = 0
         '
-        'btn_object_accept
+        'object_label_info
         '
-        Me.btn_object_accept.BackColor = System.Drawing.Color.White
-        Me.btn_object_accept.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_object_accept.Dock = System.Windows.Forms.DockStyle.Right
-        Me.btn_object_accept.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btn_object_accept.FlatAppearance.BorderSize = 0
-        Me.btn_object_accept.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.btn_object_accept.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
-        Me.btn_object_accept.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_object_accept.Font = New System.Drawing.Font("Open Sans Condensed Light", 20.0!)
-        Me.btn_object_accept.ForeColor = System.Drawing.Color.LightSeaGreen
-        Me.btn_object_accept.Location = New System.Drawing.Point(1227, 1)
-        Me.btn_object_accept.Margin = New System.Windows.Forms.Padding(0)
-        Me.btn_object_accept.Name = "btn_object_accept"
-        Me.btn_object_accept.Size = New System.Drawing.Size(91, 50)
-        Me.btn_object_accept.TabIndex = 0
-        Me.btn_object_accept.TabStop = False
-        Me.btn_object_accept.Text = "Aceptar"
-        Me.btn_object_accept.UseVisualStyleBackColor = False
+        Me.object_label_info.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.object_label_info.Appearance.ForeColor = System.Drawing.Color.DimGray
+        Me.object_label_info.Appearance.Options.UseFont = True
+        Me.object_label_info.Appearance.Options.UseForeColor = True
+        Me.object_label_info.Appearance.Options.UseTextOptions = True
+        Me.object_label_info.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
+        Me.object_label_info.Location = New System.Drawing.Point(45, 72)
+        Me.object_label_info.LookAndFeel.SkinName = "Office 2019 White"
+        Me.object_label_info.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.object_label_info.Margin = New System.Windows.Forms.Padding(0)
+        Me.object_label_info.Name = "object_label_info"
+        Me.object_label_info.Size = New System.Drawing.Size(284, 16)
+        Me.object_label_info.TabIndex = 25
+        Me.object_label_info.Text = "Todos los campos marcados con asterico (*) son obligatorios"
         '
-        'chk_row_visible
+        'object_label_title
         '
-        Me.chk_row_visible.EditValue = True
-        Me.chk_row_visible.Location = New System.Drawing.Point(923, 358)
-        Me.chk_row_visible.Margin = New System.Windows.Forms.Padding(0)
-        Me.chk_row_visible.Name = "chk_row_visible"
-        Me.chk_row_visible.Properties.Appearance.BackColor = System.Drawing.Color.White
-        Me.chk_row_visible.Properties.Appearance.BackColor2 = System.Drawing.Color.White
-        Me.chk_row_visible.Properties.Appearance.BorderColor = System.Drawing.Color.White
-        Me.chk_row_visible.Properties.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chk_row_visible.Properties.Appearance.ForeColor = System.Drawing.Color.DimGray
-        Me.chk_row_visible.Properties.Appearance.Options.UseBackColor = True
-        Me.chk_row_visible.Properties.Appearance.Options.UseBorderColor = True
-        Me.chk_row_visible.Properties.Appearance.Options.UseFont = True
-        Me.chk_row_visible.Properties.Appearance.Options.UseForeColor = True
-        Me.chk_row_visible.Properties.AppearanceDisabled.BackColor = System.Drawing.Color.White
-        Me.chk_row_visible.Properties.AppearanceDisabled.BackColor2 = System.Drawing.Color.White
-        Me.chk_row_visible.Properties.AppearanceDisabled.BorderColor = System.Drawing.Color.White
-        Me.chk_row_visible.Properties.AppearanceDisabled.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chk_row_visible.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.DimGray
-        Me.chk_row_visible.Properties.AppearanceDisabled.Options.UseBackColor = True
-        Me.chk_row_visible.Properties.AppearanceDisabled.Options.UseBorderColor = True
-        Me.chk_row_visible.Properties.AppearanceDisabled.Options.UseFont = True
-        Me.chk_row_visible.Properties.AppearanceDisabled.Options.UseForeColor = True
-        Me.chk_row_visible.Properties.AppearanceFocused.BackColor = System.Drawing.Color.White
-        Me.chk_row_visible.Properties.AppearanceFocused.BackColor2 = System.Drawing.Color.White
-        Me.chk_row_visible.Properties.AppearanceFocused.BorderColor = System.Drawing.Color.White
-        Me.chk_row_visible.Properties.AppearanceFocused.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chk_row_visible.Properties.AppearanceFocused.ForeColor = System.Drawing.Color.DimGray
-        Me.chk_row_visible.Properties.AppearanceFocused.Options.UseBackColor = True
-        Me.chk_row_visible.Properties.AppearanceFocused.Options.UseBorderColor = True
-        Me.chk_row_visible.Properties.AppearanceFocused.Options.UseFont = True
-        Me.chk_row_visible.Properties.AppearanceFocused.Options.UseForeColor = True
-        Me.chk_row_visible.Properties.AppearanceReadOnly.BackColor = System.Drawing.Color.White
-        Me.chk_row_visible.Properties.AppearanceReadOnly.BackColor2 = System.Drawing.Color.White
-        Me.chk_row_visible.Properties.AppearanceReadOnly.BorderColor = System.Drawing.Color.White
-        Me.chk_row_visible.Properties.AppearanceReadOnly.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chk_row_visible.Properties.AppearanceReadOnly.ForeColor = System.Drawing.Color.DimGray
-        Me.chk_row_visible.Properties.AppearanceReadOnly.Options.UseBackColor = True
-        Me.chk_row_visible.Properties.AppearanceReadOnly.Options.UseBorderColor = True
-        Me.chk_row_visible.Properties.AppearanceReadOnly.Options.UseFont = True
-        Me.chk_row_visible.Properties.AppearanceReadOnly.Options.UseForeColor = True
-        Me.chk_row_visible.Properties.Caption = "El estado actual del registro es vigente?"
-        Me.chk_row_visible.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.chk_row_visible.Properties.LookAndFeel.SkinName = "Office 2016 Colorful"
-        Me.chk_row_visible.Properties.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.chk_row_visible.Size = New System.Drawing.Size(207, 20)
-        Me.chk_row_visible.TabIndex = 0
-        '
-        'pnl_object_container
-        '
-        Me.pnl_object_container.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        Me.pnl_object_container.Controls.Add(Me.chk_row_visible)
-        Me.pnl_object_container.Controls.Add(Me.txt_guarantee_support)
-        Me.pnl_object_container.Controls.Add(Me.lbl_guarantee_support)
-        Me.pnl_object_container.Controls.Add(Me.lbl_guarantee_revision)
-        Me.pnl_object_container.Controls.Add(Me.cmb_guarantee_revision)
-        Me.pnl_object_container.Controls.Add(Me.lbl_guarantee_sku)
-        Me.pnl_object_container.Controls.Add(Me.txt_guarantee_sku)
-        Me.pnl_object_container.Controls.Add(Me.lbl_object_caracters)
-        Me.pnl_object_container.Controls.Add(Me.lbl_guarantee_description)
-        Me.pnl_object_container.Controls.Add(Me.lbl_guarantee_brand)
-        Me.pnl_object_container.Controls.Add(Me.cmb_guarantee_brand)
-        Me.pnl_object_container.Controls.Add(Me.txt_guarantee_product)
-        Me.pnl_object_container.Controls.Add(Me.lbl_guarantee_product)
-        Me.pnl_object_container.Controls.Add(Me.lbl_guarantee_causal)
-        Me.pnl_object_container.Controls.Add(Me.cmb_guarantee_causal)
-        Me.pnl_object_container.Controls.Add(Me.txt_guarantee_serial)
-        Me.pnl_object_container.Controls.Add(Me.lbl_guarantee_serial)
-        Me.pnl_object_container.Controls.Add(Me.lbl_guarantee_bill)
-        Me.pnl_object_container.Controls.Add(Me.txt_guarantee_invoice)
-        Me.pnl_object_container.Controls.Add(Me.txt_guarantee_date)
-        Me.pnl_object_container.Controls.Add(Me.lbl_guarantee_date)
-        Me.pnl_object_container.Controls.Add(Me.lbl_guarantee_customer)
-        Me.pnl_object_container.Controls.Add(Me.txt_guarantee_customer)
-        Me.pnl_object_container.Controls.Add(Me.txt_guarantee_description)
-        Me.pnl_object_container.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnl_object_container.Location = New System.Drawing.Point(1, 76)
-        Me.pnl_object_container.LookAndFeel.SkinName = "Office 2019 White"
-        Me.pnl_object_container.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.pnl_object_container.Margin = New System.Windows.Forms.Padding(0)
-        Me.pnl_object_container.Name = "pnl_object_container"
-        Me.pnl_object_container.Padding = New System.Windows.Forms.Padding(1)
-        Me.pnl_object_container.Size = New System.Drawing.Size(1348, 421)
-        Me.pnl_object_container.TabIndex = 0
-        '
-        'lbl_guarantee_support
-        '
-        Me.lbl_guarantee_support.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_guarantee_support.Appearance.ForeColor = System.Drawing.Color.DimGray
-        Me.lbl_guarantee_support.Appearance.Options.UseFont = True
-        Me.lbl_guarantee_support.Appearance.Options.UseForeColor = True
-        Me.lbl_guarantee_support.Location = New System.Drawing.Point(727, 113)
-        Me.lbl_guarantee_support.LookAndFeel.SkinName = "Office 2019 White"
-        Me.lbl_guarantee_support.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.lbl_guarantee_support.Margin = New System.Windows.Forms.Padding(0)
-        Me.lbl_guarantee_support.Name = "lbl_guarantee_support"
-        Me.lbl_guarantee_support.Size = New System.Drawing.Size(89, 16)
-        Me.lbl_guarantee_support.TabIndex = 0
-        Me.lbl_guarantee_support.Text = "Fecha de revisión*"
+        Me.object_label_title.Appearance.Font = New System.Drawing.Font("Open Sans Condensed Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.object_label_title.Appearance.ForeColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.object_label_title.Appearance.Options.UseFont = True
+        Me.object_label_title.Appearance.Options.UseForeColor = True
+        Me.object_label_title.Appearance.Options.UseTextOptions = True
+        Me.object_label_title.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.object_label_title.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Bottom
+        Me.object_label_title.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.object_label_title.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter
+        Me.object_label_title.ImageOptions.Alignment = System.Drawing.ContentAlignment.MiddleLeft
+        Me.object_label_title.Location = New System.Drawing.Point(44, 42)
+        Me.object_label_title.LookAndFeel.SkinName = "Office 2019 White"
+        Me.object_label_title.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.object_label_title.Margin = New System.Windows.Forms.Padding(0)
+        Me.object_label_title.Name = "object_label_title"
+        Me.object_label_title.Size = New System.Drawing.Size(125, 33)
+        Me.object_label_title.TabIndex = 26
+        Me.object_label_title.Text = "Revisión Técnica"
         '
         'lbl_guarantee_revision
         '
@@ -918,7 +380,7 @@ Partial Class wholesales_guarantee_support
         Me.lbl_guarantee_revision.Appearance.ForeColor = System.Drawing.Color.DimGray
         Me.lbl_guarantee_revision.Appearance.Options.UseFont = True
         Me.lbl_guarantee_revision.Appearance.Options.UseForeColor = True
-        Me.lbl_guarantee_revision.Location = New System.Drawing.Point(934, 113)
+        Me.lbl_guarantee_revision.Location = New System.Drawing.Point(477, 130)
         Me.lbl_guarantee_revision.LookAndFeel.SkinName = "Office 2019 White"
         Me.lbl_guarantee_revision.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_guarantee_revision.Margin = New System.Windows.Forms.Padding(0)
@@ -927,26 +389,11 @@ Partial Class wholesales_guarantee_support
         Me.lbl_guarantee_revision.TabIndex = 0
         Me.lbl_guarantee_revision.Text = "Tipo de revisión*"
         '
-        'lbl_guarantee_sku
-        '
-        Me.lbl_guarantee_sku.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_guarantee_sku.Appearance.ForeColor = System.Drawing.Color.DimGray
-        Me.lbl_guarantee_sku.Appearance.Options.UseFont = True
-        Me.lbl_guarantee_sku.Appearance.Options.UseForeColor = True
-        Me.lbl_guarantee_sku.Location = New System.Drawing.Point(206, 305)
-        Me.lbl_guarantee_sku.LookAndFeel.SkinName = "Office 2019 White"
-        Me.lbl_guarantee_sku.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.lbl_guarantee_sku.Margin = New System.Windows.Forms.Padding(0)
-        Me.lbl_guarantee_sku.Name = "lbl_guarantee_sku"
-        Me.lbl_guarantee_sku.Size = New System.Drawing.Size(26, 16)
-        Me.lbl_guarantee_sku.TabIndex = 0
-        Me.lbl_guarantee_sku.Text = "SKU*"
-        '
         'lbl_object_caracters
         '
         Me.lbl_object_caracters.Appearance.ForeColor = System.Drawing.Color.DimGray
         Me.lbl_object_caracters.Appearance.Options.UseForeColor = True
-        Me.lbl_object_caracters.Location = New System.Drawing.Point(727, 358)
+        Me.lbl_object_caracters.Location = New System.Drawing.Point(802, 340)
         Me.lbl_object_caracters.LookAndFeel.SkinName = "Office 2019 White"
         Me.lbl_object_caracters.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_object_caracters.Margin = New System.Windows.Forms.Padding(0)
@@ -961,7 +408,7 @@ Partial Class wholesales_guarantee_support
         Me.lbl_guarantee_description.Appearance.ForeColor = System.Drawing.Color.DimGray
         Me.lbl_guarantee_description.Appearance.Options.UseFont = True
         Me.lbl_guarantee_description.Appearance.Options.UseForeColor = True
-        Me.lbl_guarantee_description.Location = New System.Drawing.Point(727, 177)
+        Me.lbl_guarantee_description.Location = New System.Drawing.Point(477, 199)
         Me.lbl_guarantee_description.LookAndFeel.SkinName = "Office 2019 White"
         Me.lbl_guarantee_description.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_guarantee_description.Margin = New System.Windows.Forms.Padding(0)
@@ -970,28 +417,13 @@ Partial Class wholesales_guarantee_support
         Me.lbl_guarantee_description.TabIndex = 0
         Me.lbl_guarantee_description.Text = "Describa detalladamente los motivos y/o razones de la garantia*"
         '
-        'lbl_guarantee_brand
-        '
-        Me.lbl_guarantee_brand.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_guarantee_brand.Appearance.ForeColor = System.Drawing.Color.DimGray
-        Me.lbl_guarantee_brand.Appearance.Options.UseFont = True
-        Me.lbl_guarantee_brand.Appearance.Options.UseForeColor = True
-        Me.lbl_guarantee_brand.Location = New System.Drawing.Point(411, 305)
-        Me.lbl_guarantee_brand.LookAndFeel.SkinName = "Office 2019 White"
-        Me.lbl_guarantee_brand.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.lbl_guarantee_brand.Margin = New System.Windows.Forms.Padding(0)
-        Me.lbl_guarantee_brand.Name = "lbl_guarantee_brand"
-        Me.lbl_guarantee_brand.Size = New System.Drawing.Size(95, 16)
-        Me.lbl_guarantee_brand.TabIndex = 0
-        Me.lbl_guarantee_brand.Text = "Marca del producto*"
-        '
         'lbl_guarantee_product
         '
         Me.lbl_guarantee_product.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_guarantee_product.Appearance.ForeColor = System.Drawing.Color.DimGray
         Me.lbl_guarantee_product.Appearance.Options.UseFont = True
         Me.lbl_guarantee_product.Appearance.Options.UseForeColor = True
-        Me.lbl_guarantee_product.Location = New System.Drawing.Point(206, 241)
+        Me.lbl_guarantee_product.Location = New System.Drawing.Point(45, 199)
         Me.lbl_guarantee_product.LookAndFeel.SkinName = "Office 2019 White"
         Me.lbl_guarantee_product.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_guarantee_product.Margin = New System.Windows.Forms.Padding(0)
@@ -1006,14 +438,14 @@ Partial Class wholesales_guarantee_support
         Me.lbl_guarantee_causal.Appearance.ForeColor = System.Drawing.Color.DimGray
         Me.lbl_guarantee_causal.Appearance.Options.UseFont = True
         Me.lbl_guarantee_causal.Appearance.Options.UseForeColor = True
-        Me.lbl_guarantee_causal.Location = New System.Drawing.Point(727, 49)
+        Me.lbl_guarantee_causal.Location = New System.Drawing.Point(45, 267)
         Me.lbl_guarantee_causal.LookAndFeel.SkinName = "Office 2019 White"
         Me.lbl_guarantee_causal.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_guarantee_causal.Margin = New System.Windows.Forms.Padding(0)
         Me.lbl_guarantee_causal.Name = "lbl_guarantee_causal"
-        Me.lbl_guarantee_causal.Size = New System.Drawing.Size(180, 16)
+        Me.lbl_guarantee_causal.Size = New System.Drawing.Size(48, 16)
         Me.lbl_guarantee_causal.TabIndex = 0
-        Me.lbl_guarantee_causal.Text = "Seleccione las causales de la solicitud*"
+        Me.lbl_guarantee_causal.Text = "Causales*"
         '
         'lbl_guarantee_serial
         '
@@ -1021,59 +453,14 @@ Partial Class wholesales_guarantee_support
         Me.lbl_guarantee_serial.Appearance.ForeColor = System.Drawing.Color.DimGray
         Me.lbl_guarantee_serial.Appearance.Options.UseFont = True
         Me.lbl_guarantee_serial.Appearance.Options.UseForeColor = True
-        Me.lbl_guarantee_serial.Location = New System.Drawing.Point(206, 113)
+        Me.lbl_guarantee_serial.Location = New System.Drawing.Point(45, 130)
         Me.lbl_guarantee_serial.LookAndFeel.SkinName = "Office 2019 White"
         Me.lbl_guarantee_serial.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_guarantee_serial.Margin = New System.Windows.Forms.Padding(0)
         Me.lbl_guarantee_serial.Name = "lbl_guarantee_serial"
-        Me.lbl_guarantee_serial.Size = New System.Drawing.Size(85, 16)
+        Me.lbl_guarantee_serial.Size = New System.Drawing.Size(146, 16)
         Me.lbl_guarantee_serial.TabIndex = 0
-        Me.lbl_guarantee_serial.Text = "Numero de serial*"
-        '
-        'lbl_guarantee_bill
-        '
-        Me.lbl_guarantee_bill.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_guarantee_bill.Appearance.ForeColor = System.Drawing.Color.DimGray
-        Me.lbl_guarantee_bill.Appearance.Options.UseFont = True
-        Me.lbl_guarantee_bill.Appearance.Options.UseForeColor = True
-        Me.lbl_guarantee_bill.Location = New System.Drawing.Point(411, 177)
-        Me.lbl_guarantee_bill.LookAndFeel.SkinName = "Office 2019 White"
-        Me.lbl_guarantee_bill.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.lbl_guarantee_bill.Margin = New System.Windows.Forms.Padding(0)
-        Me.lbl_guarantee_bill.Name = "lbl_guarantee_bill"
-        Me.lbl_guarantee_bill.Size = New System.Drawing.Size(91, 16)
-        Me.lbl_guarantee_bill.TabIndex = 0
-        Me.lbl_guarantee_bill.Text = "Numero de factura*"
-        '
-        'lbl_guarantee_date
-        '
-        Me.lbl_guarantee_date.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_guarantee_date.Appearance.ForeColor = System.Drawing.Color.DimGray
-        Me.lbl_guarantee_date.Appearance.Options.UseFont = True
-        Me.lbl_guarantee_date.Appearance.Options.UseForeColor = True
-        Me.lbl_guarantee_date.Location = New System.Drawing.Point(206, 177)
-        Me.lbl_guarantee_date.LookAndFeel.SkinName = "Office 2019 White"
-        Me.lbl_guarantee_date.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.lbl_guarantee_date.Margin = New System.Windows.Forms.Padding(0)
-        Me.lbl_guarantee_date.Name = "lbl_guarantee_date"
-        Me.lbl_guarantee_date.Size = New System.Drawing.Size(78, 16)
-        Me.lbl_guarantee_date.TabIndex = 0
-        Me.lbl_guarantee_date.Text = "Fecha de venta*"
-        '
-        'lbl_guarantee_customer
-        '
-        Me.lbl_guarantee_customer.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_guarantee_customer.Appearance.ForeColor = System.Drawing.Color.DimGray
-        Me.lbl_guarantee_customer.Appearance.Options.UseFont = True
-        Me.lbl_guarantee_customer.Appearance.Options.UseForeColor = True
-        Me.lbl_guarantee_customer.Location = New System.Drawing.Point(206, 49)
-        Me.lbl_guarantee_customer.LookAndFeel.SkinName = "Office 2019 White"
-        Me.lbl_guarantee_customer.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.lbl_guarantee_customer.Margin = New System.Windows.Forms.Padding(0)
-        Me.lbl_guarantee_customer.Name = "lbl_guarantee_customer"
-        Me.lbl_guarantee_customer.Size = New System.Drawing.Size(91, 16)
-        Me.lbl_guarantee_customer.TabIndex = 0
-        Me.lbl_guarantee_customer.Text = "Nombre del cliente*"
+        Me.lbl_guarantee_serial.Text = "Numero de serial del producto*"
         '
         'xvp_spell
         '
@@ -1094,79 +481,158 @@ Partial Class wholesales_guarantee_support
         Me.xvp_spell.SpellCheckMode = DevExpress.XtraSpellChecker.SpellCheckMode.AsYouType
         Me.xvp_spell.SpellingFormType = DevExpress.XtraSpellChecker.SpellingFormType.Word
         '
+        'object_panel_actions
+        '
+        Me.object_panel_actions.Controls.Add(Me.object_button_saved)
+        Me.object_panel_actions.Controls.Add(Me.object_separator_spliter1)
+        Me.object_panel_actions.Controls.Add(Me.object_button_clean)
+        Me.object_panel_actions.Controls.Add(Me.object_button_closed)
+        Me.object_panel_actions.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.object_panel_actions.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft
+        Me.object_panel_actions.Location = New System.Drawing.Point(1, 395)
+        Me.object_panel_actions.Margin = New System.Windows.Forms.Padding(0)
+        Me.object_panel_actions.Name = "object_panel_actions"
+        Me.object_panel_actions.Padding = New System.Windows.Forms.Padding(5, 5, 30, 5)
+        Me.object_panel_actions.Size = New System.Drawing.Size(882, 50)
+        Me.object_panel_actions.TabIndex = 0
+        '
+        'object_button_saved
+        '
+        Me.object_button_saved.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.object_button_saved.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.object_button_saved.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
+        Me.object_button_saved.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.object_button_saved.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.object_button_saved.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.object_button_saved.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.object_button_saved.ForeColor = System.Drawing.Color.DimGray
+        Me.object_button_saved.Image = CType(resources.GetObject("object_button_saved.Image"), System.Drawing.Image)
+        Me.object_button_saved.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.object_button_saved.Location = New System.Drawing.Point(757, 5)
+        Me.object_button_saved.Margin = New System.Windows.Forms.Padding(0)
+        Me.object_button_saved.MaximumSize = New System.Drawing.Size(90, 38)
+        Me.object_button_saved.MinimumSize = New System.Drawing.Size(90, 38)
+        Me.object_button_saved.Name = "object_button_saved"
+        Me.object_button_saved.Size = New System.Drawing.Size(90, 38)
+        Me.object_button_saved.TabIndex = 3
+        Me.object_button_saved.TabStop = False
+        Me.object_button_saved.Tag = ""
+        Me.object_button_saved.Text = "Guardar"
+        Me.object_button_saved.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.object_button_saved.UseVisualStyleBackColor = True
+        '
+        'object_separator_spliter1
+        '
+        Me.object_separator_spliter1.LineAlignment = DevExpress.XtraEditors.Alignment.Center
+        Me.object_separator_spliter1.LineColor = System.Drawing.Color.Silver
+        Me.object_separator_spliter1.LineOrientation = System.Windows.Forms.Orientation.Vertical
+        Me.object_separator_spliter1.Location = New System.Drawing.Point(750, 5)
+        Me.object_separator_spliter1.LookAndFeel.SkinName = "Office 2019 White"
+        Me.object_separator_spliter1.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.object_separator_spliter1.Margin = New System.Windows.Forms.Padding(0)
+        Me.object_separator_spliter1.Name = "object_separator_spliter1"
+        Me.object_separator_spliter1.Padding = New System.Windows.Forms.Padding(0, 10, 0, 10)
+        Me.object_separator_spliter1.Size = New System.Drawing.Size(7, 40)
+        Me.object_separator_spliter1.TabIndex = 2
+        '
+        'object_button_clean
+        '
+        Me.object_button_clean.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.object_button_clean.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.object_button_clean.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
+        Me.object_button_clean.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.object_button_clean.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.object_button_clean.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.object_button_clean.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.object_button_clean.ForeColor = System.Drawing.Color.DimGray
+        Me.object_button_clean.Image = CType(resources.GetObject("object_button_clean.Image"), System.Drawing.Image)
+        Me.object_button_clean.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.object_button_clean.Location = New System.Drawing.Point(672, 5)
+        Me.object_button_clean.Margin = New System.Windows.Forms.Padding(0)
+        Me.object_button_clean.MaximumSize = New System.Drawing.Size(78, 38)
+        Me.object_button_clean.MinimumSize = New System.Drawing.Size(78, 38)
+        Me.object_button_clean.Name = "object_button_clean"
+        Me.object_button_clean.Size = New System.Drawing.Size(78, 38)
+        Me.object_button_clean.TabIndex = 0
+        Me.object_button_clean.TabStop = False
+        Me.object_button_clean.Tag = ""
+        Me.object_button_clean.Text = "Limpiar"
+        Me.object_button_clean.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.object_button_clean.UseVisualStyleBackColor = True
+        '
+        'object_button_closed
+        '
+        Me.object_button_closed.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.object_button_closed.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.object_button_closed.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.object_button_closed.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
+        Me.object_button_closed.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.object_button_closed.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.object_button_closed.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.object_button_closed.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.object_button_closed.ForeColor = System.Drawing.Color.DimGray
+        Me.object_button_closed.Image = CType(resources.GetObject("object_button_closed.Image"), System.Drawing.Image)
+        Me.object_button_closed.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.object_button_closed.Location = New System.Drawing.Point(596, 5)
+        Me.object_button_closed.Margin = New System.Windows.Forms.Padding(0)
+        Me.object_button_closed.MaximumSize = New System.Drawing.Size(76, 38)
+        Me.object_button_closed.MinimumSize = New System.Drawing.Size(76, 38)
+        Me.object_button_closed.Name = "object_button_closed"
+        Me.object_button_closed.Size = New System.Drawing.Size(76, 38)
+        Me.object_button_closed.TabIndex = 0
+        Me.object_button_closed.TabStop = False
+        Me.object_button_closed.Tag = ""
+        Me.object_button_closed.Text = " Cancelar"
+        Me.object_button_closed.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.object_button_closed.UseVisualStyleBackColor = True
+        '
         'wholesales_guarantee_support
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.BackColor = System.Drawing.Color.White
-        Me.Controls.Add(Me.pnl_object_container)
-        Me.Controls.Add(Me.pnl_object_bottom)
-        Me.Controls.Add(Me.pnl_object_top)
+        Me.Controls.Add(Me.object_panel_container)
+        Me.Controls.Add(Me.object_panel_actions)
         Me.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.DimGray
         Me.Margin = New System.Windows.Forms.Padding(0)
         Me.Name = "wholesales_guarantee_support"
         Me.Padding = New System.Windows.Forms.Padding(1)
-        Me.Size = New System.Drawing.Size(1350, 550)
+        Me.Size = New System.Drawing.Size(884, 446)
         Me.Tag = "Revisión Tecnica"
-        CType(Me.pnl_object_top, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnl_object_top.ResumeLayout(False)
         CType(Me.xvp_validate, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txt_guarantee_sku.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.cmb_guarantee_brand.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txt_guarantee_product.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.cmb_guarantee_causal.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txt_guarantee_serial.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txt_guarantee_invoice.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txt_guarantee_date.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txt_guarantee_date.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.cmb_guarantee_revision.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txt_guarantee_support.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txt_guarantee_support.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txt_guarantee_customer.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txt_guarantee_description.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pnl_object_bottom, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnl_object_bottom.ResumeLayout(False)
-        CType(Me.chk_row_visible.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pnl_object_container, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnl_object_container.ResumeLayout(False)
-        Me.pnl_object_container.PerformLayout()
+        CType(Me.object_panel_container, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.object_panel_container.ResumeLayout(False)
+        Me.object_panel_container.PerformLayout()
+        Me.object_panel_actions.ResumeLayout(False)
+        CType(Me.object_separator_spliter1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents pnl_object_top As DevExpress.XtraEditors.PanelControl
-    Friend WithEvents lbl_object_info As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents lbl_object_title As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents btn_object_refresh As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents btn_object_cancel As Button
     Friend WithEvents xvp_validate As DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider
-    Friend WithEvents pnl_object_bottom As DevExpress.XtraEditors.PanelControl
-    Friend WithEvents btn_object_accept As Button
-    Protected WithEvents chk_row_visible As DevExpress.XtraEditors.CheckEdit
-    Friend WithEvents pnl_object_container As DevExpress.XtraEditors.PanelControl
-    Friend WithEvents lbl_guarantee_sku As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents txt_guarantee_sku As APDA.Object.Controls.TextboxEdit
+    Friend WithEvents object_panel_container As DevExpress.XtraEditors.PanelControl
     Friend WithEvents lbl_object_caracters As DevExpress.XtraEditors.LabelControl
     Friend WithEvents lbl_guarantee_description As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents lbl_guarantee_brand As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents cmb_guarantee_brand As APDA.Object.Controls.ComboboxEdit
     Friend WithEvents txt_guarantee_product As APDA.Object.Controls.TextboxEdit
     Friend WithEvents lbl_guarantee_product As DevExpress.XtraEditors.LabelControl
     Friend WithEvents lbl_guarantee_causal As DevExpress.XtraEditors.LabelControl
     Friend WithEvents cmb_guarantee_causal As APDA.Object.Controls.ComboboxCheck
     Friend WithEvents txt_guarantee_serial As APDA.Object.Controls.TextboxEdit
     Friend WithEvents lbl_guarantee_serial As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents lbl_guarantee_bill As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents txt_guarantee_invoice As APDA.Object.Controls.TextboxEdit
-    Friend WithEvents txt_guarantee_date As APDA.Object.Controls.TextboxDates
-    Friend WithEvents lbl_guarantee_date As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents lbl_guarantee_customer As DevExpress.XtraEditors.LabelControl
     Friend WithEvents lbl_guarantee_revision As DevExpress.XtraEditors.LabelControl
     Friend WithEvents cmb_guarantee_revision As APDA.Object.Controls.ComboboxEdit
-    Friend WithEvents txt_guarantee_support As APDA.Object.Controls.TextboxDates
-    Friend WithEvents lbl_guarantee_support As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents txt_guarantee_customer As APDA.Object.Controls.TextboxEdit
     Friend WithEvents xvp_spell As DevExpress.XtraSpellChecker.SpellChecker
     Private WithEvents txt_guarantee_description As DevExpress.XtraEditors.MemoEdit
+    Friend WithEvents object_label_info As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents object_label_title As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents object_panel_actions As FlowLayoutPanel
+    Protected WithEvents object_button_saved As Button
+    Friend WithEvents object_separator_spliter1 As DevExpress.XtraEditors.SeparatorControl
+    Protected WithEvents object_button_clean As Button
+    Protected WithEvents object_button_closed As Button
 End Class

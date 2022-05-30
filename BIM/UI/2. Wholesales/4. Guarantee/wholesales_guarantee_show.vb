@@ -3,7 +3,7 @@ Imports DevExpress.XtraGrid.Views.Grid
 Imports DevExpress.XtraGrid.Views.Grid.ViewInfo
 
 Public Class wholesales_guarantee_show
-    Private criteria_search As String = "month(g.event_date)=month('" & Now.ToString("yyyy-MM-dd") & "') and year(g.event_date)=year('" & Now.ToString("yyyy-MM-dd") & "') and g.row_visible=1 and g.agency_code in (" & sessions.agency_permit & ") and g." & sessions.query_permit
+    Private criteria_search As String = "month(g.event_date)=month('" & Now.ToString("yyyy-MM-dd") & "') and year(g.event_date)=year('" & Now.ToString("yyyy-MM-dd") & "') and g.row_visible=1 and g.agency_code in (" & sessions.agency_permit & ")"
     Private guarantee As Guarantee = Guarantee.Instance
     Private source_object As New DataTable
     Private notes_ As Notes = Notes.Instance
@@ -65,9 +65,11 @@ Public Class wholesales_guarantee_show
         If source_object.Rows.Count > 0 Then
             With source_object
                 object_label_slopes.Text = String.Format("En Tramite: ({0})", .Select("Estado='En Tramite'").Count)
-                object_label_isolates.Text = String.Format("Soporte y/o Taller: ({0})", .Select("Estado='Soporte y/o Taller'").Count)
-                object_label_brand.Text = String.Format("Brand House: ({0})", .Select("Estado='Brand House'").Count)
-                object_label_sending.Text = String.Format("En Despacho: ({0})", .Select("Estado='En Despacho'").Count)
+                object_label_wineris.Text = String.Format("Llegada Bodega: ({0})", .Select("Estado='Llegada A Bodega'").Count)
+                object_label_isolates.Text = String.Format("Soporte y/o Taller: ({0})", .Select("Estado in ('Revision En Taller','Solicitud A Taller')").Count)
+                object_label_brand.Text = String.Format("Brand House: ({0})", .Select("Estado in ('Solicitud A Marca','Envio A Marca')").Count)
+                object_label_returns.Text = String.Format("Regreso Bodega: ({0})", .Select("Estado in ('Regresa Equipo Reparado De Taller','Regresa Equipo Reparado De Marca')").Count)
+                object_label_sending.Text = String.Format("En Despacho: ({0})", .Select("Estado='Despacho De Bodega A La Tienda'").Count)
                 object_label_closed.Text = String.Format("Finalizados: ({0})", .Select("Estado='Finalizado'").Count)
                 object_label_search.Text = String.Format("Todas las registros: ({0})", .Rows.Count)
 
@@ -142,7 +144,7 @@ Public Class wholesales_guarantee_show
         End If
     End Sub
 
-    Private Sub quick_search(sender As Object, e As EventArgs) Handles object_label_slopes.Click, object_label_sending.Click, object_label_search.Click, object_label_isolates.Click, object_label_closed.Click, object_label_brand.Click
+    Private Sub quick_search(sender As Object, e As EventArgs) Handles object_label_slopes.Click, object_label_sending.Click, object_label_search.Click, object_label_isolates.Click, object_label_closed.Click, object_label_brand.Click, object_label_returns.Click, object_label_wineris.Click
         If source_object.Rows.Count > 0 Then
             reports_show(filter_search(source_object, sender.AccessibleDescription.ToString))
         End If
@@ -248,47 +250,29 @@ Public Class wholesales_guarantee_show
         show_option(New wholesales_guarantee_create)
     End Sub
 
-    Private Sub edited_option(sender As Object, e As EventArgs) Handles btn_object_edit.Click
-        If dgv_object_view.SelectedRowsCount.ToString = 1 Then
-            If message_text("Está seguro que desea finalizar el registro seleccionado?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
-                Using new_ As New wholesales_guarantee_closed(dgv_object_view.GetRowCellValue(dgv_object_view.FocusedRowHandle, "Id"))
-                    new_.ShowDialog(start_home)
-                End Using
-
-                'update listed to showed
-                reports_show(criteria_search)
-            End If
-        Else
-            message_text("La acción no se puede realizar con selección multiple", MessageBoxButtons.OK)
-        End If
-    End Sub
-
     Private Sub erased_option(sender As Object, e As EventArgs) Handles btn_object_erase.Click
-        If dgv_object_view.RowCount > 0 Then
-            If message_text("Está seguro que desea eliminar los registros seleccionados?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
-                For i As Integer = 0 To dgv_object_view.DataRowCount - 1
-                    If dgv_object_view.IsRowSelected(i) = True Then
-                        guarantee.wholesale_guarantee_erase(dgv_object_view.GetRowCellValue(i, "Id"), False)
-                    End If
-                Next
-
-                'return message to end process
-                If message_text("Los registros seleccionados fueron actualizados exitosamente", MessageBoxButtons.OK) = DialogResult.OK Then reports_show(criteria_search)
-            End If
-        End If
-    End Sub
-
-    Private Sub supported_option(sender As Object, e As EventArgs) Handles btn_object_support.Click
         If dgv_object_view.SelectedRowsCount.ToString = 1 Then
-            If message_text("Está seguro que desea crear una revisión tecnica al registro seleccionado?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
-                show_option(New wholesales_guarantee_support(dgv_object_view.GetRowCellValue(dgv_object_view.FocusedRowHandle, "Id"), Me))
+            If message_text("Está seguro que desea anular los registros seleccionados?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
+                If guarantee.wholesale_guarantee_erase(dgv_object_view.GetRowCellValue(dgv_object_view.FocusedRowHandle, "Id")) = True Then
+                    If message_text("Los registros seleccionados fueron actualizados exitosamente", MessageBoxButtons.OK) = DialogResult.OK Then reports_show(criteria_search)
+                End If
             End If
         Else
             message_text("La acción no se puede realizar con selección multiple", MessageBoxButtons.OK)
         End If
     End Sub
 
-    Private Sub transfer_option(sender As Object, e As EventArgs) Handles btn_object_transfer.Click
+    Private Sub search_option(sender As Object, e As EventArgs) Handles btn_object_search.Click
+        If dgv_object_view.SelectedRowsCount.ToString = 1 Then
+            If message_text("Está seguro que desea ver el registro seleccionado en busqueda rapida?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
+                show_option(New wholesales_guarantee_details(dgv_object_view.GetRowCellValue(dgv_object_view.FocusedRowHandle, "Id")))
+            End If
+        Else
+            message_text("La acción no se puede realizar con selección multiple", MessageBoxButtons.OK)
+        End If
+    End Sub
+
+    Private Sub transfer_option(sender As Object, e As EventArgs)
         If dgv_object_view.SelectedRowsCount.ToString = 1 Then
             If message_text("Está seguro que desea transferir el registro seleccionado?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
                 Using new_ As New wholesales_guarantee_transfer(dgv_object_view.GetRowCellValue(dgv_object_view.FocusedRowHandle, "Id"))
@@ -303,63 +287,10 @@ Public Class wholesales_guarantee_show
     Private Sub status_option(sender As Object, e As EventArgs) Handles btn_object_status.Click
         If dgv_object_view.SelectedRowsCount.ToString = 1 Then
             If message_text("Está seguro que desea cambiar el estado al registro seleccionado?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
-                Using new_ As New wholesales_guarantee_status(dgv_object_view.GetRowCellValue(dgv_object_view.FocusedRowHandle, "Id"))
-                    new_.ShowDialog(start_home)
-                End Using
+                show_flyout(New wholesales_guarantee_stages(dgv_object_view.GetRowCellValue(dgv_object_view.FocusedRowHandle, "Id")))
             End If
         Else
             message_text("La acción no se puede realizar con selección multiple", MessageBoxButtons.OK)
-        End If
-    End Sub
-
-    Private Sub dispach_option(sender As Object, e As EventArgs) Handles btn_object_dispach.Click
-        If dgv_object_view.SelectedRowsCount.ToString = 1 Then
-            If (dgv_object_view.GetRowCellValue(dgv_object_view.FocusedRowHandle, "Numero de guía")) = "this field is not defined" Then
-                If message_text("Está seguro que desea registar el numero de guía al registro seleccionado?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
-                    Using new_ As New wholesales_guarantee_dispach(dgv_object_view.GetRowCellValue(dgv_object_view.FocusedRowHandle, "Id"))
-                        new_.ShowDialog(start_home)
-                    End Using
-
-                    'update listed to showed
-                    reports_show(criteria_search)
-                End If
-            Else
-                message_text("La solicitud de modificación no es valida", MessageBoxButtons.OK)
-            End If
-        Else
-            message_text("La acción no se puede realizar con selección multiple", MessageBoxButtons.OK)
-        End If
-    End Sub
-
-    Private Sub noted_option(sender As Object, e As EventArgs) Handles btn_object_notes.Click
-        If dgv_object_view.SelectedRowsCount.ToString = 1 Then
-            Using new_ As New model_object_notes("Wholesales.Masters.Guarantee", dgv_object_view.GetRowCellValue(dgv_object_view.FocusedRowHandle, "Id"), "Garantías")
-                new_.ShowDialog(start_home)
-            End Using
-        Else
-            message_text("La acción no se puede realizar con selección multiple", MessageBoxButtons.OK)
-        End If
-    End Sub
-
-    Private Sub solution_option(sender As Object, e As EventArgs) Handles btn_object_solution.Click
-        If dgv_object_view.RowCount > 0 Then
-            If message_text("Está seguro que desea solucionar los registros seleccionados?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
-                Dim rows_selected As New List(Of Integer)
-
-                For i As Integer = 0 To dgv_object_view.DataRowCount - 1
-                    If dgv_object_view.IsRowSelected(i) = True Then
-                        rows_selected.Add(CInt(dgv_object_view.GetRowCellValue(i, "Id")))
-                    End If
-                Next
-
-                If rows_selected.Count > 0 Then
-                    Using new_ As New wholesales_guarantee_solution(rows_selected)
-                        new_.ShowDialog(start_home)
-                    End Using
-                Else
-                    message_text("No se detectó filas seleccionadas", MessageBoxButtons.OK)
-                End If
-            End If
         End If
     End Sub
 
@@ -368,16 +299,6 @@ Public Class wholesales_guarantee_show
             If message_text("Está seguro que desea generar el formato de garantía al registro seleccionado?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
                 Dim new_ As New wholesales_guarantee_viewer(dgv_object_view.GetRowCellValue(dgv_object_view.FocusedRowHandle, "Id"))
                 new_.Show()
-            End If
-        Else
-            message_text("La acción no se puede realizar con selección multiple", MessageBoxButtons.OK)
-        End If
-    End Sub
-
-    Private Sub search_option(sender As Object, e As EventArgs)
-        If dgv_object_view.SelectedRowsCount.ToString = 1 Then
-            If message_text("Está seguro que desea ver el registro seleccionado en busqueda rapida?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
-                show_option(New wholesales_guarantee_details(dgv_object_view.GetRowCellValue(dgv_object_view.FocusedRowHandle, "Id")))
             End If
         Else
             message_text("La acción no se puede realizar con selección multiple", MessageBoxButtons.OK)

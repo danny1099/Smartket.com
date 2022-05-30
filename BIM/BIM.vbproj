@@ -35,7 +35,7 @@
     <MinimumRequiredVersion>3.0.4.360</MinimumRequiredVersion>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>386</ApplicationRevision>
+    <ApplicationRevision>387</ApplicationRevision>
     <ApplicationVersion>3.0.4.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -485,6 +485,12 @@
     <Compile Include="UI\1. Comercial\2. Attentions\comercial_attention_massive.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_stages.Designer.vb">
+      <DependentUpon>wholesales_guarantee_stages.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_stages.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="UI\5. Reporting\1. Wholesales\reports_wholesales_agencys.Designer.vb">
       <DependentUpon>reports_wholesales_agencys.vb</DependentUpon>
     </Compile>
@@ -713,18 +719,6 @@
     <Compile Include="UI\2. Wholesales\1. Sales\3. Frees\wholesales_frees_edited.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_solution.Designer.vb">
-      <DependentUpon>wholesales_guarantee_solution.vb</DependentUpon>
-    </Compile>
-    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_solution.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_status.Designer.vb">
-      <DependentUpon>wholesales_guarantee_status.vb</DependentUpon>
-    </Compile>
-    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_status.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_transfer.Designer.vb">
       <DependentUpon>wholesales_guarantee_transfer.vb</DependentUpon>
     </Compile>
@@ -785,12 +779,6 @@
     <Compile Include="UI\2. Wholesales\3. Request\wholesales_request_show.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_closed.Designer.vb">
-      <DependentUpon>wholesales_guarantee_closed.vb</DependentUpon>
-    </Compile>
-    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_closed.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_create.Designer.vb">
       <DependentUpon>wholesales_guarantee_create.vb</DependentUpon>
     </Compile>
@@ -802,12 +790,6 @@
     </Compile>
     <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_details.vb">
       <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_dispach.Designer.vb">
-      <DependentUpon>wholesales_guarantee_dispach.vb</DependentUpon>
-    </Compile>
-    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_dispach.vb">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_format.vb">
       <AutoGen>True</AutoGen>
@@ -1906,6 +1888,9 @@
     <EmbeddedResource Include="UI\1. Comercial\2. Attentions\comercial_attention_massive.resx">
       <DependentUpon>comercial_attention_massive.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_stages.resx">
+      <DependentUpon>wholesales_guarantee_stages.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\5. Reporting\1. Wholesales\Reporting\reports_wholesales_agency.rdlc" />
     <EmbeddedResource Include="UI\5. Reporting\1. Wholesales\reports_wholesales_agencys.resx">
       <DependentUpon>reports_wholesales_agencys.vb</DependentUpon>
@@ -2013,12 +1998,6 @@
     <EmbeddedResource Include="UI\2. Wholesales\1. Sales\3. Frees\wholesales_frees_edited.resx">
       <DependentUpon>wholesales_frees_edited.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_solution.resx">
-      <DependentUpon>wholesales_guarantee_solution.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_status.resx">
-      <DependentUpon>wholesales_guarantee_status.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_transfer.resx">
       <DependentUpon>wholesales_guarantee_transfer.vb</DependentUpon>
     </EmbeddedResource>
@@ -2049,17 +2028,11 @@
     <EmbeddedResource Include="UI\2. Wholesales\3. Request\wholesales_request_show.resx">
       <DependentUpon>wholesales_request_show.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_closed.resx">
-      <DependentUpon>wholesales_guarantee_closed.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_create.resx">
       <DependentUpon>wholesales_guarantee_create.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_details.resx">
       <DependentUpon>wholesales_guarantee_details.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_dispach.resx">
-      <DependentUpon>wholesales_guarantee_dispach.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_format.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -2608,10 +2581,14 @@
     <Content Include="Model\6. Database\Dictionaries\SpanishAlphabet.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\Item-New-24_black.png" />
     <None Include="packages.config" />
     <None Include="Resources\bim.ico" />
     <None Include="Resources\erase_green.png" />
     <None Include="Resources\erase_option.png" />
+    <None Include="Resources\Document-01-24-4.png" />
+    <None Include="Resources\Document-01-16 %281%29.png" />
+    <None Include="Resources\Document-01-16.png" />
     <Content Include="Resources\formato_instrucciones.docx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

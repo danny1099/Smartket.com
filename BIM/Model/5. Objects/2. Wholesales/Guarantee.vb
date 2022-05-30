@@ -39,6 +39,18 @@
         Return table
     End Function
 
+    Public Function wholesale_guarantee_status(Optional criteria_search As String = "") As DataTable
+        With sql_command
+            .CommandType = CommandType.StoredProcedure
+            .CommandText = "wholesales_master_guarantee_stages"
+
+            .Parameters.Clear()
+            .Parameters.Add("@criteria_search", SqlDbType.VarChar, 8000).Value = criteria_search
+
+            Return execute_table()
+        End With
+    End Function
+
     Public Function wholesale_guarantee_show(Optional criteria_search As String = "") As DataTable
         With sql_command
             .CommandType = CommandType.StoredProcedure
@@ -70,6 +82,30 @@
 
             .Parameters.Clear()
             .Parameters.Add("@criteria_search", SqlDbType.VarChar, 8000).Value = criteria_search
+
+            Return execute_table()
+        End With
+    End Function
+
+    Public Function wholesale_guarantee_revision(guarantee_code As Integer) As DataTable
+        With sql_command
+            .CommandType = CommandType.StoredProcedure
+            .CommandText = "wholesales_master_guarantee_revisions"
+
+            .Parameters.Clear()
+            .Parameters.Add("@guarantee_code", SqlDbType.Int).Value = guarantee_code
+
+            Return execute_table()
+        End With
+    End Function
+
+    Public Function wholesale_guarantee_timeline(guarantee_code As Integer) As DataTable
+        With sql_command
+            .CommandType = CommandType.StoredProcedure
+            .CommandText = "wholesales_master_guarantee_timeline"
+
+            .Parameters.Clear()
+            .Parameters.Add("@guarantee_code", SqlDbType.Int).Value = guarantee_code
 
             Return execute_table()
         End With

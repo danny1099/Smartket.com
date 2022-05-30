@@ -187,7 +187,7 @@ Public Class comercial_chances_show
         End If
     End Sub
 
-    Private Sub lookup_option(sender As Object, e As EventArgs) Handles btn_object_lookup.Click
+    Private Sub lookup_option(sender As Object, e As EventArgs) 
         If dgv_object_view.SelectedRowsCount.ToString = 1 Then
             Using view_ As New comercial_chances_lookup(dgv_object_view.GetRowCellValue(dgv_object_view.FocusedRowHandle, "condition_text"))
                 view_.ShowDialog(start_home)

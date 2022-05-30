@@ -4,7 +4,6 @@ Imports DevExpress.XtraGrid.Views.Grid.ViewInfo
 
 Public Class chances_taked_showed
     Private chances As Chances = Chances.Instance
-    Private rows_selected As New List(Of TakedChance)
 
 #Region "constructor"
     Public Sub New()
@@ -125,9 +124,11 @@ Public Class chances_taked_showed
         If dgv_object_view.RowCount > 0 And cmb_chances_condition.EditValue IsNot Nothing Then
             If message_text("Está seguro que desea tomar las oportunidades de venta seleccionadas?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
                 With dgv_object_view
+                    Dim rows_cheked As New List(Of TakedChance)
+
                     For i As Integer = 0 To .DataRowCount - 1
                         If .IsRowSelected(i) = True Then
-                            rows_selected.Add(New TakedChance With {.chance_code = cmb_chances_condition.EditValue,
+                            rows_cheked.Add(New TakedChance With {.chance_code = cmb_chances_condition.EditValue,
                                                                                                                   .customer_code = dgv_object_view.GetRowCellValue(i, "customer_code"),
                                                                                                                   .wholesales_code = dgv_object_view.GetRowCellValue(i, "Id"),
                                                                                                                   .services_code = dgv_object_view.GetRowCellValue(i, "service_code")})
@@ -135,38 +136,8 @@ Public Class chances_taked_showed
                     Next
 
                     'llama el modulo de creacion pasando el listado creado
-                    show_option(New chances_taked_create(rows_selected))
+                    show_option(New chances_taked_create(rows_cheked))
                 End With
-            End If
-        End If
-    End Sub
-
-    Private Sub massive_option(sender As Object, e As EventArgs)
-        If dgv_object_view.RowCount > 0 And cmb_chances_condition.EditValue IsNot Nothing Then
-            If message_text("Está seguro que desea tomar las oportunidades de venta seleccionadas?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
-                With dgv_object_view
-                    For i As Integer = 0 To .DataRowCount - 1
-                        If .IsRowSelected(i) = True Then
-                            rows_selected.Add(New TakedChance With {.chance_code = cmb_chances_condition.EditValue,
-                                                                                                                  .customer_code = dgv_object_view.GetRowCellValue(i, "customer_code"),
-                                                                                                                  .wholesales_code = dgv_object_view.GetRowCellValue(i, "Id"),
-                                                                                                                  .services_code = dgv_object_view.GetRowCellValue(i, "service_code")})
-                        End If
-                    Next
-                End With
-
-                'Confirma las oportunidades tomadas y carga el modulo rapido de asignacion
-                If rows_selected.Count > 0 Then
-                    Using new_ As New chances_taked_massive(rows_selected)
-                        new_.ShowDialog(start_home)
-                    End Using
-
-                    If message_text("¿Desea ir al modulo de gestión comercial?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
-                        show_option(New comercial_attention_show)
-                    End If
-                Else
-                    message_text("No se detectó filas seleccionadas", MessageBoxButtons.OK)
-                End If
             End If
         End If
     End Sub

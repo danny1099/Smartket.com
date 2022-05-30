@@ -23,41 +23,43 @@ Partial Class start_initial_restored
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(start_initial_restored))
         Dim EditorButtonImageOptions1 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
         Dim SerializableAppearanceObject1 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject2 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject3 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject4 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim ConditionValidationRule1 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
         Dim EditorButtonImageOptions2 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
         Dim SerializableAppearanceObject5 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject6 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject7 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject8 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim ConditionValidationRule2 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(start_initial_restored))
         Me.object_component_tool = New DevExpress.Utils.DefaultToolTipController(Me.components)
         Me.object_panel_actions = New System.Windows.Forms.FlowLayoutPanel()
-        Me.object_button_saved = New System.Windows.Forms.Button()
         Me.object_separator_spliter1 = New DevExpress.XtraEditors.SeparatorControl()
-        Me.object_button_clean = New System.Windows.Forms.Button()
-        Me.object_button_closed = New System.Windows.Forms.Button()
         Me.object_panel_container = New DevExpress.XtraEditors.PanelControl()
-        Me.object_text_password = New APDA.[Object].Controls.TextboxEdit()
-        Me.txt_object_account = New APDA.[Object].Controls.TextboxEdit()
         Me.object_label_random = New DevExpress.XtraEditors.LabelControl()
-        Me.object_check_showed = New DevExpress.XtraEditors.CheckEdit()
         Me.object_label_username = New DevExpress.XtraEditors.LabelControl()
         Me.object_label_password = New DevExpress.XtraEditors.LabelControl()
         Me.object_label_info = New DevExpress.XtraEditors.LabelControl()
         Me.object_label_title = New DevExpress.XtraEditors.LabelControl()
         Me.object_component_validate = New DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(Me.components)
+        Me.object_text_password = New APDA.[Object].Controls.TextboxEdit()
+        Me.txt_object_account = New APDA.[Object].Controls.TextboxEdit()
+        Me.object_check_showed = New DevExpress.XtraEditors.CheckEdit()
+        Me.object_button_saved = New System.Windows.Forms.Button()
+        Me.object_button_clean = New System.Windows.Forms.Button()
+        Me.object_button_closed = New System.Windows.Forms.Button()
         Me.object_panel_actions.SuspendLayout()
         CType(Me.object_separator_spliter1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.object_panel_container, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.object_panel_container.SuspendLayout()
+        CType(Me.object_component_validate, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.object_text_password.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txt_object_account.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.object_check_showed.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.object_component_validate, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'object_component_tool
@@ -103,32 +105,6 @@ Partial Class start_initial_restored
         Me.object_panel_actions.Size = New System.Drawing.Size(826, 50)
         Me.object_panel_actions.TabIndex = 0
         '
-        'object_button_saved
-        '
-        Me.object_component_tool.SetAllowHtmlText(Me.object_button_saved, DevExpress.Utils.DefaultBoolean.[Default])
-        Me.object_button_saved.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.object_button_saved.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.object_button_saved.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
-        Me.object_button_saved.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.object_button_saved.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
-        Me.object_button_saved.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.object_button_saved.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.object_button_saved.ForeColor = System.Drawing.Color.DimGray
-        Me.object_button_saved.Image = CType(resources.GetObject("object_button_saved.Image"), System.Drawing.Image)
-        Me.object_button_saved.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.object_button_saved.Location = New System.Drawing.Point(701, 5)
-        Me.object_button_saved.Margin = New System.Windows.Forms.Padding(0)
-        Me.object_button_saved.MaximumSize = New System.Drawing.Size(90, 38)
-        Me.object_button_saved.MinimumSize = New System.Drawing.Size(90, 38)
-        Me.object_button_saved.Name = "object_button_saved"
-        Me.object_button_saved.Size = New System.Drawing.Size(90, 38)
-        Me.object_button_saved.TabIndex = 3
-        Me.object_button_saved.TabStop = False
-        Me.object_button_saved.Tag = ""
-        Me.object_button_saved.Text = "Guardar"
-        Me.object_button_saved.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.object_button_saved.UseVisualStyleBackColor = True
-        '
         'object_separator_spliter1
         '
         Me.object_component_tool.SetAllowHtmlText(Me.object_separator_spliter1, DevExpress.Utils.DefaultBoolean.[Default])
@@ -143,59 +119,6 @@ Partial Class start_initial_restored
         Me.object_separator_spliter1.Padding = New System.Windows.Forms.Padding(0, 10, 0, 10)
         Me.object_separator_spliter1.Size = New System.Drawing.Size(7, 40)
         Me.object_separator_spliter1.TabIndex = 2
-        '
-        'object_button_clean
-        '
-        Me.object_component_tool.SetAllowHtmlText(Me.object_button_clean, DevExpress.Utils.DefaultBoolean.[Default])
-        Me.object_button_clean.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.object_button_clean.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.object_button_clean.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
-        Me.object_button_clean.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.object_button_clean.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
-        Me.object_button_clean.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.object_button_clean.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.object_button_clean.ForeColor = System.Drawing.Color.DimGray
-        Me.object_button_clean.Image = CType(resources.GetObject("object_button_clean.Image"), System.Drawing.Image)
-        Me.object_button_clean.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.object_button_clean.Location = New System.Drawing.Point(616, 5)
-        Me.object_button_clean.Margin = New System.Windows.Forms.Padding(0)
-        Me.object_button_clean.MaximumSize = New System.Drawing.Size(78, 38)
-        Me.object_button_clean.MinimumSize = New System.Drawing.Size(78, 38)
-        Me.object_button_clean.Name = "object_button_clean"
-        Me.object_button_clean.Size = New System.Drawing.Size(78, 38)
-        Me.object_button_clean.TabIndex = 0
-        Me.object_button_clean.TabStop = False
-        Me.object_button_clean.Tag = ""
-        Me.object_button_clean.Text = "Limpiar"
-        Me.object_button_clean.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.object_button_clean.UseVisualStyleBackColor = True
-        '
-        'object_button_closed
-        '
-        Me.object_component_tool.SetAllowHtmlText(Me.object_button_closed, DevExpress.Utils.DefaultBoolean.[Default])
-        Me.object_button_closed.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.object_button_closed.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.object_button_closed.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.object_button_closed.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
-        Me.object_button_closed.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.object_button_closed.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
-        Me.object_button_closed.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.object_button_closed.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.object_button_closed.ForeColor = System.Drawing.Color.DimGray
-        Me.object_button_closed.Image = CType(resources.GetObject("object_button_closed.Image"), System.Drawing.Image)
-        Me.object_button_closed.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.object_button_closed.Location = New System.Drawing.Point(540, 5)
-        Me.object_button_closed.Margin = New System.Windows.Forms.Padding(0)
-        Me.object_button_closed.MaximumSize = New System.Drawing.Size(76, 38)
-        Me.object_button_closed.MinimumSize = New System.Drawing.Size(76, 38)
-        Me.object_button_closed.Name = "object_button_closed"
-        Me.object_button_closed.Size = New System.Drawing.Size(76, 38)
-        Me.object_button_closed.TabIndex = 0
-        Me.object_button_closed.TabStop = False
-        Me.object_button_closed.Tag = ""
-        Me.object_button_closed.Text = " Cancelar"
-        Me.object_button_closed.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.object_button_closed.UseVisualStyleBackColor = True
         '
         'object_panel_container
         '
@@ -218,88 +141,6 @@ Partial Class start_initial_restored
         Me.object_panel_container.Size = New System.Drawing.Size(826, 348)
         Me.object_panel_container.TabIndex = 0
         '
-        'object_text_password
-        '
-        Me.object_text_password.Location = New System.Drawing.Point(439, 194)
-        Me.object_text_password.Margin = New System.Windows.Forms.Padding(0)
-        Me.object_text_password.Name = "object_text_password"
-        Me.object_text_password.Properties.Appearance.BackColor = System.Drawing.Color.White
-        Me.object_text_password.Properties.Appearance.BackColor2 = System.Drawing.Color.White
-        Me.object_text_password.Properties.Appearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.object_text_password.Properties.Appearance.ForeColor = System.Drawing.Color.Black
-        Me.object_text_password.Properties.Appearance.Options.UseBackColor = True
-        Me.object_text_password.Properties.Appearance.Options.UseBorderColor = True
-        Me.object_text_password.Properties.Appearance.Options.UseForeColor = True
-        Me.object_text_password.Properties.AppearanceDisabled.BackColor = System.Drawing.Color.White
-        Me.object_text_password.Properties.AppearanceDisabled.BackColor2 = System.Drawing.Color.White
-        Me.object_text_password.Properties.AppearanceDisabled.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.object_text_password.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black
-        Me.object_text_password.Properties.AppearanceDisabled.Options.UseBackColor = True
-        Me.object_text_password.Properties.AppearanceDisabled.Options.UseBorderColor = True
-        Me.object_text_password.Properties.AppearanceDisabled.Options.UseForeColor = True
-        Me.object_text_password.Properties.AppearanceFocused.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.object_text_password.Properties.AppearanceFocused.ForeColor = System.Drawing.Color.Black
-        Me.object_text_password.Properties.AppearanceFocused.Options.UseBorderColor = True
-        Me.object_text_password.Properties.AppearanceFocused.Options.UseForeColor = True
-        Me.object_text_password.Properties.AppearanceReadOnly.BackColor = System.Drawing.Color.White
-        Me.object_text_password.Properties.AppearanceReadOnly.BackColor2 = System.Drawing.Color.White
-        Me.object_text_password.Properties.AppearanceReadOnly.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.object_text_password.Properties.AppearanceReadOnly.ForeColor = System.Drawing.Color.Black
-        Me.object_text_password.Properties.AppearanceReadOnly.Options.UseBackColor = True
-        Me.object_text_password.Properties.AppearanceReadOnly.Options.UseBorderColor = True
-        Me.object_text_password.Properties.AppearanceReadOnly.Options.UseForeColor = True
-        Me.object_text_password.Properties.AutoHeight = False
-        Me.object_text_password.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple
-        EditorButtonImageOptions1.Image = CType(resources.GetObject("EditorButtonImageOptions1.Image"), System.Drawing.Image)
-        Me.object_text_password.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions1, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, SerializableAppearanceObject2, SerializableAppearanceObject3, SerializableAppearanceObject4, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
-        Me.object_text_password.Properties.LookAndFeel.SkinName = "Office 2019 White"
-        Me.object_text_password.Properties.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.object_text_password.Properties.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.object_text_password.Size = New System.Drawing.Size(335, 35)
-        Me.object_text_password.TabIndex = 2
-        Me.object_text_password.Tag = "Contraseña"
-        '
-        'txt_object_account
-        '
-        Me.txt_object_account.Location = New System.Drawing.Point(47, 194)
-        Me.txt_object_account.Margin = New System.Windows.Forms.Padding(0)
-        Me.txt_object_account.Name = "txt_object_account"
-        Me.txt_object_account.Properties.Appearance.BackColor = System.Drawing.Color.White
-        Me.txt_object_account.Properties.Appearance.BackColor2 = System.Drawing.Color.White
-        Me.txt_object_account.Properties.Appearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_object_account.Properties.Appearance.ForeColor = System.Drawing.Color.Black
-        Me.txt_object_account.Properties.Appearance.Options.UseBackColor = True
-        Me.txt_object_account.Properties.Appearance.Options.UseBorderColor = True
-        Me.txt_object_account.Properties.Appearance.Options.UseForeColor = True
-        Me.txt_object_account.Properties.AppearanceDisabled.BackColor = System.Drawing.Color.White
-        Me.txt_object_account.Properties.AppearanceDisabled.BackColor2 = System.Drawing.Color.White
-        Me.txt_object_account.Properties.AppearanceDisabled.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_object_account.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black
-        Me.txt_object_account.Properties.AppearanceDisabled.Options.UseBackColor = True
-        Me.txt_object_account.Properties.AppearanceDisabled.Options.UseBorderColor = True
-        Me.txt_object_account.Properties.AppearanceDisabled.Options.UseForeColor = True
-        Me.txt_object_account.Properties.AppearanceFocused.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_object_account.Properties.AppearanceFocused.ForeColor = System.Drawing.Color.Black
-        Me.txt_object_account.Properties.AppearanceFocused.Options.UseBorderColor = True
-        Me.txt_object_account.Properties.AppearanceFocused.Options.UseForeColor = True
-        Me.txt_object_account.Properties.AppearanceReadOnly.BackColor = System.Drawing.Color.White
-        Me.txt_object_account.Properties.AppearanceReadOnly.BackColor2 = System.Drawing.Color.White
-        Me.txt_object_account.Properties.AppearanceReadOnly.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_object_account.Properties.AppearanceReadOnly.ForeColor = System.Drawing.Color.Black
-        Me.txt_object_account.Properties.AppearanceReadOnly.Options.UseBackColor = True
-        Me.txt_object_account.Properties.AppearanceReadOnly.Options.UseBorderColor = True
-        Me.txt_object_account.Properties.AppearanceReadOnly.Options.UseForeColor = True
-        Me.txt_object_account.Properties.AutoHeight = False
-        Me.txt_object_account.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple
-        EditorButtonImageOptions2.Image = CType(resources.GetObject("EditorButtonImageOptions2.Image"), System.Drawing.Image)
-        Me.txt_object_account.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions2, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject5, SerializableAppearanceObject6, SerializableAppearanceObject7, SerializableAppearanceObject8, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
-        Me.txt_object_account.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower
-        Me.txt_object_account.Properties.LookAndFeel.SkinName = "Office 2019 White"
-        Me.txt_object_account.Properties.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.txt_object_account.Size = New System.Drawing.Size(335, 35)
-        Me.txt_object_account.TabIndex = 1
-        Me.txt_object_account.Tag = "Usuario"
-        '
         'object_label_random
         '
         Me.object_label_random.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -315,24 +156,6 @@ Partial Class start_initial_restored
         Me.object_label_random.Size = New System.Drawing.Size(159, 16)
         Me.object_label_random.TabIndex = 0
         Me.object_label_random.Text = "Generar una contraseña aleatoria"
-        '
-        'object_check_showed
-        '
-        Me.object_check_showed.Location = New System.Drawing.Point(646, 252)
-        Me.object_check_showed.Margin = New System.Windows.Forms.Padding(0)
-        Me.object_check_showed.Name = "object_check_showed"
-        Me.object_check_showed.Properties.Appearance.ForeColor = System.Drawing.Color.Gray
-        Me.object_check_showed.Properties.Appearance.Options.UseForeColor = True
-        Me.object_check_showed.Properties.Caption = "Mostrar Contraseñas"
-        Me.object_check_showed.Properties.CheckBoxOptions.Style = DevExpress.XtraEditors.Controls.CheckBoxStyle.SvgToggle1
-        Me.object_check_showed.Properties.CheckBoxOptions.SvgColorChecked = System.Drawing.Color.LightSeaGreen
-        Me.object_check_showed.Properties.CheckBoxOptions.SvgColorGrayed = System.Drawing.Color.GhostWhite
-        Me.object_check_showed.Properties.CheckBoxOptions.SvgColorUnchecked = System.Drawing.Color.Gainsboro
-        Me.object_check_showed.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.object_check_showed.Properties.LookAndFeel.SkinName = "Office 2019 White"
-        Me.object_check_showed.Properties.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.object_check_showed.Size = New System.Drawing.Size(127, 22)
-        Me.object_check_showed.TabIndex = 0
         '
         'object_label_username
         '
@@ -407,6 +230,191 @@ Partial Class start_initial_restored
         Me.object_component_validate.ValidateHiddenControls = False
         Me.object_component_validate.ValidationMode = DevExpress.XtraEditors.DXErrorProvider.ValidationMode.[Auto]
         '
+        'object_text_password
+        '
+        Me.object_text_password.Location = New System.Drawing.Point(439, 194)
+        Me.object_text_password.Margin = New System.Windows.Forms.Padding(0)
+        Me.object_text_password.Name = "object_text_password"
+        Me.object_text_password.Properties.Appearance.BackColor = System.Drawing.Color.White
+        Me.object_text_password.Properties.Appearance.BackColor2 = System.Drawing.Color.White
+        Me.object_text_password.Properties.Appearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.object_text_password.Properties.Appearance.ForeColor = System.Drawing.Color.Black
+        Me.object_text_password.Properties.Appearance.Options.UseBackColor = True
+        Me.object_text_password.Properties.Appearance.Options.UseBorderColor = True
+        Me.object_text_password.Properties.Appearance.Options.UseForeColor = True
+        Me.object_text_password.Properties.AppearanceDisabled.BackColor = System.Drawing.Color.White
+        Me.object_text_password.Properties.AppearanceDisabled.BackColor2 = System.Drawing.Color.White
+        Me.object_text_password.Properties.AppearanceDisabled.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.object_text_password.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black
+        Me.object_text_password.Properties.AppearanceDisabled.Options.UseBackColor = True
+        Me.object_text_password.Properties.AppearanceDisabled.Options.UseBorderColor = True
+        Me.object_text_password.Properties.AppearanceDisabled.Options.UseForeColor = True
+        Me.object_text_password.Properties.AppearanceFocused.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.object_text_password.Properties.AppearanceFocused.ForeColor = System.Drawing.Color.Black
+        Me.object_text_password.Properties.AppearanceFocused.Options.UseBorderColor = True
+        Me.object_text_password.Properties.AppearanceFocused.Options.UseForeColor = True
+        Me.object_text_password.Properties.AppearanceReadOnly.BackColor = System.Drawing.Color.White
+        Me.object_text_password.Properties.AppearanceReadOnly.BackColor2 = System.Drawing.Color.White
+        Me.object_text_password.Properties.AppearanceReadOnly.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.object_text_password.Properties.AppearanceReadOnly.ForeColor = System.Drawing.Color.Black
+        Me.object_text_password.Properties.AppearanceReadOnly.Options.UseBackColor = True
+        Me.object_text_password.Properties.AppearanceReadOnly.Options.UseBorderColor = True
+        Me.object_text_password.Properties.AppearanceReadOnly.Options.UseForeColor = True
+        Me.object_text_password.Properties.AutoHeight = False
+        Me.object_text_password.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple
+        EditorButtonImageOptions1.Image = CType(resources.GetObject("EditorButtonImageOptions1.Image"), System.Drawing.Image)
+        Me.object_text_password.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions1, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, SerializableAppearanceObject2, SerializableAppearanceObject3, SerializableAppearanceObject4, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        Me.object_text_password.Properties.LookAndFeel.SkinName = "Office 2019 White"
+        Me.object_text_password.Properties.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.object_text_password.Properties.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.object_text_password.Size = New System.Drawing.Size(335, 35)
+        Me.object_text_password.TabIndex = 2
+        Me.object_text_password.Tag = "Contraseña"
+        ConditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
+        ConditionValidationRule1.ErrorText = "Este campo es requerido..."
+        Me.object_component_validate.SetValidationRule(Me.object_text_password, ConditionValidationRule1)
+        '
+        'txt_object_account
+        '
+        Me.txt_object_account.Location = New System.Drawing.Point(47, 194)
+        Me.txt_object_account.Margin = New System.Windows.Forms.Padding(0)
+        Me.txt_object_account.Name = "txt_object_account"
+        Me.txt_object_account.Properties.Appearance.BackColor = System.Drawing.Color.White
+        Me.txt_object_account.Properties.Appearance.BackColor2 = System.Drawing.Color.White
+        Me.txt_object_account.Properties.Appearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.txt_object_account.Properties.Appearance.ForeColor = System.Drawing.Color.Black
+        Me.txt_object_account.Properties.Appearance.Options.UseBackColor = True
+        Me.txt_object_account.Properties.Appearance.Options.UseBorderColor = True
+        Me.txt_object_account.Properties.Appearance.Options.UseForeColor = True
+        Me.txt_object_account.Properties.AppearanceDisabled.BackColor = System.Drawing.Color.White
+        Me.txt_object_account.Properties.AppearanceDisabled.BackColor2 = System.Drawing.Color.White
+        Me.txt_object_account.Properties.AppearanceDisabled.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.txt_object_account.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black
+        Me.txt_object_account.Properties.AppearanceDisabled.Options.UseBackColor = True
+        Me.txt_object_account.Properties.AppearanceDisabled.Options.UseBorderColor = True
+        Me.txt_object_account.Properties.AppearanceDisabled.Options.UseForeColor = True
+        Me.txt_object_account.Properties.AppearanceFocused.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.txt_object_account.Properties.AppearanceFocused.ForeColor = System.Drawing.Color.Black
+        Me.txt_object_account.Properties.AppearanceFocused.Options.UseBorderColor = True
+        Me.txt_object_account.Properties.AppearanceFocused.Options.UseForeColor = True
+        Me.txt_object_account.Properties.AppearanceReadOnly.BackColor = System.Drawing.Color.White
+        Me.txt_object_account.Properties.AppearanceReadOnly.BackColor2 = System.Drawing.Color.White
+        Me.txt_object_account.Properties.AppearanceReadOnly.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.txt_object_account.Properties.AppearanceReadOnly.ForeColor = System.Drawing.Color.Black
+        Me.txt_object_account.Properties.AppearanceReadOnly.Options.UseBackColor = True
+        Me.txt_object_account.Properties.AppearanceReadOnly.Options.UseBorderColor = True
+        Me.txt_object_account.Properties.AppearanceReadOnly.Options.UseForeColor = True
+        Me.txt_object_account.Properties.AutoHeight = False
+        Me.txt_object_account.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple
+        EditorButtonImageOptions2.Image = CType(resources.GetObject("EditorButtonImageOptions2.Image"), System.Drawing.Image)
+        Me.txt_object_account.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions2, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject5, SerializableAppearanceObject6, SerializableAppearanceObject7, SerializableAppearanceObject8, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        Me.txt_object_account.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower
+        Me.txt_object_account.Properties.LookAndFeel.SkinName = "Office 2019 White"
+        Me.txt_object_account.Properties.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.txt_object_account.Size = New System.Drawing.Size(335, 35)
+        Me.txt_object_account.TabIndex = 1
+        Me.txt_object_account.Tag = "Usuario"
+        ConditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
+        ConditionValidationRule2.ErrorText = "Este campo es requerido..."
+        Me.object_component_validate.SetValidationRule(Me.txt_object_account, ConditionValidationRule2)
+        '
+        'object_check_showed
+        '
+        Me.object_check_showed.Location = New System.Drawing.Point(646, 252)
+        Me.object_check_showed.Margin = New System.Windows.Forms.Padding(0)
+        Me.object_check_showed.Name = "object_check_showed"
+        Me.object_check_showed.Properties.Appearance.ForeColor = System.Drawing.Color.Gray
+        Me.object_check_showed.Properties.Appearance.Options.UseForeColor = True
+        Me.object_check_showed.Properties.Caption = "Mostrar Contraseñas"
+        Me.object_check_showed.Properties.CheckBoxOptions.Style = DevExpress.XtraEditors.Controls.CheckBoxStyle.SvgToggle1
+        Me.object_check_showed.Properties.CheckBoxOptions.SvgColorChecked = System.Drawing.Color.LightSeaGreen
+        Me.object_check_showed.Properties.CheckBoxOptions.SvgColorGrayed = System.Drawing.Color.GhostWhite
+        Me.object_check_showed.Properties.CheckBoxOptions.SvgColorUnchecked = System.Drawing.Color.Gainsboro
+        Me.object_check_showed.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far
+        Me.object_check_showed.Properties.LookAndFeel.SkinName = "Office 2019 White"
+        Me.object_check_showed.Properties.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.object_check_showed.Size = New System.Drawing.Size(127, 22)
+        Me.object_check_showed.TabIndex = 0
+        '
+        'object_button_saved
+        '
+        Me.object_component_tool.SetAllowHtmlText(Me.object_button_saved, DevExpress.Utils.DefaultBoolean.[Default])
+        Me.object_button_saved.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.object_button_saved.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.object_button_saved.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
+        Me.object_button_saved.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.object_button_saved.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.object_button_saved.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.object_button_saved.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.object_button_saved.ForeColor = System.Drawing.Color.DimGray
+        Me.object_button_saved.Image = CType(resources.GetObject("object_button_saved.Image"), System.Drawing.Image)
+        Me.object_button_saved.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.object_button_saved.Location = New System.Drawing.Point(701, 5)
+        Me.object_button_saved.Margin = New System.Windows.Forms.Padding(0)
+        Me.object_button_saved.MaximumSize = New System.Drawing.Size(90, 38)
+        Me.object_button_saved.MinimumSize = New System.Drawing.Size(90, 38)
+        Me.object_button_saved.Name = "object_button_saved"
+        Me.object_button_saved.Size = New System.Drawing.Size(90, 38)
+        Me.object_button_saved.TabIndex = 3
+        Me.object_button_saved.TabStop = False
+        Me.object_button_saved.Tag = ""
+        Me.object_button_saved.Text = "Guardar"
+        Me.object_button_saved.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.object_button_saved.UseVisualStyleBackColor = True
+        '
+        'object_button_clean
+        '
+        Me.object_component_tool.SetAllowHtmlText(Me.object_button_clean, DevExpress.Utils.DefaultBoolean.[Default])
+        Me.object_button_clean.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.object_button_clean.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.object_button_clean.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
+        Me.object_button_clean.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.object_button_clean.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.object_button_clean.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.object_button_clean.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.object_button_clean.ForeColor = System.Drawing.Color.DimGray
+        Me.object_button_clean.Image = CType(resources.GetObject("object_button_clean.Image"), System.Drawing.Image)
+        Me.object_button_clean.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.object_button_clean.Location = New System.Drawing.Point(616, 5)
+        Me.object_button_clean.Margin = New System.Windows.Forms.Padding(0)
+        Me.object_button_clean.MaximumSize = New System.Drawing.Size(78, 38)
+        Me.object_button_clean.MinimumSize = New System.Drawing.Size(78, 38)
+        Me.object_button_clean.Name = "object_button_clean"
+        Me.object_button_clean.Size = New System.Drawing.Size(78, 38)
+        Me.object_button_clean.TabIndex = 0
+        Me.object_button_clean.TabStop = False
+        Me.object_button_clean.Tag = ""
+        Me.object_button_clean.Text = "Limpiar"
+        Me.object_button_clean.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.object_button_clean.UseVisualStyleBackColor = True
+        '
+        'object_button_closed
+        '
+        Me.object_component_tool.SetAllowHtmlText(Me.object_button_closed, DevExpress.Utils.DefaultBoolean.[Default])
+        Me.object_button_closed.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.object_button_closed.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.object_button_closed.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.object_button_closed.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
+        Me.object_button_closed.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.object_button_closed.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.object_button_closed.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.object_button_closed.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.object_button_closed.ForeColor = System.Drawing.Color.DimGray
+        Me.object_button_closed.Image = CType(resources.GetObject("object_button_closed.Image"), System.Drawing.Image)
+        Me.object_button_closed.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.object_button_closed.Location = New System.Drawing.Point(540, 5)
+        Me.object_button_closed.Margin = New System.Windows.Forms.Padding(0)
+        Me.object_button_closed.MaximumSize = New System.Drawing.Size(76, 38)
+        Me.object_button_closed.MinimumSize = New System.Drawing.Size(76, 38)
+        Me.object_button_closed.Name = "object_button_closed"
+        Me.object_button_closed.Size = New System.Drawing.Size(76, 38)
+        Me.object_button_closed.TabIndex = 0
+        Me.object_button_closed.TabStop = False
+        Me.object_button_closed.Tag = ""
+        Me.object_button_closed.Text = " Cancelar"
+        Me.object_button_closed.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.object_button_closed.UseVisualStyleBackColor = True
+        '
         'start_initial_restored
         '
         Me.object_component_tool.SetAllowHtmlText(Me, DevExpress.Utils.DefaultBoolean.[Default])
@@ -426,10 +434,10 @@ Partial Class start_initial_restored
         CType(Me.object_panel_container, System.ComponentModel.ISupportInitialize).EndInit()
         Me.object_panel_container.ResumeLayout(False)
         Me.object_panel_container.PerformLayout()
+        CType(Me.object_component_validate, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.object_text_password.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txt_object_account.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.object_check_showed.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.object_component_validate, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

@@ -23,6 +23,11 @@ Partial Class wholesales_guarantee_details
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(wholesales_guarantee_details))
+        Dim EditorButtonImageOptions11 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
+        Dim SerializableAppearanceObject41 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject42 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject43 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject44 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim EditorButtonImageOptions1 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
         Dim SerializableAppearanceObject1 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject2 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
@@ -68,11 +73,6 @@ Partial Class wholesales_guarantee_details
         Dim SerializableAppearanceObject34 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject35 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject36 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim EditorButtonImageOptions10 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
-        Dim SerializableAppearanceObject37 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject38 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject39 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject40 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Me.pnl_object_top = New DevExpress.XtraEditors.PanelControl()
         Me.lbl_object_info = New DevExpress.XtraEditors.LabelControl()
         Me.lbl_object_title = New DevExpress.XtraEditors.LabelControl()
@@ -83,18 +83,33 @@ Partial Class wholesales_guarantee_details
         Me.btn_object_close = New System.Windows.Forms.Button()
         Me.pnl_search_container = New DevExpress.XtraEditors.PanelControl()
         Me.pnl_search_right = New DevExpress.XtraEditors.XtraScrollableControl()
-        Me.pnl_object_flyout = New DevExpress.Utils.FlyoutPanel()
-        Me.pnl_object_menu = New DevExpress.XtraEditors.PanelControl()
-        Me.pnl_object_actions = New System.Windows.Forms.FlowLayoutPanel()
-        Me.btn_object_edit = New System.Windows.Forms.Button()
-        Me.btn_object_erase = New System.Windows.Forms.Button()
-        Me.btn_object_dispach = New System.Windows.Forms.Button()
-        Me.btn_object_transfer = New System.Windows.Forms.Button()
-        Me.btn_object_status = New System.Windows.Forms.Button()
-        Me.btn_object_proof = New System.Windows.Forms.Button()
-        Me.dgv_grid_result = New APDA.[Object].Controls.CustomGrid()
-        Me.dgv_view_results = New APDA.[Object].Controls.CustomGridView()
-        Me.rpt_picture_option = New DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit()
+        Me.pnl_revision_tabbed = New DevExpress.XtraTab.XtraTabControl()
+        Me.xtp_object_stages = New DevExpress.XtraTab.XtraTabPage()
+        Me.object_progress_stage = New DevExpress.XtraEditors.StepProgressBar()
+        Me.object_progress_initial = New DevExpress.XtraEditors.StepProgressBarItem()
+        Me.object_progress_store = New DevExpress.XtraEditors.StepProgressBarItem()
+        Me.object_progress_request = New DevExpress.XtraEditors.StepProgressBarItem()
+        Me.object_progress_sending = New DevExpress.XtraEditors.StepProgressBarItem()
+        Me.object_progress_return = New DevExpress.XtraEditors.StepProgressBarItem()
+        Me.object_progress_agency = New DevExpress.XtraEditors.StepProgressBarItem()
+        Me.object_progress_finish = New DevExpress.XtraEditors.StepProgressBarItem()
+        Me.xtp_object_revisions = New DevExpress.XtraTab.XtraTabPage()
+        Me.pnl_grid_revision = New DevExpress.XtraEditors.PanelControl()
+        Me.dgv_grid_revisions = New APDA.[Object].Controls.CustomGrid()
+        Me.dgv_view_revisions = New APDA.[Object].Controls.CustomGridView()
+        Me.RepositoryItemPictureEdit2 = New DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit()
+        Me.RepositoryItemMemoEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit()
+        Me.pnl_options_revisions = New DevExpress.XtraEditors.PanelControl()
+        Me.btn_update_revisions = New System.Windows.Forms.Button()
+        Me.btn_printer_revisions = New System.Windows.Forms.Button()
+        Me.btn_export_revisions = New System.Windows.Forms.Button()
+        Me.lbl_count_revisions = New DevExpress.XtraEditors.LabelControl()
+        Me.lbl_total_revisions = New DevExpress.XtraEditors.LabelControl()
+        Me.lbl_separator_revisions = New DevExpress.XtraEditors.SeparatorControl()
+        Me.txt_navigate_revisions = New DevExpress.XtraEditors.ControlNavigator()
+        Me.pnl_object_revision = New DevExpress.XtraEditors.PanelControl()
+        Me.btn_object_support = New System.Windows.Forms.Button()
+        Me.xtp_object_notes = New DevExpress.XtraTab.XtraTabPage()
         Me.pnl_search_objects = New DevExpress.XtraEditors.PanelControl()
         Me.dgv_grid_objects = New APDA.[Object].Controls.CustomGrid()
         Me.dgv_view_objects = New APDA.[Object].Controls.CustomGridView()
@@ -109,15 +124,16 @@ Partial Class wholesales_guarantee_details
         Me.lbl_separator_objects = New DevExpress.XtraEditors.SeparatorControl()
         Me.txt_navigate_objects = New DevExpress.XtraEditors.ControlNavigator()
         Me.pnl_object_options = New DevExpress.XtraEditors.PanelControl()
-        Me.lbl_separator_tiny2 = New DevExpress.XtraEditors.SeparatorControl()
         Me.btn_object_notes = New System.Windows.Forms.Button()
-        Me.lbl_options_notes = New DevExpress.XtraEditors.LabelControl()
-        Me.lbl_object_separator4 = New DevExpress.XtraEditors.LabelControl()
-        Me.txt_search_description = New APDA.[Object].Controls.TextboxMemo()
-        Me.pnl_object_revision = New DevExpress.XtraEditors.PanelControl()
-        Me.lbl_search_support = New DevExpress.XtraEditors.LabelControl()
-        Me.lbl_separator_tiny1 = New DevExpress.XtraEditors.SeparatorControl()
-        Me.btn_object_support = New System.Windows.Forms.Button()
+        Me.pnl_object_flyout = New DevExpress.Utils.FlyoutPanel()
+        Me.pnl_object_menu = New DevExpress.XtraEditors.PanelControl()
+        Me.pnl_object_actions = New System.Windows.Forms.FlowLayoutPanel()
+        Me.btn_object_status = New System.Windows.Forms.Button()
+        Me.btn_object_erase = New System.Windows.Forms.Button()
+        Me.btn_object_proof = New System.Windows.Forms.Button()
+        Me.dgv_grid_result = New APDA.[Object].Controls.CustomGrid()
+        Me.dgv_view_results = New APDA.[Object].Controls.CustomGridView()
+        Me.rpt_picture_option = New DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit()
         Me.lbl_object_separator3 = New DevExpress.XtraEditors.LabelControl()
         Me.pnl_search_results = New DevExpress.XtraEditors.PanelControl()
         Me.pnl_options_result = New DevExpress.XtraEditors.PanelControl()
@@ -146,8 +162,6 @@ Partial Class wholesales_guarantee_details
         Me.lbl_search_infotracing = New DevExpress.XtraEditors.LabelControl()
         Me.lbl_object_separator2 = New DevExpress.XtraEditors.LabelControl()
         Me.pnl_search_sales = New DevExpress.XtraEditors.PanelControl()
-        Me.txt_search_dispach = New APDA.[Object].Controls.TextboxEdit()
-        Me.lbl_search_dispach = New DevExpress.XtraEditors.LabelControl()
         Me.txt_search_status = New APDA.[Object].Controls.TextboxEdit()
         Me.lbl_search_status = New DevExpress.XtraEditors.LabelControl()
         Me.txt_search_trace = New APDA.[Object].Controls.TextboxEdit()
@@ -197,6 +211,7 @@ Partial Class wholesales_guarantee_details
         Me.lbl_search_document = New DevExpress.XtraEditors.LabelControl()
         Me.chk_search_optin = New APDA.[Object].Controls.TextboxCheck()
         Me.lbl_search_optin = New DevExpress.XtraEditors.LabelControl()
+        Me.CustomGridView1 = New APDA.[Object].Controls.CustomGridView()
         CType(Me.pnl_object_top, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnl_object_top.SuspendLayout()
         CType(Me.pnl_object_search, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -206,14 +221,23 @@ Partial Class wholesales_guarantee_details
         CType(Me.pnl_search_container, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnl_search_container.SuspendLayout()
         Me.pnl_search_right.SuspendLayout()
-        CType(Me.pnl_object_flyout, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnl_object_flyout.SuspendLayout()
-        CType(Me.pnl_object_menu, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnl_object_menu.SuspendLayout()
-        Me.pnl_object_actions.SuspendLayout()
-        CType(Me.dgv_grid_result, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgv_view_results, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.rpt_picture_option, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pnl_revision_tabbed, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnl_revision_tabbed.SuspendLayout()
+        Me.xtp_object_stages.SuspendLayout()
+        CType(Me.object_progress_stage, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.xtp_object_revisions.SuspendLayout()
+        CType(Me.pnl_grid_revision, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnl_grid_revision.SuspendLayout()
+        CType(Me.dgv_grid_revisions, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgv_view_revisions, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemPictureEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemMemoEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pnl_options_revisions, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnl_options_revisions.SuspendLayout()
+        CType(Me.lbl_separator_revisions, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pnl_object_revision, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnl_object_revision.SuspendLayout()
+        Me.xtp_object_notes.SuspendLayout()
         CType(Me.pnl_search_objects, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnl_search_objects.SuspendLayout()
         CType(Me.dgv_grid_objects, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -225,11 +249,14 @@ Partial Class wholesales_guarantee_details
         CType(Me.lbl_separator_objects, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pnl_object_options, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnl_object_options.SuspendLayout()
-        CType(Me.lbl_separator_tiny2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txt_search_description.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pnl_object_revision, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnl_object_revision.SuspendLayout()
-        CType(Me.lbl_separator_tiny1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pnl_object_flyout, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnl_object_flyout.SuspendLayout()
+        CType(Me.pnl_object_menu, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnl_object_menu.SuspendLayout()
+        Me.pnl_object_actions.SuspendLayout()
+        CType(Me.dgv_grid_result, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgv_view_results, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.rpt_picture_option, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pnl_search_results, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnl_search_results.SuspendLayout()
         CType(Me.pnl_options_result, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -246,7 +273,6 @@ Partial Class wholesales_guarantee_details
         CType(Me.txt_search_username.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pnl_search_sales, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnl_search_sales.SuspendLayout()
-        CType(Me.txt_search_dispach.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txt_search_status.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txt_search_trace.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txt_search_skuitem.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -272,6 +298,7 @@ Partial Class wholesales_guarantee_details
         CType(Me.txt_search_customer.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txt_search_document.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.chk_search_optin.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CustomGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pnl_object_top
@@ -538,12 +565,8 @@ Partial Class wholesales_guarantee_details
         Me.pnl_search_right.Appearance.BorderColor = System.Drawing.Color.White
         Me.pnl_search_right.Appearance.Options.UseBackColor = True
         Me.pnl_search_right.Appearance.Options.UseBorderColor = True
+        Me.pnl_search_right.Controls.Add(Me.pnl_revision_tabbed)
         Me.pnl_search_right.Controls.Add(Me.pnl_object_flyout)
-        Me.pnl_search_right.Controls.Add(Me.pnl_search_objects)
-        Me.pnl_search_right.Controls.Add(Me.pnl_object_options)
-        Me.pnl_search_right.Controls.Add(Me.lbl_object_separator4)
-        Me.pnl_search_right.Controls.Add(Me.txt_search_description)
-        Me.pnl_search_right.Controls.Add(Me.pnl_object_revision)
         Me.pnl_search_right.Controls.Add(Me.lbl_object_separator3)
         Me.pnl_search_right.Controls.Add(Me.pnl_search_results)
         Me.pnl_search_right.Controls.Add(Me.lbl_search_inforesults)
@@ -557,544 +580,711 @@ Partial Class wholesales_guarantee_details
         Me.pnl_search_right.Size = New System.Drawing.Size(846, 851)
         Me.pnl_search_right.TabIndex = 0
         '
-        'pnl_object_flyout
+        'pnl_revision_tabbed
         '
-        Me.pnl_object_flyout.AnimationRate = 70
-        Me.pnl_object_flyout.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
-        Me.pnl_object_flyout.Appearance.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
-        Me.pnl_object_flyout.Appearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer))
-        Me.pnl_object_flyout.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnl_object_flyout.Appearance.Options.UseBackColor = True
-        Me.pnl_object_flyout.Appearance.Options.UseBorderColor = True
-        Me.pnl_object_flyout.Appearance.Options.UseFont = True
-        Me.pnl_object_flyout.Controls.Add(Me.pnl_object_menu)
-        Me.pnl_object_flyout.Location = New System.Drawing.Point(11, 90)
-        Me.pnl_object_flyout.LookAndFeel.SkinName = "Office 2016 Black"
-        Me.pnl_object_flyout.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.pnl_object_flyout.Margin = New System.Windows.Forms.Padding(0)
-        Me.pnl_object_flyout.Name = "pnl_object_flyout"
-        Me.pnl_object_flyout.Options.AnchorType = DevExpress.Utils.Win.PopupToolWindowAnchor.Manual
-        Me.pnl_object_flyout.Options.CloseOnOuterClick = True
-        Me.pnl_object_flyout.OptionsBeakPanel.AnimationType = DevExpress.Utils.Win.PopupToolWindowAnimation.Slide
-        Me.pnl_object_flyout.OptionsBeakPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
-        Me.pnl_object_flyout.OptionsBeakPanel.BorderColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.pnl_object_flyout.OptionsButtonPanel.ButtonPanelLocation = DevExpress.Utils.FlyoutPanelButtonPanelLocation.Top
-        Me.pnl_object_flyout.OwnerControl = Me.dgv_grid_result
-        Me.pnl_object_flyout.Size = New System.Drawing.Size(260, 266)
-        Me.pnl_object_flyout.TabIndex = 0
+        Me.pnl_revision_tabbed.AppearancePage.Header.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnl_revision_tabbed.AppearancePage.Header.ForeColor = System.Drawing.Color.DimGray
+        Me.pnl_revision_tabbed.AppearancePage.Header.Options.UseFont = True
+        Me.pnl_revision_tabbed.AppearancePage.Header.Options.UseForeColor = True
+        Me.pnl_revision_tabbed.AppearancePage.HeaderActive.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnl_revision_tabbed.AppearancePage.HeaderActive.ForeColor = System.Drawing.Color.DimGray
+        Me.pnl_revision_tabbed.AppearancePage.HeaderActive.Options.UseFont = True
+        Me.pnl_revision_tabbed.AppearancePage.HeaderActive.Options.UseForeColor = True
+        Me.pnl_revision_tabbed.AppearancePage.HeaderDisabled.ForeColor = System.Drawing.Color.DimGray
+        Me.pnl_revision_tabbed.AppearancePage.HeaderDisabled.Options.UseForeColor = True
+        Me.pnl_revision_tabbed.AppearancePage.HeaderHotTracked.ForeColor = System.Drawing.Color.DimGray
+        Me.pnl_revision_tabbed.AppearancePage.HeaderHotTracked.Options.UseForeColor = True
+        Me.pnl_revision_tabbed.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.pnl_revision_tabbed.BorderStylePage = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.pnl_revision_tabbed.Dock = System.Windows.Forms.DockStyle.Top
+        Me.pnl_revision_tabbed.HeaderAutoFill = DevExpress.Utils.DefaultBoolean.[True]
+        Me.pnl_revision_tabbed.HeaderButtons = DevExpress.XtraTab.TabButtons.None
+        Me.pnl_revision_tabbed.HeaderButtonsShowMode = DevExpress.XtraTab.TabButtonShowMode.Never
+        Me.pnl_revision_tabbed.Location = New System.Drawing.Point(40, 318)
+        Me.pnl_revision_tabbed.LookAndFeel.SkinName = "My Office 2019 Colorful"
+        Me.pnl_revision_tabbed.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.pnl_revision_tabbed.Margin = New System.Windows.Forms.Padding(0)
+        Me.pnl_revision_tabbed.Name = "pnl_revision_tabbed"
+        Me.pnl_revision_tabbed.PaintStyleName = "Skin"
+        Me.pnl_revision_tabbed.SelectedTabPage = Me.xtp_object_stages
+        Me.pnl_revision_tabbed.ShowHeaderFocus = DevExpress.Utils.DefaultBoolean.[False]
+        Me.pnl_revision_tabbed.Size = New System.Drawing.Size(759, 540)
+        Me.pnl_revision_tabbed.TabIndex = 0
+        Me.pnl_revision_tabbed.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.xtp_object_stages, Me.xtp_object_revisions, Me.xtp_object_notes})
+        Me.pnl_revision_tabbed.Transition.AllowTransition = DevExpress.Utils.DefaultBoolean.[True]
         '
-        'pnl_object_menu
+        'xtp_object_stages
         '
-        Me.pnl_object_menu.Appearance.BackColor = System.Drawing.Color.White
-        Me.pnl_object_menu.Appearance.BackColor2 = System.Drawing.Color.White
-        Me.pnl_object_menu.Appearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.pnl_object_menu.Appearance.Options.UseBackColor = True
-        Me.pnl_object_menu.Appearance.Options.UseBorderColor = True
-        Me.pnl_object_menu.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple
-        Me.pnl_object_menu.Controls.Add(Me.pnl_object_actions)
-        Me.pnl_object_menu.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnl_object_menu.Location = New System.Drawing.Point(0, 0)
-        Me.pnl_object_menu.LookAndFeel.SkinName = "Office 2016 Colorful"
-        Me.pnl_object_menu.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat
-        Me.pnl_object_menu.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.pnl_object_menu.Margin = New System.Windows.Forms.Padding(0)
-        Me.pnl_object_menu.Name = "pnl_object_menu"
-        Me.pnl_object_menu.Size = New System.Drawing.Size(260, 266)
-        Me.pnl_object_menu.TabIndex = 0
+        Me.xtp_object_stages.AutoScroll = True
+        Me.xtp_object_stages.Controls.Add(Me.object_progress_stage)
+        Me.xtp_object_stages.FireScrollEventOnMouseWheel = True
+        Me.xtp_object_stages.ImageOptions.Image = CType(resources.GetObject("xtp_object_stages.ImageOptions.Image"), System.Drawing.Image)
+        Me.xtp_object_stages.Margin = New System.Windows.Forms.Padding(0)
+        Me.xtp_object_stages.Name = "xtp_object_stages"
+        Me.xtp_object_stages.Padding = New System.Windows.Forms.Padding(10)
+        Me.xtp_object_stages.Size = New System.Drawing.Size(757, 506)
+        Me.xtp_object_stages.Text = "Gestión de estados"
         '
-        'pnl_object_actions
+        'object_progress_stage
         '
-        Me.pnl_object_actions.BackColor = System.Drawing.Color.White
-        Me.pnl_object_actions.Controls.Add(Me.btn_object_edit)
-        Me.pnl_object_actions.Controls.Add(Me.btn_object_erase)
-        Me.pnl_object_actions.Controls.Add(Me.btn_object_dispach)
-        Me.pnl_object_actions.Controls.Add(Me.btn_object_transfer)
-        Me.pnl_object_actions.Controls.Add(Me.btn_object_status)
-        Me.pnl_object_actions.Controls.Add(Me.btn_object_proof)
-        Me.pnl_object_actions.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnl_object_actions.FlowDirection = System.Windows.Forms.FlowDirection.TopDown
-        Me.pnl_object_actions.Location = New System.Drawing.Point(2, 2)
-        Me.pnl_object_actions.Margin = New System.Windows.Forms.Padding(0)
-        Me.pnl_object_actions.Name = "pnl_object_actions"
-        Me.pnl_object_actions.Padding = New System.Windows.Forms.Padding(3)
-        Me.pnl_object_actions.Size = New System.Drawing.Size(256, 262)
-        Me.pnl_object_actions.TabIndex = 0
-        Me.pnl_object_actions.WrapContents = False
+        Me.object_progress_stage.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.object_progress_stage.Appearance.Options.UseFont = True
+        Me.object_progress_stage.Appearances.CommonActiveColor = System.Drawing.Color.LightSeaGreen
+        Me.object_progress_stage.Appearances.CommonInactiveColor = System.Drawing.Color.Gainsboro
+        Me.object_progress_stage.Appearances.FirstContentBlockAppearance.Caption.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.object_progress_stage.Appearances.FirstContentBlockAppearance.Caption.Options.UseFont = True
+        Me.object_progress_stage.Appearances.SecondContentBlockAppearance.Caption.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.object_progress_stage.Appearances.SecondContentBlockAppearance.Caption.Options.UseFont = True
+        Me.object_progress_stage.Appearances.SecondContentBlockAppearance.Description.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.object_progress_stage.Appearances.SecondContentBlockAppearance.Description.Options.UseFont = True
+        Me.object_progress_stage.AutoSize = True
+        Me.object_progress_stage.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        Me.object_progress_stage.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.object_progress_stage.Items.Add(Me.object_progress_initial)
+        Me.object_progress_stage.Items.Add(Me.object_progress_store)
+        Me.object_progress_stage.Items.Add(Me.object_progress_request)
+        Me.object_progress_stage.Items.Add(Me.object_progress_sending)
+        Me.object_progress_stage.Items.Add(Me.object_progress_return)
+        Me.object_progress_stage.Items.Add(Me.object_progress_agency)
+        Me.object_progress_stage.Items.Add(Me.object_progress_finish)
+        Me.object_progress_stage.LayoutMode = DevExpress.XtraEditors.StepProgressBarLayoutMode.FullSize
+        Me.object_progress_stage.Location = New System.Drawing.Point(10, 10)
+        Me.object_progress_stage.LookAndFeel.SkinName = "Office 2019 White"
+        Me.object_progress_stage.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.object_progress_stage.Margin = New System.Windows.Forms.Padding(0)
+        Me.object_progress_stage.Name = "object_progress_stage"
+        Me.object_progress_stage.Orientation = System.Windows.Forms.Orientation.Vertical
+        Me.object_progress_stage.Size = New System.Drawing.Size(737, 486)
+        Me.object_progress_stage.TabIndex = 0
         '
-        'btn_object_edit
+        'object_progress_initial
         '
-        Me.btn_object_edit.BackColor = System.Drawing.Color.White
-        Me.btn_object_edit.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_object_edit.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btn_object_edit.FlatAppearance.BorderSize = 0
-        Me.btn_object_edit.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
-        Me.btn_object_edit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.btn_object_edit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
-        Me.btn_object_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_object_edit.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_object_edit.ForeColor = System.Drawing.Color.DimGray
-        Me.btn_object_edit.Image = CType(resources.GetObject("btn_object_edit.Image"), System.Drawing.Image)
-        Me.btn_object_edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_object_edit.Location = New System.Drawing.Point(4, 4)
-        Me.btn_object_edit.Margin = New System.Windows.Forms.Padding(1)
-        Me.btn_object_edit.MaximumSize = New System.Drawing.Size(250, 40)
-        Me.btn_object_edit.MinimumSize = New System.Drawing.Size(250, 0)
-        Me.btn_object_edit.Name = "btn_object_edit"
-        Me.btn_object_edit.Size = New System.Drawing.Size(250, 40)
-        Me.btn_object_edit.TabIndex = 0
-        Me.btn_object_edit.Text = "Finalizar"
-        Me.btn_object_edit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_object_edit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btn_object_edit.UseVisualStyleBackColor = False
+        Me.object_progress_initial.ContentBlock1.Caption = "EN TRAMITE"
+        Me.object_progress_initial.Name = "object_progress_initial"
+        Me.object_progress_initial.Options.Indicator.ActiveStateImageOptions.Image = CType(resources.GetObject("object_progress_initial.Options.Indicator.ActiveStateImageOptions.Image"), System.Drawing.Image)
+        Me.object_progress_initial.Options.Indicator.InactiveStateImageOptions.Image = CType(resources.GetObject("object_progress_initial.Options.Indicator.InactiveStateImageOptions.Image"), System.Drawing.Image)
         '
-        'btn_object_erase
+        'object_progress_store
         '
-        Me.btn_object_erase.BackColor = System.Drawing.Color.White
-        Me.btn_object_erase.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_object_erase.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btn_object_erase.FlatAppearance.BorderSize = 0
-        Me.btn_object_erase.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
-        Me.btn_object_erase.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.btn_object_erase.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
-        Me.btn_object_erase.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_object_erase.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_object_erase.ForeColor = System.Drawing.Color.DimGray
-        Me.btn_object_erase.Image = CType(resources.GetObject("btn_object_erase.Image"), System.Drawing.Image)
-        Me.btn_object_erase.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_object_erase.Location = New System.Drawing.Point(4, 46)
-        Me.btn_object_erase.Margin = New System.Windows.Forms.Padding(1)
-        Me.btn_object_erase.MaximumSize = New System.Drawing.Size(250, 40)
-        Me.btn_object_erase.MinimumSize = New System.Drawing.Size(250, 0)
-        Me.btn_object_erase.Name = "btn_object_erase"
-        Me.btn_object_erase.Size = New System.Drawing.Size(250, 40)
-        Me.btn_object_erase.TabIndex = 0
-        Me.btn_object_erase.Tag = "2"
-        Me.btn_object_erase.Text = "Eliminar"
-        Me.btn_object_erase.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_object_erase.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btn_object_erase.UseVisualStyleBackColor = False
+        Me.object_progress_store.ContentBlock1.Caption = "LLEGADA A BODEGA"
+        Me.object_progress_store.Name = "object_progress_store"
+        Me.object_progress_store.Options.Indicator.ActiveStateImageOptions.Image = CType(resources.GetObject("object_progress_store.Options.Indicator.ActiveStateImageOptions.Image"), System.Drawing.Image)
+        Me.object_progress_store.Options.Indicator.InactiveStateImageOptions.Image = CType(resources.GetObject("object_progress_store.Options.Indicator.InactiveStateImageOptions.Image"), System.Drawing.Image)
         '
-        'btn_object_dispach
+        'object_progress_request
         '
-        Me.btn_object_dispach.BackColor = System.Drawing.Color.White
-        Me.btn_object_dispach.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_object_dispach.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btn_object_dispach.FlatAppearance.BorderSize = 0
-        Me.btn_object_dispach.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
-        Me.btn_object_dispach.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.btn_object_dispach.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
-        Me.btn_object_dispach.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_object_dispach.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_object_dispach.ForeColor = System.Drawing.Color.DimGray
-        Me.btn_object_dispach.Image = CType(resources.GetObject("btn_object_dispach.Image"), System.Drawing.Image)
-        Me.btn_object_dispach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_object_dispach.Location = New System.Drawing.Point(4, 88)
-        Me.btn_object_dispach.Margin = New System.Windows.Forms.Padding(1)
-        Me.btn_object_dispach.MaximumSize = New System.Drawing.Size(250, 40)
-        Me.btn_object_dispach.MinimumSize = New System.Drawing.Size(250, 0)
-        Me.btn_object_dispach.Name = "btn_object_dispach"
-        Me.btn_object_dispach.Size = New System.Drawing.Size(250, 40)
-        Me.btn_object_dispach.TabIndex = 0
-        Me.btn_object_dispach.Text = "Guía Envío"
-        Me.btn_object_dispach.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_object_dispach.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btn_object_dispach.UseVisualStyleBackColor = False
+        Me.object_progress_request.ContentBlock1.Caption = "SOLICITUD A"
+        Me.object_progress_request.Name = "object_progress_request"
+        Me.object_progress_request.Options.Indicator.ActiveStateImageOptions.Image = Global.BIM.My.Resources.Resources.Document_01_16__1_
+        Me.object_progress_request.Options.Indicator.InactiveStateImageOptions.Image = Global.BIM.My.Resources.Resources.Document_01_16
         '
-        'btn_object_transfer
+        'object_progress_sending
         '
-        Me.btn_object_transfer.BackColor = System.Drawing.Color.White
-        Me.btn_object_transfer.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_object_transfer.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btn_object_transfer.FlatAppearance.BorderSize = 0
-        Me.btn_object_transfer.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
-        Me.btn_object_transfer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.btn_object_transfer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
-        Me.btn_object_transfer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_object_transfer.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_object_transfer.ForeColor = System.Drawing.Color.DimGray
-        Me.btn_object_transfer.Image = CType(resources.GetObject("btn_object_transfer.Image"), System.Drawing.Image)
-        Me.btn_object_transfer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_object_transfer.Location = New System.Drawing.Point(4, 130)
-        Me.btn_object_transfer.Margin = New System.Windows.Forms.Padding(1)
-        Me.btn_object_transfer.MaximumSize = New System.Drawing.Size(250, 40)
-        Me.btn_object_transfer.MinimumSize = New System.Drawing.Size(250, 0)
-        Me.btn_object_transfer.Name = "btn_object_transfer"
-        Me.btn_object_transfer.Size = New System.Drawing.Size(250, 40)
-        Me.btn_object_transfer.TabIndex = 0
-        Me.btn_object_transfer.Tag = ""
-        Me.btn_object_transfer.Text = "Transferir"
-        Me.btn_object_transfer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_object_transfer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btn_object_transfer.UseVisualStyleBackColor = False
+        Me.object_progress_sending.ContentBlock1.Caption = "ENVIO / REVISION"
+        Me.object_progress_sending.Name = "object_progress_sending"
+        Me.object_progress_sending.Options.Indicator.ActiveStateImageOptions.Image = CType(resources.GetObject("object_progress_sending.Options.Indicator.ActiveStateImageOptions.Image"), System.Drawing.Image)
+        Me.object_progress_sending.Options.Indicator.InactiveStateImageOptions.Image = CType(resources.GetObject("object_progress_sending.Options.Indicator.InactiveStateImageOptions.Image"), System.Drawing.Image)
         '
-        'btn_object_status
+        'object_progress_return
         '
-        Me.btn_object_status.BackColor = System.Drawing.Color.White
-        Me.btn_object_status.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_object_status.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btn_object_status.FlatAppearance.BorderSize = 0
-        Me.btn_object_status.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
-        Me.btn_object_status.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.btn_object_status.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
-        Me.btn_object_status.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_object_status.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_object_status.ForeColor = System.Drawing.Color.DimGray
-        Me.btn_object_status.Image = CType(resources.GetObject("btn_object_status.Image"), System.Drawing.Image)
-        Me.btn_object_status.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_object_status.Location = New System.Drawing.Point(4, 172)
-        Me.btn_object_status.Margin = New System.Windows.Forms.Padding(1)
-        Me.btn_object_status.MaximumSize = New System.Drawing.Size(250, 40)
-        Me.btn_object_status.MinimumSize = New System.Drawing.Size(250, 0)
-        Me.btn_object_status.Name = "btn_object_status"
-        Me.btn_object_status.Size = New System.Drawing.Size(250, 40)
-        Me.btn_object_status.TabIndex = 0
-        Me.btn_object_status.Tag = ""
-        Me.btn_object_status.Text = "Cambiar Estado"
-        Me.btn_object_status.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_object_status.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btn_object_status.UseVisualStyleBackColor = False
+        Me.object_progress_return.ContentBlock1.Caption = "REGRESA EQUIPO A BODEGA"
+        Me.object_progress_return.Name = "object_progress_return"
+        Me.object_progress_return.Options.Indicator.ActiveStateImageOptions.Image = CType(resources.GetObject("object_progress_return.Options.Indicator.ActiveStateImageOptions.Image"), System.Drawing.Image)
+        Me.object_progress_return.Options.Indicator.InactiveStateImageOptions.Image = CType(resources.GetObject("object_progress_return.Options.Indicator.InactiveStateImageOptions.Image"), System.Drawing.Image)
         '
-        'btn_object_proof
+        'object_progress_agency
         '
-        Me.btn_object_proof.BackColor = System.Drawing.Color.White
-        Me.btn_object_proof.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_object_proof.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btn_object_proof.FlatAppearance.BorderSize = 0
-        Me.btn_object_proof.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
-        Me.btn_object_proof.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.btn_object_proof.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
-        Me.btn_object_proof.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_object_proof.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_object_proof.ForeColor = System.Drawing.Color.DimGray
-        Me.btn_object_proof.Image = CType(resources.GetObject("btn_object_proof.Image"), System.Drawing.Image)
-        Me.btn_object_proof.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_object_proof.Location = New System.Drawing.Point(4, 214)
-        Me.btn_object_proof.Margin = New System.Windows.Forms.Padding(1)
-        Me.btn_object_proof.MaximumSize = New System.Drawing.Size(250, 40)
-        Me.btn_object_proof.MinimumSize = New System.Drawing.Size(250, 0)
-        Me.btn_object_proof.Name = "btn_object_proof"
-        Me.btn_object_proof.Size = New System.Drawing.Size(250, 40)
-        Me.btn_object_proof.TabIndex = 0
-        Me.btn_object_proof.Tag = ""
-        Me.btn_object_proof.Text = "Formato de garantía"
-        Me.btn_object_proof.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_object_proof.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btn_object_proof.UseVisualStyleBackColor = False
+        Me.object_progress_agency.ContentBlock1.Caption = "DESPACHO DE BODEGA A LA TIENDA"
+        Me.object_progress_agency.Name = "object_progress_agency"
+        Me.object_progress_agency.Options.Indicator.ActiveStateImageOptions.Image = CType(resources.GetObject("object_progress_agency.Options.Indicator.ActiveStateImageOptions.Image"), System.Drawing.Image)
+        Me.object_progress_agency.Options.Indicator.InactiveStateImageOptions.Image = CType(resources.GetObject("object_progress_agency.Options.Indicator.InactiveStateImageOptions.Image"), System.Drawing.Image)
         '
-        'dgv_grid_result
+        'object_progress_finish
         '
-        Me.dgv_grid_result.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgv_grid_result.Location = New System.Drawing.Point(3, 3)
-        Me.dgv_grid_result.LookAndFeel.SkinName = "My Office 2019 White"
-        Me.dgv_grid_result.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.dgv_grid_result.MainView = Me.dgv_view_results
-        Me.dgv_grid_result.Margin = New System.Windows.Forms.Padding(0)
-        Me.dgv_grid_result.Name = "dgv_grid_result"
-        Me.dgv_grid_result.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpt_picture_option})
-        Me.dgv_grid_result.Size = New System.Drawing.Size(753, 145)
-        Me.dgv_grid_result.TabIndex = 0
-        Me.dgv_grid_result.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.dgv_view_results})
+        Me.object_progress_finish.ContentBlock1.Caption = "FINALIZADO"
+        Me.object_progress_finish.Name = "object_progress_finish"
+        Me.object_progress_finish.Options.Indicator.ActiveStateImageOptions.Image = CType(resources.GetObject("object_progress_finish.Options.Indicator.ActiveStateImageOptions.Image"), System.Drawing.Image)
+        Me.object_progress_finish.Options.Indicator.InactiveStateImageOptions.Image = CType(resources.GetObject("object_progress_finish.Options.Indicator.InactiveStateImageOptions.Image"), System.Drawing.Image)
         '
-        'dgv_view_results
+        'xtp_object_revisions
         '
-        Me.dgv_view_results.Appearance.ColumnFilterButton.BackColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.ColumnFilterButton.BackColor2 = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.ColumnFilterButton.BorderColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.ColumnFilterButton.ForeColor = System.Drawing.Color.DimGray
-        Me.dgv_view_results.Appearance.ColumnFilterButton.Options.UseBackColor = True
-        Me.dgv_view_results.Appearance.ColumnFilterButton.Options.UseBorderColor = True
-        Me.dgv_view_results.Appearance.ColumnFilterButton.Options.UseForeColor = True
-        Me.dgv_view_results.Appearance.Empty.BackColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.Empty.BackColor2 = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.Empty.BorderColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.Empty.ForeColor = System.Drawing.Color.DimGray
-        Me.dgv_view_results.Appearance.Empty.Options.UseBackColor = True
-        Me.dgv_view_results.Appearance.Empty.Options.UseBorderColor = True
-        Me.dgv_view_results.Appearance.Empty.Options.UseForeColor = True
-        Me.dgv_view_results.Appearance.EvenRow.BackColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.EvenRow.BackColor2 = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.EvenRow.BorderColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.EvenRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dgv_view_results.Appearance.EvenRow.ForeColor = System.Drawing.Color.Black
-        Me.dgv_view_results.Appearance.EvenRow.Options.UseBackColor = True
-        Me.dgv_view_results.Appearance.EvenRow.Options.UseBorderColor = True
-        Me.dgv_view_results.Appearance.EvenRow.Options.UseFont = True
-        Me.dgv_view_results.Appearance.EvenRow.Options.UseForeColor = True
-        Me.dgv_view_results.Appearance.FilterCloseButton.BackColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.FilterCloseButton.BackColor2 = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.FilterCloseButton.BorderColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.FilterCloseButton.ForeColor = System.Drawing.Color.DimGray
-        Me.dgv_view_results.Appearance.FilterCloseButton.Options.UseBackColor = True
-        Me.dgv_view_results.Appearance.FilterCloseButton.Options.UseBorderColor = True
-        Me.dgv_view_results.Appearance.FilterCloseButton.Options.UseFont = True
-        Me.dgv_view_results.Appearance.FilterCloseButton.Options.UseForeColor = True
-        Me.dgv_view_results.Appearance.FilterPanel.BackColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.FilterPanel.BackColor2 = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.FilterPanel.BorderColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.FilterPanel.ForeColor = System.Drawing.Color.DimGray
-        Me.dgv_view_results.Appearance.FilterPanel.Options.UseBackColor = True
-        Me.dgv_view_results.Appearance.FilterPanel.Options.UseBorderColor = True
-        Me.dgv_view_results.Appearance.FilterPanel.Options.UseFont = True
-        Me.dgv_view_results.Appearance.FilterPanel.Options.UseForeColor = True
-        Me.dgv_view_results.Appearance.FixedLine.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.dgv_view_results.Appearance.FixedLine.BackColor2 = System.Drawing.Color.WhiteSmoke
-        Me.dgv_view_results.Appearance.FixedLine.BorderColor = System.Drawing.Color.WhiteSmoke
-        Me.dgv_view_results.Appearance.FixedLine.Options.UseBackColor = True
-        Me.dgv_view_results.Appearance.FixedLine.Options.UseBorderColor = True
-        Me.dgv_view_results.Appearance.FocusedCell.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dgv_view_results.Appearance.FocusedCell.Options.UseFont = True
-        Me.dgv_view_results.Appearance.FocusedRow.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.dgv_view_results.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.LightSeaGreen
-        Me.dgv_view_results.Appearance.FocusedRow.BorderColor = System.Drawing.Color.LightSeaGreen
-        Me.dgv_view_results.Appearance.FocusedRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dgv_view_results.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.FocusedRow.Options.UseBackColor = True
-        Me.dgv_view_results.Appearance.FocusedRow.Options.UseBorderColor = True
-        Me.dgv_view_results.Appearance.FocusedRow.Options.UseFont = True
-        Me.dgv_view_results.Appearance.FocusedRow.Options.UseForeColor = True
-        Me.dgv_view_results.Appearance.FooterPanel.BackColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.FooterPanel.BackColor2 = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.FooterPanel.BorderColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.FooterPanel.ForeColor = System.Drawing.Color.DimGray
-        Me.dgv_view_results.Appearance.FooterPanel.Options.UseBackColor = True
-        Me.dgv_view_results.Appearance.FooterPanel.Options.UseBorderColor = True
-        Me.dgv_view_results.Appearance.FooterPanel.Options.UseFont = True
-        Me.dgv_view_results.Appearance.FooterPanel.Options.UseForeColor = True
-        Me.dgv_view_results.Appearance.GroupButton.BackColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.GroupButton.BackColor2 = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.GroupButton.BorderColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.GroupButton.Options.UseBackColor = True
-        Me.dgv_view_results.Appearance.GroupButton.Options.UseBorderColor = True
-        Me.dgv_view_results.Appearance.GroupButton.Options.UseFont = True
-        Me.dgv_view_results.Appearance.GroupFooter.BackColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.GroupFooter.BackColor2 = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.GroupFooter.BorderColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.GroupFooter.ForeColor = System.Drawing.Color.Black
-        Me.dgv_view_results.Appearance.GroupFooter.Options.UseBackColor = True
-        Me.dgv_view_results.Appearance.GroupFooter.Options.UseBorderColor = True
-        Me.dgv_view_results.Appearance.GroupFooter.Options.UseFont = True
-        Me.dgv_view_results.Appearance.GroupFooter.Options.UseForeColor = True
-        Me.dgv_view_results.Appearance.GroupPanel.BackColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.GroupPanel.BackColor2 = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.GroupPanel.BorderColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.GroupPanel.ForeColor = System.Drawing.Color.DimGray
-        Me.dgv_view_results.Appearance.GroupPanel.Options.UseBackColor = True
-        Me.dgv_view_results.Appearance.GroupPanel.Options.UseBorderColor = True
-        Me.dgv_view_results.Appearance.GroupPanel.Options.UseFont = True
-        Me.dgv_view_results.Appearance.GroupPanel.Options.UseForeColor = True
-        Me.dgv_view_results.Appearance.GroupRow.BackColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.GroupRow.BackColor2 = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.GroupRow.BorderColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.GroupRow.ForeColor = System.Drawing.Color.Black
-        Me.dgv_view_results.Appearance.GroupRow.Options.UseBackColor = True
-        Me.dgv_view_results.Appearance.GroupRow.Options.UseBorderColor = True
-        Me.dgv_view_results.Appearance.GroupRow.Options.UseFont = True
-        Me.dgv_view_results.Appearance.GroupRow.Options.UseForeColor = True
-        Me.dgv_view_results.Appearance.HeaderPanel.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.dgv_view_results.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.WhiteSmoke
-        Me.dgv_view_results.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.WhiteSmoke
-        Me.dgv_view_results.Appearance.HeaderPanel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dgv_view_results.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.DimGray
-        Me.dgv_view_results.Appearance.HeaderPanel.Options.UseBackColor = True
-        Me.dgv_view_results.Appearance.HeaderPanel.Options.UseBorderColor = True
-        Me.dgv_view_results.Appearance.HeaderPanel.Options.UseFont = True
-        Me.dgv_view_results.Appearance.HeaderPanel.Options.UseForeColor = True
-        Me.dgv_view_results.Appearance.HideSelectionRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dgv_view_results.Appearance.HideSelectionRow.Options.UseFont = True
-        Me.dgv_view_results.Appearance.HorzLine.BackColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.HorzLine.BackColor2 = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.HorzLine.BorderColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.HorzLine.ForeColor = System.Drawing.Color.DimGray
-        Me.dgv_view_results.Appearance.HorzLine.Options.UseBackColor = True
-        Me.dgv_view_results.Appearance.HorzLine.Options.UseBorderColor = True
-        Me.dgv_view_results.Appearance.HorzLine.Options.UseFont = True
-        Me.dgv_view_results.Appearance.HorzLine.Options.UseForeColor = True
-        Me.dgv_view_results.Appearance.OddRow.BackColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.OddRow.BackColor2 = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.OddRow.BorderColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.OddRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dgv_view_results.Appearance.OddRow.ForeColor = System.Drawing.Color.Black
-        Me.dgv_view_results.Appearance.OddRow.Options.UseBackColor = True
-        Me.dgv_view_results.Appearance.OddRow.Options.UseBorderColor = True
-        Me.dgv_view_results.Appearance.OddRow.Options.UseFont = True
-        Me.dgv_view_results.Appearance.OddRow.Options.UseForeColor = True
-        Me.dgv_view_results.Appearance.Preview.BackColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.Preview.BackColor2 = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.Preview.BorderColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.Preview.ForeColor = System.Drawing.Color.Black
-        Me.dgv_view_results.Appearance.Preview.Options.UseBackColor = True
-        Me.dgv_view_results.Appearance.Preview.Options.UseBorderColor = True
-        Me.dgv_view_results.Appearance.Preview.Options.UseFont = True
-        Me.dgv_view_results.Appearance.Preview.Options.UseForeColor = True
-        Me.dgv_view_results.Appearance.Row.BackColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.Row.BackColor2 = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.Row.BorderColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.Row.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dgv_view_results.Appearance.Row.ForeColor = System.Drawing.Color.Black
-        Me.dgv_view_results.Appearance.Row.Options.UseBackColor = True
-        Me.dgv_view_results.Appearance.Row.Options.UseBorderColor = True
-        Me.dgv_view_results.Appearance.Row.Options.UseFont = True
-        Me.dgv_view_results.Appearance.Row.Options.UseForeColor = True
-        Me.dgv_view_results.Appearance.RowSeparator.BackColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.RowSeparator.BackColor2 = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.RowSeparator.BorderColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.RowSeparator.Options.UseBackColor = True
-        Me.dgv_view_results.Appearance.RowSeparator.Options.UseBorderColor = True
-        Me.dgv_view_results.Appearance.RowSeparator.Options.UseFont = True
-        Me.dgv_view_results.Appearance.SelectedRow.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.dgv_view_results.Appearance.SelectedRow.BackColor2 = System.Drawing.Color.LightSeaGreen
-        Me.dgv_view_results.Appearance.SelectedRow.BorderColor = System.Drawing.Color.LightSeaGreen
-        Me.dgv_view_results.Appearance.SelectedRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dgv_view_results.Appearance.SelectedRow.ForeColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.SelectedRow.Options.UseBackColor = True
-        Me.dgv_view_results.Appearance.SelectedRow.Options.UseBorderColor = True
-        Me.dgv_view_results.Appearance.SelectedRow.Options.UseFont = True
-        Me.dgv_view_results.Appearance.SelectedRow.Options.UseForeColor = True
-        Me.dgv_view_results.Appearance.TopNewRow.BackColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.TopNewRow.BackColor2 = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.TopNewRow.BorderColor = System.Drawing.Color.White
-        Me.dgv_view_results.Appearance.TopNewRow.ForeColor = System.Drawing.Color.DimGray
-        Me.dgv_view_results.Appearance.TopNewRow.Options.UseBackColor = True
-        Me.dgv_view_results.Appearance.TopNewRow.Options.UseBorderColor = True
-        Me.dgv_view_results.Appearance.TopNewRow.Options.UseFont = True
-        Me.dgv_view_results.Appearance.TopNewRow.Options.UseForeColor = True
-        Me.dgv_view_results.Appearance.VertLine.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.dgv_view_results.Appearance.VertLine.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.dgv_view_results.Appearance.VertLine.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.dgv_view_results.Appearance.VertLine.Options.UseBackColor = True
-        Me.dgv_view_results.Appearance.VertLine.Options.UseBorderColor = True
-        Me.dgv_view_results.Appearance.VertLine.Options.UseFont = True
-        Me.dgv_view_results.Appearance.ViewCaption.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.dgv_view_results.Appearance.ViewCaption.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.dgv_view_results.Appearance.ViewCaption.BorderColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.dgv_view_results.Appearance.ViewCaption.Options.UseBackColor = True
-        Me.dgv_view_results.Appearance.ViewCaption.Options.UseBorderColor = True
-        Me.dgv_view_results.AppearancePrint.EvenRow.BackColor = System.Drawing.Color.White
-        Me.dgv_view_results.AppearancePrint.EvenRow.BackColor2 = System.Drawing.Color.White
-        Me.dgv_view_results.AppearancePrint.EvenRow.BorderColor = System.Drawing.Color.White
-        Me.dgv_view_results.AppearancePrint.EvenRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
-        Me.dgv_view_results.AppearancePrint.EvenRow.ForeColor = System.Drawing.Color.Black
-        Me.dgv_view_results.AppearancePrint.EvenRow.Options.UseBackColor = True
-        Me.dgv_view_results.AppearancePrint.EvenRow.Options.UseBorderColor = True
-        Me.dgv_view_results.AppearancePrint.EvenRow.Options.UseFont = True
-        Me.dgv_view_results.AppearancePrint.EvenRow.Options.UseForeColor = True
-        Me.dgv_view_results.AppearancePrint.FilterPanel.BackColor = System.Drawing.Color.White
-        Me.dgv_view_results.AppearancePrint.FilterPanel.BackColor2 = System.Drawing.Color.White
-        Me.dgv_view_results.AppearancePrint.FilterPanel.BorderColor = System.Drawing.Color.White
-        Me.dgv_view_results.AppearancePrint.FilterPanel.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
-        Me.dgv_view_results.AppearancePrint.FilterPanel.Options.UseBackColor = True
-        Me.dgv_view_results.AppearancePrint.FilterPanel.Options.UseBorderColor = True
-        Me.dgv_view_results.AppearancePrint.FilterPanel.Options.UseFont = True
-        Me.dgv_view_results.AppearancePrint.FooterPanel.BackColor = System.Drawing.Color.White
-        Me.dgv_view_results.AppearancePrint.FooterPanel.BackColor2 = System.Drawing.Color.White
-        Me.dgv_view_results.AppearancePrint.FooterPanel.BorderColor = System.Drawing.Color.White
-        Me.dgv_view_results.AppearancePrint.FooterPanel.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
-        Me.dgv_view_results.AppearancePrint.FooterPanel.Options.UseBackColor = True
-        Me.dgv_view_results.AppearancePrint.FooterPanel.Options.UseBorderColor = True
-        Me.dgv_view_results.AppearancePrint.FooterPanel.Options.UseFont = True
-        Me.dgv_view_results.AppearancePrint.GroupFooter.BackColor = System.Drawing.Color.White
-        Me.dgv_view_results.AppearancePrint.GroupFooter.BackColor2 = System.Drawing.Color.White
-        Me.dgv_view_results.AppearancePrint.GroupFooter.BorderColor = System.Drawing.Color.White
-        Me.dgv_view_results.AppearancePrint.GroupFooter.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
-        Me.dgv_view_results.AppearancePrint.GroupFooter.Options.UseBackColor = True
-        Me.dgv_view_results.AppearancePrint.GroupFooter.Options.UseBorderColor = True
-        Me.dgv_view_results.AppearancePrint.GroupFooter.Options.UseFont = True
-        Me.dgv_view_results.AppearancePrint.GroupRow.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.dgv_view_results.AppearancePrint.GroupRow.BackColor2 = System.Drawing.Color.WhiteSmoke
-        Me.dgv_view_results.AppearancePrint.GroupRow.BorderColor = System.Drawing.Color.WhiteSmoke
-        Me.dgv_view_results.AppearancePrint.GroupRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
-        Me.dgv_view_results.AppearancePrint.GroupRow.Options.UseBackColor = True
-        Me.dgv_view_results.AppearancePrint.GroupRow.Options.UseBorderColor = True
-        Me.dgv_view_results.AppearancePrint.GroupRow.Options.UseFont = True
-        Me.dgv_view_results.AppearancePrint.HeaderPanel.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.dgv_view_results.AppearancePrint.HeaderPanel.BackColor2 = System.Drawing.Color.WhiteSmoke
-        Me.dgv_view_results.AppearancePrint.HeaderPanel.BorderColor = System.Drawing.Color.WhiteSmoke
-        Me.dgv_view_results.AppearancePrint.HeaderPanel.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
-        Me.dgv_view_results.AppearancePrint.HeaderPanel.Options.UseBackColor = True
-        Me.dgv_view_results.AppearancePrint.HeaderPanel.Options.UseBorderColor = True
-        Me.dgv_view_results.AppearancePrint.HeaderPanel.Options.UseFont = True
-        Me.dgv_view_results.AppearancePrint.Lines.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.dgv_view_results.AppearancePrint.Lines.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.dgv_view_results.AppearancePrint.Lines.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.dgv_view_results.AppearancePrint.Lines.Options.UseBackColor = True
-        Me.dgv_view_results.AppearancePrint.Lines.Options.UseBorderColor = True
-        Me.dgv_view_results.AppearancePrint.OddRow.BackColor = System.Drawing.Color.White
-        Me.dgv_view_results.AppearancePrint.OddRow.BackColor2 = System.Drawing.Color.White
-        Me.dgv_view_results.AppearancePrint.OddRow.BorderColor = System.Drawing.Color.White
-        Me.dgv_view_results.AppearancePrint.OddRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
-        Me.dgv_view_results.AppearancePrint.OddRow.ForeColor = System.Drawing.Color.Black
-        Me.dgv_view_results.AppearancePrint.OddRow.Options.UseBackColor = True
-        Me.dgv_view_results.AppearancePrint.OddRow.Options.UseBorderColor = True
-        Me.dgv_view_results.AppearancePrint.OddRow.Options.UseFont = True
-        Me.dgv_view_results.AppearancePrint.OddRow.Options.UseForeColor = True
-        Me.dgv_view_results.AppearancePrint.Preview.BackColor = System.Drawing.Color.White
-        Me.dgv_view_results.AppearancePrint.Preview.BackColor2 = System.Drawing.Color.White
-        Me.dgv_view_results.AppearancePrint.Preview.BorderColor = System.Drawing.Color.White
-        Me.dgv_view_results.AppearancePrint.Preview.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
-        Me.dgv_view_results.AppearancePrint.Preview.Options.UseBackColor = True
-        Me.dgv_view_results.AppearancePrint.Preview.Options.UseBorderColor = True
-        Me.dgv_view_results.AppearancePrint.Preview.Options.UseFont = True
-        Me.dgv_view_results.AppearancePrint.Row.BackColor = System.Drawing.Color.White
-        Me.dgv_view_results.AppearancePrint.Row.BackColor2 = System.Drawing.Color.White
-        Me.dgv_view_results.AppearancePrint.Row.BorderColor = System.Drawing.Color.White
-        Me.dgv_view_results.AppearancePrint.Row.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dgv_view_results.AppearancePrint.Row.ForeColor = System.Drawing.Color.Black
-        Me.dgv_view_results.AppearancePrint.Row.Options.UseBackColor = True
-        Me.dgv_view_results.AppearancePrint.Row.Options.UseBorderColor = True
-        Me.dgv_view_results.AppearancePrint.Row.Options.UseFont = True
-        Me.dgv_view_results.AppearancePrint.Row.Options.UseForeColor = True
-        Me.dgv_view_results.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        Me.dgv_view_results.ColumnPanelRowHeight = 40
-        Me.dgv_view_results.FixedLineWidth = 1
-        Me.dgv_view_results.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
-        Me.dgv_view_results.GridControl = Me.dgv_grid_result
-        Me.dgv_view_results.Name = "dgv_view_results"
-        Me.dgv_view_results.OptionsBehavior.AlignGroupSummaryInGroupRow = DevExpress.Utils.DefaultBoolean.[True]
-        Me.dgv_view_results.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.[False]
-        Me.dgv_view_results.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.[False]
-        Me.dgv_view_results.OptionsBehavior.AutoExpandAllGroups = True
-        Me.dgv_view_results.OptionsBehavior.Editable = False
-        Me.dgv_view_results.OptionsBehavior.ReadOnly = True
-        Me.dgv_view_results.OptionsClipboard.ClipboardMode = DevExpress.Export.ClipboardMode.Formatted
-        Me.dgv_view_results.OptionsClipboard.CopyColumnHeaders = DevExpress.Utils.DefaultBoolean.[True]
-        Me.dgv_view_results.OptionsCustomization.CustomizationFormSearchBoxVisible = True
-        Me.dgv_view_results.OptionsDetail.DetailMode = DevExpress.XtraGrid.Views.Grid.DetailMode.Embedded
-        Me.dgv_view_results.OptionsDetail.ShowDetailTabs = False
-        Me.dgv_view_results.OptionsMenu.EnableFooterMenu = False
-        Me.dgv_view_results.OptionsPrint.EnableAppearanceEvenRow = True
-        Me.dgv_view_results.OptionsPrint.EnableAppearanceOddRow = True
-        Me.dgv_view_results.OptionsPrint.PrintHorzLines = False
-        Me.dgv_view_results.OptionsPrint.PrintVertLines = False
-        Me.dgv_view_results.OptionsSelection.CheckBoxSelectorColumnWidth = 30
-        Me.dgv_view_results.OptionsSelection.EnableAppearanceFocusedCell = False
-        Me.dgv_view_results.OptionsSelection.EnableAppearanceHideSelection = False
-        Me.dgv_view_results.OptionsSelection.MultiSelect = True
-        Me.dgv_view_results.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect
-        Me.dgv_view_results.OptionsSelection.ResetSelectionClickOutsideCheckboxSelector = True
-        Me.dgv_view_results.OptionsSelection.ShowCheckBoxSelectorInColumnHeader = DevExpress.Utils.DefaultBoolean.[True]
-        Me.dgv_view_results.OptionsSelection.ShowCheckBoxSelectorInGroupRow = DevExpress.Utils.DefaultBoolean.[False]
-        Me.dgv_view_results.OptionsSelection.ShowCheckBoxSelectorInPrintExport = DevExpress.Utils.DefaultBoolean.[False]
-        Me.dgv_view_results.OptionsView.AnimationType = DevExpress.XtraGrid.Views.Base.GridAnimationType.AnimateFocusedItem
-        Me.dgv_view_results.OptionsView.BestFitMode = DevExpress.XtraGrid.Views.Grid.GridBestFitMode.Full
-        Me.dgv_view_results.OptionsView.ColumnAutoWidth = False
-        Me.dgv_view_results.OptionsView.EnableAppearanceOddRow = True
-        Me.dgv_view_results.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.SmartTag
-        Me.dgv_view_results.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never
-        Me.dgv_view_results.OptionsView.ShowGroupedColumns = True
-        Me.dgv_view_results.OptionsView.ShowGroupPanel = False
-        Me.dgv_view_results.OptionsView.ShowGroupPanelColumnsAsSingleRow = True
-        Me.dgv_view_results.OptionsView.ShowIndicator = False
-        Me.dgv_view_results.OptionsView.ShowPreviewRowLines = DevExpress.Utils.DefaultBoolean.[False]
-        Me.dgv_view_results.OptionsView.ShowVerticalLines = DevExpress.Utils.DefaultBoolean.[False]
-        Me.dgv_view_results.PaintStyleName = "Skin"
-        Me.dgv_view_results.RowHeight = 30
+        Me.xtp_object_revisions.AutoScroll = True
+        Me.xtp_object_revisions.Controls.Add(Me.pnl_grid_revision)
+        Me.xtp_object_revisions.Controls.Add(Me.pnl_object_revision)
+        Me.xtp_object_revisions.FireScrollEventOnMouseWheel = True
+        Me.xtp_object_revisions.ImageOptions.Image = CType(resources.GetObject("xtp_object_revisions.ImageOptions.Image"), System.Drawing.Image)
+        Me.xtp_object_revisions.Margin = New System.Windows.Forms.Padding(0)
+        Me.xtp_object_revisions.Name = "xtp_object_revisions"
+        Me.xtp_object_revisions.Padding = New System.Windows.Forms.Padding(10, 20, 10, 10)
+        Me.xtp_object_revisions.Size = New System.Drawing.Size(774, 506)
+        Me.xtp_object_revisions.Text = " Revisiones Técnicas"
         '
-        'rpt_picture_option
+        'pnl_grid_revision
         '
-        Me.rpt_picture_option.LookAndFeel.SkinName = "Office 2019 White"
-        Me.rpt_picture_option.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.rpt_picture_option.Name = "rpt_picture_option"
-        Me.rpt_picture_option.ShowMenu = False
+        Me.pnl_grid_revision.Appearance.BackColor = System.Drawing.Color.White
+        Me.pnl_grid_revision.Appearance.BackColor2 = System.Drawing.Color.White
+        Me.pnl_grid_revision.Appearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.pnl_grid_revision.Appearance.Options.UseBackColor = True
+        Me.pnl_grid_revision.Appearance.Options.UseBorderColor = True
+        Me.pnl_grid_revision.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple
+        Me.pnl_grid_revision.Controls.Add(Me.dgv_grid_revisions)
+        Me.pnl_grid_revision.Controls.Add(Me.pnl_options_revisions)
+        Me.pnl_grid_revision.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnl_grid_revision.Location = New System.Drawing.Point(10, 55)
+        Me.pnl_grid_revision.LookAndFeel.SkinName = "Office 2019 White"
+        Me.pnl_grid_revision.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.pnl_grid_revision.Margin = New System.Windows.Forms.Padding(0)
+        Me.pnl_grid_revision.Name = "pnl_grid_revision"
+        Me.pnl_grid_revision.Padding = New System.Windows.Forms.Padding(1)
+        Me.pnl_grid_revision.Size = New System.Drawing.Size(754, 441)
+        Me.pnl_grid_revision.TabIndex = 0
+        '
+        'dgv_grid_revisions
+        '
+        Me.dgv_grid_revisions.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgv_grid_revisions.Location = New System.Drawing.Point(3, 3)
+        Me.dgv_grid_revisions.LookAndFeel.SkinName = "My Office 2019 White"
+        Me.dgv_grid_revisions.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.dgv_grid_revisions.MainView = Me.dgv_view_revisions
+        Me.dgv_grid_revisions.Margin = New System.Windows.Forms.Padding(0)
+        Me.dgv_grid_revisions.Name = "dgv_grid_revisions"
+        Me.dgv_grid_revisions.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemPictureEdit2, Me.RepositoryItemMemoEdit1})
+        Me.dgv_grid_revisions.Size = New System.Drawing.Size(748, 405)
+        Me.dgv_grid_revisions.TabIndex = 0
+        Me.dgv_grid_revisions.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.dgv_view_revisions})
+        '
+        'dgv_view_revisions
+        '
+        Me.dgv_view_revisions.Appearance.ColumnFilterButton.BackColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.ColumnFilterButton.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.ColumnFilterButton.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.ColumnFilterButton.ForeColor = System.Drawing.Color.DimGray
+        Me.dgv_view_revisions.Appearance.ColumnFilterButton.Options.UseBackColor = True
+        Me.dgv_view_revisions.Appearance.ColumnFilterButton.Options.UseBorderColor = True
+        Me.dgv_view_revisions.Appearance.ColumnFilterButton.Options.UseForeColor = True
+        Me.dgv_view_revisions.Appearance.Empty.BackColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.Empty.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.Empty.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.Empty.ForeColor = System.Drawing.Color.DimGray
+        Me.dgv_view_revisions.Appearance.Empty.Options.UseBackColor = True
+        Me.dgv_view_revisions.Appearance.Empty.Options.UseBorderColor = True
+        Me.dgv_view_revisions.Appearance.Empty.Options.UseForeColor = True
+        Me.dgv_view_revisions.Appearance.EvenRow.BackColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.EvenRow.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.EvenRow.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.EvenRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgv_view_revisions.Appearance.EvenRow.ForeColor = System.Drawing.Color.Black
+        Me.dgv_view_revisions.Appearance.EvenRow.Options.UseBackColor = True
+        Me.dgv_view_revisions.Appearance.EvenRow.Options.UseBorderColor = True
+        Me.dgv_view_revisions.Appearance.EvenRow.Options.UseFont = True
+        Me.dgv_view_revisions.Appearance.EvenRow.Options.UseForeColor = True
+        Me.dgv_view_revisions.Appearance.FilterCloseButton.BackColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.FilterCloseButton.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.FilterCloseButton.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.FilterCloseButton.ForeColor = System.Drawing.Color.DimGray
+        Me.dgv_view_revisions.Appearance.FilterCloseButton.Options.UseBackColor = True
+        Me.dgv_view_revisions.Appearance.FilterCloseButton.Options.UseBorderColor = True
+        Me.dgv_view_revisions.Appearance.FilterCloseButton.Options.UseFont = True
+        Me.dgv_view_revisions.Appearance.FilterCloseButton.Options.UseForeColor = True
+        Me.dgv_view_revisions.Appearance.FilterPanel.BackColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.FilterPanel.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.FilterPanel.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.FilterPanel.ForeColor = System.Drawing.Color.DimGray
+        Me.dgv_view_revisions.Appearance.FilterPanel.Options.UseBackColor = True
+        Me.dgv_view_revisions.Appearance.FilterPanel.Options.UseBorderColor = True
+        Me.dgv_view_revisions.Appearance.FilterPanel.Options.UseFont = True
+        Me.dgv_view_revisions.Appearance.FilterPanel.Options.UseForeColor = True
+        Me.dgv_view_revisions.Appearance.FixedLine.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.dgv_view_revisions.Appearance.FixedLine.BackColor2 = System.Drawing.Color.WhiteSmoke
+        Me.dgv_view_revisions.Appearance.FixedLine.BorderColor = System.Drawing.Color.WhiteSmoke
+        Me.dgv_view_revisions.Appearance.FixedLine.Options.UseBackColor = True
+        Me.dgv_view_revisions.Appearance.FixedLine.Options.UseBorderColor = True
+        Me.dgv_view_revisions.Appearance.FocusedCell.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgv_view_revisions.Appearance.FocusedCell.Options.UseFont = True
+        Me.dgv_view_revisions.Appearance.FocusedRow.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.dgv_view_revisions.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.LightSeaGreen
+        Me.dgv_view_revisions.Appearance.FocusedRow.BorderColor = System.Drawing.Color.LightSeaGreen
+        Me.dgv_view_revisions.Appearance.FocusedRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgv_view_revisions.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.FocusedRow.Options.UseBackColor = True
+        Me.dgv_view_revisions.Appearance.FocusedRow.Options.UseBorderColor = True
+        Me.dgv_view_revisions.Appearance.FocusedRow.Options.UseFont = True
+        Me.dgv_view_revisions.Appearance.FocusedRow.Options.UseForeColor = True
+        Me.dgv_view_revisions.Appearance.FooterPanel.BackColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.FooterPanel.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.FooterPanel.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.FooterPanel.ForeColor = System.Drawing.Color.DimGray
+        Me.dgv_view_revisions.Appearance.FooterPanel.Options.UseBackColor = True
+        Me.dgv_view_revisions.Appearance.FooterPanel.Options.UseBorderColor = True
+        Me.dgv_view_revisions.Appearance.FooterPanel.Options.UseFont = True
+        Me.dgv_view_revisions.Appearance.FooterPanel.Options.UseForeColor = True
+        Me.dgv_view_revisions.Appearance.GroupButton.BackColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.GroupButton.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.GroupButton.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.GroupButton.Options.UseBackColor = True
+        Me.dgv_view_revisions.Appearance.GroupButton.Options.UseBorderColor = True
+        Me.dgv_view_revisions.Appearance.GroupButton.Options.UseFont = True
+        Me.dgv_view_revisions.Appearance.GroupFooter.BackColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.GroupFooter.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.GroupFooter.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.GroupFooter.ForeColor = System.Drawing.Color.Black
+        Me.dgv_view_revisions.Appearance.GroupFooter.Options.UseBackColor = True
+        Me.dgv_view_revisions.Appearance.GroupFooter.Options.UseBorderColor = True
+        Me.dgv_view_revisions.Appearance.GroupFooter.Options.UseFont = True
+        Me.dgv_view_revisions.Appearance.GroupFooter.Options.UseForeColor = True
+        Me.dgv_view_revisions.Appearance.GroupPanel.BackColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.GroupPanel.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.GroupPanel.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.GroupPanel.ForeColor = System.Drawing.Color.DimGray
+        Me.dgv_view_revisions.Appearance.GroupPanel.Options.UseBackColor = True
+        Me.dgv_view_revisions.Appearance.GroupPanel.Options.UseBorderColor = True
+        Me.dgv_view_revisions.Appearance.GroupPanel.Options.UseFont = True
+        Me.dgv_view_revisions.Appearance.GroupPanel.Options.UseForeColor = True
+        Me.dgv_view_revisions.Appearance.GroupRow.BackColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.GroupRow.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.GroupRow.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.GroupRow.ForeColor = System.Drawing.Color.Black
+        Me.dgv_view_revisions.Appearance.GroupRow.Options.UseBackColor = True
+        Me.dgv_view_revisions.Appearance.GroupRow.Options.UseBorderColor = True
+        Me.dgv_view_revisions.Appearance.GroupRow.Options.UseFont = True
+        Me.dgv_view_revisions.Appearance.GroupRow.Options.UseForeColor = True
+        Me.dgv_view_revisions.Appearance.HeaderPanel.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.dgv_view_revisions.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.WhiteSmoke
+        Me.dgv_view_revisions.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.WhiteSmoke
+        Me.dgv_view_revisions.Appearance.HeaderPanel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgv_view_revisions.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.DimGray
+        Me.dgv_view_revisions.Appearance.HeaderPanel.Options.UseBackColor = True
+        Me.dgv_view_revisions.Appearance.HeaderPanel.Options.UseBorderColor = True
+        Me.dgv_view_revisions.Appearance.HeaderPanel.Options.UseFont = True
+        Me.dgv_view_revisions.Appearance.HeaderPanel.Options.UseForeColor = True
+        Me.dgv_view_revisions.Appearance.HideSelectionRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgv_view_revisions.Appearance.HideSelectionRow.Options.UseFont = True
+        Me.dgv_view_revisions.Appearance.HorzLine.BackColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.HorzLine.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.HorzLine.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.HorzLine.ForeColor = System.Drawing.Color.DimGray
+        Me.dgv_view_revisions.Appearance.HorzLine.Options.UseBackColor = True
+        Me.dgv_view_revisions.Appearance.HorzLine.Options.UseBorderColor = True
+        Me.dgv_view_revisions.Appearance.HorzLine.Options.UseFont = True
+        Me.dgv_view_revisions.Appearance.HorzLine.Options.UseForeColor = True
+        Me.dgv_view_revisions.Appearance.OddRow.BackColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.OddRow.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.OddRow.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.OddRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgv_view_revisions.Appearance.OddRow.ForeColor = System.Drawing.Color.Black
+        Me.dgv_view_revisions.Appearance.OddRow.Options.UseBackColor = True
+        Me.dgv_view_revisions.Appearance.OddRow.Options.UseBorderColor = True
+        Me.dgv_view_revisions.Appearance.OddRow.Options.UseFont = True
+        Me.dgv_view_revisions.Appearance.OddRow.Options.UseForeColor = True
+        Me.dgv_view_revisions.Appearance.Preview.BackColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.Preview.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.Preview.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.Preview.ForeColor = System.Drawing.Color.Black
+        Me.dgv_view_revisions.Appearance.Preview.Options.UseBackColor = True
+        Me.dgv_view_revisions.Appearance.Preview.Options.UseBorderColor = True
+        Me.dgv_view_revisions.Appearance.Preview.Options.UseFont = True
+        Me.dgv_view_revisions.Appearance.Preview.Options.UseForeColor = True
+        Me.dgv_view_revisions.Appearance.Row.BackColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.Row.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.Row.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.Row.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgv_view_revisions.Appearance.Row.ForeColor = System.Drawing.Color.Black
+        Me.dgv_view_revisions.Appearance.Row.Options.UseBackColor = True
+        Me.dgv_view_revisions.Appearance.Row.Options.UseBorderColor = True
+        Me.dgv_view_revisions.Appearance.Row.Options.UseFont = True
+        Me.dgv_view_revisions.Appearance.Row.Options.UseForeColor = True
+        Me.dgv_view_revisions.Appearance.RowSeparator.BackColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.RowSeparator.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.RowSeparator.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.RowSeparator.Options.UseBackColor = True
+        Me.dgv_view_revisions.Appearance.RowSeparator.Options.UseBorderColor = True
+        Me.dgv_view_revisions.Appearance.RowSeparator.Options.UseFont = True
+        Me.dgv_view_revisions.Appearance.SelectedRow.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.dgv_view_revisions.Appearance.SelectedRow.BackColor2 = System.Drawing.Color.LightSeaGreen
+        Me.dgv_view_revisions.Appearance.SelectedRow.BorderColor = System.Drawing.Color.LightSeaGreen
+        Me.dgv_view_revisions.Appearance.SelectedRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgv_view_revisions.Appearance.SelectedRow.ForeColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.SelectedRow.Options.UseBackColor = True
+        Me.dgv_view_revisions.Appearance.SelectedRow.Options.UseBorderColor = True
+        Me.dgv_view_revisions.Appearance.SelectedRow.Options.UseFont = True
+        Me.dgv_view_revisions.Appearance.SelectedRow.Options.UseForeColor = True
+        Me.dgv_view_revisions.Appearance.TopNewRow.BackColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.TopNewRow.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.TopNewRow.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.Appearance.TopNewRow.ForeColor = System.Drawing.Color.DimGray
+        Me.dgv_view_revisions.Appearance.TopNewRow.Options.UseBackColor = True
+        Me.dgv_view_revisions.Appearance.TopNewRow.Options.UseBorderColor = True
+        Me.dgv_view_revisions.Appearance.TopNewRow.Options.UseFont = True
+        Me.dgv_view_revisions.Appearance.TopNewRow.Options.UseForeColor = True
+        Me.dgv_view_revisions.Appearance.VertLine.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgv_view_revisions.Appearance.VertLine.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgv_view_revisions.Appearance.VertLine.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgv_view_revisions.Appearance.VertLine.Options.UseBackColor = True
+        Me.dgv_view_revisions.Appearance.VertLine.Options.UseBorderColor = True
+        Me.dgv_view_revisions.Appearance.VertLine.Options.UseFont = True
+        Me.dgv_view_revisions.Appearance.ViewCaption.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.dgv_view_revisions.Appearance.ViewCaption.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.dgv_view_revisions.Appearance.ViewCaption.BorderColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.dgv_view_revisions.Appearance.ViewCaption.Options.UseBackColor = True
+        Me.dgv_view_revisions.Appearance.ViewCaption.Options.UseBorderColor = True
+        Me.dgv_view_revisions.AppearancePrint.EvenRow.BackColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.AppearancePrint.EvenRow.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_revisions.AppearancePrint.EvenRow.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.AppearancePrint.EvenRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.dgv_view_revisions.AppearancePrint.EvenRow.ForeColor = System.Drawing.Color.Black
+        Me.dgv_view_revisions.AppearancePrint.EvenRow.Options.UseBackColor = True
+        Me.dgv_view_revisions.AppearancePrint.EvenRow.Options.UseBorderColor = True
+        Me.dgv_view_revisions.AppearancePrint.EvenRow.Options.UseFont = True
+        Me.dgv_view_revisions.AppearancePrint.EvenRow.Options.UseForeColor = True
+        Me.dgv_view_revisions.AppearancePrint.FilterPanel.BackColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.AppearancePrint.FilterPanel.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_revisions.AppearancePrint.FilterPanel.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.AppearancePrint.FilterPanel.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.dgv_view_revisions.AppearancePrint.FilterPanel.Options.UseBackColor = True
+        Me.dgv_view_revisions.AppearancePrint.FilterPanel.Options.UseBorderColor = True
+        Me.dgv_view_revisions.AppearancePrint.FilterPanel.Options.UseFont = True
+        Me.dgv_view_revisions.AppearancePrint.FooterPanel.BackColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.AppearancePrint.FooterPanel.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_revisions.AppearancePrint.FooterPanel.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.AppearancePrint.FooterPanel.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.dgv_view_revisions.AppearancePrint.FooterPanel.Options.UseBackColor = True
+        Me.dgv_view_revisions.AppearancePrint.FooterPanel.Options.UseBorderColor = True
+        Me.dgv_view_revisions.AppearancePrint.FooterPanel.Options.UseFont = True
+        Me.dgv_view_revisions.AppearancePrint.GroupFooter.BackColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.AppearancePrint.GroupFooter.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_revisions.AppearancePrint.GroupFooter.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.AppearancePrint.GroupFooter.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.dgv_view_revisions.AppearancePrint.GroupFooter.Options.UseBackColor = True
+        Me.dgv_view_revisions.AppearancePrint.GroupFooter.Options.UseBorderColor = True
+        Me.dgv_view_revisions.AppearancePrint.GroupFooter.Options.UseFont = True
+        Me.dgv_view_revisions.AppearancePrint.GroupRow.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.dgv_view_revisions.AppearancePrint.GroupRow.BackColor2 = System.Drawing.Color.WhiteSmoke
+        Me.dgv_view_revisions.AppearancePrint.GroupRow.BorderColor = System.Drawing.Color.WhiteSmoke
+        Me.dgv_view_revisions.AppearancePrint.GroupRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.dgv_view_revisions.AppearancePrint.GroupRow.Options.UseBackColor = True
+        Me.dgv_view_revisions.AppearancePrint.GroupRow.Options.UseBorderColor = True
+        Me.dgv_view_revisions.AppearancePrint.GroupRow.Options.UseFont = True
+        Me.dgv_view_revisions.AppearancePrint.HeaderPanel.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.dgv_view_revisions.AppearancePrint.HeaderPanel.BackColor2 = System.Drawing.Color.WhiteSmoke
+        Me.dgv_view_revisions.AppearancePrint.HeaderPanel.BorderColor = System.Drawing.Color.WhiteSmoke
+        Me.dgv_view_revisions.AppearancePrint.HeaderPanel.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.dgv_view_revisions.AppearancePrint.HeaderPanel.Options.UseBackColor = True
+        Me.dgv_view_revisions.AppearancePrint.HeaderPanel.Options.UseBorderColor = True
+        Me.dgv_view_revisions.AppearancePrint.HeaderPanel.Options.UseFont = True
+        Me.dgv_view_revisions.AppearancePrint.Lines.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgv_view_revisions.AppearancePrint.Lines.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgv_view_revisions.AppearancePrint.Lines.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgv_view_revisions.AppearancePrint.Lines.Options.UseBackColor = True
+        Me.dgv_view_revisions.AppearancePrint.Lines.Options.UseBorderColor = True
+        Me.dgv_view_revisions.AppearancePrint.OddRow.BackColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.AppearancePrint.OddRow.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_revisions.AppearancePrint.OddRow.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.AppearancePrint.OddRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.dgv_view_revisions.AppearancePrint.OddRow.ForeColor = System.Drawing.Color.Black
+        Me.dgv_view_revisions.AppearancePrint.OddRow.Options.UseBackColor = True
+        Me.dgv_view_revisions.AppearancePrint.OddRow.Options.UseBorderColor = True
+        Me.dgv_view_revisions.AppearancePrint.OddRow.Options.UseFont = True
+        Me.dgv_view_revisions.AppearancePrint.OddRow.Options.UseForeColor = True
+        Me.dgv_view_revisions.AppearancePrint.Preview.BackColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.AppearancePrint.Preview.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_revisions.AppearancePrint.Preview.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.AppearancePrint.Preview.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.dgv_view_revisions.AppearancePrint.Preview.Options.UseBackColor = True
+        Me.dgv_view_revisions.AppearancePrint.Preview.Options.UseBorderColor = True
+        Me.dgv_view_revisions.AppearancePrint.Preview.Options.UseFont = True
+        Me.dgv_view_revisions.AppearancePrint.Row.BackColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.AppearancePrint.Row.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_revisions.AppearancePrint.Row.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_revisions.AppearancePrint.Row.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgv_view_revisions.AppearancePrint.Row.ForeColor = System.Drawing.Color.Black
+        Me.dgv_view_revisions.AppearancePrint.Row.Options.UseBackColor = True
+        Me.dgv_view_revisions.AppearancePrint.Row.Options.UseBorderColor = True
+        Me.dgv_view_revisions.AppearancePrint.Row.Options.UseFont = True
+        Me.dgv_view_revisions.AppearancePrint.Row.Options.UseForeColor = True
+        Me.dgv_view_revisions.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.dgv_view_revisions.ColumnPanelRowHeight = 40
+        Me.dgv_view_revisions.FixedLineWidth = 1
+        Me.dgv_view_revisions.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
+        Me.dgv_view_revisions.GridControl = Me.dgv_grid_revisions
+        Me.dgv_view_revisions.Name = "dgv_view_revisions"
+        Me.dgv_view_revisions.OptionsBehavior.AlignGroupSummaryInGroupRow = DevExpress.Utils.DefaultBoolean.[True]
+        Me.dgv_view_revisions.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.[False]
+        Me.dgv_view_revisions.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.[False]
+        Me.dgv_view_revisions.OptionsBehavior.AutoExpandAllGroups = True
+        Me.dgv_view_revisions.OptionsBehavior.Editable = False
+        Me.dgv_view_revisions.OptionsBehavior.ReadOnly = True
+        Me.dgv_view_revisions.OptionsClipboard.ClipboardMode = DevExpress.Export.ClipboardMode.Formatted
+        Me.dgv_view_revisions.OptionsClipboard.CopyColumnHeaders = DevExpress.Utils.DefaultBoolean.[True]
+        Me.dgv_view_revisions.OptionsCustomization.CustomizationFormSearchBoxVisible = True
+        Me.dgv_view_revisions.OptionsDetail.DetailMode = DevExpress.XtraGrid.Views.Grid.DetailMode.Embedded
+        Me.dgv_view_revisions.OptionsDetail.ShowDetailTabs = False
+        Me.dgv_view_revisions.OptionsMenu.EnableFooterMenu = False
+        Me.dgv_view_revisions.OptionsPrint.EnableAppearanceEvenRow = True
+        Me.dgv_view_revisions.OptionsPrint.EnableAppearanceOddRow = True
+        Me.dgv_view_revisions.OptionsPrint.PrintHorzLines = False
+        Me.dgv_view_revisions.OptionsPrint.PrintVertLines = False
+        Me.dgv_view_revisions.OptionsSelection.CheckBoxSelectorColumnWidth = 30
+        Me.dgv_view_revisions.OptionsSelection.EnableAppearanceFocusedCell = False
+        Me.dgv_view_revisions.OptionsSelection.EnableAppearanceHideSelection = False
+        Me.dgv_view_revisions.OptionsSelection.MultiSelect = True
+        Me.dgv_view_revisions.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect
+        Me.dgv_view_revisions.OptionsSelection.ResetSelectionClickOutsideCheckboxSelector = True
+        Me.dgv_view_revisions.OptionsSelection.ShowCheckBoxSelectorInColumnHeader = DevExpress.Utils.DefaultBoolean.[True]
+        Me.dgv_view_revisions.OptionsSelection.ShowCheckBoxSelectorInGroupRow = DevExpress.Utils.DefaultBoolean.[False]
+        Me.dgv_view_revisions.OptionsSelection.ShowCheckBoxSelectorInPrintExport = DevExpress.Utils.DefaultBoolean.[False]
+        Me.dgv_view_revisions.OptionsView.AnimationType = DevExpress.XtraGrid.Views.Base.GridAnimationType.AnimateFocusedItem
+        Me.dgv_view_revisions.OptionsView.BestFitMode = DevExpress.XtraGrid.Views.Grid.GridBestFitMode.Full
+        Me.dgv_view_revisions.OptionsView.ColumnAutoWidth = False
+        Me.dgv_view_revisions.OptionsView.EnableAppearanceOddRow = True
+        Me.dgv_view_revisions.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.SmartTag
+        Me.dgv_view_revisions.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never
+        Me.dgv_view_revisions.OptionsView.ShowGroupedColumns = True
+        Me.dgv_view_revisions.OptionsView.ShowGroupPanel = False
+        Me.dgv_view_revisions.OptionsView.ShowGroupPanelColumnsAsSingleRow = True
+        Me.dgv_view_revisions.OptionsView.ShowIndicator = False
+        Me.dgv_view_revisions.OptionsView.ShowPreviewRowLines = DevExpress.Utils.DefaultBoolean.[False]
+        Me.dgv_view_revisions.OptionsView.ShowVerticalLines = DevExpress.Utils.DefaultBoolean.[False]
+        Me.dgv_view_revisions.PaintStyleName = "Skin"
+        Me.dgv_view_revisions.RowHeight = 30
+        '
+        'RepositoryItemPictureEdit2
+        '
+        Me.RepositoryItemPictureEdit2.LookAndFeel.SkinName = "Office 2019 White"
+        Me.RepositoryItemPictureEdit2.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.RepositoryItemPictureEdit2.Name = "RepositoryItemPictureEdit2"
+        Me.RepositoryItemPictureEdit2.ShowMenu = False
+        '
+        'RepositoryItemMemoEdit1
+        '
+        Me.RepositoryItemMemoEdit1.Name = "RepositoryItemMemoEdit1"
+        '
+        'pnl_options_revisions
+        '
+        Me.pnl_options_revisions.Appearance.BackColor = System.Drawing.Color.White
+        Me.pnl_options_revisions.Appearance.BackColor2 = System.Drawing.Color.White
+        Me.pnl_options_revisions.Appearance.BorderColor = System.Drawing.Color.White
+        Me.pnl_options_revisions.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnl_options_revisions.Appearance.ForeColor = System.Drawing.Color.DimGray
+        Me.pnl_options_revisions.Appearance.Options.UseBackColor = True
+        Me.pnl_options_revisions.Appearance.Options.UseBorderColor = True
+        Me.pnl_options_revisions.Appearance.Options.UseFont = True
+        Me.pnl_options_revisions.Appearance.Options.UseForeColor = True
+        Me.pnl_options_revisions.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.pnl_options_revisions.Controls.Add(Me.btn_update_revisions)
+        Me.pnl_options_revisions.Controls.Add(Me.btn_printer_revisions)
+        Me.pnl_options_revisions.Controls.Add(Me.btn_export_revisions)
+        Me.pnl_options_revisions.Controls.Add(Me.lbl_count_revisions)
+        Me.pnl_options_revisions.Controls.Add(Me.lbl_total_revisions)
+        Me.pnl_options_revisions.Controls.Add(Me.lbl_separator_revisions)
+        Me.pnl_options_revisions.Controls.Add(Me.txt_navigate_revisions)
+        Me.pnl_options_revisions.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.pnl_options_revisions.Location = New System.Drawing.Point(3, 408)
+        Me.pnl_options_revisions.LookAndFeel.SkinName = "Office 2016 Colorful"
+        Me.pnl_options_revisions.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.pnl_options_revisions.Margin = New System.Windows.Forms.Padding(0)
+        Me.pnl_options_revisions.Name = "pnl_options_revisions"
+        Me.pnl_options_revisions.Padding = New System.Windows.Forms.Padding(1, 1, 5, 1)
+        Me.pnl_options_revisions.Size = New System.Drawing.Size(748, 30)
+        Me.pnl_options_revisions.TabIndex = 0
+        '
+        'btn_update_revisions
+        '
+        Me.btn_update_revisions.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btn_update_revisions.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btn_update_revisions.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btn_update_revisions.FlatAppearance.BorderSize = 0
+        Me.btn_update_revisions.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
+        Me.btn_update_revisions.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btn_update_revisions.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.btn_update_revisions.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_update_revisions.Image = CType(resources.GetObject("btn_update_revisions.Image"), System.Drawing.Image)
+        Me.btn_update_revisions.Location = New System.Drawing.Point(643, 1)
+        Me.btn_update_revisions.Margin = New System.Windows.Forms.Padding(0)
+        Me.btn_update_revisions.MinimumSize = New System.Drawing.Size(25, 25)
+        Me.btn_update_revisions.Name = "btn_update_revisions"
+        Me.btn_update_revisions.Size = New System.Drawing.Size(35, 28)
+        Me.btn_update_revisions.TabIndex = 0
+        Me.btn_update_revisions.TabStop = False
+        Me.btn_update_revisions.Tag = "Actualizar"
+        Me.btn_update_revisions.UseVisualStyleBackColor = True
+        '
+        'btn_printer_revisions
+        '
+        Me.btn_printer_revisions.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btn_printer_revisions.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btn_printer_revisions.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btn_printer_revisions.FlatAppearance.BorderSize = 0
+        Me.btn_printer_revisions.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
+        Me.btn_printer_revisions.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btn_printer_revisions.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.btn_printer_revisions.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_printer_revisions.Image = CType(resources.GetObject("btn_printer_revisions.Image"), System.Drawing.Image)
+        Me.btn_printer_revisions.Location = New System.Drawing.Point(678, 1)
+        Me.btn_printer_revisions.Margin = New System.Windows.Forms.Padding(0)
+        Me.btn_printer_revisions.MinimumSize = New System.Drawing.Size(25, 25)
+        Me.btn_printer_revisions.Name = "btn_printer_revisions"
+        Me.btn_printer_revisions.Size = New System.Drawing.Size(35, 28)
+        Me.btn_printer_revisions.TabIndex = 0
+        Me.btn_printer_revisions.TabStop = False
+        Me.btn_printer_revisions.Tag = "Imprimir"
+        Me.btn_printer_revisions.UseVisualStyleBackColor = True
+        '
+        'btn_export_revisions
+        '
+        Me.btn_export_revisions.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btn_export_revisions.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btn_export_revisions.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btn_export_revisions.FlatAppearance.BorderSize = 0
+        Me.btn_export_revisions.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
+        Me.btn_export_revisions.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btn_export_revisions.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.btn_export_revisions.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_export_revisions.ForeColor = System.Drawing.Color.CornflowerBlue
+        Me.btn_export_revisions.Image = CType(resources.GetObject("btn_export_revisions.Image"), System.Drawing.Image)
+        Me.btn_export_revisions.Location = New System.Drawing.Point(713, 1)
+        Me.btn_export_revisions.Margin = New System.Windows.Forms.Padding(0, 0, 5, 0)
+        Me.btn_export_revisions.MinimumSize = New System.Drawing.Size(25, 25)
+        Me.btn_export_revisions.Name = "btn_export_revisions"
+        Me.btn_export_revisions.Size = New System.Drawing.Size(30, 28)
+        Me.btn_export_revisions.TabIndex = 0
+        Me.btn_export_revisions.TabStop = False
+        Me.btn_export_revisions.Tag = "Exportar"
+        Me.btn_export_revisions.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_export_revisions.UseVisualStyleBackColor = True
+        '
+        'lbl_count_revisions
+        '
+        Me.lbl_count_revisions.Appearance.Font = New System.Drawing.Font("Arial Narrow", 12.75!)
+        Me.lbl_count_revisions.Appearance.ForeColor = System.Drawing.Color.LightSeaGreen
+        Me.lbl_count_revisions.Appearance.Options.UseFont = True
+        Me.lbl_count_revisions.Appearance.Options.UseForeColor = True
+        Me.lbl_count_revisions.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal
+        Me.lbl_count_revisions.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_count_revisions.Location = New System.Drawing.Point(300, 1)
+        Me.lbl_count_revisions.LookAndFeel.SkinName = "Office 2016 Colorful"
+        Me.lbl_count_revisions.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.lbl_count_revisions.Margin = New System.Windows.Forms.Padding(0)
+        Me.lbl_count_revisions.Name = "lbl_count_revisions"
+        Me.lbl_count_revisions.Padding = New System.Windows.Forms.Padding(0, 4, 0, 0)
+        Me.lbl_count_revisions.Size = New System.Drawing.Size(8, 26)
+        Me.lbl_count_revisions.TabIndex = 0
+        Me.lbl_count_revisions.Text = "0"
+        '
+        'lbl_total_revisions
+        '
+        Me.lbl_total_revisions.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_total_revisions.Appearance.ForeColor = System.Drawing.Color.DimGray
+        Me.lbl_total_revisions.Appearance.Options.UseFont = True
+        Me.lbl_total_revisions.Appearance.Options.UseForeColor = True
+        Me.lbl_total_revisions.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
+        Me.lbl_total_revisions.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_total_revisions.Location = New System.Drawing.Point(196, 1)
+        Me.lbl_total_revisions.LookAndFeel.SkinName = "Office 2019 White"
+        Me.lbl_total_revisions.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.lbl_total_revisions.Margin = New System.Windows.Forms.Padding(0)
+        Me.lbl_total_revisions.Name = "lbl_total_revisions"
+        Me.lbl_total_revisions.Size = New System.Drawing.Size(104, 28)
+        Me.lbl_total_revisions.TabIndex = 0
+        Me.lbl_total_revisions.Text = "Numero de registros: "
+        '
+        'lbl_separator_revisions
+        '
+        Me.lbl_separator_revisions.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_separator_revisions.LineAlignment = DevExpress.XtraEditors.Alignment.Near
+        Me.lbl_separator_revisions.LineColor = System.Drawing.Color.Silver
+        Me.lbl_separator_revisions.LineOrientation = System.Windows.Forms.Orientation.Vertical
+        Me.lbl_separator_revisions.Location = New System.Drawing.Point(191, 1)
+        Me.lbl_separator_revisions.LookAndFeel.SkinName = "Office 2019 White"
+        Me.lbl_separator_revisions.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.lbl_separator_revisions.Margin = New System.Windows.Forms.Padding(0)
+        Me.lbl_separator_revisions.Name = "lbl_separator_revisions"
+        Me.lbl_separator_revisions.Padding = New System.Windows.Forms.Padding(0, 7, 0, 7)
+        Me.lbl_separator_revisions.Size = New System.Drawing.Size(5, 28)
+        Me.lbl_separator_revisions.TabIndex = 0
+        '
+        'txt_navigate_revisions
+        '
+        Me.txt_navigate_revisions.Appearance.BackColor = System.Drawing.Color.White
+        Me.txt_navigate_revisions.Appearance.BackColor2 = System.Drawing.Color.White
+        Me.txt_navigate_revisions.Appearance.BorderColor = System.Drawing.Color.White
+        Me.txt_navigate_revisions.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_navigate_revisions.Appearance.ForeColor = System.Drawing.Color.DimGray
+        Me.txt_navigate_revisions.Appearance.Options.UseBackColor = True
+        Me.txt_navigate_revisions.Appearance.Options.UseBorderColor = True
+        Me.txt_navigate_revisions.Appearance.Options.UseFont = True
+        Me.txt_navigate_revisions.Appearance.Options.UseForeColor = True
+        Me.txt_navigate_revisions.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.txt_navigate_revisions.Buttons.Append.Visible = False
+        Me.txt_navigate_revisions.Buttons.CancelEdit.Visible = False
+        Me.txt_navigate_revisions.Buttons.Edit.Visible = False
+        Me.txt_navigate_revisions.Buttons.EndEdit.Visible = False
+        Me.txt_navigate_revisions.Buttons.Remove.Visible = False
+        Me.txt_navigate_revisions.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.txt_navigate_revisions.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txt_navigate_revisions.Location = New System.Drawing.Point(1, 1)
+        Me.txt_navigate_revisions.LookAndFeel.SkinName = "Office 2019 White"
+        Me.txt_navigate_revisions.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.txt_navigate_revisions.Margin = New System.Windows.Forms.Padding(0)
+        Me.txt_navigate_revisions.Name = "txt_navigate_revisions"
+        Me.txt_navigate_revisions.Padding = New System.Windows.Forms.Padding(1)
+        Me.txt_navigate_revisions.ShowToolTips = True
+        Me.txt_navigate_revisions.Size = New System.Drawing.Size(190, 28)
+        Me.txt_navigate_revisions.TabIndex = 0
+        '
+        'pnl_object_revision
+        '
+        Me.pnl_object_revision.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.pnl_object_revision.Controls.Add(Me.btn_object_support)
+        Me.pnl_object_revision.Dock = System.Windows.Forms.DockStyle.Top
+        Me.pnl_object_revision.Location = New System.Drawing.Point(10, 20)
+        Me.pnl_object_revision.LookAndFeel.SkinName = "Office 2019 White"
+        Me.pnl_object_revision.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.pnl_object_revision.Margin = New System.Windows.Forms.Padding(0)
+        Me.pnl_object_revision.Name = "pnl_object_revision"
+        Me.pnl_object_revision.Padding = New System.Windows.Forms.Padding(1)
+        Me.pnl_object_revision.Size = New System.Drawing.Size(754, 35)
+        Me.pnl_object_revision.TabIndex = 0
+        '
+        'btn_object_support
+        '
+        Me.btn_object_support.BackColor = System.Drawing.Color.White
+        Me.btn_object_support.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btn_object_support.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btn_object_support.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btn_object_support.FlatAppearance.BorderSize = 0
+        Me.btn_object_support.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
+        Me.btn_object_support.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btn_object_support.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.btn_object_support.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_object_support.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_object_support.ForeColor = System.Drawing.Color.DimGray
+        Me.btn_object_support.Image = CType(resources.GetObject("btn_object_support.Image"), System.Drawing.Image)
+        Me.btn_object_support.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_object_support.Location = New System.Drawing.Point(634, 1)
+        Me.btn_object_support.Margin = New System.Windows.Forms.Padding(0)
+        Me.btn_object_support.MaximumSize = New System.Drawing.Size(119, 33)
+        Me.btn_object_support.MinimumSize = New System.Drawing.Size(119, 33)
+        Me.btn_object_support.Name = "btn_object_support"
+        Me.btn_object_support.Size = New System.Drawing.Size(119, 33)
+        Me.btn_object_support.TabIndex = 0
+        Me.btn_object_support.Tag = ""
+        Me.btn_object_support.Text = "  Crear Revisión"
+        Me.btn_object_support.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_object_support.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_object_support.UseVisualStyleBackColor = False
+        '
+        'xtp_object_notes
+        '
+        Me.xtp_object_notes.AutoScroll = True
+        Me.xtp_object_notes.Controls.Add(Me.pnl_search_objects)
+        Me.xtp_object_notes.Controls.Add(Me.pnl_object_options)
+        Me.xtp_object_notes.FireScrollEventOnMouseWheel = True
+        Me.xtp_object_notes.ImageOptions.Image = CType(resources.GetObject("xtp_object_notes.ImageOptions.Image"), System.Drawing.Image)
+        Me.xtp_object_notes.Margin = New System.Windows.Forms.Padding(0)
+        Me.xtp_object_notes.Name = "xtp_object_notes"
+        Me.xtp_object_notes.Padding = New System.Windows.Forms.Padding(10, 20, 10, 10)
+        Me.xtp_object_notes.Size = New System.Drawing.Size(774, 506)
+        Me.xtp_object_notes.Text = " Notas de gestión"
         '
         'pnl_search_objects
         '
@@ -1106,14 +1296,14 @@ Partial Class wholesales_guarantee_details
         Me.pnl_search_objects.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple
         Me.pnl_search_objects.Controls.Add(Me.dgv_grid_objects)
         Me.pnl_search_objects.Controls.Add(Me.pnl_options_objects)
-        Me.pnl_search_objects.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnl_search_objects.Location = New System.Drawing.Point(40, 502)
+        Me.pnl_search_objects.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnl_search_objects.Location = New System.Drawing.Point(10, 55)
         Me.pnl_search_objects.LookAndFeel.SkinName = "Office 2019 White"
         Me.pnl_search_objects.LookAndFeel.UseDefaultLookAndFeel = False
         Me.pnl_search_objects.Margin = New System.Windows.Forms.Padding(0)
         Me.pnl_search_objects.Name = "pnl_search_objects"
         Me.pnl_search_objects.Padding = New System.Windows.Forms.Padding(1)
-        Me.pnl_search_objects.Size = New System.Drawing.Size(759, 473)
+        Me.pnl_search_objects.Size = New System.Drawing.Size(754, 441)
         Me.pnl_search_objects.TabIndex = 0
         '
         'dgv_grid_objects
@@ -1126,7 +1316,7 @@ Partial Class wholesales_guarantee_details
         Me.dgv_grid_objects.Margin = New System.Windows.Forms.Padding(0)
         Me.dgv_grid_objects.Name = "dgv_grid_objects"
         Me.dgv_grid_objects.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemPictureEdit1, Me.txt_memo_edit})
-        Me.dgv_grid_objects.Size = New System.Drawing.Size(753, 437)
+        Me.dgv_grid_objects.Size = New System.Drawing.Size(748, 405)
         Me.dgv_grid_objects.TabIndex = 0
         Me.dgv_grid_objects.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.dgv_view_objects})
         '
@@ -1455,13 +1645,13 @@ Partial Class wholesales_guarantee_details
         Me.pnl_options_objects.Controls.Add(Me.lbl_separator_objects)
         Me.pnl_options_objects.Controls.Add(Me.txt_navigate_objects)
         Me.pnl_options_objects.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.pnl_options_objects.Location = New System.Drawing.Point(3, 440)
+        Me.pnl_options_objects.Location = New System.Drawing.Point(3, 408)
         Me.pnl_options_objects.LookAndFeel.SkinName = "Office 2016 Colorful"
         Me.pnl_options_objects.LookAndFeel.UseDefaultLookAndFeel = False
         Me.pnl_options_objects.Margin = New System.Windows.Forms.Padding(0)
         Me.pnl_options_objects.Name = "pnl_options_objects"
         Me.pnl_options_objects.Padding = New System.Windows.Forms.Padding(1, 1, 5, 1)
-        Me.pnl_options_objects.Size = New System.Drawing.Size(753, 30)
+        Me.pnl_options_objects.Size = New System.Drawing.Size(748, 30)
         Me.pnl_options_objects.TabIndex = 0
         '
         'btn_update_objects
@@ -1475,7 +1665,7 @@ Partial Class wholesales_guarantee_details
         Me.btn_update_objects.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
         Me.btn_update_objects.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_update_objects.Image = CType(resources.GetObject("btn_update_objects.Image"), System.Drawing.Image)
-        Me.btn_update_objects.Location = New System.Drawing.Point(648, 1)
+        Me.btn_update_objects.Location = New System.Drawing.Point(643, 1)
         Me.btn_update_objects.Margin = New System.Windows.Forms.Padding(0)
         Me.btn_update_objects.MinimumSize = New System.Drawing.Size(25, 25)
         Me.btn_update_objects.Name = "btn_update_objects"
@@ -1496,7 +1686,7 @@ Partial Class wholesales_guarantee_details
         Me.btn_print_objects.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
         Me.btn_print_objects.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_print_objects.Image = CType(resources.GetObject("btn_print_objects.Image"), System.Drawing.Image)
-        Me.btn_print_objects.Location = New System.Drawing.Point(683, 1)
+        Me.btn_print_objects.Location = New System.Drawing.Point(678, 1)
         Me.btn_print_objects.Margin = New System.Windows.Forms.Padding(0)
         Me.btn_print_objects.MinimumSize = New System.Drawing.Size(25, 25)
         Me.btn_print_objects.Name = "btn_print_objects"
@@ -1518,7 +1708,7 @@ Partial Class wholesales_guarantee_details
         Me.btn_export_objects.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_export_objects.ForeColor = System.Drawing.Color.CornflowerBlue
         Me.btn_export_objects.Image = CType(resources.GetObject("btn_export_objects.Image"), System.Drawing.Image)
-        Me.btn_export_objects.Location = New System.Drawing.Point(718, 1)
+        Me.btn_export_objects.Location = New System.Drawing.Point(713, 1)
         Me.btn_export_objects.Margin = New System.Windows.Forms.Padding(0, 0, 5, 0)
         Me.btn_export_objects.MinimumSize = New System.Drawing.Size(25, 25)
         Me.btn_export_objects.Name = "btn_export_objects"
@@ -1611,33 +1801,16 @@ Partial Class wholesales_guarantee_details
         'pnl_object_options
         '
         Me.pnl_object_options.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        Me.pnl_object_options.Controls.Add(Me.lbl_separator_tiny2)
         Me.pnl_object_options.Controls.Add(Me.btn_object_notes)
-        Me.pnl_object_options.Controls.Add(Me.lbl_options_notes)
         Me.pnl_object_options.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnl_object_options.Location = New System.Drawing.Point(40, 467)
+        Me.pnl_object_options.Location = New System.Drawing.Point(10, 20)
         Me.pnl_object_options.LookAndFeel.SkinName = "Office 2019 White"
         Me.pnl_object_options.LookAndFeel.UseDefaultLookAndFeel = False
         Me.pnl_object_options.Margin = New System.Windows.Forms.Padding(0)
         Me.pnl_object_options.Name = "pnl_object_options"
         Me.pnl_object_options.Padding = New System.Windows.Forms.Padding(1, 1, 5, 1)
-        Me.pnl_object_options.Size = New System.Drawing.Size(759, 35)
+        Me.pnl_object_options.Size = New System.Drawing.Size(754, 35)
         Me.pnl_object_options.TabIndex = 0
-        '
-        'lbl_separator_tiny2
-        '
-        Me.lbl_separator_tiny2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.lbl_separator_tiny2.LineAlignment = DevExpress.XtraEditors.Alignment.Near
-        Me.lbl_separator_tiny2.LineColor = System.Drawing.Color.Silver
-        Me.lbl_separator_tiny2.LineOrientation = System.Windows.Forms.Orientation.Vertical
-        Me.lbl_separator_tiny2.Location = New System.Drawing.Point(619, 1)
-        Me.lbl_separator_tiny2.LookAndFeel.SkinName = "Office 2019 White"
-        Me.lbl_separator_tiny2.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.lbl_separator_tiny2.Margin = New System.Windows.Forms.Padding(0)
-        Me.lbl_separator_tiny2.Name = "lbl_separator_tiny2"
-        Me.lbl_separator_tiny2.Padding = New System.Windows.Forms.Padding(0, 8, 0, 8)
-        Me.lbl_separator_tiny2.Size = New System.Drawing.Size(5, 33)
-        Me.lbl_separator_tiny2.TabIndex = 0
         '
         'btn_object_notes
         '
@@ -1654,183 +1827,473 @@ Partial Class wholesales_guarantee_details
         Me.btn_object_notes.ForeColor = System.Drawing.Color.DimGray
         Me.btn_object_notes.Image = CType(resources.GetObject("btn_object_notes.Image"), System.Drawing.Image)
         Me.btn_object_notes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_object_notes.Location = New System.Drawing.Point(624, 1)
+        Me.btn_object_notes.Location = New System.Drawing.Point(646, 1)
         Me.btn_object_notes.Margin = New System.Windows.Forms.Padding(0)
         Me.btn_object_notes.Name = "btn_object_notes"
-        Me.btn_object_notes.Size = New System.Drawing.Size(130, 33)
+        Me.btn_object_notes.Size = New System.Drawing.Size(103, 33)
         Me.btn_object_notes.TabIndex = 0
         Me.btn_object_notes.Tag = ""
-        Me.btn_object_notes.Text = "Crear Comentario"
+        Me.btn_object_notes.Text = "Crear Nota"
         Me.btn_object_notes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btn_object_notes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btn_object_notes.UseVisualStyleBackColor = False
         '
-        'lbl_options_notes
+        'pnl_object_flyout
         '
-        Me.lbl_options_notes.Appearance.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_options_notes.Appearance.ForeColor = System.Drawing.Color.DimGray
-        Me.lbl_options_notes.Appearance.Options.UseFont = True
-        Me.lbl_options_notes.Appearance.Options.UseForeColor = True
-        Me.lbl_options_notes.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
-        Me.lbl_options_notes.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lbl_options_notes.Dock = System.Windows.Forms.DockStyle.Left
-        Me.lbl_options_notes.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter
-        Me.lbl_options_notes.ImageOptions.Alignment = System.Drawing.ContentAlignment.MiddleLeft
-        Me.lbl_options_notes.ImageOptions.Image = CType(resources.GetObject("lbl_options_notes.ImageOptions.Image"), System.Drawing.Image)
-        Me.lbl_options_notes.Location = New System.Drawing.Point(1, 1)
-        Me.lbl_options_notes.LookAndFeel.SkinName = "Office 2019 White"
-        Me.lbl_options_notes.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.lbl_options_notes.Margin = New System.Windows.Forms.Padding(0)
-        Me.lbl_options_notes.Name = "lbl_options_notes"
-        Me.lbl_options_notes.Padding = New System.Windows.Forms.Padding(5, 0, 5, 0)
-        Me.lbl_options_notes.Size = New System.Drawing.Size(168, 33)
-        Me.lbl_options_notes.TabIndex = 0
-        Me.lbl_options_notes.Text = "Notas y/o comentarios"
+        Me.pnl_object_flyout.AnimationRate = 70
+        Me.pnl_object_flyout.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
+        Me.pnl_object_flyout.Appearance.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
+        Me.pnl_object_flyout.Appearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer))
+        Me.pnl_object_flyout.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnl_object_flyout.Appearance.Options.UseBackColor = True
+        Me.pnl_object_flyout.Appearance.Options.UseBorderColor = True
+        Me.pnl_object_flyout.Appearance.Options.UseFont = True
+        Me.pnl_object_flyout.Controls.Add(Me.pnl_object_menu)
+        Me.pnl_object_flyout.Location = New System.Drawing.Point(13, 93)
+        Me.pnl_object_flyout.LookAndFeel.SkinName = "Office 2016 Black"
+        Me.pnl_object_flyout.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.pnl_object_flyout.Margin = New System.Windows.Forms.Padding(0)
+        Me.pnl_object_flyout.Name = "pnl_object_flyout"
+        Me.pnl_object_flyout.Options.AnchorType = DevExpress.Utils.Win.PopupToolWindowAnchor.Manual
+        Me.pnl_object_flyout.Options.CloseOnOuterClick = True
+        Me.pnl_object_flyout.OptionsBeakPanel.AnimationType = DevExpress.Utils.Win.PopupToolWindowAnimation.Slide
+        Me.pnl_object_flyout.OptionsBeakPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
+        Me.pnl_object_flyout.OptionsBeakPanel.BorderColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.pnl_object_flyout.OptionsButtonPanel.ButtonPanelLocation = DevExpress.Utils.FlyoutPanelButtonPanelLocation.Top
+        Me.pnl_object_flyout.OwnerControl = Me.dgv_grid_result
+        Me.pnl_object_flyout.Size = New System.Drawing.Size(260, 137)
+        Me.pnl_object_flyout.TabIndex = 0
         '
-        'lbl_object_separator4
+        'pnl_object_menu
         '
-        Me.lbl_object_separator4.Appearance.BackColor = System.Drawing.Color.White
-        Me.lbl_object_separator4.Appearance.BackColor2 = System.Drawing.Color.White
-        Me.lbl_object_separator4.Appearance.BorderColor = System.Drawing.Color.White
-        Me.lbl_object_separator4.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_object_separator4.Appearance.ForeColor = System.Drawing.Color.DimGray
-        Me.lbl_object_separator4.Appearance.Options.UseBackColor = True
-        Me.lbl_object_separator4.Appearance.Options.UseBorderColor = True
-        Me.lbl_object_separator4.Appearance.Options.UseFont = True
-        Me.lbl_object_separator4.Appearance.Options.UseForeColor = True
-        Me.lbl_object_separator4.Appearance.Options.UseTextOptions = True
-        Me.lbl_object_separator4.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
-        Me.lbl_object_separator4.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
-        Me.lbl_object_separator4.Dock = System.Windows.Forms.DockStyle.Top
-        Me.lbl_object_separator4.Location = New System.Drawing.Point(40, 447)
-        Me.lbl_object_separator4.LookAndFeel.SkinName = "Office 2019 White"
-        Me.lbl_object_separator4.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.lbl_object_separator4.Margin = New System.Windows.Forms.Padding(0)
-        Me.lbl_object_separator4.Name = "lbl_object_separator4"
-        Me.lbl_object_separator4.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
-        Me.lbl_object_separator4.Size = New System.Drawing.Size(759, 20)
-        Me.lbl_object_separator4.TabIndex = 0
+        Me.pnl_object_menu.Appearance.BackColor = System.Drawing.Color.White
+        Me.pnl_object_menu.Appearance.BackColor2 = System.Drawing.Color.White
+        Me.pnl_object_menu.Appearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.pnl_object_menu.Appearance.Options.UseBackColor = True
+        Me.pnl_object_menu.Appearance.Options.UseBorderColor = True
+        Me.pnl_object_menu.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple
+        Me.pnl_object_menu.Controls.Add(Me.pnl_object_actions)
+        Me.pnl_object_menu.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnl_object_menu.Location = New System.Drawing.Point(0, 0)
+        Me.pnl_object_menu.LookAndFeel.SkinName = "Office 2016 Colorful"
+        Me.pnl_object_menu.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat
+        Me.pnl_object_menu.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.pnl_object_menu.Margin = New System.Windows.Forms.Padding(0)
+        Me.pnl_object_menu.Name = "pnl_object_menu"
+        Me.pnl_object_menu.Size = New System.Drawing.Size(260, 137)
+        Me.pnl_object_menu.TabIndex = 0
         '
-        'txt_search_description
+        'pnl_object_actions
         '
-        Me.txt_search_description.Dock = System.Windows.Forms.DockStyle.Top
-        Me.txt_search_description.Location = New System.Drawing.Point(40, 284)
-        Me.txt_search_description.Margin = New System.Windows.Forms.Padding(0)
-        Me.txt_search_description.Name = "txt_search_description"
-        Me.txt_search_description.Properties.Appearance.BackColor = System.Drawing.Color.White
-        Me.txt_search_description.Properties.Appearance.BackColor2 = System.Drawing.Color.White
-        Me.txt_search_description.Properties.Appearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_search_description.Properties.Appearance.ForeColor = System.Drawing.Color.Black
-        Me.txt_search_description.Properties.Appearance.Options.UseBackColor = True
-        Me.txt_search_description.Properties.Appearance.Options.UseBorderColor = True
-        Me.txt_search_description.Properties.Appearance.Options.UseForeColor = True
-        Me.txt_search_description.Properties.AppearanceDisabled.BackColor = System.Drawing.Color.White
-        Me.txt_search_description.Properties.AppearanceDisabled.BackColor2 = System.Drawing.Color.White
-        Me.txt_search_description.Properties.AppearanceDisabled.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_search_description.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black
-        Me.txt_search_description.Properties.AppearanceDisabled.Options.UseBackColor = True
-        Me.txt_search_description.Properties.AppearanceDisabled.Options.UseBorderColor = True
-        Me.txt_search_description.Properties.AppearanceDisabled.Options.UseForeColor = True
-        Me.txt_search_description.Properties.AppearanceFocused.BackColor = System.Drawing.Color.White
-        Me.txt_search_description.Properties.AppearanceFocused.BackColor2 = System.Drawing.Color.White
-        Me.txt_search_description.Properties.AppearanceFocused.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_search_description.Properties.AppearanceFocused.ForeColor = System.Drawing.Color.Black
-        Me.txt_search_description.Properties.AppearanceFocused.Options.UseBackColor = True
-        Me.txt_search_description.Properties.AppearanceFocused.Options.UseBorderColor = True
-        Me.txt_search_description.Properties.AppearanceFocused.Options.UseForeColor = True
-        Me.txt_search_description.Properties.AppearanceReadOnly.BackColor = System.Drawing.Color.White
-        Me.txt_search_description.Properties.AppearanceReadOnly.BackColor2 = System.Drawing.Color.White
-        Me.txt_search_description.Properties.AppearanceReadOnly.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_search_description.Properties.AppearanceReadOnly.ForeColor = System.Drawing.Color.Black
-        Me.txt_search_description.Properties.AppearanceReadOnly.Options.UseBackColor = True
-        Me.txt_search_description.Properties.AppearanceReadOnly.Options.UseBorderColor = True
-        Me.txt_search_description.Properties.AppearanceReadOnly.Options.UseForeColor = True
-        Me.txt_search_description.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple
-        Me.txt_search_description.Properties.LookAndFeel.SkinName = "Office 2019 White"
-        Me.txt_search_description.Properties.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.txt_search_description.Properties.MaxLength = 500
-        Me.txt_search_description.Properties.ReadOnly = True
-        Me.txt_search_description.Size = New System.Drawing.Size(759, 163)
-        Me.txt_search_description.TabIndex = 0
-        Me.txt_search_description.Tag = "Descripción"
+        Me.pnl_object_actions.BackColor = System.Drawing.Color.White
+        Me.pnl_object_actions.Controls.Add(Me.btn_object_status)
+        Me.pnl_object_actions.Controls.Add(Me.btn_object_erase)
+        Me.pnl_object_actions.Controls.Add(Me.btn_object_proof)
+        Me.pnl_object_actions.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnl_object_actions.FlowDirection = System.Windows.Forms.FlowDirection.TopDown
+        Me.pnl_object_actions.Location = New System.Drawing.Point(2, 2)
+        Me.pnl_object_actions.Margin = New System.Windows.Forms.Padding(0)
+        Me.pnl_object_actions.Name = "pnl_object_actions"
+        Me.pnl_object_actions.Padding = New System.Windows.Forms.Padding(3)
+        Me.pnl_object_actions.Size = New System.Drawing.Size(256, 133)
+        Me.pnl_object_actions.TabIndex = 0
+        Me.pnl_object_actions.WrapContents = False
         '
-        'pnl_object_revision
+        'btn_object_status
         '
-        Me.pnl_object_revision.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        Me.pnl_object_revision.Controls.Add(Me.lbl_search_support)
-        Me.pnl_object_revision.Controls.Add(Me.lbl_separator_tiny1)
-        Me.pnl_object_revision.Controls.Add(Me.btn_object_support)
-        Me.pnl_object_revision.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnl_object_revision.Location = New System.Drawing.Point(40, 249)
-        Me.pnl_object_revision.LookAndFeel.SkinName = "Office 2019 White"
-        Me.pnl_object_revision.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.pnl_object_revision.Margin = New System.Windows.Forms.Padding(0)
-        Me.pnl_object_revision.Name = "pnl_object_revision"
-        Me.pnl_object_revision.Padding = New System.Windows.Forms.Padding(1)
-        Me.pnl_object_revision.Size = New System.Drawing.Size(759, 35)
-        Me.pnl_object_revision.TabIndex = 0
+        Me.btn_object_status.BackColor = System.Drawing.Color.White
+        Me.btn_object_status.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btn_object_status.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btn_object_status.FlatAppearance.BorderSize = 0
+        Me.btn_object_status.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
+        Me.btn_object_status.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btn_object_status.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.btn_object_status.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_object_status.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_object_status.ForeColor = System.Drawing.Color.DimGray
+        Me.btn_object_status.Image = CType(resources.GetObject("btn_object_status.Image"), System.Drawing.Image)
+        Me.btn_object_status.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_object_status.Location = New System.Drawing.Point(4, 4)
+        Me.btn_object_status.Margin = New System.Windows.Forms.Padding(1)
+        Me.btn_object_status.MaximumSize = New System.Drawing.Size(250, 40)
+        Me.btn_object_status.MinimumSize = New System.Drawing.Size(250, 0)
+        Me.btn_object_status.Name = "btn_object_status"
+        Me.btn_object_status.Size = New System.Drawing.Size(250, 40)
+        Me.btn_object_status.TabIndex = 0
+        Me.btn_object_status.Tag = ""
+        Me.btn_object_status.Text = "Cambiar Estado"
+        Me.btn_object_status.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_object_status.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_object_status.UseVisualStyleBackColor = False
         '
-        'lbl_search_support
+        'btn_object_erase
         '
-        Me.lbl_search_support.Appearance.Font = New System.Drawing.Font("Open Sans Condensed Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_search_support.Appearance.ForeColor = System.Drawing.Color.CornflowerBlue
-        Me.lbl_search_support.Appearance.Options.UseFont = True
-        Me.lbl_search_support.Appearance.Options.UseForeColor = True
-        Me.lbl_search_support.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
-        Me.lbl_search_support.Dock = System.Windows.Forms.DockStyle.Left
-        Me.lbl_search_support.ImageOptions.Alignment = System.Drawing.ContentAlignment.MiddleRight
-        Me.lbl_search_support.Location = New System.Drawing.Point(1, 1)
-        Me.lbl_search_support.LookAndFeel.SkinName = "Office 2019 White"
-        Me.lbl_search_support.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.lbl_search_support.Margin = New System.Windows.Forms.Padding(0)
-        Me.lbl_search_support.Name = "lbl_search_support"
-        Me.lbl_search_support.Padding = New System.Windows.Forms.Padding(1, 0, 0, 0)
-        Me.lbl_search_support.Size = New System.Drawing.Size(414, 33)
-        Me.lbl_search_support.TabIndex = 0
-        Me.lbl_search_support.Text = "Comentarios"
+        Me.btn_object_erase.BackColor = System.Drawing.Color.White
+        Me.btn_object_erase.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btn_object_erase.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btn_object_erase.FlatAppearance.BorderSize = 0
+        Me.btn_object_erase.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
+        Me.btn_object_erase.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btn_object_erase.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.btn_object_erase.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_object_erase.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_object_erase.ForeColor = System.Drawing.Color.DimGray
+        Me.btn_object_erase.Image = CType(resources.GetObject("btn_object_erase.Image"), System.Drawing.Image)
+        Me.btn_object_erase.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_object_erase.Location = New System.Drawing.Point(4, 46)
+        Me.btn_object_erase.Margin = New System.Windows.Forms.Padding(1)
+        Me.btn_object_erase.MaximumSize = New System.Drawing.Size(250, 40)
+        Me.btn_object_erase.MinimumSize = New System.Drawing.Size(250, 0)
+        Me.btn_object_erase.Name = "btn_object_erase"
+        Me.btn_object_erase.Size = New System.Drawing.Size(250, 40)
+        Me.btn_object_erase.TabIndex = 0
+        Me.btn_object_erase.Tag = "2"
+        Me.btn_object_erase.Text = "Eliminar"
+        Me.btn_object_erase.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_object_erase.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_object_erase.UseVisualStyleBackColor = False
         '
-        'lbl_separator_tiny1
+        'btn_object_proof
         '
-        Me.lbl_separator_tiny1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.lbl_separator_tiny1.LineAlignment = DevExpress.XtraEditors.Alignment.Near
-        Me.lbl_separator_tiny1.LineColor = System.Drawing.Color.Silver
-        Me.lbl_separator_tiny1.LineOrientation = System.Windows.Forms.Orientation.Vertical
-        Me.lbl_separator_tiny1.Location = New System.Drawing.Point(634, 1)
-        Me.lbl_separator_tiny1.LookAndFeel.SkinName = "Office 2019 White"
-        Me.lbl_separator_tiny1.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.lbl_separator_tiny1.Margin = New System.Windows.Forms.Padding(0)
-        Me.lbl_separator_tiny1.Name = "lbl_separator_tiny1"
-        Me.lbl_separator_tiny1.Padding = New System.Windows.Forms.Padding(0, 8, 0, 8)
-        Me.lbl_separator_tiny1.Size = New System.Drawing.Size(5, 33)
-        Me.lbl_separator_tiny1.TabIndex = 0
+        Me.btn_object_proof.BackColor = System.Drawing.Color.White
+        Me.btn_object_proof.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btn_object_proof.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btn_object_proof.FlatAppearance.BorderSize = 0
+        Me.btn_object_proof.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
+        Me.btn_object_proof.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btn_object_proof.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.btn_object_proof.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_object_proof.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_object_proof.ForeColor = System.Drawing.Color.DimGray
+        Me.btn_object_proof.Image = CType(resources.GetObject("btn_object_proof.Image"), System.Drawing.Image)
+        Me.btn_object_proof.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_object_proof.Location = New System.Drawing.Point(4, 88)
+        Me.btn_object_proof.Margin = New System.Windows.Forms.Padding(1)
+        Me.btn_object_proof.MaximumSize = New System.Drawing.Size(250, 40)
+        Me.btn_object_proof.MinimumSize = New System.Drawing.Size(250, 0)
+        Me.btn_object_proof.Name = "btn_object_proof"
+        Me.btn_object_proof.Size = New System.Drawing.Size(250, 40)
+        Me.btn_object_proof.TabIndex = 0
+        Me.btn_object_proof.Tag = ""
+        Me.btn_object_proof.Text = "Formato de garantía"
+        Me.btn_object_proof.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_object_proof.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_object_proof.UseVisualStyleBackColor = False
         '
-        'btn_object_support
+        'dgv_grid_result
         '
-        Me.btn_object_support.BackColor = System.Drawing.Color.White
-        Me.btn_object_support.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_object_support.Dock = System.Windows.Forms.DockStyle.Right
-        Me.btn_object_support.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btn_object_support.FlatAppearance.BorderSize = 0
-        Me.btn_object_support.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
-        Me.btn_object_support.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.btn_object_support.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
-        Me.btn_object_support.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_object_support.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_object_support.ForeColor = System.Drawing.Color.DimGray
-        Me.btn_object_support.Image = CType(resources.GetObject("btn_object_support.Image"), System.Drawing.Image)
-        Me.btn_object_support.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_object_support.Location = New System.Drawing.Point(639, 1)
-        Me.btn_object_support.Margin = New System.Windows.Forms.Padding(0)
-        Me.btn_object_support.MaximumSize = New System.Drawing.Size(119, 33)
-        Me.btn_object_support.MinimumSize = New System.Drawing.Size(119, 33)
-        Me.btn_object_support.Name = "btn_object_support"
-        Me.btn_object_support.Size = New System.Drawing.Size(119, 33)
-        Me.btn_object_support.TabIndex = 0
-        Me.btn_object_support.Tag = ""
-        Me.btn_object_support.Text = "Crear Revisión"
-        Me.btn_object_support.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_object_support.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btn_object_support.UseVisualStyleBackColor = False
+        Me.dgv_grid_result.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgv_grid_result.Location = New System.Drawing.Point(3, 3)
+        Me.dgv_grid_result.LookAndFeel.SkinName = "My Office 2019 White"
+        Me.dgv_grid_result.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.dgv_grid_result.MainView = Me.dgv_view_results
+        Me.dgv_grid_result.Margin = New System.Windows.Forms.Padding(0)
+        Me.dgv_grid_result.Name = "dgv_grid_result"
+        Me.dgv_grid_result.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpt_picture_option})
+        Me.dgv_grid_result.Size = New System.Drawing.Size(753, 198)
+        Me.dgv_grid_result.TabIndex = 0
+        Me.dgv_grid_result.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.dgv_view_results})
+        '
+        'dgv_view_results
+        '
+        Me.dgv_view_results.Appearance.ColumnFilterButton.BackColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.ColumnFilterButton.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.ColumnFilterButton.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.ColumnFilterButton.ForeColor = System.Drawing.Color.DimGray
+        Me.dgv_view_results.Appearance.ColumnFilterButton.Options.UseBackColor = True
+        Me.dgv_view_results.Appearance.ColumnFilterButton.Options.UseBorderColor = True
+        Me.dgv_view_results.Appearance.ColumnFilterButton.Options.UseForeColor = True
+        Me.dgv_view_results.Appearance.Empty.BackColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.Empty.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.Empty.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.Empty.ForeColor = System.Drawing.Color.DimGray
+        Me.dgv_view_results.Appearance.Empty.Options.UseBackColor = True
+        Me.dgv_view_results.Appearance.Empty.Options.UseBorderColor = True
+        Me.dgv_view_results.Appearance.Empty.Options.UseForeColor = True
+        Me.dgv_view_results.Appearance.EvenRow.BackColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.EvenRow.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.EvenRow.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.EvenRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgv_view_results.Appearance.EvenRow.ForeColor = System.Drawing.Color.Black
+        Me.dgv_view_results.Appearance.EvenRow.Options.UseBackColor = True
+        Me.dgv_view_results.Appearance.EvenRow.Options.UseBorderColor = True
+        Me.dgv_view_results.Appearance.EvenRow.Options.UseFont = True
+        Me.dgv_view_results.Appearance.EvenRow.Options.UseForeColor = True
+        Me.dgv_view_results.Appearance.FilterCloseButton.BackColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.FilterCloseButton.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.FilterCloseButton.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.FilterCloseButton.ForeColor = System.Drawing.Color.DimGray
+        Me.dgv_view_results.Appearance.FilterCloseButton.Options.UseBackColor = True
+        Me.dgv_view_results.Appearance.FilterCloseButton.Options.UseBorderColor = True
+        Me.dgv_view_results.Appearance.FilterCloseButton.Options.UseFont = True
+        Me.dgv_view_results.Appearance.FilterCloseButton.Options.UseForeColor = True
+        Me.dgv_view_results.Appearance.FilterPanel.BackColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.FilterPanel.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.FilterPanel.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.FilterPanel.ForeColor = System.Drawing.Color.DimGray
+        Me.dgv_view_results.Appearance.FilterPanel.Options.UseBackColor = True
+        Me.dgv_view_results.Appearance.FilterPanel.Options.UseBorderColor = True
+        Me.dgv_view_results.Appearance.FilterPanel.Options.UseFont = True
+        Me.dgv_view_results.Appearance.FilterPanel.Options.UseForeColor = True
+        Me.dgv_view_results.Appearance.FixedLine.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.dgv_view_results.Appearance.FixedLine.BackColor2 = System.Drawing.Color.WhiteSmoke
+        Me.dgv_view_results.Appearance.FixedLine.BorderColor = System.Drawing.Color.WhiteSmoke
+        Me.dgv_view_results.Appearance.FixedLine.Options.UseBackColor = True
+        Me.dgv_view_results.Appearance.FixedLine.Options.UseBorderColor = True
+        Me.dgv_view_results.Appearance.FocusedCell.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgv_view_results.Appearance.FocusedCell.Options.UseFont = True
+        Me.dgv_view_results.Appearance.FocusedRow.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.dgv_view_results.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.LightSeaGreen
+        Me.dgv_view_results.Appearance.FocusedRow.BorderColor = System.Drawing.Color.LightSeaGreen
+        Me.dgv_view_results.Appearance.FocusedRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgv_view_results.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.FocusedRow.Options.UseBackColor = True
+        Me.dgv_view_results.Appearance.FocusedRow.Options.UseBorderColor = True
+        Me.dgv_view_results.Appearance.FocusedRow.Options.UseFont = True
+        Me.dgv_view_results.Appearance.FocusedRow.Options.UseForeColor = True
+        Me.dgv_view_results.Appearance.FooterPanel.BackColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.FooterPanel.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.FooterPanel.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.FooterPanel.ForeColor = System.Drawing.Color.DimGray
+        Me.dgv_view_results.Appearance.FooterPanel.Options.UseBackColor = True
+        Me.dgv_view_results.Appearance.FooterPanel.Options.UseBorderColor = True
+        Me.dgv_view_results.Appearance.FooterPanel.Options.UseFont = True
+        Me.dgv_view_results.Appearance.FooterPanel.Options.UseForeColor = True
+        Me.dgv_view_results.Appearance.GroupButton.BackColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.GroupButton.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.GroupButton.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.GroupButton.Options.UseBackColor = True
+        Me.dgv_view_results.Appearance.GroupButton.Options.UseBorderColor = True
+        Me.dgv_view_results.Appearance.GroupButton.Options.UseFont = True
+        Me.dgv_view_results.Appearance.GroupFooter.BackColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.GroupFooter.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.GroupFooter.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.GroupFooter.ForeColor = System.Drawing.Color.Black
+        Me.dgv_view_results.Appearance.GroupFooter.Options.UseBackColor = True
+        Me.dgv_view_results.Appearance.GroupFooter.Options.UseBorderColor = True
+        Me.dgv_view_results.Appearance.GroupFooter.Options.UseFont = True
+        Me.dgv_view_results.Appearance.GroupFooter.Options.UseForeColor = True
+        Me.dgv_view_results.Appearance.GroupPanel.BackColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.GroupPanel.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.GroupPanel.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.GroupPanel.ForeColor = System.Drawing.Color.DimGray
+        Me.dgv_view_results.Appearance.GroupPanel.Options.UseBackColor = True
+        Me.dgv_view_results.Appearance.GroupPanel.Options.UseBorderColor = True
+        Me.dgv_view_results.Appearance.GroupPanel.Options.UseFont = True
+        Me.dgv_view_results.Appearance.GroupPanel.Options.UseForeColor = True
+        Me.dgv_view_results.Appearance.GroupRow.BackColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.GroupRow.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.GroupRow.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.GroupRow.ForeColor = System.Drawing.Color.Black
+        Me.dgv_view_results.Appearance.GroupRow.Options.UseBackColor = True
+        Me.dgv_view_results.Appearance.GroupRow.Options.UseBorderColor = True
+        Me.dgv_view_results.Appearance.GroupRow.Options.UseFont = True
+        Me.dgv_view_results.Appearance.GroupRow.Options.UseForeColor = True
+        Me.dgv_view_results.Appearance.HeaderPanel.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.dgv_view_results.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.WhiteSmoke
+        Me.dgv_view_results.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.WhiteSmoke
+        Me.dgv_view_results.Appearance.HeaderPanel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgv_view_results.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.DimGray
+        Me.dgv_view_results.Appearance.HeaderPanel.Options.UseBackColor = True
+        Me.dgv_view_results.Appearance.HeaderPanel.Options.UseBorderColor = True
+        Me.dgv_view_results.Appearance.HeaderPanel.Options.UseFont = True
+        Me.dgv_view_results.Appearance.HeaderPanel.Options.UseForeColor = True
+        Me.dgv_view_results.Appearance.HideSelectionRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgv_view_results.Appearance.HideSelectionRow.Options.UseFont = True
+        Me.dgv_view_results.Appearance.HorzLine.BackColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.HorzLine.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.HorzLine.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.HorzLine.ForeColor = System.Drawing.Color.DimGray
+        Me.dgv_view_results.Appearance.HorzLine.Options.UseBackColor = True
+        Me.dgv_view_results.Appearance.HorzLine.Options.UseBorderColor = True
+        Me.dgv_view_results.Appearance.HorzLine.Options.UseFont = True
+        Me.dgv_view_results.Appearance.HorzLine.Options.UseForeColor = True
+        Me.dgv_view_results.Appearance.OddRow.BackColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.OddRow.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.OddRow.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.OddRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgv_view_results.Appearance.OddRow.ForeColor = System.Drawing.Color.Black
+        Me.dgv_view_results.Appearance.OddRow.Options.UseBackColor = True
+        Me.dgv_view_results.Appearance.OddRow.Options.UseBorderColor = True
+        Me.dgv_view_results.Appearance.OddRow.Options.UseFont = True
+        Me.dgv_view_results.Appearance.OddRow.Options.UseForeColor = True
+        Me.dgv_view_results.Appearance.Preview.BackColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.Preview.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.Preview.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.Preview.ForeColor = System.Drawing.Color.Black
+        Me.dgv_view_results.Appearance.Preview.Options.UseBackColor = True
+        Me.dgv_view_results.Appearance.Preview.Options.UseBorderColor = True
+        Me.dgv_view_results.Appearance.Preview.Options.UseFont = True
+        Me.dgv_view_results.Appearance.Preview.Options.UseForeColor = True
+        Me.dgv_view_results.Appearance.Row.BackColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.Row.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.Row.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.Row.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgv_view_results.Appearance.Row.ForeColor = System.Drawing.Color.Black
+        Me.dgv_view_results.Appearance.Row.Options.UseBackColor = True
+        Me.dgv_view_results.Appearance.Row.Options.UseBorderColor = True
+        Me.dgv_view_results.Appearance.Row.Options.UseFont = True
+        Me.dgv_view_results.Appearance.Row.Options.UseForeColor = True
+        Me.dgv_view_results.Appearance.RowSeparator.BackColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.RowSeparator.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.RowSeparator.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.RowSeparator.Options.UseBackColor = True
+        Me.dgv_view_results.Appearance.RowSeparator.Options.UseBorderColor = True
+        Me.dgv_view_results.Appearance.RowSeparator.Options.UseFont = True
+        Me.dgv_view_results.Appearance.SelectedRow.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.dgv_view_results.Appearance.SelectedRow.BackColor2 = System.Drawing.Color.LightSeaGreen
+        Me.dgv_view_results.Appearance.SelectedRow.BorderColor = System.Drawing.Color.LightSeaGreen
+        Me.dgv_view_results.Appearance.SelectedRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgv_view_results.Appearance.SelectedRow.ForeColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.SelectedRow.Options.UseBackColor = True
+        Me.dgv_view_results.Appearance.SelectedRow.Options.UseBorderColor = True
+        Me.dgv_view_results.Appearance.SelectedRow.Options.UseFont = True
+        Me.dgv_view_results.Appearance.SelectedRow.Options.UseForeColor = True
+        Me.dgv_view_results.Appearance.TopNewRow.BackColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.TopNewRow.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.TopNewRow.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_results.Appearance.TopNewRow.ForeColor = System.Drawing.Color.DimGray
+        Me.dgv_view_results.Appearance.TopNewRow.Options.UseBackColor = True
+        Me.dgv_view_results.Appearance.TopNewRow.Options.UseBorderColor = True
+        Me.dgv_view_results.Appearance.TopNewRow.Options.UseFont = True
+        Me.dgv_view_results.Appearance.TopNewRow.Options.UseForeColor = True
+        Me.dgv_view_results.Appearance.VertLine.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgv_view_results.Appearance.VertLine.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgv_view_results.Appearance.VertLine.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgv_view_results.Appearance.VertLine.Options.UseBackColor = True
+        Me.dgv_view_results.Appearance.VertLine.Options.UseBorderColor = True
+        Me.dgv_view_results.Appearance.VertLine.Options.UseFont = True
+        Me.dgv_view_results.Appearance.ViewCaption.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.dgv_view_results.Appearance.ViewCaption.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.dgv_view_results.Appearance.ViewCaption.BorderColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.dgv_view_results.Appearance.ViewCaption.Options.UseBackColor = True
+        Me.dgv_view_results.Appearance.ViewCaption.Options.UseBorderColor = True
+        Me.dgv_view_results.AppearancePrint.EvenRow.BackColor = System.Drawing.Color.White
+        Me.dgv_view_results.AppearancePrint.EvenRow.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_results.AppearancePrint.EvenRow.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_results.AppearancePrint.EvenRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.dgv_view_results.AppearancePrint.EvenRow.ForeColor = System.Drawing.Color.Black
+        Me.dgv_view_results.AppearancePrint.EvenRow.Options.UseBackColor = True
+        Me.dgv_view_results.AppearancePrint.EvenRow.Options.UseBorderColor = True
+        Me.dgv_view_results.AppearancePrint.EvenRow.Options.UseFont = True
+        Me.dgv_view_results.AppearancePrint.EvenRow.Options.UseForeColor = True
+        Me.dgv_view_results.AppearancePrint.FilterPanel.BackColor = System.Drawing.Color.White
+        Me.dgv_view_results.AppearancePrint.FilterPanel.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_results.AppearancePrint.FilterPanel.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_results.AppearancePrint.FilterPanel.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.dgv_view_results.AppearancePrint.FilterPanel.Options.UseBackColor = True
+        Me.dgv_view_results.AppearancePrint.FilterPanel.Options.UseBorderColor = True
+        Me.dgv_view_results.AppearancePrint.FilterPanel.Options.UseFont = True
+        Me.dgv_view_results.AppearancePrint.FooterPanel.BackColor = System.Drawing.Color.White
+        Me.dgv_view_results.AppearancePrint.FooterPanel.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_results.AppearancePrint.FooterPanel.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_results.AppearancePrint.FooterPanel.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.dgv_view_results.AppearancePrint.FooterPanel.Options.UseBackColor = True
+        Me.dgv_view_results.AppearancePrint.FooterPanel.Options.UseBorderColor = True
+        Me.dgv_view_results.AppearancePrint.FooterPanel.Options.UseFont = True
+        Me.dgv_view_results.AppearancePrint.GroupFooter.BackColor = System.Drawing.Color.White
+        Me.dgv_view_results.AppearancePrint.GroupFooter.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_results.AppearancePrint.GroupFooter.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_results.AppearancePrint.GroupFooter.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.dgv_view_results.AppearancePrint.GroupFooter.Options.UseBackColor = True
+        Me.dgv_view_results.AppearancePrint.GroupFooter.Options.UseBorderColor = True
+        Me.dgv_view_results.AppearancePrint.GroupFooter.Options.UseFont = True
+        Me.dgv_view_results.AppearancePrint.GroupRow.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.dgv_view_results.AppearancePrint.GroupRow.BackColor2 = System.Drawing.Color.WhiteSmoke
+        Me.dgv_view_results.AppearancePrint.GroupRow.BorderColor = System.Drawing.Color.WhiteSmoke
+        Me.dgv_view_results.AppearancePrint.GroupRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.dgv_view_results.AppearancePrint.GroupRow.Options.UseBackColor = True
+        Me.dgv_view_results.AppearancePrint.GroupRow.Options.UseBorderColor = True
+        Me.dgv_view_results.AppearancePrint.GroupRow.Options.UseFont = True
+        Me.dgv_view_results.AppearancePrint.HeaderPanel.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.dgv_view_results.AppearancePrint.HeaderPanel.BackColor2 = System.Drawing.Color.WhiteSmoke
+        Me.dgv_view_results.AppearancePrint.HeaderPanel.BorderColor = System.Drawing.Color.WhiteSmoke
+        Me.dgv_view_results.AppearancePrint.HeaderPanel.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.dgv_view_results.AppearancePrint.HeaderPanel.Options.UseBackColor = True
+        Me.dgv_view_results.AppearancePrint.HeaderPanel.Options.UseBorderColor = True
+        Me.dgv_view_results.AppearancePrint.HeaderPanel.Options.UseFont = True
+        Me.dgv_view_results.AppearancePrint.Lines.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgv_view_results.AppearancePrint.Lines.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgv_view_results.AppearancePrint.Lines.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgv_view_results.AppearancePrint.Lines.Options.UseBackColor = True
+        Me.dgv_view_results.AppearancePrint.Lines.Options.UseBorderColor = True
+        Me.dgv_view_results.AppearancePrint.OddRow.BackColor = System.Drawing.Color.White
+        Me.dgv_view_results.AppearancePrint.OddRow.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_results.AppearancePrint.OddRow.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_results.AppearancePrint.OddRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.dgv_view_results.AppearancePrint.OddRow.ForeColor = System.Drawing.Color.Black
+        Me.dgv_view_results.AppearancePrint.OddRow.Options.UseBackColor = True
+        Me.dgv_view_results.AppearancePrint.OddRow.Options.UseBorderColor = True
+        Me.dgv_view_results.AppearancePrint.OddRow.Options.UseFont = True
+        Me.dgv_view_results.AppearancePrint.OddRow.Options.UseForeColor = True
+        Me.dgv_view_results.AppearancePrint.Preview.BackColor = System.Drawing.Color.White
+        Me.dgv_view_results.AppearancePrint.Preview.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_results.AppearancePrint.Preview.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_results.AppearancePrint.Preview.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.dgv_view_results.AppearancePrint.Preview.Options.UseBackColor = True
+        Me.dgv_view_results.AppearancePrint.Preview.Options.UseBorderColor = True
+        Me.dgv_view_results.AppearancePrint.Preview.Options.UseFont = True
+        Me.dgv_view_results.AppearancePrint.Row.BackColor = System.Drawing.Color.White
+        Me.dgv_view_results.AppearancePrint.Row.BackColor2 = System.Drawing.Color.White
+        Me.dgv_view_results.AppearancePrint.Row.BorderColor = System.Drawing.Color.White
+        Me.dgv_view_results.AppearancePrint.Row.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgv_view_results.AppearancePrint.Row.ForeColor = System.Drawing.Color.Black
+        Me.dgv_view_results.AppearancePrint.Row.Options.UseBackColor = True
+        Me.dgv_view_results.AppearancePrint.Row.Options.UseBorderColor = True
+        Me.dgv_view_results.AppearancePrint.Row.Options.UseFont = True
+        Me.dgv_view_results.AppearancePrint.Row.Options.UseForeColor = True
+        Me.dgv_view_results.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.dgv_view_results.ColumnPanelRowHeight = 40
+        Me.dgv_view_results.FixedLineWidth = 1
+        Me.dgv_view_results.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
+        Me.dgv_view_results.GridControl = Me.dgv_grid_result
+        Me.dgv_view_results.Name = "dgv_view_results"
+        Me.dgv_view_results.OptionsBehavior.AlignGroupSummaryInGroupRow = DevExpress.Utils.DefaultBoolean.[True]
+        Me.dgv_view_results.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.[False]
+        Me.dgv_view_results.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.[False]
+        Me.dgv_view_results.OptionsBehavior.AutoExpandAllGroups = True
+        Me.dgv_view_results.OptionsBehavior.Editable = False
+        Me.dgv_view_results.OptionsBehavior.ReadOnly = True
+        Me.dgv_view_results.OptionsClipboard.ClipboardMode = DevExpress.Export.ClipboardMode.Formatted
+        Me.dgv_view_results.OptionsClipboard.CopyColumnHeaders = DevExpress.Utils.DefaultBoolean.[True]
+        Me.dgv_view_results.OptionsCustomization.CustomizationFormSearchBoxVisible = True
+        Me.dgv_view_results.OptionsDetail.DetailMode = DevExpress.XtraGrid.Views.Grid.DetailMode.Embedded
+        Me.dgv_view_results.OptionsDetail.ShowDetailTabs = False
+        Me.dgv_view_results.OptionsMenu.EnableFooterMenu = False
+        Me.dgv_view_results.OptionsPrint.EnableAppearanceEvenRow = True
+        Me.dgv_view_results.OptionsPrint.EnableAppearanceOddRow = True
+        Me.dgv_view_results.OptionsPrint.PrintHorzLines = False
+        Me.dgv_view_results.OptionsPrint.PrintVertLines = False
+        Me.dgv_view_results.OptionsSelection.CheckBoxSelectorColumnWidth = 30
+        Me.dgv_view_results.OptionsSelection.EnableAppearanceFocusedCell = False
+        Me.dgv_view_results.OptionsSelection.EnableAppearanceHideSelection = False
+        Me.dgv_view_results.OptionsSelection.MultiSelect = True
+        Me.dgv_view_results.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect
+        Me.dgv_view_results.OptionsSelection.ResetSelectionClickOutsideCheckboxSelector = True
+        Me.dgv_view_results.OptionsSelection.ShowCheckBoxSelectorInColumnHeader = DevExpress.Utils.DefaultBoolean.[True]
+        Me.dgv_view_results.OptionsSelection.ShowCheckBoxSelectorInGroupRow = DevExpress.Utils.DefaultBoolean.[False]
+        Me.dgv_view_results.OptionsSelection.ShowCheckBoxSelectorInPrintExport = DevExpress.Utils.DefaultBoolean.[False]
+        Me.dgv_view_results.OptionsView.AnimationType = DevExpress.XtraGrid.Views.Base.GridAnimationType.AnimateFocusedItem
+        Me.dgv_view_results.OptionsView.BestFitMode = DevExpress.XtraGrid.Views.Grid.GridBestFitMode.Full
+        Me.dgv_view_results.OptionsView.ColumnAutoWidth = False
+        Me.dgv_view_results.OptionsView.EnableAppearanceOddRow = True
+        Me.dgv_view_results.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.SmartTag
+        Me.dgv_view_results.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never
+        Me.dgv_view_results.OptionsView.ShowGroupedColumns = True
+        Me.dgv_view_results.OptionsView.ShowGroupPanel = False
+        Me.dgv_view_results.OptionsView.ShowGroupPanelColumnsAsSingleRow = True
+        Me.dgv_view_results.OptionsView.ShowIndicator = False
+        Me.dgv_view_results.OptionsView.ShowPreviewRowLines = DevExpress.Utils.DefaultBoolean.[False]
+        Me.dgv_view_results.OptionsView.ShowVerticalLines = DevExpress.Utils.DefaultBoolean.[False]
+        Me.dgv_view_results.PaintStyleName = "Skin"
+        Me.dgv_view_results.RowHeight = 30
+        '
+        'rpt_picture_option
+        '
+        Me.rpt_picture_option.LookAndFeel.SkinName = "Office 2019 White"
+        Me.rpt_picture_option.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.rpt_picture_option.Name = "rpt_picture_option"
+        Me.rpt_picture_option.ShowMenu = False
         '
         'lbl_object_separator3
         '
@@ -1847,13 +2310,13 @@ Partial Class wholesales_guarantee_details
         Me.lbl_object_separator3.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.lbl_object_separator3.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
         Me.lbl_object_separator3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.lbl_object_separator3.Location = New System.Drawing.Point(40, 229)
+        Me.lbl_object_separator3.Location = New System.Drawing.Point(40, 282)
         Me.lbl_object_separator3.LookAndFeel.SkinName = "Office 2019 White"
         Me.lbl_object_separator3.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_object_separator3.Margin = New System.Windows.Forms.Padding(0)
         Me.lbl_object_separator3.Name = "lbl_object_separator3"
         Me.lbl_object_separator3.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
-        Me.lbl_object_separator3.Size = New System.Drawing.Size(759, 20)
+        Me.lbl_object_separator3.Size = New System.Drawing.Size(759, 36)
         Me.lbl_object_separator3.TabIndex = 0
         '
         'pnl_search_results
@@ -1873,7 +2336,7 @@ Partial Class wholesales_guarantee_details
         Me.pnl_search_results.Margin = New System.Windows.Forms.Padding(0)
         Me.pnl_search_results.Name = "pnl_search_results"
         Me.pnl_search_results.Padding = New System.Windows.Forms.Padding(1)
-        Me.pnl_search_results.Size = New System.Drawing.Size(759, 181)
+        Me.pnl_search_results.Size = New System.Drawing.Size(759, 234)
         Me.pnl_search_results.TabIndex = 0
         '
         'pnl_options_result
@@ -1897,7 +2360,7 @@ Partial Class wholesales_guarantee_details
         Me.pnl_options_result.Controls.Add(Me.btn_export_results)
         Me.pnl_options_result.Controls.Add(Me.txt_navigate_results)
         Me.pnl_options_result.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.pnl_options_result.Location = New System.Drawing.Point(3, 148)
+        Me.pnl_options_result.Location = New System.Drawing.Point(3, 201)
         Me.pnl_options_result.LookAndFeel.SkinName = "Office 2016 Colorful"
         Me.pnl_options_result.LookAndFeel.UseDefaultLookAndFeel = False
         Me.pnl_options_result.Margin = New System.Windows.Forms.Padding(0)
@@ -2113,7 +2576,7 @@ Partial Class wholesales_guarantee_details
         Me.pnl_search_trancing.Controls.Add(Me.lbl_search_username)
         Me.pnl_search_trancing.Controls.Add(Me.lbl_search_infotracing)
         Me.pnl_search_trancing.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnl_search_trancing.Location = New System.Drawing.Point(40, 1105)
+        Me.pnl_search_trancing.Location = New System.Drawing.Point(40, 1056)
         Me.pnl_search_trancing.LookAndFeel.SkinName = "Office 2019 White"
         Me.pnl_search_trancing.LookAndFeel.UseDefaultLookAndFeel = False
         Me.pnl_search_trancing.Margin = New System.Windows.Forms.Padding(0)
@@ -2229,8 +2692,8 @@ Partial Class wholesales_guarantee_details
         Me.txt_search_timestamp.Properties.AppearanceReadOnly.Options.UseForeColor = True
         Me.txt_search_timestamp.Properties.AutoHeight = False
         Me.txt_search_timestamp.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        EditorButtonImageOptions1.Image = CType(resources.GetObject("EditorButtonImageOptions1.Image"), System.Drawing.Image)
-        Me.txt_search_timestamp.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions1, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, SerializableAppearanceObject2, SerializableAppearanceObject3, SerializableAppearanceObject4, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions11.Image = CType(resources.GetObject("EditorButtonImageOptions11.Image"), System.Drawing.Image)
+        Me.txt_search_timestamp.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions11, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject41, SerializableAppearanceObject42, SerializableAppearanceObject43, SerializableAppearanceObject44, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_search_timestamp.Properties.DisplayFormat.FormatString = "T"
         Me.txt_search_timestamp.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime
         Me.txt_search_timestamp.Properties.EditFormat.FormatString = "T"
@@ -2436,8 +2899,8 @@ Partial Class wholesales_guarantee_details
         Me.txt_search_datestamp.Properties.AppearanceReadOnly.Options.UseForeColor = True
         Me.txt_search_datestamp.Properties.AutoHeight = False
         Me.txt_search_datestamp.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        EditorButtonImageOptions2.Image = CType(resources.GetObject("EditorButtonImageOptions2.Image"), System.Drawing.Image)
-        Me.txt_search_datestamp.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions2, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject5, SerializableAppearanceObject6, SerializableAppearanceObject7, SerializableAppearanceObject8, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions1.Image = CType(resources.GetObject("EditorButtonImageOptions1.Image"), System.Drawing.Image)
+        Me.txt_search_datestamp.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions1, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, SerializableAppearanceObject2, SerializableAppearanceObject3, SerializableAppearanceObject4, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_search_datestamp.Properties.DisplayFormat.FormatString = "D"
         Me.txt_search_datestamp.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime
         Me.txt_search_datestamp.Properties.EditFormat.FormatString = "D"
@@ -2573,7 +3036,7 @@ Partial Class wholesales_guarantee_details
         Me.lbl_object_separator2.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.lbl_object_separator2.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
         Me.lbl_object_separator2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.lbl_object_separator2.Location = New System.Drawing.Point(40, 1075)
+        Me.lbl_object_separator2.Location = New System.Drawing.Point(40, 1026)
         Me.lbl_object_separator2.LookAndFeel.SkinName = "Office 2019 White"
         Me.lbl_object_separator2.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_object_separator2.Margin = New System.Windows.Forms.Padding(0)
@@ -2590,8 +3053,6 @@ Partial Class wholesales_guarantee_details
         Me.pnl_search_sales.Appearance.Options.UseBackColor = True
         Me.pnl_search_sales.Appearance.Options.UseBorderColor = True
         Me.pnl_search_sales.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        Me.pnl_search_sales.Controls.Add(Me.txt_search_dispach)
-        Me.pnl_search_sales.Controls.Add(Me.lbl_search_dispach)
         Me.pnl_search_sales.Controls.Add(Me.txt_search_status)
         Me.pnl_search_sales.Controls.Add(Me.lbl_search_status)
         Me.pnl_search_sales.Controls.Add(Me.txt_search_trace)
@@ -2625,81 +3086,8 @@ Partial Class wholesales_guarantee_details
         Me.pnl_search_sales.MinimumSize = New System.Drawing.Size(0, 35)
         Me.pnl_search_sales.Name = "pnl_search_sales"
         Me.pnl_search_sales.Padding = New System.Windows.Forms.Padding(5)
-        Me.pnl_search_sales.Size = New System.Drawing.Size(433, 590)
+        Me.pnl_search_sales.Size = New System.Drawing.Size(433, 541)
         Me.pnl_search_sales.TabIndex = 0
-        '
-        'txt_search_dispach
-        '
-        Me.txt_search_dispach.EditValue = ""
-        Me.txt_search_dispach.Location = New System.Drawing.Point(127, 552)
-        Me.txt_search_dispach.Margin = New System.Windows.Forms.Padding(0)
-        Me.txt_search_dispach.Name = "txt_search_dispach"
-        Me.txt_search_dispach.Properties.Appearance.BackColor = System.Drawing.Color.White
-        Me.txt_search_dispach.Properties.Appearance.BackColor2 = System.Drawing.Color.White
-        Me.txt_search_dispach.Properties.Appearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_search_dispach.Properties.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_search_dispach.Properties.Appearance.ForeColor = System.Drawing.Color.Black
-        Me.txt_search_dispach.Properties.Appearance.Options.UseBackColor = True
-        Me.txt_search_dispach.Properties.Appearance.Options.UseBorderColor = True
-        Me.txt_search_dispach.Properties.Appearance.Options.UseFont = True
-        Me.txt_search_dispach.Properties.Appearance.Options.UseForeColor = True
-        Me.txt_search_dispach.Properties.Appearance.Options.UseTextOptions = True
-        Me.txt_search_dispach.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Bottom
-        Me.txt_search_dispach.Properties.AppearanceDisabled.BackColor = System.Drawing.Color.White
-        Me.txt_search_dispach.Properties.AppearanceDisabled.BackColor2 = System.Drawing.Color.White
-        Me.txt_search_dispach.Properties.AppearanceDisabled.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_search_dispach.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black
-        Me.txt_search_dispach.Properties.AppearanceDisabled.Options.UseBackColor = True
-        Me.txt_search_dispach.Properties.AppearanceDisabled.Options.UseBorderColor = True
-        Me.txt_search_dispach.Properties.AppearanceDisabled.Options.UseForeColor = True
-        Me.txt_search_dispach.Properties.AppearanceFocused.BackColor = System.Drawing.Color.White
-        Me.txt_search_dispach.Properties.AppearanceFocused.BackColor2 = System.Drawing.Color.White
-        Me.txt_search_dispach.Properties.AppearanceFocused.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_search_dispach.Properties.AppearanceFocused.ForeColor = System.Drawing.Color.Black
-        Me.txt_search_dispach.Properties.AppearanceFocused.Options.UseBackColor = True
-        Me.txt_search_dispach.Properties.AppearanceFocused.Options.UseBorderColor = True
-        Me.txt_search_dispach.Properties.AppearanceFocused.Options.UseForeColor = True
-        Me.txt_search_dispach.Properties.AppearanceReadOnly.BackColor = System.Drawing.Color.White
-        Me.txt_search_dispach.Properties.AppearanceReadOnly.BackColor2 = System.Drawing.Color.White
-        Me.txt_search_dispach.Properties.AppearanceReadOnly.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txt_search_dispach.Properties.AppearanceReadOnly.ForeColor = System.Drawing.Color.Black
-        Me.txt_search_dispach.Properties.AppearanceReadOnly.Options.UseBackColor = True
-        Me.txt_search_dispach.Properties.AppearanceReadOnly.Options.UseBorderColor = True
-        Me.txt_search_dispach.Properties.AppearanceReadOnly.Options.UseForeColor = True
-        Me.txt_search_dispach.Properties.AutoHeight = False
-        Me.txt_search_dispach.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        Me.txt_search_dispach.Properties.DisplayFormat.FormatString = "D"
-        Me.txt_search_dispach.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime
-        Me.txt_search_dispach.Properties.EditFormat.FormatString = "D"
-        Me.txt_search_dispach.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime
-        Me.txt_search_dispach.Properties.LookAndFeel.SkinName = "Office 2019 White"
-        Me.txt_search_dispach.Properties.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.txt_search_dispach.Properties.Mask.BeepOnError = True
-        Me.txt_search_dispach.Properties.Mask.EditMask = "D"
-        Me.txt_search_dispach.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret
-        Me.txt_search_dispach.Properties.ReadOnly = True
-        Me.txt_search_dispach.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-        Me.txt_search_dispach.Size = New System.Drawing.Size(278, 25)
-        Me.txt_search_dispach.TabIndex = 0
-        Me.txt_search_dispach.TabStop = False
-        '
-        'lbl_search_dispach
-        '
-        Me.lbl_search_dispach.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_search_dispach.Appearance.ForeColor = System.Drawing.Color.DimGray
-        Me.lbl_search_dispach.Appearance.Options.UseFont = True
-        Me.lbl_search_dispach.Appearance.Options.UseForeColor = True
-        Me.lbl_search_dispach.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
-        Me.lbl_search_dispach.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom
-        Me.lbl_search_dispach.LineVisible = True
-        Me.lbl_search_dispach.Location = New System.Drawing.Point(7, 555)
-        Me.lbl_search_dispach.LookAndFeel.SkinName = "Office 2019 White"
-        Me.lbl_search_dispach.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.lbl_search_dispach.Margin = New System.Windows.Forms.Padding(0)
-        Me.lbl_search_dispach.Name = "lbl_search_dispach"
-        Me.lbl_search_dispach.Size = New System.Drawing.Size(398, 25)
-        Me.lbl_search_dispach.TabIndex = 0
-        Me.lbl_search_dispach.Text = "Numero de guía:"
         '
         'txt_search_status
         '
@@ -2923,7 +3311,7 @@ Partial Class wholesales_guarantee_details
         'txt_search_causal
         '
         Me.txt_search_causal.EditValue = ""
-        Me.txt_search_causal.Location = New System.Drawing.Point(127, 517)
+        Me.txt_search_causal.Location = New System.Drawing.Point(127, 486)
         Me.txt_search_causal.Margin = New System.Windows.Forms.Padding(0)
         Me.txt_search_causal.Name = "txt_search_causal"
         Me.txt_search_causal.Properties.Appearance.BackColor = System.Drawing.Color.White
@@ -2984,7 +3372,7 @@ Partial Class wholesales_guarantee_details
         Me.lbl_search_causal.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
         Me.lbl_search_causal.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom
         Me.lbl_search_causal.LineVisible = True
-        Me.lbl_search_causal.Location = New System.Drawing.Point(7, 520)
+        Me.lbl_search_causal.Location = New System.Drawing.Point(7, 490)
         Me.lbl_search_causal.LookAndFeel.SkinName = "Office 2019 White"
         Me.lbl_search_causal.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_search_causal.Margin = New System.Windows.Forms.Padding(0)
@@ -3106,8 +3494,8 @@ Partial Class wholesales_guarantee_details
         Me.txt_search_product.Properties.AppearanceReadOnly.Options.UseForeColor = True
         Me.txt_search_product.Properties.AutoHeight = False
         Me.txt_search_product.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        EditorButtonImageOptions3.Image = CType(resources.GetObject("EditorButtonImageOptions3.Image"), System.Drawing.Image)
-        Me.txt_search_product.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions3, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject9, SerializableAppearanceObject10, SerializableAppearanceObject11, SerializableAppearanceObject12, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions2.Image = CType(resources.GetObject("EditorButtonImageOptions2.Image"), System.Drawing.Image)
+        Me.txt_search_product.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions2, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject5, SerializableAppearanceObject6, SerializableAppearanceObject7, SerializableAppearanceObject8, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_search_product.Properties.DisplayFormat.FormatString = "D"
         Me.txt_search_product.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime
         Me.txt_search_product.Properties.EditFormat.FormatString = "D"
@@ -3254,8 +3642,8 @@ Partial Class wholesales_guarantee_details
         Me.txt_search_date.Properties.AppearanceReadOnly.Options.UseForeColor = True
         Me.txt_search_date.Properties.AutoHeight = False
         Me.txt_search_date.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        EditorButtonImageOptions4.Image = CType(resources.GetObject("EditorButtonImageOptions4.Image"), System.Drawing.Image)
-        Me.txt_search_date.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions4, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject13, SerializableAppearanceObject14, SerializableAppearanceObject15, SerializableAppearanceObject16, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions3.Image = CType(resources.GetObject("EditorButtonImageOptions3.Image"), System.Drawing.Image)
+        Me.txt_search_date.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions3, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject9, SerializableAppearanceObject10, SerializableAppearanceObject11, SerializableAppearanceObject12, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_search_date.Properties.DisplayFormat.FormatString = "D"
         Me.txt_search_date.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime
         Me.txt_search_date.Properties.EditFormat.FormatString = "D"
@@ -3694,8 +4082,8 @@ Partial Class wholesales_guarantee_details
         Me.txt_search_cellphone.Properties.AppearanceReadOnly.Options.UseForeColor = True
         Me.txt_search_cellphone.Properties.AutoHeight = False
         Me.txt_search_cellphone.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        EditorButtonImageOptions5.Image = CType(resources.GetObject("EditorButtonImageOptions5.Image"), System.Drawing.Image)
-        Me.txt_search_cellphone.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions5, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject17, SerializableAppearanceObject18, SerializableAppearanceObject19, SerializableAppearanceObject20, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions4.Image = CType(resources.GetObject("EditorButtonImageOptions4.Image"), System.Drawing.Image)
+        Me.txt_search_cellphone.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions4, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject13, SerializableAppearanceObject14, SerializableAppearanceObject15, SerializableAppearanceObject16, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_search_cellphone.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.txt_search_cellphone.Properties.LookAndFeel.UseDefaultLookAndFeel = False
         Me.txt_search_cellphone.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
@@ -3743,8 +4131,8 @@ Partial Class wholesales_guarantee_details
         Me.txt_search_created.Properties.AppearanceReadOnly.Options.UseForeColor = True
         Me.txt_search_created.Properties.AutoHeight = False
         Me.txt_search_created.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        EditorButtonImageOptions6.Image = CType(resources.GetObject("EditorButtonImageOptions6.Image"), System.Drawing.Image)
-        Me.txt_search_created.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions6, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject21, SerializableAppearanceObject22, SerializableAppearanceObject23, SerializableAppearanceObject24, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions5.Image = CType(resources.GetObject("EditorButtonImageOptions5.Image"), System.Drawing.Image)
+        Me.txt_search_created.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions5, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject17, SerializableAppearanceObject18, SerializableAppearanceObject19, SerializableAppearanceObject20, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_search_created.Properties.DisplayFormat.FormatString = "D"
         Me.txt_search_created.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime
         Me.txt_search_created.Properties.EditFormat.FormatString = "D"
@@ -3950,8 +4338,8 @@ Partial Class wholesales_guarantee_details
         Me.txt_search_address.Properties.AppearanceReadOnly.Options.UseForeColor = True
         Me.txt_search_address.Properties.AutoHeight = False
         Me.txt_search_address.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        EditorButtonImageOptions7.Image = CType(resources.GetObject("EditorButtonImageOptions7.Image"), System.Drawing.Image)
-        Me.txt_search_address.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions7, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject25, SerializableAppearanceObject26, SerializableAppearanceObject27, SerializableAppearanceObject28, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions6.Image = CType(resources.GetObject("EditorButtonImageOptions6.Image"), System.Drawing.Image)
+        Me.txt_search_address.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions6, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject21, SerializableAppearanceObject22, SerializableAppearanceObject23, SerializableAppearanceObject24, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_search_address.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.txt_search_address.Properties.LookAndFeel.UseDefaultLookAndFeel = False
         Me.txt_search_address.Properties.ReadOnly = True
@@ -4018,8 +4406,8 @@ Partial Class wholesales_guarantee_details
         Me.txt_search_email.Properties.AppearanceReadOnly.Options.UseForeColor = True
         Me.txt_search_email.Properties.AutoHeight = False
         Me.txt_search_email.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        EditorButtonImageOptions8.Image = CType(resources.GetObject("EditorButtonImageOptions8.Image"), System.Drawing.Image)
-        Me.txt_search_email.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions8, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject29, SerializableAppearanceObject30, SerializableAppearanceObject31, SerializableAppearanceObject32, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions7.Image = CType(resources.GetObject("EditorButtonImageOptions7.Image"), System.Drawing.Image)
+        Me.txt_search_email.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions7, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject25, SerializableAppearanceObject26, SerializableAppearanceObject27, SerializableAppearanceObject28, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_search_email.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.txt_search_email.Properties.LookAndFeel.UseDefaultLookAndFeel = False
         Me.txt_search_email.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
@@ -4085,8 +4473,8 @@ Partial Class wholesales_guarantee_details
         Me.txt_search_phone.Properties.AppearanceReadOnly.Options.UseForeColor = True
         Me.txt_search_phone.Properties.AutoHeight = False
         Me.txt_search_phone.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        EditorButtonImageOptions9.Image = CType(resources.GetObject("EditorButtonImageOptions9.Image"), System.Drawing.Image)
-        Me.txt_search_phone.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions9, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject33, SerializableAppearanceObject34, SerializableAppearanceObject35, SerializableAppearanceObject36, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions8.Image = CType(resources.GetObject("EditorButtonImageOptions8.Image"), System.Drawing.Image)
+        Me.txt_search_phone.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions8, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject29, SerializableAppearanceObject30, SerializableAppearanceObject31, SerializableAppearanceObject32, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_search_phone.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.txt_search_phone.Properties.LookAndFeel.UseDefaultLookAndFeel = False
         Me.txt_search_phone.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
@@ -4152,8 +4540,8 @@ Partial Class wholesales_guarantee_details
         Me.txt_search_birthdate.Properties.AppearanceReadOnly.Options.UseForeColor = True
         Me.txt_search_birthdate.Properties.AutoHeight = False
         Me.txt_search_birthdate.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        EditorButtonImageOptions10.Image = CType(resources.GetObject("EditorButtonImageOptions10.Image"), System.Drawing.Image)
-        Me.txt_search_birthdate.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions10, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject37, SerializableAppearanceObject38, SerializableAppearanceObject39, SerializableAppearanceObject40, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions9.Image = CType(resources.GetObject("EditorButtonImageOptions9.Image"), System.Drawing.Image)
+        Me.txt_search_birthdate.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions9, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject33, SerializableAppearanceObject34, SerializableAppearanceObject35, SerializableAppearanceObject36, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_search_birthdate.Properties.DisplayFormat.FormatString = "D"
         Me.txt_search_birthdate.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime
         Me.txt_search_birthdate.Properties.EditFormat.FormatString = "D"
@@ -4376,6 +4764,297 @@ Partial Class wholesales_guarantee_details
         Me.lbl_search_optin.TabIndex = 0
         Me.lbl_search_optin.Text = "Habeas Data:"
         '
+        'CustomGridView1
+        '
+        Me.CustomGridView1.Appearance.ColumnFilterButton.BackColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.ColumnFilterButton.BackColor2 = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.ColumnFilterButton.BorderColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.ColumnFilterButton.ForeColor = System.Drawing.Color.DimGray
+        Me.CustomGridView1.Appearance.ColumnFilterButton.Options.UseBackColor = True
+        Me.CustomGridView1.Appearance.ColumnFilterButton.Options.UseBorderColor = True
+        Me.CustomGridView1.Appearance.ColumnFilterButton.Options.UseForeColor = True
+        Me.CustomGridView1.Appearance.Empty.BackColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.Empty.BackColor2 = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.Empty.BorderColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.Empty.ForeColor = System.Drawing.Color.DimGray
+        Me.CustomGridView1.Appearance.Empty.Options.UseBackColor = True
+        Me.CustomGridView1.Appearance.Empty.Options.UseBorderColor = True
+        Me.CustomGridView1.Appearance.Empty.Options.UseForeColor = True
+        Me.CustomGridView1.Appearance.EvenRow.BackColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.EvenRow.BackColor2 = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.EvenRow.BorderColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.EvenRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CustomGridView1.Appearance.EvenRow.ForeColor = System.Drawing.Color.Black
+        Me.CustomGridView1.Appearance.EvenRow.Options.UseBackColor = True
+        Me.CustomGridView1.Appearance.EvenRow.Options.UseBorderColor = True
+        Me.CustomGridView1.Appearance.EvenRow.Options.UseFont = True
+        Me.CustomGridView1.Appearance.EvenRow.Options.UseForeColor = True
+        Me.CustomGridView1.Appearance.FilterCloseButton.BackColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.FilterCloseButton.BackColor2 = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.FilterCloseButton.BorderColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.FilterCloseButton.ForeColor = System.Drawing.Color.DimGray
+        Me.CustomGridView1.Appearance.FilterCloseButton.Options.UseBackColor = True
+        Me.CustomGridView1.Appearance.FilterCloseButton.Options.UseBorderColor = True
+        Me.CustomGridView1.Appearance.FilterCloseButton.Options.UseFont = True
+        Me.CustomGridView1.Appearance.FilterCloseButton.Options.UseForeColor = True
+        Me.CustomGridView1.Appearance.FilterPanel.BackColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.FilterPanel.BackColor2 = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.FilterPanel.BorderColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.FilterPanel.ForeColor = System.Drawing.Color.DimGray
+        Me.CustomGridView1.Appearance.FilterPanel.Options.UseBackColor = True
+        Me.CustomGridView1.Appearance.FilterPanel.Options.UseBorderColor = True
+        Me.CustomGridView1.Appearance.FilterPanel.Options.UseFont = True
+        Me.CustomGridView1.Appearance.FilterPanel.Options.UseForeColor = True
+        Me.CustomGridView1.Appearance.FixedLine.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.CustomGridView1.Appearance.FixedLine.BackColor2 = System.Drawing.Color.WhiteSmoke
+        Me.CustomGridView1.Appearance.FixedLine.BorderColor = System.Drawing.Color.WhiteSmoke
+        Me.CustomGridView1.Appearance.FixedLine.Options.UseBackColor = True
+        Me.CustomGridView1.Appearance.FixedLine.Options.UseBorderColor = True
+        Me.CustomGridView1.Appearance.FocusedCell.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CustomGridView1.Appearance.FocusedCell.Options.UseFont = True
+        Me.CustomGridView1.Appearance.FocusedRow.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.CustomGridView1.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.LightSeaGreen
+        Me.CustomGridView1.Appearance.FocusedRow.BorderColor = System.Drawing.Color.LightSeaGreen
+        Me.CustomGridView1.Appearance.FocusedRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CustomGridView1.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.FocusedRow.Options.UseBackColor = True
+        Me.CustomGridView1.Appearance.FocusedRow.Options.UseBorderColor = True
+        Me.CustomGridView1.Appearance.FocusedRow.Options.UseFont = True
+        Me.CustomGridView1.Appearance.FocusedRow.Options.UseForeColor = True
+        Me.CustomGridView1.Appearance.FooterPanel.BackColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.FooterPanel.BackColor2 = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.FooterPanel.BorderColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.FooterPanel.ForeColor = System.Drawing.Color.DimGray
+        Me.CustomGridView1.Appearance.FooterPanel.Options.UseBackColor = True
+        Me.CustomGridView1.Appearance.FooterPanel.Options.UseBorderColor = True
+        Me.CustomGridView1.Appearance.FooterPanel.Options.UseFont = True
+        Me.CustomGridView1.Appearance.FooterPanel.Options.UseForeColor = True
+        Me.CustomGridView1.Appearance.GroupButton.BackColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.GroupButton.BackColor2 = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.GroupButton.BorderColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.GroupButton.Options.UseBackColor = True
+        Me.CustomGridView1.Appearance.GroupButton.Options.UseBorderColor = True
+        Me.CustomGridView1.Appearance.GroupButton.Options.UseFont = True
+        Me.CustomGridView1.Appearance.GroupFooter.BackColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.GroupFooter.BackColor2 = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.GroupFooter.BorderColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.GroupFooter.ForeColor = System.Drawing.Color.Black
+        Me.CustomGridView1.Appearance.GroupFooter.Options.UseBackColor = True
+        Me.CustomGridView1.Appearance.GroupFooter.Options.UseBorderColor = True
+        Me.CustomGridView1.Appearance.GroupFooter.Options.UseFont = True
+        Me.CustomGridView1.Appearance.GroupFooter.Options.UseForeColor = True
+        Me.CustomGridView1.Appearance.GroupPanel.BackColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.GroupPanel.BackColor2 = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.GroupPanel.BorderColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.GroupPanel.ForeColor = System.Drawing.Color.DimGray
+        Me.CustomGridView1.Appearance.GroupPanel.Options.UseBackColor = True
+        Me.CustomGridView1.Appearance.GroupPanel.Options.UseBorderColor = True
+        Me.CustomGridView1.Appearance.GroupPanel.Options.UseFont = True
+        Me.CustomGridView1.Appearance.GroupPanel.Options.UseForeColor = True
+        Me.CustomGridView1.Appearance.GroupRow.BackColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.GroupRow.BackColor2 = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.GroupRow.BorderColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.GroupRow.ForeColor = System.Drawing.Color.Black
+        Me.CustomGridView1.Appearance.GroupRow.Options.UseBackColor = True
+        Me.CustomGridView1.Appearance.GroupRow.Options.UseBorderColor = True
+        Me.CustomGridView1.Appearance.GroupRow.Options.UseFont = True
+        Me.CustomGridView1.Appearance.GroupRow.Options.UseForeColor = True
+        Me.CustomGridView1.Appearance.HeaderPanel.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.CustomGridView1.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.WhiteSmoke
+        Me.CustomGridView1.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.WhiteSmoke
+        Me.CustomGridView1.Appearance.HeaderPanel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CustomGridView1.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.DimGray
+        Me.CustomGridView1.Appearance.HeaderPanel.Options.UseBackColor = True
+        Me.CustomGridView1.Appearance.HeaderPanel.Options.UseBorderColor = True
+        Me.CustomGridView1.Appearance.HeaderPanel.Options.UseFont = True
+        Me.CustomGridView1.Appearance.HeaderPanel.Options.UseForeColor = True
+        Me.CustomGridView1.Appearance.HideSelectionRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CustomGridView1.Appearance.HideSelectionRow.Options.UseFont = True
+        Me.CustomGridView1.Appearance.HorzLine.BackColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.HorzLine.BackColor2 = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.HorzLine.BorderColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.HorzLine.ForeColor = System.Drawing.Color.DimGray
+        Me.CustomGridView1.Appearance.HorzLine.Options.UseBackColor = True
+        Me.CustomGridView1.Appearance.HorzLine.Options.UseBorderColor = True
+        Me.CustomGridView1.Appearance.HorzLine.Options.UseFont = True
+        Me.CustomGridView1.Appearance.HorzLine.Options.UseForeColor = True
+        Me.CustomGridView1.Appearance.OddRow.BackColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.OddRow.BackColor2 = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.OddRow.BorderColor = System.Drawing.Color.WhiteSmoke
+        Me.CustomGridView1.Appearance.OddRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CustomGridView1.Appearance.OddRow.ForeColor = System.Drawing.Color.Black
+        Me.CustomGridView1.Appearance.OddRow.Options.UseBackColor = True
+        Me.CustomGridView1.Appearance.OddRow.Options.UseBorderColor = True
+        Me.CustomGridView1.Appearance.OddRow.Options.UseFont = True
+        Me.CustomGridView1.Appearance.OddRow.Options.UseForeColor = True
+        Me.CustomGridView1.Appearance.Preview.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.CustomGridView1.Appearance.Preview.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.CustomGridView1.Appearance.Preview.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.CustomGridView1.Appearance.Preview.ForeColor = System.Drawing.Color.Black
+        Me.CustomGridView1.Appearance.Preview.Options.UseBackColor = True
+        Me.CustomGridView1.Appearance.Preview.Options.UseBorderColor = True
+        Me.CustomGridView1.Appearance.Preview.Options.UseFont = True
+        Me.CustomGridView1.Appearance.Preview.Options.UseForeColor = True
+        Me.CustomGridView1.Appearance.Row.BackColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.Row.BackColor2 = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.Row.BorderColor = System.Drawing.Color.WhiteSmoke
+        Me.CustomGridView1.Appearance.Row.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CustomGridView1.Appearance.Row.ForeColor = System.Drawing.Color.Black
+        Me.CustomGridView1.Appearance.Row.Options.UseBackColor = True
+        Me.CustomGridView1.Appearance.Row.Options.UseBorderColor = True
+        Me.CustomGridView1.Appearance.Row.Options.UseFont = True
+        Me.CustomGridView1.Appearance.Row.Options.UseForeColor = True
+        Me.CustomGridView1.Appearance.RowSeparator.BackColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.RowSeparator.BackColor2 = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.RowSeparator.BorderColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.RowSeparator.Options.UseBackColor = True
+        Me.CustomGridView1.Appearance.RowSeparator.Options.UseBorderColor = True
+        Me.CustomGridView1.Appearance.RowSeparator.Options.UseFont = True
+        Me.CustomGridView1.Appearance.SelectedRow.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.CustomGridView1.Appearance.SelectedRow.BackColor2 = System.Drawing.Color.LightSeaGreen
+        Me.CustomGridView1.Appearance.SelectedRow.BorderColor = System.Drawing.Color.LightSeaGreen
+        Me.CustomGridView1.Appearance.SelectedRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CustomGridView1.Appearance.SelectedRow.ForeColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.SelectedRow.Options.UseBackColor = True
+        Me.CustomGridView1.Appearance.SelectedRow.Options.UseBorderColor = True
+        Me.CustomGridView1.Appearance.SelectedRow.Options.UseFont = True
+        Me.CustomGridView1.Appearance.SelectedRow.Options.UseForeColor = True
+        Me.CustomGridView1.Appearance.TopNewRow.BackColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.TopNewRow.BackColor2 = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.TopNewRow.BorderColor = System.Drawing.Color.White
+        Me.CustomGridView1.Appearance.TopNewRow.ForeColor = System.Drawing.Color.DimGray
+        Me.CustomGridView1.Appearance.TopNewRow.Options.UseBackColor = True
+        Me.CustomGridView1.Appearance.TopNewRow.Options.UseBorderColor = True
+        Me.CustomGridView1.Appearance.TopNewRow.Options.UseFont = True
+        Me.CustomGridView1.Appearance.TopNewRow.Options.UseForeColor = True
+        Me.CustomGridView1.Appearance.VertLine.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.CustomGridView1.Appearance.VertLine.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.CustomGridView1.Appearance.VertLine.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.CustomGridView1.Appearance.VertLine.Options.UseBackColor = True
+        Me.CustomGridView1.Appearance.VertLine.Options.UseBorderColor = True
+        Me.CustomGridView1.Appearance.VertLine.Options.UseFont = True
+        Me.CustomGridView1.Appearance.ViewCaption.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.CustomGridView1.Appearance.ViewCaption.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.CustomGridView1.Appearance.ViewCaption.BorderColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.CustomGridView1.Appearance.ViewCaption.Options.UseBackColor = True
+        Me.CustomGridView1.Appearance.ViewCaption.Options.UseBorderColor = True
+        Me.CustomGridView1.AppearancePrint.EvenRow.BackColor = System.Drawing.Color.White
+        Me.CustomGridView1.AppearancePrint.EvenRow.BackColor2 = System.Drawing.Color.White
+        Me.CustomGridView1.AppearancePrint.EvenRow.BorderColor = System.Drawing.Color.White
+        Me.CustomGridView1.AppearancePrint.EvenRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.CustomGridView1.AppearancePrint.EvenRow.ForeColor = System.Drawing.Color.Black
+        Me.CustomGridView1.AppearancePrint.EvenRow.Options.UseBackColor = True
+        Me.CustomGridView1.AppearancePrint.EvenRow.Options.UseBorderColor = True
+        Me.CustomGridView1.AppearancePrint.EvenRow.Options.UseFont = True
+        Me.CustomGridView1.AppearancePrint.EvenRow.Options.UseForeColor = True
+        Me.CustomGridView1.AppearancePrint.FilterPanel.BackColor = System.Drawing.Color.White
+        Me.CustomGridView1.AppearancePrint.FilterPanel.BackColor2 = System.Drawing.Color.White
+        Me.CustomGridView1.AppearancePrint.FilterPanel.BorderColor = System.Drawing.Color.White
+        Me.CustomGridView1.AppearancePrint.FilterPanel.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.CustomGridView1.AppearancePrint.FilterPanel.Options.UseBackColor = True
+        Me.CustomGridView1.AppearancePrint.FilterPanel.Options.UseBorderColor = True
+        Me.CustomGridView1.AppearancePrint.FilterPanel.Options.UseFont = True
+        Me.CustomGridView1.AppearancePrint.FooterPanel.BackColor = System.Drawing.Color.White
+        Me.CustomGridView1.AppearancePrint.FooterPanel.BackColor2 = System.Drawing.Color.White
+        Me.CustomGridView1.AppearancePrint.FooterPanel.BorderColor = System.Drawing.Color.White
+        Me.CustomGridView1.AppearancePrint.FooterPanel.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.CustomGridView1.AppearancePrint.FooterPanel.Options.UseBackColor = True
+        Me.CustomGridView1.AppearancePrint.FooterPanel.Options.UseBorderColor = True
+        Me.CustomGridView1.AppearancePrint.FooterPanel.Options.UseFont = True
+        Me.CustomGridView1.AppearancePrint.GroupFooter.BackColor = System.Drawing.Color.White
+        Me.CustomGridView1.AppearancePrint.GroupFooter.BackColor2 = System.Drawing.Color.White
+        Me.CustomGridView1.AppearancePrint.GroupFooter.BorderColor = System.Drawing.Color.White
+        Me.CustomGridView1.AppearancePrint.GroupFooter.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.CustomGridView1.AppearancePrint.GroupFooter.Options.UseBackColor = True
+        Me.CustomGridView1.AppearancePrint.GroupFooter.Options.UseBorderColor = True
+        Me.CustomGridView1.AppearancePrint.GroupFooter.Options.UseFont = True
+        Me.CustomGridView1.AppearancePrint.GroupRow.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.CustomGridView1.AppearancePrint.GroupRow.BackColor2 = System.Drawing.Color.WhiteSmoke
+        Me.CustomGridView1.AppearancePrint.GroupRow.BorderColor = System.Drawing.Color.WhiteSmoke
+        Me.CustomGridView1.AppearancePrint.GroupRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.CustomGridView1.AppearancePrint.GroupRow.Options.UseBackColor = True
+        Me.CustomGridView1.AppearancePrint.GroupRow.Options.UseBorderColor = True
+        Me.CustomGridView1.AppearancePrint.GroupRow.Options.UseFont = True
+        Me.CustomGridView1.AppearancePrint.HeaderPanel.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.CustomGridView1.AppearancePrint.HeaderPanel.BackColor2 = System.Drawing.Color.WhiteSmoke
+        Me.CustomGridView1.AppearancePrint.HeaderPanel.BorderColor = System.Drawing.Color.WhiteSmoke
+        Me.CustomGridView1.AppearancePrint.HeaderPanel.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.CustomGridView1.AppearancePrint.HeaderPanel.Options.UseBackColor = True
+        Me.CustomGridView1.AppearancePrint.HeaderPanel.Options.UseBorderColor = True
+        Me.CustomGridView1.AppearancePrint.HeaderPanel.Options.UseFont = True
+        Me.CustomGridView1.AppearancePrint.Lines.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.CustomGridView1.AppearancePrint.Lines.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.CustomGridView1.AppearancePrint.Lines.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.CustomGridView1.AppearancePrint.Lines.Options.UseBackColor = True
+        Me.CustomGridView1.AppearancePrint.Lines.Options.UseBorderColor = True
+        Me.CustomGridView1.AppearancePrint.OddRow.BackColor = System.Drawing.Color.White
+        Me.CustomGridView1.AppearancePrint.OddRow.BackColor2 = System.Drawing.Color.White
+        Me.CustomGridView1.AppearancePrint.OddRow.BorderColor = System.Drawing.Color.White
+        Me.CustomGridView1.AppearancePrint.OddRow.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.CustomGridView1.AppearancePrint.OddRow.ForeColor = System.Drawing.Color.Black
+        Me.CustomGridView1.AppearancePrint.OddRow.Options.UseBackColor = True
+        Me.CustomGridView1.AppearancePrint.OddRow.Options.UseBorderColor = True
+        Me.CustomGridView1.AppearancePrint.OddRow.Options.UseFont = True
+        Me.CustomGridView1.AppearancePrint.OddRow.Options.UseForeColor = True
+        Me.CustomGridView1.AppearancePrint.Preview.BackColor = System.Drawing.Color.White
+        Me.CustomGridView1.AppearancePrint.Preview.BackColor2 = System.Drawing.Color.White
+        Me.CustomGridView1.AppearancePrint.Preview.BorderColor = System.Drawing.Color.White
+        Me.CustomGridView1.AppearancePrint.Preview.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.CustomGridView1.AppearancePrint.Preview.Options.UseBackColor = True
+        Me.CustomGridView1.AppearancePrint.Preview.Options.UseBorderColor = True
+        Me.CustomGridView1.AppearancePrint.Preview.Options.UseFont = True
+        Me.CustomGridView1.AppearancePrint.Row.BackColor = System.Drawing.Color.White
+        Me.CustomGridView1.AppearancePrint.Row.BackColor2 = System.Drawing.Color.White
+        Me.CustomGridView1.AppearancePrint.Row.BorderColor = System.Drawing.Color.White
+        Me.CustomGridView1.AppearancePrint.Row.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CustomGridView1.AppearancePrint.Row.ForeColor = System.Drawing.Color.Black
+        Me.CustomGridView1.AppearancePrint.Row.Options.UseBackColor = True
+        Me.CustomGridView1.AppearancePrint.Row.Options.UseBorderColor = True
+        Me.CustomGridView1.AppearancePrint.Row.Options.UseFont = True
+        Me.CustomGridView1.AppearancePrint.Row.Options.UseForeColor = True
+        Me.CustomGridView1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.CustomGridView1.ColumnPanelRowHeight = 45
+        Me.CustomGridView1.FixedLineWidth = 1
+        Me.CustomGridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
+        Me.CustomGridView1.Name = "CustomGridView1"
+        Me.CustomGridView1.OptionsBehavior.AlignGroupSummaryInGroupRow = DevExpress.Utils.DefaultBoolean.[True]
+        Me.CustomGridView1.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.[False]
+        Me.CustomGridView1.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.[False]
+        Me.CustomGridView1.OptionsBehavior.Editable = False
+        Me.CustomGridView1.OptionsBehavior.ReadOnly = True
+        Me.CustomGridView1.OptionsCustomization.CustomizationFormSearchBoxVisible = True
+        Me.CustomGridView1.OptionsDetail.DetailMode = DevExpress.XtraGrid.Views.Grid.DetailMode.Embedded
+        Me.CustomGridView1.OptionsDetail.ShowDetailTabs = False
+        Me.CustomGridView1.OptionsMenu.EnableFooterMenu = False
+        Me.CustomGridView1.OptionsPrint.EnableAppearanceEvenRow = True
+        Me.CustomGridView1.OptionsPrint.EnableAppearanceOddRow = True
+        Me.CustomGridView1.OptionsPrint.ExpandAllDetails = True
+        Me.CustomGridView1.OptionsPrint.PrintDetails = True
+        Me.CustomGridView1.OptionsPrint.PrintVertLines = False
+        Me.CustomGridView1.OptionsSelection.CheckBoxSelectorColumnWidth = 30
+        Me.CustomGridView1.OptionsSelection.EnableAppearanceFocusedCell = False
+        Me.CustomGridView1.OptionsSelection.EnableAppearanceHideSelection = False
+        Me.CustomGridView1.OptionsSelection.MultiSelect = True
+        Me.CustomGridView1.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect
+        Me.CustomGridView1.OptionsSelection.ResetSelectionClickOutsideCheckboxSelector = True
+        Me.CustomGridView1.OptionsSelection.ShowCheckBoxSelectorInColumnHeader = DevExpress.Utils.DefaultBoolean.[True]
+        Me.CustomGridView1.OptionsSelection.ShowCheckBoxSelectorInGroupRow = DevExpress.Utils.DefaultBoolean.[False]
+        Me.CustomGridView1.OptionsSelection.ShowCheckBoxSelectorInPrintExport = DevExpress.Utils.DefaultBoolean.[False]
+        Me.CustomGridView1.OptionsView.AnimationType = DevExpress.XtraGrid.Views.Base.GridAnimationType.AnimateFocusedItem
+        Me.CustomGridView1.OptionsView.BestFitMode = DevExpress.XtraGrid.Views.Grid.GridBestFitMode.Full
+        Me.CustomGridView1.OptionsView.ColumnAutoWidth = False
+        Me.CustomGridView1.OptionsView.EnableAppearanceOddRow = True
+        Me.CustomGridView1.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never
+        Me.CustomGridView1.OptionsView.ShowGroupedColumns = True
+        Me.CustomGridView1.OptionsView.ShowGroupPanel = False
+        Me.CustomGridView1.OptionsView.ShowGroupPanelColumnsAsSingleRow = True
+        Me.CustomGridView1.OptionsView.ShowHorizontalLines = DevExpress.Utils.DefaultBoolean.[True]
+        Me.CustomGridView1.OptionsView.ShowIndicator = False
+        Me.CustomGridView1.OptionsView.ShowPreviewRowLines = DevExpress.Utils.DefaultBoolean.[False]
+        Me.CustomGridView1.OptionsView.ShowVerticalLines = DevExpress.Utils.DefaultBoolean.[False]
+        Me.CustomGridView1.PaintStyleName = "Skin"
+        Me.CustomGridView1.RowHeight = 30
+        '
         'wholesales_guarantee_details
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
@@ -4399,14 +5078,25 @@ Partial Class wholesales_guarantee_details
         CType(Me.pnl_search_container, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnl_search_container.ResumeLayout(False)
         Me.pnl_search_right.ResumeLayout(False)
-        CType(Me.pnl_object_flyout, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnl_object_flyout.ResumeLayout(False)
-        CType(Me.pnl_object_menu, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnl_object_menu.ResumeLayout(False)
-        Me.pnl_object_actions.ResumeLayout(False)
-        CType(Me.dgv_grid_result, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgv_view_results, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.rpt_picture_option, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pnl_revision_tabbed, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnl_revision_tabbed.ResumeLayout(False)
+        Me.xtp_object_stages.ResumeLayout(False)
+        Me.xtp_object_stages.PerformLayout()
+        CType(Me.object_progress_stage, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.xtp_object_revisions.ResumeLayout(False)
+        CType(Me.pnl_grid_revision, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnl_grid_revision.ResumeLayout(False)
+        CType(Me.dgv_grid_revisions, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgv_view_revisions, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemPictureEdit2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemMemoEdit1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pnl_options_revisions, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnl_options_revisions.ResumeLayout(False)
+        Me.pnl_options_revisions.PerformLayout()
+        CType(Me.lbl_separator_revisions, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pnl_object_revision, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnl_object_revision.ResumeLayout(False)
+        Me.xtp_object_notes.ResumeLayout(False)
         CType(Me.pnl_search_objects, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnl_search_objects.ResumeLayout(False)
         CType(Me.dgv_grid_objects, System.ComponentModel.ISupportInitialize).EndInit()
@@ -4419,11 +5109,14 @@ Partial Class wholesales_guarantee_details
         CType(Me.lbl_separator_objects, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pnl_object_options, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnl_object_options.ResumeLayout(False)
-        CType(Me.lbl_separator_tiny2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txt_search_description.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pnl_object_revision, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnl_object_revision.ResumeLayout(False)
-        CType(Me.lbl_separator_tiny1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pnl_object_flyout, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnl_object_flyout.ResumeLayout(False)
+        CType(Me.pnl_object_menu, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnl_object_menu.ResumeLayout(False)
+        Me.pnl_object_actions.ResumeLayout(False)
+        CType(Me.dgv_grid_result, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgv_view_results, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.rpt_picture_option, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pnl_search_results, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnl_search_results.ResumeLayout(False)
         CType(Me.pnl_options_result, System.ComponentModel.ISupportInitialize).EndInit()
@@ -4441,7 +5134,6 @@ Partial Class wholesales_guarantee_details
         CType(Me.txt_search_username.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pnl_search_sales, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnl_search_sales.ResumeLayout(False)
-        CType(Me.txt_search_dispach.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txt_search_status.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txt_search_trace.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txt_search_skuitem.Properties, System.ComponentModel.ISupportInitialize).EndInit()
@@ -4467,6 +5159,7 @@ Partial Class wholesales_guarantee_details
         CType(Me.txt_search_customer.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txt_search_document.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.chk_search_optin.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CustomGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -4501,7 +5194,6 @@ Partial Class wholesales_guarantee_details
     Friend WithEvents lbl_separator_objects As DevExpress.XtraEditors.SeparatorControl
     Protected WithEvents txt_navigate_objects As DevExpress.XtraEditors.ControlNavigator
     Friend WithEvents pnl_object_options As DevExpress.XtraEditors.PanelControl
-    Friend WithEvents lbl_options_notes As DevExpress.XtraEditors.LabelControl
     Friend WithEvents lbl_object_separator3 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents pnl_search_results As DevExpress.XtraEditors.PanelControl
     Protected WithEvents pnl_options_result As DevExpress.XtraEditors.PanelControl
@@ -4576,23 +5268,39 @@ Partial Class wholesales_guarantee_details
     Friend WithEvents txt_search_skuitem As APDA.Object.Controls.TextboxEdit
     Friend WithEvents lbl_search_skuitem As DevExpress.XtraEditors.LabelControl
     Friend WithEvents pnl_object_revision As DevExpress.XtraEditors.PanelControl
-    Friend WithEvents lbl_separator_tiny1 As DevExpress.XtraEditors.SeparatorControl
-    Friend WithEvents lbl_object_separator4 As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents txt_search_description As APDA.Object.Controls.TextboxMemo
     Protected WithEvents btn_object_support As Button
-    Friend WithEvents lbl_search_support As DevExpress.XtraEditors.LabelControl
-    Protected WithEvents btn_object_edit As Button
     Protected WithEvents btn_object_erase As Button
-    Protected WithEvents btn_object_dispach As Button
     Protected WithEvents btn_object_proof As Button
     Friend WithEvents txt_search_trace As APDA.Object.Controls.TextboxEdit
     Friend WithEvents lbl_search_trace As DevExpress.XtraEditors.LabelControl
     Friend WithEvents txt_search_status As APDA.Object.Controls.TextboxEdit
     Friend WithEvents lbl_search_status As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents txt_search_dispach As APDA.Object.Controls.TextboxEdit
-    Friend WithEvents lbl_search_dispach As DevExpress.XtraEditors.LabelControl
     Protected WithEvents btn_object_notes As Button
-    Protected WithEvents btn_object_transfer As Button
     Protected WithEvents btn_object_status As Button
-    Friend WithEvents lbl_separator_tiny2 As DevExpress.XtraEditors.SeparatorControl
+    Friend WithEvents pnl_revision_tabbed As DevExpress.XtraTab.XtraTabControl
+    Friend WithEvents xtp_object_stages As DevExpress.XtraTab.XtraTabPage
+    Friend WithEvents xtp_object_revisions As DevExpress.XtraTab.XtraTabPage
+    Friend WithEvents xtp_object_notes As DevExpress.XtraTab.XtraTabPage
+    Friend WithEvents CustomGridView1 As APDA.Object.Controls.CustomGridView
+    Friend WithEvents pnl_grid_revision As DevExpress.XtraEditors.PanelControl
+    Friend WithEvents dgv_grid_revisions As APDA.Object.Controls.CustomGrid
+    Friend WithEvents dgv_view_revisions As APDA.Object.Controls.CustomGridView
+    Friend WithEvents RepositoryItemPictureEdit2 As DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit
+    Friend WithEvents RepositoryItemMemoEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit
+    Protected WithEvents pnl_options_revisions As DevExpress.XtraEditors.PanelControl
+    Protected WithEvents btn_update_revisions As Button
+    Protected WithEvents btn_printer_revisions As Button
+    Protected WithEvents btn_export_revisions As Button
+    Friend WithEvents lbl_count_revisions As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents lbl_total_revisions As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents lbl_separator_revisions As DevExpress.XtraEditors.SeparatorControl
+    Protected WithEvents txt_navigate_revisions As DevExpress.XtraEditors.ControlNavigator
+    Friend WithEvents object_progress_stage As DevExpress.XtraEditors.StepProgressBar
+    Friend WithEvents object_progress_initial As DevExpress.XtraEditors.StepProgressBarItem
+    Friend WithEvents object_progress_store As DevExpress.XtraEditors.StepProgressBarItem
+    Friend WithEvents object_progress_request As DevExpress.XtraEditors.StepProgressBarItem
+    Friend WithEvents object_progress_sending As DevExpress.XtraEditors.StepProgressBarItem
+    Friend WithEvents object_progress_return As DevExpress.XtraEditors.StepProgressBarItem
+    Friend WithEvents object_progress_agency As DevExpress.XtraEditors.StepProgressBarItem
+    Friend WithEvents object_progress_finish As DevExpress.XtraEditors.StepProgressBarItem
 End Class

@@ -55,15 +55,7 @@
             End With
 
             If guarantees.execute_procedure(True) = True Then
-                'mensaje de confirmacion para cambiar el estado de la garantia
-                If message_text("Desea cambiar el estado de la garantía seleccionada?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
-                    Using new_ As New wholesales_guarantee_status(row_selected)
-                        Me.Close()
-                        new_.ShowDialog(start_home)
-                    End Using
-                Else
-                    Close()
-                End If
+                Close()
             End If
         End If
     End Sub

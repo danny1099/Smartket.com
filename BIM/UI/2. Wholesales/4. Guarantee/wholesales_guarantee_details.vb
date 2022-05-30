@@ -50,7 +50,6 @@ Public Class wholesales_guarantee_details
                     'busca si la opcion de captura está asignada
                     If .Select("action_object='btn_object_support' and option_showed='" & Me.Name & "'").Count = 0 Then
                         btn_object_support.Visible = False
-                        lbl_separator_tiny1.Visible = True
                     End If
 
                     For Each options As Control In pnl_object_actions.Controls
@@ -101,8 +100,6 @@ Public Class wholesales_guarantee_details
         If source IsNot Nothing Then source.DefaultView.RowFilter = Nothing
     End Sub
 
-
-    'methods to show options in selected row
     Private Sub option_column()
         If dgv_view_results.RowCount > 0 Then
             Dim column_option As GridColumn = dgv_view_results.Columns.AddVisible("column_option")
@@ -199,8 +196,6 @@ Public Class wholesales_guarantee_details
         End If
     End Sub
 
-
-    'methods to search sales and others objects results
     Private Sub search_text(sender As Object, e As KeyEventArgs) Handles txt_search_criteria.KeyDown
         If (e.KeyData = Keys.Enter) = True Then
             If cmb_search_field.Text = "All Contents" Then search_guarantee("g.tracing_number='" & txt_search_criteria.Text & "' or g.number_serial='" & txt_search_criteria.Text & "'  or c.number_document='" & txt_search_criteria.Text & "' or g.sku_item='" & txt_search_criteria.Text & "' and g.row_visible not in (2)") Else search_guarantee(cmb_search_field.EditValue & txt_search_criteria.Text & "' and g.row_visible not in (2)")
@@ -279,11 +274,9 @@ Public Class wholesales_guarantee_details
                 txt_search_status.EditValue = .Item("Estado").ToString()
 
                 txt_search_causal.EditValue = .Item("causal_name").ToString()
-                txt_search_dispach.EditValue = .Item("dispatch_number").ToString()
                 txt_search_product.EditValue = .Item("product_name").ToString()
                 txt_search_brand.EditValue = .Item("brand_name").ToString()
                 txt_search_skuitem.EditValue = .Item("sku_item").ToString()
-                txt_search_description.EditValue = .Item("description_text").ToString()
 
                 'info data of tracing
                 txt_search_username.EditValue = .Item("user_create").ToString()
@@ -295,31 +288,21 @@ Public Class wholesales_guarantee_details
 
                 'check if field special with condition
                 If .Item("opt_in").ToString() = "True" Then chk_search_optin.Checked = True Else chk_search_optin.Checked = False
-                If .Item("support_text").ToString() <> "" Then txt_search_description.EditValue += vbCrLf & vbCrLf & "Revisión Tecnica: " & vbCrLf & .Item("support_text").ToString() & vbCrLf & vbCrLf & "Tecnico: " & .Item("revision_user").ToString() & vbCrLf & "Fecha de revisión: " & CDate(.Item("support_date").ToString()).ToLongDateString & vbCrLf & "Tipo de revisión: " & .Item("revision_type").ToString()
 
-                'Carga las notas asociadas al registro seleccionado
-                reports_show(options_changed("lbl_options_notes"))
+                'Carga los estados asociadas al registro seleccionado
+                timeline_show(options_changed("xtp_object_stages"))
             End With
         End If
+    End Sub
+
+    Private Sub selected_page(sender As Object, e As DevExpress.XtraTab.TabPageChangedEventArgs) Handles pnl_revision_tabbed.SelectedPageChanged
+        If e.Page.Name = "xtp_object_stages" Then timeline_show(options_changed("xtp_object_stages"))
+        If e.Page.Name = "xtp_object_revisions" Then revisions_show(options_changed("xtp_object_revisions"))
+        If e.Page.Name = "xtp_object_notes" Then notes_show(options_changed("xtp_object_notes"))
     End Sub
 #End Region
 
 #Region "options"
-    Private Sub edited_option(sender As Object, e As EventArgs) Handles btn_object_edit.Click
-        If dgv_view_results.SelectedRowsCount.ToString = 1 Then
-            If message_text("Está seguro que desea finalizar el registro seleccionado?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
-                Using new_ As New wholesales_guarantee_closed(dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Id"))
-                    new_.ShowDialog(start_home)
-                End Using
-
-                'actualiza la consulta realizada
-                search_guarantee(criteria_condition)
-            End If
-        Else
-            message_text("La acción no se puede realizar con selección multiple", MessageBoxButtons.OK)
-        End If
-    End Sub
-
     Private Sub erased_option(sender As Object, e As EventArgs) Handles btn_object_erase.Click
         If dgv_view_results.SelectedRowsCount.ToString = 1 Then
             If message_text("Está seguro que desea anular el registro seleccionado?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
@@ -327,22 +310,6 @@ Public Class wholesales_guarantee_details
                     search_guarantee(criteria_condition)
                 End If
             End If
-        End If
-    End Sub
-
-    Private Sub dispach_option(sender As Object, e As EventArgs) Handles btn_object_dispach.Click
-        If dgv_view_results.SelectedRowsCount.ToString = 1 Then
-            If (dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "dispatch_number")) = "this field is not defined" Then
-                If message_text("Está seguro que desea registar el numero de guía al registro seleccionado?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
-                    Using new_ As New wholesales_guarantee_dispach(dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Id"))
-                        new_.ShowDialog(start_home)
-                    End Using
-                End If
-            Else
-                message_text("La solicitud de modificación no es valida", MessageBoxButtons.OK)
-            End If
-        Else
-            message_text("La acción no se puede realizar con selección multiple", MessageBoxButtons.OK)
         End If
     End Sub
 
@@ -357,44 +324,10 @@ Public Class wholesales_guarantee_details
         End If
     End Sub
 
-    Private Sub noted_option(sender As Object, e As EventArgs) Handles btn_object_notes.Click
-        If dgv_view_results.SelectedRowsCount.ToString = 1 Then
-            If message_text("Está seguro que desea crear una nota al registro seleccionado?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
-                Using new_ As New model_object_notes("Wholesales.Masters.Guarantee", dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Id"), Me.Tag.ToString)
-                    new_.ShowDialog(start_home)
-                End Using
-            End If
-        Else
-            message_text("La acción no se puede realizar con selección multiple", MessageBoxButtons.OK)
-        End If
-    End Sub
-
-    Private Sub revisions_option(sender As Object, e As EventArgs) Handles btn_object_support.Click
-        If dgv_view_results.SelectedRowsCount.ToString = 1 Then
-            If message_text("Está seguro que desea crear una revisión tecnica al registro seleccionado?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
-                show_option(New wholesales_guarantee_support(dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Id"), Me))
-            End If
-        Else
-            message_text("La acción no se puede realizar con selección multiple", MessageBoxButtons.OK)
-        End If
-    End Sub
-
-    Private Sub transfer_option(sender As Object, e As EventArgs) Handles btn_object_transfer.Click
+    Private Sub transfer_option(sender As Object, e As EventArgs)
         If dgv_view_results.SelectedRowsCount.ToString = 1 Then
             If message_text("Está seguro que desea transferir el registro seleccionado?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
                 Using new_ As New wholesales_guarantee_transfer(dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Id"))
-                    new_.ShowDialog(start_home)
-                End Using
-            End If
-        Else
-            message_text("La acción no se puede realizar con selección multiple", MessageBoxButtons.OK)
-        End If
-    End Sub
-
-    Private Sub status_option(sender As Object, e As EventArgs) Handles btn_object_status.Click
-        If dgv_view_results.SelectedRowsCount.ToString = 1 Then
-            If message_text("Está seguro que desea cambiar el estado al registro seleccionado?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
-                Using new_ As New wholesales_guarantee_status(dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Id"))
                     new_.ShowDialog(start_home)
                 End Using
             End If
@@ -418,6 +351,44 @@ Public Class wholesales_guarantee_details
     Private Sub printer_option(sender As Object, e As EventArgs) Handles btn_print_results.Click
         If dgv_view_results.RowCount > 0 Then
             dgv_view_results.ShowPrintPreview()
+        End If
+    End Sub
+
+
+    Private Sub status_option(sender As Object, e As EventArgs) Handles btn_object_status.Click
+        If dgv_view_results.SelectedRowsCount.ToString = 1 Then
+            If message_text("Está seguro que desea cambiar el estado al registro seleccionado?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
+                show_flyout(New wholesales_guarantee_stages(dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Id")))
+                timeline_show(options_changed("xtp_object_stages"))
+            End If
+        Else
+            message_text("La acción no se puede realizar con selección multiple", MessageBoxButtons.OK)
+        End If
+    End Sub
+
+    Private Sub revisions_option(sender As Object, e As EventArgs) Handles btn_object_support.Click
+        If dgv_view_results.SelectedRowsCount.ToString = 1 Then
+            If dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Estado").ToString = "Revisado y/o Verificado" Then
+                If message_text("Está seguro que desea crear una revisión técnica al registro seleccionado?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
+                    show_flyout(New wholesales_guarantee_support(dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Id")))
+                End If
+            Else
+                message_text("No se puede realizar revisiones técnicas con el estado actual", MessageBoxButtons.OK)
+            End If
+        Else
+            message_text("La acción no se puede realizar con selección multiple", MessageBoxButtons.OK)
+        End If
+    End Sub
+
+    Private Sub noted_option(sender As Object, e As EventArgs) Handles btn_object_notes.Click
+        If dgv_view_results.SelectedRowsCount.ToString = 1 Then
+            If message_text("Está seguro que desea crear una nota al registro seleccionado?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
+                Using new_ As New model_object_notes("Wholesales.Masters.Guarantee", dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Id"), Me.Tag.ToString)
+                    new_.ShowDialog(start_home)
+                End Using
+            End If
+        Else
+            message_text("La acción no se puede realizar con selección multiple", MessageBoxButtons.OK)
         End If
     End Sub
 
@@ -446,8 +417,7 @@ Public Class wholesales_guarantee_details
         End If
     End Sub
 
-
-    Public Sub reports_show(source As DataTable, Optional show_option As Boolean = False)
+    Public Sub notes_show(source As DataTable, Optional show_option As Boolean = False)
         dgv_grid_objects.DataSource = Nothing
         dgv_view_objects.Columns.Clear()
         lbl_count_objects.Text = 0
@@ -471,20 +441,105 @@ Public Class wholesales_guarantee_details
             lbl_count_objects.Text = CInt(dgv_view_objects.RowCount.ToString)
         End If
     End Sub
+
+    Public Sub revisions_show(source As DataTable, Optional show_option As Boolean = False)
+        dgv_grid_revisions.DataSource = Nothing
+        dgv_view_revisions.Columns.Clear()
+        lbl_count_objects.Text = 0
+
+        'check if data source paratemeter has rows
+        If source.Rows.Count > 0 Then
+            dgv_grid_revisions.DataSource = source
+            dgv_view_revisions.BestFitColumns(True)
+            dgv_view_revisions.SelectRow(0)
+
+            'check if columng comentario exists to change columnd and row size
+            With dgv_view_revisions
+                If .Columns("Observaciones") IsNot Nothing Then .Columns("Observaciones").ColumnEdit = txt_memo_edit
+                If .Columns("Observaciones") IsNot Nothing Then .Columns("Observaciones").Width = 400
+                If .Columns("Observaciones") IsNot Nothing Then .RowHeight = 60
+                If .Columns("Observaciones") IsNot Nothing Then .Columns("Observaciones").AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
+            End With
+
+            'set total of registre in label lbl_count
+            lbl_count_revisions.Text = CInt(dgv_view_revisions.RowCount.ToString)
+        End If
+    End Sub
+
+    Public Sub timeline_show(source As DataTable)
+        If source.Rows.Count >= 1 Then
+
+            'Resetea los valores de los items por defecto
+            default_stages()
+
+            For i As Integer = 0 To source.Rows.Count - 1
+                Dim status_name As String = source.Rows.Item(i).Item("description_text").ToString()
+                Dim tracing_number As String = source.Rows.Item(i).Item("tracing_number").ToString()
+                Dim dispatch_number As String = source.Rows.Item(i).Item("dispatch_number").ToString()
+                Dim person_name As String = source.Rows.Item(i).Item("person_name").ToString()
+                Dim event_date As String = source.Rows.Item(i).Item("event_date").ToString()
+                Dim element_name As String = source.Rows.Item(i).Item("element_name").ToString()
+
+                With object_progress_stage
+
+                    For Each item As StepProgressBarItem In .Items
+                        If item.Name = element_name Then
+                            If person_name = "" And item.Name = "object_progress_initial" Then
+                                item.State = True
+                                item.ContentBlock2.Caption = txt_search_username.EditValue
+                                item.ContentBlock2.Description = txt_search_datestamp.EditValue & " | 000000"
+
+                            ElseIf person_name <> "" And item.Name <> "object_progress_initial" Then
+                                item.State = True
+                                item.ContentBlock2.Caption = person_name
+                                item.ContentBlock2.Description = event_date & " | " & If(dispatch_number <> "", dispatch_number, tracing_number)
+                            End If
+
+                            'Actualiza el estado a cumplir
+                            item.ContentBlock1.Caption = status_name
+                        End If
+                    Next
+                End With
+            Next
+
+        End If
+    End Sub
+
+    Private Sub default_stages()
+        object_progress_initial.ContentBlock1.Caption = "EN TRAMITE"
+        object_progress_initial.ContentBlock2.Caption = ""
+        object_progress_initial.ContentBlock2.Description = ""
+        object_progress_store.ContentBlock1.Caption = "LLEGADA A BODEGA"
+        object_progress_store.ContentBlock2.Caption = ""
+        object_progress_store.ContentBlock2.Description = ""
+        object_progress_request.ContentBlock1.Caption = "SOLICITUD A"
+        object_progress_request.ContentBlock2.Caption = ""
+        object_progress_request.ContentBlock2.Description = ""
+        object_progress_sending.ContentBlock1.Caption = "ENVIO / REVISION"
+        object_progress_sending.ContentBlock2.Caption = ""
+        object_progress_sending.ContentBlock2.Description = ""
+        object_progress_return.ContentBlock1.Caption = "REGRESA EQUIPO A BODEGA"
+        object_progress_return.ContentBlock2.Caption = ""
+        object_progress_return.ContentBlock2.Description = ""
+        object_progress_agency.ContentBlock1.Caption = "DESPACHO DE BODEGA A LA TIENDA"
+        object_progress_agency.ContentBlock2.Caption = ""
+        object_progress_agency.ContentBlock2.Description = ""
+        object_progress_finish.ContentBlock1.Caption = "FINALIZADO"
+        object_progress_finish.ContentBlock2.Caption = ""
+        object_progress_finish.ContentBlock2.Description = ""
+    End Sub
 #End Region
 
 #Region "objects"
-    Private Sub options_selected(sender As Object, e As EventArgs) Handles lbl_options_notes.Click
-        reports_show(options_changed(sender.Name))
-    End Sub
-
     Private Function options_changed(process_name_ As String) As DataTable
         'set name of process execute
         process_name = process_name_
 
         'compare name to decide process execute table
         Select Case process_name_
-            Case "lbl_options_notes" : Return notes.notes_master_show("Wholesales.Masters.Guarantee", dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Id"))
+            Case "xtp_object_notes" : Return notes.notes_master_show("Wholesales.Masters.Guarantee", dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Id"))
+            Case "xtp_object_revisions" : Return guarantees.wholesale_guarantee_revision(dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Id"))
+            Case "xtp_object_stages" : Return guarantees.wholesale_guarantee_timeline(dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Id"))
         End Select
 
         Throw New ArgumentOutOfRangeException(process_name_)
@@ -504,20 +559,21 @@ Public Class wholesales_guarantee_details
     End Function
 
     Private Sub options_update(sender As Object, e As EventArgs) Handles btn_update_objects.Click
-        If process_name <> "" Then reports_show(options_changed(process_name), options_helpers(process_name))
+        If pnl_revision_tabbed.SelectedTabPage.Name = "xtp_object_notes" Then notes_show(options_changed(process_name))
+        If pnl_revision_tabbed.SelectedTabPage.Name = "xtp_object_revisions" Then revisions_show(options_changed(process_name))
     End Sub
 
-    Private Sub options_export(sender As Object, e As EventArgs) Handles btn_export_objects.Click
-        If dgv_view_objects.RowCount > 0 Then
-            Using export As New model_object_export(dgv_view_objects)
+    Private Sub options_export(sender As Object, e As EventArgs) Handles btn_export_objects.Click, btn_export_revisions.Click
+        If sender.RowCount > 0 Then
+            Using export As New model_object_export(sender)
                 export.ShowDialog(start_home)
             End Using
         End If
     End Sub
 
-    Private Sub options_printer(sender As Object, e As EventArgs) Handles btn_print_objects.Click
-        If dgv_view_objects.RowCount > 0 Then
-            dgv_view_objects.ShowPrintPreview()
+    Private Sub options_printer(sender As Object, e As EventArgs) Handles btn_print_objects.Click, btn_printer_revisions.Click
+        If sender.RowCount > 0 Then
+            sender.ShowPrintPreview()
         End If
     End Sub
 #End Region
