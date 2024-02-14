@@ -153,7 +153,6 @@ Public Class reports_guarantees_resumen
         txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Agencia", "g.agency_code", GetType(Integer), New RepositoryChecked(agency.settings_agencys_search("row_visible=1"), "agency_name"), FilterColumnClauseClass.Lookup))
         txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Nombre de funcionario", "g.person_code", GetType(Integer), New RepositoryChecked(person.settings_persons_listed("p.row_visible=1"), "Nombre del funcionario"), FilterColumnClauseClass.Lookup))
         txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Usuario Creador", "g.created_code", GetType(Integer), New RepositoryChecked(person.settings_persons_listed("p.row_visible=1"), "Nombre del funcionario"), FilterColumnClauseClass.Lookup))
-        txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Tipo de solución", "g.revision_code", GetType(Integer), New RepositoryChecked(causal.request_causal_search("row_visible=1 and c.module_code=2 and c.causal_type='S'"), "causal_name"), FilterColumnClauseClass.Lookup))
         txt_rules_criteria.FilterColumns.Add(New UnboundFilterColumn("Tipo de ingreso", "g.causal_type", GetType(Integer), New RepositoryChecked(causal.request_causal_search("row_visible=1 and c.module_code=2 and c.causal_type='R'"), "causal_name"), FilterColumnClauseClass.Lookup))
     End Sub
 

@@ -23,11 +23,6 @@ Partial Class wholesales_guarantee_details
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(wholesales_guarantee_details))
-        Dim EditorButtonImageOptions11 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
-        Dim SerializableAppearanceObject41 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject42 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject43 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject44 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim EditorButtonImageOptions1 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
         Dim SerializableAppearanceObject1 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject2 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
@@ -73,6 +68,11 @@ Partial Class wholesales_guarantee_details
         Dim SerializableAppearanceObject34 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject35 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject36 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim EditorButtonImageOptions10 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
+        Dim SerializableAppearanceObject37 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject38 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject39 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject40 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Me.pnl_object_top = New DevExpress.XtraEditors.PanelControl()
         Me.lbl_object_info = New DevExpress.XtraEditors.LabelControl()
         Me.lbl_object_title = New DevExpress.XtraEditors.LabelControl()
@@ -1887,8 +1887,8 @@ Partial Class wholesales_guarantee_details
         '
         Me.pnl_object_actions.BackColor = System.Drawing.Color.White
         Me.pnl_object_actions.Controls.Add(Me.btn_object_status)
-        Me.pnl_object_actions.Controls.Add(Me.btn_object_erase)
         Me.pnl_object_actions.Controls.Add(Me.btn_object_proof)
+        Me.pnl_object_actions.Controls.Add(Me.btn_object_erase)
         Me.pnl_object_actions.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnl_object_actions.FlowDirection = System.Windows.Forms.FlowDirection.TopDown
         Me.pnl_object_actions.Location = New System.Drawing.Point(2, 2)
@@ -1940,7 +1940,7 @@ Partial Class wholesales_guarantee_details
         Me.btn_object_erase.ForeColor = System.Drawing.Color.DimGray
         Me.btn_object_erase.Image = CType(resources.GetObject("btn_object_erase.Image"), System.Drawing.Image)
         Me.btn_object_erase.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_object_erase.Location = New System.Drawing.Point(4, 46)
+        Me.btn_object_erase.Location = New System.Drawing.Point(4, 88)
         Me.btn_object_erase.Margin = New System.Windows.Forms.Padding(1)
         Me.btn_object_erase.MaximumSize = New System.Drawing.Size(250, 40)
         Me.btn_object_erase.MinimumSize = New System.Drawing.Size(250, 0)
@@ -1967,7 +1967,7 @@ Partial Class wholesales_guarantee_details
         Me.btn_object_proof.ForeColor = System.Drawing.Color.DimGray
         Me.btn_object_proof.Image = CType(resources.GetObject("btn_object_proof.Image"), System.Drawing.Image)
         Me.btn_object_proof.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_object_proof.Location = New System.Drawing.Point(4, 88)
+        Me.btn_object_proof.Location = New System.Drawing.Point(4, 46)
         Me.btn_object_proof.Margin = New System.Windows.Forms.Padding(1)
         Me.btn_object_proof.MaximumSize = New System.Drawing.Size(250, 40)
         Me.btn_object_proof.MinimumSize = New System.Drawing.Size(250, 0)
@@ -2692,8 +2692,8 @@ Partial Class wholesales_guarantee_details
         Me.txt_search_timestamp.Properties.AppearanceReadOnly.Options.UseForeColor = True
         Me.txt_search_timestamp.Properties.AutoHeight = False
         Me.txt_search_timestamp.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        EditorButtonImageOptions11.Image = CType(resources.GetObject("EditorButtonImageOptions11.Image"), System.Drawing.Image)
-        Me.txt_search_timestamp.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions11, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject41, SerializableAppearanceObject42, SerializableAppearanceObject43, SerializableAppearanceObject44, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions1.Image = CType(resources.GetObject("EditorButtonImageOptions1.Image"), System.Drawing.Image)
+        Me.txt_search_timestamp.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions1, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, SerializableAppearanceObject2, SerializableAppearanceObject3, SerializableAppearanceObject4, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_search_timestamp.Properties.DisplayFormat.FormatString = "T"
         Me.txt_search_timestamp.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime
         Me.txt_search_timestamp.Properties.EditFormat.FormatString = "T"
@@ -2899,8 +2899,8 @@ Partial Class wholesales_guarantee_details
         Me.txt_search_datestamp.Properties.AppearanceReadOnly.Options.UseForeColor = True
         Me.txt_search_datestamp.Properties.AutoHeight = False
         Me.txt_search_datestamp.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        EditorButtonImageOptions1.Image = CType(resources.GetObject("EditorButtonImageOptions1.Image"), System.Drawing.Image)
-        Me.txt_search_datestamp.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions1, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, SerializableAppearanceObject2, SerializableAppearanceObject3, SerializableAppearanceObject4, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions2.Image = CType(resources.GetObject("EditorButtonImageOptions2.Image"), System.Drawing.Image)
+        Me.txt_search_datestamp.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions2, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject5, SerializableAppearanceObject6, SerializableAppearanceObject7, SerializableAppearanceObject8, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_search_datestamp.Properties.DisplayFormat.FormatString = "D"
         Me.txt_search_datestamp.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime
         Me.txt_search_datestamp.Properties.EditFormat.FormatString = "D"
@@ -3494,8 +3494,8 @@ Partial Class wholesales_guarantee_details
         Me.txt_search_product.Properties.AppearanceReadOnly.Options.UseForeColor = True
         Me.txt_search_product.Properties.AutoHeight = False
         Me.txt_search_product.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        EditorButtonImageOptions2.Image = CType(resources.GetObject("EditorButtonImageOptions2.Image"), System.Drawing.Image)
-        Me.txt_search_product.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions2, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject5, SerializableAppearanceObject6, SerializableAppearanceObject7, SerializableAppearanceObject8, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions3.Image = CType(resources.GetObject("EditorButtonImageOptions3.Image"), System.Drawing.Image)
+        Me.txt_search_product.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions3, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject9, SerializableAppearanceObject10, SerializableAppearanceObject11, SerializableAppearanceObject12, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_search_product.Properties.DisplayFormat.FormatString = "D"
         Me.txt_search_product.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime
         Me.txt_search_product.Properties.EditFormat.FormatString = "D"
@@ -3642,8 +3642,8 @@ Partial Class wholesales_guarantee_details
         Me.txt_search_date.Properties.AppearanceReadOnly.Options.UseForeColor = True
         Me.txt_search_date.Properties.AutoHeight = False
         Me.txt_search_date.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        EditorButtonImageOptions3.Image = CType(resources.GetObject("EditorButtonImageOptions3.Image"), System.Drawing.Image)
-        Me.txt_search_date.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions3, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject9, SerializableAppearanceObject10, SerializableAppearanceObject11, SerializableAppearanceObject12, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions4.Image = CType(resources.GetObject("EditorButtonImageOptions4.Image"), System.Drawing.Image)
+        Me.txt_search_date.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions4, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject13, SerializableAppearanceObject14, SerializableAppearanceObject15, SerializableAppearanceObject16, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_search_date.Properties.DisplayFormat.FormatString = "D"
         Me.txt_search_date.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime
         Me.txt_search_date.Properties.EditFormat.FormatString = "D"
@@ -4082,8 +4082,8 @@ Partial Class wholesales_guarantee_details
         Me.txt_search_cellphone.Properties.AppearanceReadOnly.Options.UseForeColor = True
         Me.txt_search_cellphone.Properties.AutoHeight = False
         Me.txt_search_cellphone.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        EditorButtonImageOptions4.Image = CType(resources.GetObject("EditorButtonImageOptions4.Image"), System.Drawing.Image)
-        Me.txt_search_cellphone.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions4, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject13, SerializableAppearanceObject14, SerializableAppearanceObject15, SerializableAppearanceObject16, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions5.Image = CType(resources.GetObject("EditorButtonImageOptions5.Image"), System.Drawing.Image)
+        Me.txt_search_cellphone.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions5, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject17, SerializableAppearanceObject18, SerializableAppearanceObject19, SerializableAppearanceObject20, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_search_cellphone.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.txt_search_cellphone.Properties.LookAndFeel.UseDefaultLookAndFeel = False
         Me.txt_search_cellphone.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
@@ -4131,8 +4131,8 @@ Partial Class wholesales_guarantee_details
         Me.txt_search_created.Properties.AppearanceReadOnly.Options.UseForeColor = True
         Me.txt_search_created.Properties.AutoHeight = False
         Me.txt_search_created.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        EditorButtonImageOptions5.Image = CType(resources.GetObject("EditorButtonImageOptions5.Image"), System.Drawing.Image)
-        Me.txt_search_created.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions5, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject17, SerializableAppearanceObject18, SerializableAppearanceObject19, SerializableAppearanceObject20, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions6.Image = CType(resources.GetObject("EditorButtonImageOptions6.Image"), System.Drawing.Image)
+        Me.txt_search_created.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions6, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject21, SerializableAppearanceObject22, SerializableAppearanceObject23, SerializableAppearanceObject24, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_search_created.Properties.DisplayFormat.FormatString = "D"
         Me.txt_search_created.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime
         Me.txt_search_created.Properties.EditFormat.FormatString = "D"
@@ -4338,8 +4338,8 @@ Partial Class wholesales_guarantee_details
         Me.txt_search_address.Properties.AppearanceReadOnly.Options.UseForeColor = True
         Me.txt_search_address.Properties.AutoHeight = False
         Me.txt_search_address.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        EditorButtonImageOptions6.Image = CType(resources.GetObject("EditorButtonImageOptions6.Image"), System.Drawing.Image)
-        Me.txt_search_address.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions6, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject21, SerializableAppearanceObject22, SerializableAppearanceObject23, SerializableAppearanceObject24, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions7.Image = CType(resources.GetObject("EditorButtonImageOptions7.Image"), System.Drawing.Image)
+        Me.txt_search_address.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions7, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject25, SerializableAppearanceObject26, SerializableAppearanceObject27, SerializableAppearanceObject28, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_search_address.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.txt_search_address.Properties.LookAndFeel.UseDefaultLookAndFeel = False
         Me.txt_search_address.Properties.ReadOnly = True
@@ -4406,8 +4406,8 @@ Partial Class wholesales_guarantee_details
         Me.txt_search_email.Properties.AppearanceReadOnly.Options.UseForeColor = True
         Me.txt_search_email.Properties.AutoHeight = False
         Me.txt_search_email.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        EditorButtonImageOptions7.Image = CType(resources.GetObject("EditorButtonImageOptions7.Image"), System.Drawing.Image)
-        Me.txt_search_email.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions7, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject25, SerializableAppearanceObject26, SerializableAppearanceObject27, SerializableAppearanceObject28, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions8.Image = CType(resources.GetObject("EditorButtonImageOptions8.Image"), System.Drawing.Image)
+        Me.txt_search_email.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions8, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject29, SerializableAppearanceObject30, SerializableAppearanceObject31, SerializableAppearanceObject32, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_search_email.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.txt_search_email.Properties.LookAndFeel.UseDefaultLookAndFeel = False
         Me.txt_search_email.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
@@ -4473,8 +4473,8 @@ Partial Class wholesales_guarantee_details
         Me.txt_search_phone.Properties.AppearanceReadOnly.Options.UseForeColor = True
         Me.txt_search_phone.Properties.AutoHeight = False
         Me.txt_search_phone.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        EditorButtonImageOptions8.Image = CType(resources.GetObject("EditorButtonImageOptions8.Image"), System.Drawing.Image)
-        Me.txt_search_phone.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions8, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject29, SerializableAppearanceObject30, SerializableAppearanceObject31, SerializableAppearanceObject32, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions9.Image = CType(resources.GetObject("EditorButtonImageOptions9.Image"), System.Drawing.Image)
+        Me.txt_search_phone.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions9, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject33, SerializableAppearanceObject34, SerializableAppearanceObject35, SerializableAppearanceObject36, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_search_phone.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.txt_search_phone.Properties.LookAndFeel.UseDefaultLookAndFeel = False
         Me.txt_search_phone.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
@@ -4540,8 +4540,8 @@ Partial Class wholesales_guarantee_details
         Me.txt_search_birthdate.Properties.AppearanceReadOnly.Options.UseForeColor = True
         Me.txt_search_birthdate.Properties.AutoHeight = False
         Me.txt_search_birthdate.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        EditorButtonImageOptions9.Image = CType(resources.GetObject("EditorButtonImageOptions9.Image"), System.Drawing.Image)
-        Me.txt_search_birthdate.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions9, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject33, SerializableAppearanceObject34, SerializableAppearanceObject35, SerializableAppearanceObject36, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions10.Image = CType(resources.GetObject("EditorButtonImageOptions10.Image"), System.Drawing.Image)
+        Me.txt_search_birthdate.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions10, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject37, SerializableAppearanceObject38, SerializableAppearanceObject39, SerializableAppearanceObject40, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_search_birthdate.Properties.DisplayFormat.FormatString = "D"
         Me.txt_search_birthdate.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime
         Me.txt_search_birthdate.Properties.EditFormat.FormatString = "D"

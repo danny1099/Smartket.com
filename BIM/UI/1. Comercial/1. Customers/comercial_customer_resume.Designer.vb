@@ -29,7 +29,6 @@ Partial Class comercial_customer_resume
         Dim SerializableAppearanceObject3 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject4 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Me.pnl_object_top = New DevExpress.XtraEditors.PanelControl()
-        Me.lbl_object_current = New System.Windows.Forms.Label()
         Me.btn_object_back = New DevExpress.XtraEditors.LabelControl()
         Me.btn_object_close = New System.Windows.Forms.Button()
         Me.pnl_object_person = New DevExpress.XtraEditors.PanelControl()
@@ -44,7 +43,7 @@ Partial Class comercial_customer_resume
         Me.lbl_object_credits = New DevExpress.XtraEditors.LabelControl()
         Me.lbl_object_hobbies = New DevExpress.XtraEditors.LabelControl()
         Me.lbl_object_refered = New DevExpress.XtraEditors.LabelControl()
-        Me.lbl_object_visits = New DevExpress.XtraEditors.LabelControl()
+        Me.lbl_object_balances = New DevExpress.XtraEditors.LabelControl()
         Me.lbl_object_datacredit = New DevExpress.XtraEditors.LabelControl()
         Me.lbl_object_sales = New DevExpress.XtraEditors.LabelControl()
         Me.lbl_object_attention = New DevExpress.XtraEditors.LabelControl()
@@ -112,7 +111,6 @@ Partial Class comercial_customer_resume
         'pnl_object_top
         '
         Me.pnl_object_top.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        Me.pnl_object_top.Controls.Add(Me.lbl_object_current)
         Me.pnl_object_top.Controls.Add(Me.btn_object_back)
         Me.pnl_object_top.Controls.Add(Me.btn_object_close)
         Me.pnl_object_top.Dock = System.Windows.Forms.DockStyle.Top
@@ -125,20 +123,9 @@ Partial Class comercial_customer_resume
         Me.pnl_object_top.Size = New System.Drawing.Size(1348, 40)
         Me.pnl_object_top.TabIndex = 0
         '
-        'lbl_object_current
-        '
-        Me.lbl_object_current.AutoSize = True
-        Me.lbl_object_current.Dock = System.Windows.Forms.DockStyle.Right
-        Me.lbl_object_current.Font = New System.Drawing.Font("Open Sans Condensed Light", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_object_current.ForeColor = System.Drawing.Color.LightSeaGreen
-        Me.lbl_object_current.Location = New System.Drawing.Point(1308, 5)
-        Me.lbl_object_current.Margin = New System.Windows.Forms.Padding(0)
-        Me.lbl_object_current.Name = "lbl_object_current"
-        Me.lbl_object_current.Size = New System.Drawing.Size(0, 28)
-        Me.lbl_object_current.TabIndex = 0
-        '
         'btn_object_back
         '
+        Me.btn_object_back.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_object_back.Appearance.ForeColor = System.Drawing.Color.DimGray
         Me.btn_object_back.Appearance.Image = CType(resources.GetObject("btn_object_back.Appearance.Image"), System.Drawing.Image)
         Me.btn_object_back.Appearance.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -356,7 +343,7 @@ Partial Class comercial_customer_resume
         Me.pnl_object_stripe.Controls.Add(Me.lbl_object_credits)
         Me.pnl_object_stripe.Controls.Add(Me.lbl_object_hobbies)
         Me.pnl_object_stripe.Controls.Add(Me.lbl_object_refered)
-        Me.pnl_object_stripe.Controls.Add(Me.lbl_object_visits)
+        Me.pnl_object_stripe.Controls.Add(Me.lbl_object_balances)
         Me.pnl_object_stripe.Controls.Add(Me.lbl_object_datacredit)
         Me.pnl_object_stripe.Controls.Add(Me.lbl_object_sales)
         Me.pnl_object_stripe.Controls.Add(Me.lbl_object_attention)
@@ -408,7 +395,7 @@ Partial Class comercial_customer_resume
         Me.lbl_object_hobbies.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lbl_object_hobbies.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter
         Me.lbl_object_hobbies.ImageOptions.Image = CType(resources.GetObject("lbl_object_hobbies.ImageOptions.Image"), System.Drawing.Image)
-        Me.lbl_object_hobbies.Location = New System.Drawing.Point(772, 9)
+        Me.lbl_object_hobbies.Location = New System.Drawing.Point(758, 9)
         Me.lbl_object_hobbies.LookAndFeel.SkinName = "Office 2019 White"
         Me.lbl_object_hobbies.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_object_hobbies.Margin = New System.Windows.Forms.Padding(0)
@@ -432,7 +419,7 @@ Partial Class comercial_customer_resume
         Me.lbl_object_refered.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lbl_object_refered.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter
         Me.lbl_object_refered.ImageOptions.Image = CType(resources.GetObject("lbl_object_refered.ImageOptions.Image"), System.Drawing.Image)
-        Me.lbl_object_refered.Location = New System.Drawing.Point(643, 9)
+        Me.lbl_object_refered.Location = New System.Drawing.Point(914, 9)
         Me.lbl_object_refered.LookAndFeel.SkinName = "Office 2019 White"
         Me.lbl_object_refered.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_object_refered.Margin = New System.Windows.Forms.Padding(0)
@@ -442,29 +429,29 @@ Partial Class comercial_customer_resume
         Me.lbl_object_refered.Tag = "fn_customer_refered"
         Me.lbl_object_refered.Text = "Clientes Referidos"
         '
-        'lbl_object_visits
+        'lbl_object_balances
         '
-        Me.lbl_object_visits.Appearance.ForeColor = System.Drawing.Color.DimGray
-        Me.lbl_object_visits.Appearance.Image = CType(resources.GetObject("lbl_object_visits.Appearance.Image"), System.Drawing.Image)
-        Me.lbl_object_visits.Appearance.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.lbl_object_visits.Appearance.Options.UseFont = True
-        Me.lbl_object_visits.Appearance.Options.UseForeColor = True
-        Me.lbl_object_visits.Appearance.Options.UseImage = True
-        Me.lbl_object_visits.Appearance.Options.UseImageAlign = True
-        Me.lbl_object_visits.Appearance.Options.UseTextOptions = True
-        Me.lbl_object_visits.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
-        Me.lbl_object_visits.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lbl_object_visits.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter
-        Me.lbl_object_visits.ImageOptions.Image = CType(resources.GetObject("lbl_object_visits.ImageOptions.Image"), System.Drawing.Image)
-        Me.lbl_object_visits.Location = New System.Drawing.Point(924, 9)
-        Me.lbl_object_visits.LookAndFeel.SkinName = "Office 2019 White"
-        Me.lbl_object_visits.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.lbl_object_visits.Margin = New System.Windows.Forms.Padding(0)
-        Me.lbl_object_visits.Name = "lbl_object_visits"
-        Me.lbl_object_visits.Size = New System.Drawing.Size(107, 28)
-        Me.lbl_object_visits.TabIndex = 0
-        Me.lbl_object_visits.Tag = "fn_customer_visited"
-        Me.lbl_object_visits.Text = "Visitas del cliente"
+        Me.lbl_object_balances.Appearance.ForeColor = System.Drawing.Color.DimGray
+        Me.lbl_object_balances.Appearance.Image = CType(resources.GetObject("lbl_object_balances.Appearance.Image"), System.Drawing.Image)
+        Me.lbl_object_balances.Appearance.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lbl_object_balances.Appearance.Options.UseFont = True
+        Me.lbl_object_balances.Appearance.Options.UseForeColor = True
+        Me.lbl_object_balances.Appearance.Options.UseImage = True
+        Me.lbl_object_balances.Appearance.Options.UseImageAlign = True
+        Me.lbl_object_balances.Appearance.Options.UseTextOptions = True
+        Me.lbl_object_balances.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.lbl_object_balances.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lbl_object_balances.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter
+        Me.lbl_object_balances.ImageOptions.Image = CType(resources.GetObject("lbl_object_balances.ImageOptions.Image"), System.Drawing.Image)
+        Me.lbl_object_balances.Location = New System.Drawing.Point(641, 9)
+        Me.lbl_object_balances.LookAndFeel.SkinName = "Office 2019 White"
+        Me.lbl_object_balances.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.lbl_object_balances.Margin = New System.Windows.Forms.Padding(0)
+        Me.lbl_object_balances.Name = "lbl_object_balances"
+        Me.lbl_object_balances.Size = New System.Drawing.Size(100, 28)
+        Me.lbl_object_balances.TabIndex = 0
+        Me.lbl_object_balances.Tag = "fn_customer_visited"
+        Me.lbl_object_balances.Text = "Saldos Cartera"
         '
         'lbl_object_datacredit
         '
@@ -1067,6 +1054,7 @@ Partial Class comercial_customer_resume
         Me.dgv_object_view.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
         Me.dgv_object_view.GridControl = Me.dgv_object_grid
         Me.dgv_object_view.GroupSummary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Count, "Id", Nothing, " | Total: {0}")})
+        Me.dgv_object_view.HorzScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Always
         Me.dgv_object_view.Name = "dgv_object_view"
         Me.dgv_object_view.OptionsBehavior.AlignGroupSummaryInGroupRow = DevExpress.Utils.DefaultBoolean.[True]
         Me.dgv_object_view.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.[False]
@@ -1211,7 +1199,7 @@ Partial Class comercial_customer_resume
         Me.lbl_object_count.Appearance.Options.UseForeColor = True
         Me.lbl_object_count.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal
         Me.lbl_object_count.Dock = System.Windows.Forms.DockStyle.Left
-        Me.lbl_object_count.Location = New System.Drawing.Point(302, 1)
+        Me.lbl_object_count.Location = New System.Drawing.Point(232, 1)
         Me.lbl_object_count.LookAndFeel.SkinName = "Office 2016 Colorful"
         Me.lbl_object_count.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_object_count.Margin = New System.Windows.Forms.Padding(0)
@@ -1234,9 +1222,9 @@ Partial Class comercial_customer_resume
         Me.lbl_object_total.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_object_total.Margin = New System.Windows.Forms.Padding(0)
         Me.lbl_object_total.Name = "lbl_object_total"
-        Me.lbl_object_total.Size = New System.Drawing.Size(106, 28)
+        Me.lbl_object_total.Size = New System.Drawing.Size(36, 28)
         Me.lbl_object_total.TabIndex = 0
-        Me.lbl_object_total.Text = "Numero de registros: "
+        Me.lbl_object_total.Text = "Total: "
         '
         'lbl_separator_line1
         '
@@ -1546,7 +1534,6 @@ Partial Class comercial_customer_resume
     Friend WithEvents txt_birth_date As DevExpress.XtraEditors.LabelControl
     Friend WithEvents btn_object_edited As DevExpress.XtraEditors.LabelControl
     Friend WithEvents pnl_object_name As DevExpress.XtraEditors.PanelControl
-    Friend WithEvents lbl_object_current As Label
     Protected WithEvents pnl_object_flyout As DevExpress.Utils.FlyoutPanel
     Protected WithEvents pnl_object_menu As DevExpress.XtraEditors.PanelControl
     Friend WithEvents pnl_object_actions As FlowLayoutPanel
@@ -1554,7 +1541,7 @@ Partial Class comercial_customer_resume
     Protected WithEvents btn_object_erase As Button
     Protected WithEvents btn_object_transfer As Button
     Protected WithEvents btn_object_notes As Button
-    Friend WithEvents lbl_object_visits As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents lbl_object_balances As DevExpress.XtraEditors.LabelControl
     Friend WithEvents lbl_object_refered As DevExpress.XtraEditors.LabelControl
     Friend WithEvents lbl_separator1 As DevExpress.XtraEditors.SeparatorControl
     Protected WithEvents btn_object_panel As Button

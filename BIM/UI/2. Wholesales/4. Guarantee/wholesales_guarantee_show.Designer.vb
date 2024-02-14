@@ -23,18 +23,18 @@ Partial Class wholesales_guarantee_show
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim GridLevelNode2 As DevExpress.XtraGrid.GridLevelNode = New DevExpress.XtraGrid.GridLevelNode()
+        Dim GridLevelNode1 As DevExpress.XtraGrid.GridLevelNode = New DevExpress.XtraGrid.GridLevelNode()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(wholesales_guarantee_show))
-        Dim EditorButtonImageOptions3 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
-        Dim SerializableAppearanceObject9 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject10 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject11 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject12 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim EditorButtonImageOptions1 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
         Dim SerializableAppearanceObject1 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject2 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject3 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject4 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim EditorButtonImageOptions2 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
+        Dim SerializableAppearanceObject5 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject6 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject7 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject8 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Me.dgv_object_node = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.dgv_object_grid = New APDA.[Object].Controls.CustomGrid()
         Me.dgv_object_view = New APDA.[Object].Controls.CustomGridView()
@@ -73,14 +73,15 @@ Partial Class wholesales_guarantee_show
         Me.txt_sales_date = New APDA.[Object].Controls.TextboxDates()
         Me.object_panel_quick = New System.Windows.Forms.FlowLayoutPanel()
         Me.object_label_slopes = New DevExpress.XtraEditors.LabelControl()
+        Me.object_label_wineris = New DevExpress.XtraEditors.LabelControl()
         Me.object_label_isolates = New DevExpress.XtraEditors.LabelControl()
         Me.object_label_brand = New DevExpress.XtraEditors.LabelControl()
+        Me.object_label_returns = New DevExpress.XtraEditors.LabelControl()
         Me.object_label_sending = New DevExpress.XtraEditors.LabelControl()
         Me.object_label_closed = New DevExpress.XtraEditors.LabelControl()
         Me.SeparatorControl1 = New DevExpress.XtraEditors.SeparatorControl()
         Me.object_label_search = New DevExpress.XtraEditors.LabelControl()
-        Me.object_label_returns = New DevExpress.XtraEditors.LabelControl()
-        Me.object_label_wineris = New DevExpress.XtraEditors.LabelControl()
+        Me.btn_object_notes = New System.Windows.Forms.Button()
         CType(Me.dgv_object_node, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgv_object_grid, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgv_object_view, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -132,9 +133,9 @@ Partial Class wholesales_guarantee_show
         'dgv_object_grid
         '
         Me.dgv_object_grid.Dock = System.Windows.Forms.DockStyle.Fill
-        GridLevelNode2.LevelTemplate = Me.dgv_object_node
-        GridLevelNode2.RelationName = "NotesView"
-        Me.dgv_object_grid.LevelTree.Nodes.AddRange(New DevExpress.XtraGrid.GridLevelNode() {GridLevelNode2})
+        GridLevelNode1.LevelTemplate = Me.dgv_object_node
+        GridLevelNode1.RelationName = "NotesView"
+        Me.dgv_object_grid.LevelTree.Nodes.AddRange(New DevExpress.XtraGrid.GridLevelNode() {GridLevelNode1})
         Me.dgv_object_grid.Location = New System.Drawing.Point(2, 37)
         Me.dgv_object_grid.LookAndFeel.SkinName = "My Office 2019 White"
         Me.dgv_object_grid.LookAndFeel.UseDefaultLookAndFeel = False
@@ -669,7 +670,7 @@ Partial Class wholesales_guarantee_show
         Me.pnl_object_flyout.OptionsBeakPanel.BorderColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
         Me.pnl_object_flyout.OptionsButtonPanel.ButtonPanelLocation = DevExpress.Utils.FlyoutPanelButtonPanelLocation.Top
         Me.pnl_object_flyout.OwnerControl = Me.dgv_object_grid
-        Me.pnl_object_flyout.Size = New System.Drawing.Size(260, 182)
+        Me.pnl_object_flyout.Size = New System.Drawing.Size(260, 221)
         Me.pnl_object_flyout.TabIndex = 0
         '
         'pnl_object_menu
@@ -688,7 +689,7 @@ Partial Class wholesales_guarantee_show
         Me.pnl_object_menu.LookAndFeel.UseDefaultLookAndFeel = False
         Me.pnl_object_menu.Margin = New System.Windows.Forms.Padding(0)
         Me.pnl_object_menu.Name = "pnl_object_menu"
-        Me.pnl_object_menu.Size = New System.Drawing.Size(260, 182)
+        Me.pnl_object_menu.Size = New System.Drawing.Size(260, 221)
         Me.pnl_object_menu.TabIndex = 0
         '
         'pnl_object_actions
@@ -696,6 +697,7 @@ Partial Class wholesales_guarantee_show
         Me.pnl_object_actions.BackColor = System.Drawing.Color.White
         Me.pnl_object_actions.Controls.Add(Me.btn_object_search)
         Me.pnl_object_actions.Controls.Add(Me.btn_object_status)
+        Me.pnl_object_actions.Controls.Add(Me.btn_object_notes)
         Me.pnl_object_actions.Controls.Add(Me.btn_object_proof)
         Me.pnl_object_actions.Controls.Add(Me.btn_object_erase)
         Me.pnl_object_actions.Dock = System.Windows.Forms.DockStyle.Fill
@@ -704,7 +706,7 @@ Partial Class wholesales_guarantee_show
         Me.pnl_object_actions.Margin = New System.Windows.Forms.Padding(0)
         Me.pnl_object_actions.Name = "pnl_object_actions"
         Me.pnl_object_actions.Padding = New System.Windows.Forms.Padding(3)
-        Me.pnl_object_actions.Size = New System.Drawing.Size(256, 178)
+        Me.pnl_object_actions.Size = New System.Drawing.Size(256, 217)
         Me.pnl_object_actions.TabIndex = 0
         Me.pnl_object_actions.WrapContents = False
         '
@@ -776,7 +778,7 @@ Partial Class wholesales_guarantee_show
         Me.btn_object_proof.ForeColor = System.Drawing.Color.DimGray
         Me.btn_object_proof.Image = CType(resources.GetObject("btn_object_proof.Image"), System.Drawing.Image)
         Me.btn_object_proof.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_object_proof.Location = New System.Drawing.Point(4, 88)
+        Me.btn_object_proof.Location = New System.Drawing.Point(4, 130)
         Me.btn_object_proof.Margin = New System.Windows.Forms.Padding(1)
         Me.btn_object_proof.MaximumSize = New System.Drawing.Size(250, 40)
         Me.btn_object_proof.MinimumSize = New System.Drawing.Size(250, 0)
@@ -803,7 +805,7 @@ Partial Class wholesales_guarantee_show
         Me.btn_object_erase.ForeColor = System.Drawing.Color.DimGray
         Me.btn_object_erase.Image = CType(resources.GetObject("btn_object_erase.Image"), System.Drawing.Image)
         Me.btn_object_erase.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_object_erase.Location = New System.Drawing.Point(4, 130)
+        Me.btn_object_erase.Location = New System.Drawing.Point(4, 172)
         Me.btn_object_erase.Margin = New System.Windows.Forms.Padding(1)
         Me.btn_object_erase.MaximumSize = New System.Drawing.Size(250, 40)
         Me.btn_object_erase.MinimumSize = New System.Drawing.Size(250, 0)
@@ -898,7 +900,7 @@ Partial Class wholesales_guarantee_show
         Me.txt_object_search.Properties.AppearanceReadOnly.Options.UseBorderColor = True
         Me.txt_object_search.Properties.AutoHeight = False
         Me.txt_object_search.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        Me.txt_object_search.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Search, "", -1, True, True, True, EditorButtonImageOptions3, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject9, SerializableAppearanceObject10, SerializableAppearanceObject11, SerializableAppearanceObject12, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        Me.txt_object_search.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Search, "", -1, True, True, True, EditorButtonImageOptions1, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, SerializableAppearanceObject2, SerializableAppearanceObject3, SerializableAppearanceObject4, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_object_search.Properties.Client = Me.dgv_object_grid
         Me.txt_object_search.Properties.FilterCondition = DevExpress.Data.Filtering.FilterCondition.Contains
         Me.txt_object_search.Properties.LookAndFeel.SkinName = "Office 2019 White"
@@ -1164,8 +1166,8 @@ Partial Class wholesales_guarantee_show
         Me.txt_sales_date.Properties.AppearanceReadOnly.Options.UseForeColor = True
         Me.txt_sales_date.Properties.AutoHeight = False
         Me.txt_sales_date.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        EditorButtonImageOptions1.Image = CType(resources.GetObject("EditorButtonImageOptions1.Image"), System.Drawing.Image)
-        Me.txt_sales_date.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "Buscar por fechas", -1, True, True, False, EditorButtonImageOptions1, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, SerializableAppearanceObject2, SerializableAppearanceObject3, SerializableAppearanceObject4, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions2.Image = CType(resources.GetObject("EditorButtonImageOptions2.Image"), System.Drawing.Image)
+        Me.txt_sales_date.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "Buscar por fechas", -1, True, True, False, EditorButtonImageOptions2, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject5, SerializableAppearanceObject6, SerializableAppearanceObject7, SerializableAppearanceObject8, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_sales_date.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.txt_sales_date.Properties.CalendarView = DevExpress.XtraEditors.Repository.CalendarView.ClassicNew
         Me.txt_sales_date.Properties.DisplayFormat.FormatString = "y"
@@ -1221,6 +1223,26 @@ Partial Class wholesales_guarantee_show
         Me.object_label_slopes.Tag = "o.status_code in (7,9)"
         Me.object_label_slopes.Text = "En Tramite"
         '
+        'object_label_wineris
+        '
+        Me.object_label_wineris.AccessibleDescription = "Estado='Llegada A Bodega'"
+        Me.object_label_wineris.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.object_label_wineris.Appearance.ForeColor = System.Drawing.Color.LightSeaGreen
+        Me.object_label_wineris.Appearance.Options.UseFont = True
+        Me.object_label_wineris.Appearance.Options.UseForeColor = True
+        Me.object_label_wineris.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal
+        Me.object_label_wineris.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.object_label_wineris.Dock = System.Windows.Forms.DockStyle.Left
+        Me.object_label_wineris.Location = New System.Drawing.Point(66, 8)
+        Me.object_label_wineris.LookAndFeel.SkinName = "Office 2019 White"
+        Me.object_label_wineris.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.object_label_wineris.Margin = New System.Windows.Forms.Padding(5, 5, 3, 5)
+        Me.object_label_wineris.Name = "object_label_wineris"
+        Me.object_label_wineris.Size = New System.Drawing.Size(78, 16)
+        Me.object_label_wineris.TabIndex = 0
+        Me.object_label_wineris.Tag = "o.status_code in (16)"
+        Me.object_label_wineris.Text = "Llegada Bodega"
+        '
         'object_label_isolates
         '
         Me.object_label_isolates.AccessibleDescription = "Estado in ('Revision En Taller','Solicitud A Taller')"
@@ -1260,6 +1282,27 @@ Partial Class wholesales_guarantee_show
         Me.object_label_brand.TabIndex = 0
         Me.object_label_brand.Tag = "o.status_code in (8)"
         Me.object_label_brand.Text = "Brand House"
+        '
+        'object_label_returns
+        '
+        Me.object_label_returns.AccessibleDescription = "Estado in ('Regresa Equipo Reparado De Taller','Regresa Equipo Reparado De Marca'" &
+    ")"
+        Me.object_label_returns.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.object_label_returns.Appearance.ForeColor = System.Drawing.Color.LightSeaGreen
+        Me.object_label_returns.Appearance.Options.UseFont = True
+        Me.object_label_returns.Appearance.Options.UseForeColor = True
+        Me.object_label_returns.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal
+        Me.object_label_returns.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.object_label_returns.Dock = System.Windows.Forms.DockStyle.Left
+        Me.object_label_returns.Location = New System.Drawing.Point(320, 8)
+        Me.object_label_returns.LookAndFeel.SkinName = "Office 2019 White"
+        Me.object_label_returns.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.object_label_returns.Margin = New System.Windows.Forms.Padding(5, 5, 3, 5)
+        Me.object_label_returns.Name = "object_label_returns"
+        Me.object_label_returns.Size = New System.Drawing.Size(81, 16)
+        Me.object_label_returns.TabIndex = 0
+        Me.object_label_returns.Tag = "o.status_code in (16)"
+        Me.object_label_returns.Text = "Regreso Bodega"
         '
         'object_label_sending
         '
@@ -1336,46 +1379,31 @@ Partial Class wholesales_guarantee_show
         Me.object_label_search.Tag = "month(o.event_date)=month(getdate()) and year(o.event_date)=year(getdate())"
         Me.object_label_search.Text = "Todas las registros"
         '
-        'object_label_returns
+        'btn_object_notes
         '
-        Me.object_label_returns.AccessibleDescription = "Estado in ('Regresa Equipo Reparado De Taller','Regresa Equipo Reparado De Marca'" &
-    ")"
-        Me.object_label_returns.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.object_label_returns.Appearance.ForeColor = System.Drawing.Color.LightSeaGreen
-        Me.object_label_returns.Appearance.Options.UseFont = True
-        Me.object_label_returns.Appearance.Options.UseForeColor = True
-        Me.object_label_returns.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal
-        Me.object_label_returns.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.object_label_returns.Dock = System.Windows.Forms.DockStyle.Left
-        Me.object_label_returns.Location = New System.Drawing.Point(320, 8)
-        Me.object_label_returns.LookAndFeel.SkinName = "Office 2019 White"
-        Me.object_label_returns.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.object_label_returns.Margin = New System.Windows.Forms.Padding(5, 5, 3, 5)
-        Me.object_label_returns.Name = "object_label_returns"
-        Me.object_label_returns.Size = New System.Drawing.Size(81, 16)
-        Me.object_label_returns.TabIndex = 0
-        Me.object_label_returns.Tag = "o.status_code in (16)"
-        Me.object_label_returns.Text = "Regreso Bodega"
-        '
-        'object_label_wineris
-        '
-        Me.object_label_wineris.AccessibleDescription = "Estado='Llegada A Bodega'"
-        Me.object_label_wineris.Appearance.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.object_label_wineris.Appearance.ForeColor = System.Drawing.Color.LightSeaGreen
-        Me.object_label_wineris.Appearance.Options.UseFont = True
-        Me.object_label_wineris.Appearance.Options.UseForeColor = True
-        Me.object_label_wineris.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal
-        Me.object_label_wineris.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.object_label_wineris.Dock = System.Windows.Forms.DockStyle.Left
-        Me.object_label_wineris.Location = New System.Drawing.Point(66, 8)
-        Me.object_label_wineris.LookAndFeel.SkinName = "Office 2019 White"
-        Me.object_label_wineris.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.object_label_wineris.Margin = New System.Windows.Forms.Padding(5, 5, 3, 5)
-        Me.object_label_wineris.Name = "object_label_wineris"
-        Me.object_label_wineris.Size = New System.Drawing.Size(78, 16)
-        Me.object_label_wineris.TabIndex = 0
-        Me.object_label_wineris.Tag = "o.status_code in (16)"
-        Me.object_label_wineris.Text = "Llegada Bodega"
+        Me.btn_object_notes.BackColor = System.Drawing.Color.White
+        Me.btn_object_notes.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btn_object_notes.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btn_object_notes.FlatAppearance.BorderSize = 0
+        Me.btn_object_notes.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
+        Me.btn_object_notes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btn_object_notes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.btn_object_notes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_object_notes.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_object_notes.ForeColor = System.Drawing.Color.DimGray
+        Me.btn_object_notes.Image = CType(resources.GetObject("btn_object_notes.Image"), System.Drawing.Image)
+        Me.btn_object_notes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_object_notes.Location = New System.Drawing.Point(4, 88)
+        Me.btn_object_notes.Margin = New System.Windows.Forms.Padding(1)
+        Me.btn_object_notes.MaximumSize = New System.Drawing.Size(250, 40)
+        Me.btn_object_notes.MinimumSize = New System.Drawing.Size(250, 0)
+        Me.btn_object_notes.Name = "btn_object_notes"
+        Me.btn_object_notes.Size = New System.Drawing.Size(250, 40)
+        Me.btn_object_notes.TabIndex = 0
+        Me.btn_object_notes.Text = "Crear Nota"
+        Me.btn_object_notes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_object_notes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_object_notes.UseVisualStyleBackColor = False
         '
         'wholesales_guarantee_show
         '
@@ -1475,4 +1503,5 @@ Partial Class wholesales_guarantee_show
     Protected WithEvents btn_object_erase As Button
     Friend WithEvents object_label_returns As DevExpress.XtraEditors.LabelControl
     Friend WithEvents object_label_wineris As DevExpress.XtraEditors.LabelControl
+    Protected WithEvents btn_object_notes As Button
 End Class

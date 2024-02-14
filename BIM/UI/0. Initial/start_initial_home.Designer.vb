@@ -46,6 +46,7 @@ Partial Class start_initial_home
         Me.nam_customer_separator1 = New DevExpress.XtraBars.Navigation.AccordionControlSeparator()
         Me.nam_comercial_search = New DevExpress.XtraBars.Navigation.AccordionControlElement()
         Me.nam_comercial_customers = New DevExpress.XtraBars.Navigation.AccordionControlElement()
+        Me.nam_comercial_credits = New DevExpress.XtraBars.Navigation.AccordionControlElement()
         Me.nam_comercial_chances = New DevExpress.XtraBars.Navigation.AccordionControlElement()
         Me.nam_customer_separator2 = New DevExpress.XtraBars.Navigation.AccordionControlSeparator()
         Me.nam_comercial_budget = New DevExpress.XtraBars.Navigation.AccordionControlElement()
@@ -499,7 +500,7 @@ Partial Class start_initial_home
         '
         'nam_comercial_group
         '
-        Me.nam_comercial_group.Elements.AddRange(New DevExpress.XtraBars.Navigation.AccordionControlElement() {Me.nam_comercial_attention, Me.nam_comercial_oportunity, Me.nam_comercial_quotation, Me.nam_customer_separator1, Me.nam_comercial_search, Me.nam_comercial_customers, Me.nam_comercial_chances, Me.nam_customer_separator2, Me.nam_comercial_budget, Me.nam_financial_request})
+        Me.nam_comercial_group.Elements.AddRange(New DevExpress.XtraBars.Navigation.AccordionControlElement() {Me.nam_comercial_attention, Me.nam_comercial_oportunity, Me.nam_comercial_quotation, Me.nam_customer_separator1, Me.nam_comercial_search, Me.nam_comercial_customers, Me.nam_comercial_credits, Me.nam_comercial_chances, Me.nam_customer_separator2, Me.nam_comercial_budget, Me.nam_financial_request})
         Me.nam_comercial_group.Expanded = True
         Me.nam_comercial_group.HeaderVisible = False
         Me.nam_comercial_group.Name = "nam_comercial_group"
@@ -547,6 +548,14 @@ Partial Class start_initial_home
         Me.nam_comercial_customers.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item
         Me.nam_comercial_customers.Tag = "comercial_customer_show"
         Me.nam_comercial_customers.Text = "Listado de clientes"
+        '
+        'nam_comercial_credits
+        '
+        Me.nam_comercial_credits.ImageOptions.Image = CType(resources.GetObject("nam_comercial_credits.ImageOptions.Image"), System.Drawing.Image)
+        Me.nam_comercial_credits.Name = "nam_comercial_credits"
+        Me.nam_comercial_credits.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item
+        Me.nam_comercial_credits.Tag = "comercial_customer_credits"
+        Me.nam_comercial_credits.Text = "Clientes con Cartera"
         '
         'nam_comercial_chances
         '
@@ -1924,4 +1933,5 @@ Partial Class start_initial_home
     Private WithEvents nam_customer_separator2 As DevExpress.XtraBars.Navigation.AccordionControlSeparator
     Friend WithEvents nam_financial_request As DevExpress.XtraBars.Navigation.AccordionControlElement
     Friend WithEvents reporting_search_agency As DevExpress.XtraBars.Navigation.AccordionControlElement
+    Friend WithEvents nam_comercial_credits As DevExpress.XtraBars.Navigation.AccordionControlElement
 End Class

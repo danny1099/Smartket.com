@@ -305,6 +305,14 @@ Public Class wholesales_guarantee_show
         End If
     End Sub
 
+    Private Sub noted_option(sender As Object, e As EventArgs) Handles btn_object_notes.Click
+        If dgv_object_view.SelectedRowsCount.ToString = 1 Then
+            show_flyout(New model_object_comentary("Wholesales.Masters.Guarantee", dgv_object_view.GetRowCellValue(dgv_object_view.FocusedRowHandle, "Id")))
+        Else
+            message_text("La acción no se puede realizar con selección multiple", MessageBoxButtons.OK)
+        End If
+    End Sub
+
     Private Sub synchronize_option(sender As Object, e As EventArgs) Handles btn_object_update.Click
         reports_show(criteria_search)
     End Sub

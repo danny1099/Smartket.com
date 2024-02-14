@@ -69,7 +69,7 @@ Public Class comercial_customer_resume
                 dgv_object_view.SelectRow(0)
 
                 'check if total column are less to change view column
-                .OptionsView.ColumnAutoWidth = If(.Columns.Count <= 15, True, False)
+                .OptionsView.ColumnAutoWidth = False
 
                 'check if column cotizaciones exist to alignment to center
                 If curren_object = "lbl_object_attention" Then option_column()
@@ -79,8 +79,13 @@ Public Class comercial_customer_resume
                 If .Columns("Edad") IsNot Nothing Then .Columns("Edad").AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
                 If .Columns("Sugerencias") IsNot Nothing Then .Columns("Sugerencias").AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
 
+                If .Columns("Total Cartera") IsNot Nothing Then .Columns("Total Cartera").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+                If .Columns("Pago Total") IsNot Nothing Then .Columns("Pago Total").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+                If .Columns("Total Cartera") IsNot Nothing Then .Columns("Total Cartera").DisplayFormat.FormatString = "c0"
+                If .Columns("Pago Total") IsNot Nothing Then .Columns("Pago Total").DisplayFormat.FormatString = "c0"
+
                 'define el total de filas en la etiqueta de totales
-                lbl_object_count.Text = .RowCount.ToString
+                lbl_object_count.Text = If(.Columns("Pago Total") IsNot Nothing, total_sales(), .RowCount.ToString)
             End With
         End If
     End Sub
@@ -88,6 +93,18 @@ Public Class comercial_customer_resume
     Private Sub count_rows(sender As Object, e As EventArgs) Handles dgv_object_view.ColumnFilterChanged
         lbl_object_count.Text = dgv_object_view.RowCount.ToString
     End Sub
+
+    Private Function total_sales() As String
+        Dim value_total As Double = 0
+
+        For i As Integer = 0 To dgv_object_view.DataRowCount
+            If dgv_object_view.GetRowCellValue(i, "Pago Total") >= 0 Then
+                value_total += CDbl(Replace(Replace(Replace(dgv_object_view.GetRowCellValue(i, "Pago Total"), ".", ""), "$", ""), "- ", "-"))
+            End If
+        Next
+
+        Return FormatCurrency((value_total), 0)
+    End Function
 
     Private Sub option_column()
         If dgv_object_view.RowCount > 0 Then
@@ -141,10 +158,9 @@ Public Class comercial_customer_resume
         End If
     End Sub
 
-    Private Sub selected_process(sender As Object, e As EventArgs) Handles lbl_object_sales.Click, lbl_object_datacredit.Click, lbl_object_attention.Click, lbl_object_visits.Click, lbl_object_refered.Click, lbl_object_hobbies.Click, lbl_object_credits.Click
+    Private Sub selected_process(sender As Object, e As EventArgs) Handles lbl_object_sales.Click, lbl_object_datacredit.Click, lbl_object_attention.Click, lbl_object_balances.Click, lbl_object_refered.Click, lbl_object_hobbies.Click, lbl_object_credits.Click
         'set current process with selected object clicked
         curren_object = sender.name.ToString
-        lbl_object_current.Text = sender.Text
 
         If curren_object IsNot Nothing Then
             reports_show(search_data(curren_object))
@@ -156,7 +172,7 @@ Public Class comercial_customer_resume
             Case "lbl_object_sales" : Return sales.wholesale_sales_show("s.customer_code=" & record_affected & "and s.row_visible in (1,3)")
             Case "lbl_object_datacredit" : Return datacredit.wholesale_datacredits_show("c.customer_code=" & record_affected & "and c.row_visible=1")
             Case "lbl_object_attention" : Return attention.commercial_attention_show("t.customer_code=" & record_affected & " and t.row_visible=1")
-            Case "lbl_object_visits" : Return customer.customer_visited_show("v.customer_code=" & record_affected & " and v.row_visible=1")
+            Case "lbl_object_balances" : Return customer.comercial_customer_credits("c.Id=" & record_affected & " and b.row_visible=1")
             Case "lbl_object_refered" : Return customer.comercial_customer_show("c.source_code=11 and c.refered_code=" & record_affected & " and c.row_visible=1")
             Case "lbl_object_hobbies" : Return customer.comercial_customer_hobbies(record_affected)
             Case "lbl_object_credits" : Return financial.financial_request_showed("r.customer_code=" & record_affected)

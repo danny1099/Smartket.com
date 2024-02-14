@@ -388,7 +388,7 @@ Public Class comercial_customer_searched
 #End Region
 
 #Region "helpers"
-    Private Sub selected_process(sender As Object, e As EventArgs) Handles lbl_options_wholesales.Click, lbl_options_quotas.Click, lbl_options_visits.Click, lbl_object_attention.Click
+    Private Sub selected_process(sender As Object, e As EventArgs) Handles lbl_options_wholesales.Click, lbl_options_quotas.Click, lbl_options_balances.Click, lbl_object_attention.Click
         reports_show(search_data(sender.name))
     End Sub
 
@@ -396,8 +396,8 @@ Public Class comercial_customer_searched
         Select Case process_name
             Case "lbl_options_wholesales" : Return wholesales.wholesale_sales_show("s.customer_code=" & record_affected & "and s.row_visible in (1,3)")
             Case "lbl_object_attention" : Return attention.commercial_attention_show("t.customer_code=" & record_affected & " and t.row_visible=1")
-            Case "lbl_options_visits" : Return customers.customer_visited_show("v.customer_code=" & record_affected & " and v.row_visible=1")
             Case "lbl_options_quotas" : Return financial.financial_credits_search("c.customer_code=" & record_affected & " and c.row_visible=1")
+            Case "lbl_options_balances" : Return customers.comercial_customer_credits("c.Id=" & record_affected & " and b.row_visible=1")
         End Select
 
         Throw New ArgumentException
@@ -421,8 +421,7 @@ Public Class comercial_customer_searched
                 .SelectRow(0)
 
                 'check if total column are less to change view column
-                .OptionsView.ColumnAutoWidth = If(.Columns.Count < 10, True, False)
-                lbl_count_objects.Text = .RowCount.ToString
+                lbl_count_objects.Text = If(.Columns("Pago Total") IsNot Nothing, total_sales(), .RowCount.ToString)
 
                 'check if column cotizaciones exist to alignment to center
                 If .Columns("Cotizaciones") IsNot Nothing Then .Columns("Cotizaciones").AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
@@ -437,5 +436,17 @@ Public Class comercial_customer_searched
             End With
         End If
     End Sub
+
+    Private Function total_sales() As String
+        Dim value_total As Double = 0
+
+        For i As Integer = 0 To dgv_view_results.DataRowCount
+            If dgv_view_results.GetRowCellValue(i, "Pago Total") >= 0 Then
+                value_total += CDbl(Replace(Replace(Replace(dgv_view_results.GetRowCellValue(i, "Pago Total"), ".", ""), "$", ""), "- ", "-"))
+            End If
+        Next
+
+        Return FormatCurrency((value_total), 0)
+    End Function
 #End Region
 End Class

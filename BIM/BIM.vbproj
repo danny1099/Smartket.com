@@ -35,7 +35,7 @@
     <MinimumRequiredVersion>3.0.4.360</MinimumRequiredVersion>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>387</ApplicationRevision>
+    <ApplicationRevision>389</ApplicationRevision>
     <ApplicationVersion>3.0.4.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -247,6 +247,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\Cloud.vb" />
+    <Compile Include="Model\0. Helpers\model_object_comentary.Designer.vb">
+      <DependentUpon>model_object_comentary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Model\0. Helpers\model_object_comentary.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Model\0. Helpers\model_object_comments.Designer.vb">
       <DependentUpon>model_object_comments.vb</DependentUpon>
     </Compile>
@@ -411,6 +417,12 @@
       <DependentUpon>comercial_customer_create.vb</DependentUpon>
     </Compile>
     <Compile Include="UI\1. Comercial\1. Customers\comercial_customer_create.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\1. Customers\comercial_customer_credits.Designer.vb">
+      <DependentUpon>comercial_customer_credits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\1. Customers\comercial_customer_credits.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UI\1. Comercial\1. Customers\comercial_customer_edited.Designer.vb">
@@ -1794,6 +1806,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Model\0. Helpers\model_object_comentary.resx">
+      <DependentUpon>model_object_comentary.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Model\0. Helpers\model_object_comments.resx">
       <DependentUpon>model_object_comments.vb</DependentUpon>
     </EmbeddedResource>
@@ -1842,6 +1857,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\1. Comercial\1. Customers\comercial_customer_create.resx">
       <DependentUpon>comercial_customer_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\1. Customers\comercial_customer_credits.resx">
+      <DependentUpon>comercial_customer_credits.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\1. Comercial\1. Customers\comercial_customer_edited.resx">
       <DependentUpon>comercial_customer_edited.vb</DependentUpon>

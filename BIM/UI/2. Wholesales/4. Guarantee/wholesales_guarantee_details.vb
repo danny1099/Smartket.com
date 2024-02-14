@@ -29,6 +29,7 @@ Public Class wholesales_guarantee_details
 
         'set in private variable parameter
         record_affected = row_selected
+        search_permits()
     End Sub
 
     Private Sub module_load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -157,10 +158,6 @@ Public Class wholesales_guarantee_details
                 .Columns("causals_split").Visible = False
                 .Columns("causal_name").Visible = False
                 .Columns("description_text").Visible = False
-                .Columns("dispatch_number").Visible = False
-                .Columns("support_date").Visible = False
-                .Columns("support_text").Visible = False
-                .Columns("revision_type").Visible = False
                 .Columns("close_date").Visible = False
                 .Columns("pc_name").Visible = False
                 .Columns("ethernet_address").Visible = False
@@ -174,7 +171,6 @@ Public Class wholesales_guarantee_details
                 .Columns("creation_date").Visible = False
                 .Columns("work_session").Visible = False
                 .Columns("opt_in").Visible = False
-                .Columns("revision_user").Visible = False
                 .Columns("timespan_date").Visible = False
                 .Columns("user_access").Visible = False
 
@@ -289,8 +285,10 @@ Public Class wholesales_guarantee_details
                 'check if field special with condition
                 If .Item("opt_in").ToString() = "True" Then chk_search_optin.Checked = True Else chk_search_optin.Checked = False
 
-                'Carga los estados asociadas al registro seleccionado
+                'Carga los modulos complementarios de la gestion de garantia
                 timeline_show(options_changed("xtp_object_stages"))
+                revisions_show(options_changed("xtp_object_revisions"))
+                notes_show(options_changed("xtp_object_notes"))
             End With
         End If
     End Sub
@@ -359,7 +357,7 @@ Public Class wholesales_guarantee_details
         If dgv_view_results.SelectedRowsCount.ToString = 1 Then
             If message_text("Está seguro que desea cambiar el estado al registro seleccionado?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
                 show_flyout(New wholesales_guarantee_stages(dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Id")))
-                timeline_show(options_changed("xtp_object_stages"))
+                pnl_revision_tabbed.SelectedTabPage = xtp_object_stages
             End If
         Else
             message_text("La acción no se puede realizar con selección multiple", MessageBoxButtons.OK)
@@ -368,9 +366,10 @@ Public Class wholesales_guarantee_details
 
     Private Sub revisions_option(sender As Object, e As EventArgs) Handles btn_object_support.Click
         If dgv_view_results.SelectedRowsCount.ToString = 1 Then
-            If dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Estado").ToString = "Revisado y/o Verificado" Then
+            If dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Estado").ToString = "Revision En Taller" Then
                 If message_text("Está seguro que desea crear una revisión técnica al registro seleccionado?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
                     show_flyout(New wholesales_guarantee_support(dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Id")))
+                    pnl_revision_tabbed.SelectedTabPage = xtp_object_revisions
                 End If
             Else
                 message_text("No se puede realizar revisiones técnicas con el estado actual", MessageBoxButtons.OK)
@@ -383,9 +382,8 @@ Public Class wholesales_guarantee_details
     Private Sub noted_option(sender As Object, e As EventArgs) Handles btn_object_notes.Click
         If dgv_view_results.SelectedRowsCount.ToString = 1 Then
             If message_text("Está seguro que desea crear una nota al registro seleccionado?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
-                Using new_ As New model_object_notes("Wholesales.Masters.Guarantee", dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Id"), Me.Tag.ToString)
-                    new_.ShowDialog(start_home)
-                End Using
+                show_flyout(New model_object_comentary("Wholesales.Masters.Guarantee", dgv_view_results.GetRowCellValue(dgv_view_results.FocusedRowHandle, "Id")))
+                pnl_revision_tabbed.SelectedTabPage = xtp_object_notes
             End If
         Else
             message_text("La acción no se puede realizar con selección multiple", MessageBoxButtons.OK)

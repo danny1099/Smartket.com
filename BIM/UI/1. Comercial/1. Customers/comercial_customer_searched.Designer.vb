@@ -105,7 +105,7 @@ Partial Class comercial_customer_searched
         Me.txt_navigate_objects = New DevExpress.XtraEditors.ControlNavigator()
         Me.btn_print_objects = New System.Windows.Forms.Button()
         Me.pnl_object_options = New DevExpress.XtraEditors.PanelControl()
-        Me.lbl_options_visits = New DevExpress.XtraEditors.LabelControl()
+        Me.lbl_options_balances = New DevExpress.XtraEditors.LabelControl()
         Me.lbl_options_quotas = New DevExpress.XtraEditors.LabelControl()
         Me.lbl_object_attention = New DevExpress.XtraEditors.LabelControl()
         Me.lbl_options_wholesales = New DevExpress.XtraEditors.LabelControl()
@@ -542,7 +542,7 @@ Partial Class comercial_customer_searched
         Me.pnl_object_flyout.OptionsBeakPanel.BorderColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
         Me.pnl_object_flyout.OptionsButtonPanel.ButtonPanelLocation = DevExpress.Utils.FlyoutPanelButtonPanelLocation.Top
         Me.pnl_object_flyout.OwnerControl = Me.dgv_grid_result
-        Me.pnl_object_flyout.Size = New System.Drawing.Size(260, 217)
+        Me.pnl_object_flyout.Size = New System.Drawing.Size(260, 213)
         Me.pnl_object_flyout.TabIndex = 0
         '
         'pnl_object_menu
@@ -561,7 +561,7 @@ Partial Class comercial_customer_searched
         Me.pnl_object_menu.LookAndFeel.UseDefaultLookAndFeel = False
         Me.pnl_object_menu.Margin = New System.Windows.Forms.Padding(0)
         Me.pnl_object_menu.Name = "pnl_object_menu"
-        Me.pnl_object_menu.Size = New System.Drawing.Size(260, 217)
+        Me.pnl_object_menu.Size = New System.Drawing.Size(260, 213)
         Me.pnl_object_menu.TabIndex = 0
         '
         'pnl_object_actions
@@ -578,7 +578,7 @@ Partial Class comercial_customer_searched
         Me.pnl_object_actions.Margin = New System.Windows.Forms.Padding(0)
         Me.pnl_object_actions.Name = "pnl_object_actions"
         Me.pnl_object_actions.Padding = New System.Windows.Forms.Padding(3)
-        Me.pnl_object_actions.Size = New System.Drawing.Size(256, 213)
+        Me.pnl_object_actions.Size = New System.Drawing.Size(256, 209)
         Me.pnl_object_actions.TabIndex = 0
         Me.pnl_object_actions.WrapContents = False
         '
@@ -1487,7 +1487,7 @@ Partial Class comercial_customer_searched
         Me.lbl_count_objects.Appearance.Options.UseForeColor = True
         Me.lbl_count_objects.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal
         Me.lbl_count_objects.Dock = System.Windows.Forms.DockStyle.Left
-        Me.lbl_count_objects.Location = New System.Drawing.Point(300, 1)
+        Me.lbl_count_objects.Location = New System.Drawing.Point(230, 1)
         Me.lbl_count_objects.LookAndFeel.SkinName = "Office 2016 Colorful"
         Me.lbl_count_objects.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_count_objects.Margin = New System.Windows.Forms.Padding(0)
@@ -1510,9 +1510,9 @@ Partial Class comercial_customer_searched
         Me.lbl_total_objects.LookAndFeel.UseDefaultLookAndFeel = False
         Me.lbl_total_objects.Margin = New System.Windows.Forms.Padding(0)
         Me.lbl_total_objects.Name = "lbl_total_objects"
-        Me.lbl_total_objects.Size = New System.Drawing.Size(104, 28)
+        Me.lbl_total_objects.Size = New System.Drawing.Size(34, 28)
         Me.lbl_total_objects.TabIndex = 0
-        Me.lbl_total_objects.Text = "Numero de registros: "
+        Me.lbl_total_objects.Text = "Total: "
         '
         'lbl_separator_objects
         '
@@ -1582,7 +1582,7 @@ Partial Class comercial_customer_searched
         'pnl_object_options
         '
         Me.pnl_object_options.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        Me.pnl_object_options.Controls.Add(Me.lbl_options_visits)
+        Me.pnl_object_options.Controls.Add(Me.lbl_options_balances)
         Me.pnl_object_options.Controls.Add(Me.lbl_options_quotas)
         Me.pnl_object_options.Controls.Add(Me.lbl_object_attention)
         Me.pnl_object_options.Controls.Add(Me.lbl_options_wholesales)
@@ -1596,33 +1596,33 @@ Partial Class comercial_customer_searched
         Me.pnl_object_options.Size = New System.Drawing.Size(725, 35)
         Me.pnl_object_options.TabIndex = 0
         '
-        'lbl_options_visits
+        'lbl_options_balances
         '
-        Me.lbl_options_visits.Appearance.Font = New System.Drawing.Font("Arial Narrow", 11.25!)
-        Me.lbl_options_visits.Appearance.ForeColor = System.Drawing.Color.DimGray
-        Me.lbl_options_visits.Appearance.Image = CType(resources.GetObject("lbl_options_visits.Appearance.Image"), System.Drawing.Image)
-        Me.lbl_options_visits.Appearance.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.lbl_options_visits.Appearance.Options.UseFont = True
-        Me.lbl_options_visits.Appearance.Options.UseForeColor = True
-        Me.lbl_options_visits.Appearance.Options.UseImage = True
-        Me.lbl_options_visits.Appearance.Options.UseImageAlign = True
-        Me.lbl_options_visits.Appearance.Options.UseTextOptions = True
-        Me.lbl_options_visits.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
-        Me.lbl_options_visits.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
-        Me.lbl_options_visits.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lbl_options_visits.Dock = System.Windows.Forms.DockStyle.Left
-        Me.lbl_options_visits.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter
-        Me.lbl_options_visits.ImageOptions.Image = CType(resources.GetObject("lbl_options_visits.ImageOptions.Image"), System.Drawing.Image)
-        Me.lbl_options_visits.Location = New System.Drawing.Point(447, 1)
-        Me.lbl_options_visits.LookAndFeel.SkinName = "Office 2019 White"
-        Me.lbl_options_visits.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.lbl_options_visits.Margin = New System.Windows.Forms.Padding(0)
-        Me.lbl_options_visits.Name = "lbl_options_visits"
-        Me.lbl_options_visits.Padding = New System.Windows.Forms.Padding(5, 0, 5, 0)
-        Me.lbl_options_visits.Size = New System.Drawing.Size(134, 33)
-        Me.lbl_options_visits.TabIndex = 0
-        Me.lbl_options_visits.Tag = "fn_customer_visited"
-        Me.lbl_options_visits.Text = "Visitas del cliente"
+        Me.lbl_options_balances.Appearance.Font = New System.Drawing.Font("Arial Narrow", 11.25!)
+        Me.lbl_options_balances.Appearance.ForeColor = System.Drawing.Color.DimGray
+        Me.lbl_options_balances.Appearance.Image = CType(resources.GetObject("lbl_options_balances.Appearance.Image"), System.Drawing.Image)
+        Me.lbl_options_balances.Appearance.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lbl_options_balances.Appearance.Options.UseFont = True
+        Me.lbl_options_balances.Appearance.Options.UseForeColor = True
+        Me.lbl_options_balances.Appearance.Options.UseImage = True
+        Me.lbl_options_balances.Appearance.Options.UseImageAlign = True
+        Me.lbl_options_balances.Appearance.Options.UseTextOptions = True
+        Me.lbl_options_balances.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.lbl_options_balances.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
+        Me.lbl_options_balances.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lbl_options_balances.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_options_balances.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter
+        Me.lbl_options_balances.ImageOptions.Image = CType(resources.GetObject("lbl_options_balances.ImageOptions.Image"), System.Drawing.Image)
+        Me.lbl_options_balances.Location = New System.Drawing.Point(447, 1)
+        Me.lbl_options_balances.LookAndFeel.SkinName = "Office 2019 White"
+        Me.lbl_options_balances.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.lbl_options_balances.Margin = New System.Windows.Forms.Padding(0)
+        Me.lbl_options_balances.Name = "lbl_options_balances"
+        Me.lbl_options_balances.Padding = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.lbl_options_balances.Size = New System.Drawing.Size(134, 33)
+        Me.lbl_options_balances.TabIndex = 0
+        Me.lbl_options_balances.Tag = "fn_customer_visited"
+        Me.lbl_options_balances.Text = "Saldos Cartera"
         '
         'lbl_options_quotas
         '
@@ -1645,7 +1645,7 @@ Partial Class comercial_customer_searched
         Me.lbl_options_quotas.Size = New System.Drawing.Size(144, 33)
         Me.lbl_options_quotas.TabIndex = 0
         Me.lbl_options_quotas.Tag = ""
-        Me.lbl_options_quotas.Text = "Historia de cupos"
+        Me.lbl_options_quotas.Text = "Historial de cupos"
         '
         'lbl_object_attention
         '
@@ -3935,7 +3935,7 @@ Partial Class comercial_customer_searched
     Protected WithEvents btn_object_attention As Button
     Protected WithEvents btn_object_resume As Button
     Friend WithEvents lbl_separator1 As DevExpress.XtraEditors.SeparatorControl
-    Friend WithEvents lbl_options_visits As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents lbl_options_balances As DevExpress.XtraEditors.LabelControl
     Protected WithEvents btn_object_quotas As Button
     Friend WithEvents txt_search_quotas As APDA.Object.Controls.TextboxEdit
     Friend WithEvents lbl_search_quotas As DevExpress.XtraEditors.LabelControl

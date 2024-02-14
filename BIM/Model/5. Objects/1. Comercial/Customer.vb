@@ -185,6 +185,18 @@
     End Function
 
 
+    Public Function comercial_customer_credits(Optional criteria_search As String = "") As DataTable
+        With sql_command
+            .CommandType = CommandType.StoredProcedure
+            .CommandText = "relationship_customer_person_credits"
+
+            .Parameters.Clear()
+            .Parameters.Add("@criteria_search", SqlDbType.VarChar, 8000).Value = criteria_search
+
+            Return execute_table()
+        End With
+    End Function
+
     Public Function comercial_customer_fieldsearchs() As DataTable
         Dim table As New DataTable
 
