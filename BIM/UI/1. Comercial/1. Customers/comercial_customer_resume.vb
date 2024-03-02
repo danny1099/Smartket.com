@@ -79,13 +79,18 @@ Public Class comercial_customer_resume
                 If .Columns("Edad") IsNot Nothing Then .Columns("Edad").AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
                 If .Columns("Sugerencias") IsNot Nothing Then .Columns("Sugerencias").AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
 
-                If .Columns("Total Cartera") IsNot Nothing Then .Columns("Total Cartera").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
-                If .Columns("Pago Total") IsNot Nothing Then .Columns("Pago Total").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
-                If .Columns("Total Cartera") IsNot Nothing Then .Columns("Total Cartera").DisplayFormat.FormatString = "c0"
-                If .Columns("Pago Total") IsNot Nothing Then .Columns("Pago Total").DisplayFormat.FormatString = "c0"
+                If .Columns("Cartera CG1") IsNot Nothing Then .Columns("Cartera CG1").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+                If .Columns("Valor Financiado") IsNot Nothing Then .Columns("Valor Financiado").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+                If .Columns("Total a Pagar") IsNot Nothing Then .Columns("Total a Pagar").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+                If .Columns("Valor Cuota") IsNot Nothing Then .Columns("Valor Cuota").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+
+                If .Columns("Cartera CG1") IsNot Nothing Then .Columns("Cartera CG1").DisplayFormat.FormatString = "c0"
+                If .Columns("Valor Financiado") IsNot Nothing Then .Columns("Valor Financiado").DisplayFormat.FormatString = "c0"
+                If .Columns("Total a Pagar") IsNot Nothing Then .Columns("Total a Pagar").DisplayFormat.FormatString = "c0"
+                If .Columns("Valor Cuota") IsNot Nothing Then .Columns("Valor Cuota").DisplayFormat.FormatString = "c0"
 
                 'define el total de filas en la etiqueta de totales
-                lbl_object_count.Text = If(.Columns("Pago Total") IsNot Nothing, total_sales(), .RowCount.ToString)
+                lbl_object_count.Text = If(.Columns("Total a Pagar") IsNot Nothing, total_sales(), .RowCount.ToString)
             End With
         End If
     End Sub

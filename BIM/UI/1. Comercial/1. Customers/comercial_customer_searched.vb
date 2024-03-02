@@ -421,10 +421,20 @@ Public Class comercial_customer_searched
                 .SelectRow(0)
 
                 'check if total column are less to change view column
-                lbl_count_objects.Text = If(.Columns("Pago Total") IsNot Nothing, total_sales(), .RowCount.ToString)
+                lbl_count_objects.Text = If(.Columns("Total a Pagar") IsNot Nothing, total_sales(), .RowCount.ToString)
 
                 'check if column cotizaciones exist to alignment to center
                 If .Columns("Cotizaciones") IsNot Nothing Then .Columns("Cotizaciones").AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+
+                If .Columns("Cartera CG1") IsNot Nothing Then .Columns("Cartera CG1").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+                If .Columns("Valor Financiado") IsNot Nothing Then .Columns("Valor Financiado").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+                If .Columns("Total a Pagar") IsNot Nothing Then .Columns("Total a Pagar").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+                If .Columns("Valor Cuota") IsNot Nothing Then .Columns("Valor Cuota").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+
+                If .Columns("Cartera CG1") IsNot Nothing Then .Columns("Cartera CG1").DisplayFormat.FormatString = "c0"
+                If .Columns("Valor Financiado") IsNot Nothing Then .Columns("Valor Financiado").DisplayFormat.FormatString = "c0"
+                If .Columns("Total a Pagar") IsNot Nothing Then .Columns("Total a Pagar").DisplayFormat.FormatString = "c0"
+                If .Columns("Valor Cuota") IsNot Nothing Then .Columns("Valor Cuota").DisplayFormat.FormatString = "c0"
 
                 'check if columng comentario exists to change columnd and row size
                 With dgv_view_objects

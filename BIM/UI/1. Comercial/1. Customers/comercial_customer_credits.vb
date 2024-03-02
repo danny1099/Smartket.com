@@ -59,10 +59,15 @@ Public Class comercial_customer_credits
                 .Columns("Id").Visible = False
 
                 'formato moneda en campo'
-                .Columns("Total Cartera").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
-                .Columns("Pago Total").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
-                .Columns("Total Cartera").DisplayFormat.FormatString = "c0"
-                .Columns("Pago Total").DisplayFormat.FormatString = "c0"
+                .Columns("Cartera CG1").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+                .Columns("Valor Financiado").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+                .Columns("Total a Pagar").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+                .Columns("Valor Cuota").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+
+                .Columns("Cartera CG1").DisplayFormat.FormatString = "c0"
+                .Columns("Valor Financiado").DisplayFormat.FormatString = "c0"
+                .Columns("Total a Pagar").DisplayFormat.FormatString = "c0"
+                .Columns("Valor Cuota").DisplayFormat.FormatString = "c0"
                 .BestFitColumns(True)
                 .SelectRow(0)
 
